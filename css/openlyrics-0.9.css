@@ -1,0 +1,139 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * OpenLyrics 0.9
+ */
+
+:root[version="0.9"] lines:after { 
+  content: "\A"; 
+  white-space: pre-line;
+}
+:root[version="0.9"] lines {
+  line-height: 1em;
+  padding: 0;
+  margin: 0;
+}
+:root[version="0.9"] lines[repeat]::before { /* repeat */
+  content: '‖:';
+}
+:root[version="0.9"] lines[repeat]::after { 
+  content: ':‖×' attr(repeat);
+}
+:root[version="0.9"] beat {
+  display: inline-block;
+}
+:root[version="0.9"] beat::after {
+  content: '|';
+  padding: 0 .1em;
+}
+:root[version="0.9"] beat:last-child::after {
+  content: none;
+}
+
+/* chords: there are two syntax: 
+ * 1st: tradicional <chord name="Em7/D" />
+ * 2nd: new         <chord base="Em" ext="7" bass="D" />
+ */
+:root[version="0.9"] chord[name],
+:root[version="0.9"] chord[base] {
+  display: inline-block;
+  line-height: 1em;
+}
+:root[version="0.9"] chord[name]::before,
+:root[version="0.9"] chord[base]::before {
+  display: block;
+  text-align: left;
+  font-weight: bold;
+  margin-bottom: -.1em;
+  margin-right: .1em;
+}
+:root[version="0.9"] chord[name]::before {
+  content: attr(name);
+}
+:root[version="0.9"] chord[base]::before {
+  content: attr(base);
+}
+:root[version="0.9"] chord[base][ext]::before {
+    content: attr(base) attr(ext);
+}
+:root[version="0.9"] chord[base][bass]::before {
+    content: attr(base) "/" attr(bass);
+}
+:root[version="0.9"] chord[base][ext][bass]::before {
+    content: attr(base) attr(ext) "/" attr(bass);
+}
+/* upbeat for text: 2 syntax:
+ * 1st: first empty chord in line <chord name="A" /> or 
+ * 2nd: <chord type="upbeat" />
+ */
+:root[version="0.9"] instrument chord[name]:empty,
+:root[version="0.9"] instrument chord[base]:empty {
+  margin-bottom: 0;
+  bottom: 0;
+  margin-right: .1em;
+}
+:root[version="0.9"] chord[name]:empty,
+:root[version="0.9"] chord[base]:empty {
+  position: relative;
+  bottom: 0.9em;
+  margin-right: -.2em;
+}
+:root[version="0.9"] chord[name][type=upbeat],
+:root[version="0.9"] chord[base][type=upbeat],
+:root[version="0.9"] lines > chord[name]:empty:first-child,
+:root[version="0.9"] lines > chord[base]:empty:first-child  {
+  position: relative;
+  bottom: .7em;
+  height: 1em;
+  margin-right: 0 !important;
+}
+:root[version="0.9"] chord[name][type=upbeat]::before,
+:root[version="0.9"] chord[base][type=upbeat]::before ,
+:root[version="0.9"] lines > chord[name]:empty:first-child::before,
+:root[version="0.9"] lines > chord[base]:empty:first-child::before { 
+  position: absolute;
+  right: 0;
+}
+:root[version="0.9"] lines > chord[name]:only-of-type,
+:root[version="0.9"] lines > chord[base]:only-of-type { /* ??? */
+  margin-top: 0em;
+  background: purple;
+}
+/* nested chords
+ * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
+ * a tweak... <chord tweak="nested" name="D"><chord name="A">Text<chord>text</chord>
+ * First playing chord is D.
+ */
+:root[version="0.9"] lines > chord[name][tweak="nested"]::before,
+:root[version="0.9"] lines > chord[base][tweak="nested"]::before /*,
+:root[version="0.9"] lines > chord[name]:has(> chord[name])::before,
+:root[version="0.9"] lines > chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
+  margin-left: 1em;
+}
+:root[version="0.9"] lines > chord[name] > chord[name]::before,
+:root[version="0.9"] lines > chord[base] > chord[base]::before {
+  margin-left: 0em;
+  margin-top: -1.1em;
+}
+:root[version="0.9"] lines > chord[name] > chord[name] > chord[name]::before,
+:root[version="0.9"] lines > chord[base] > chord[base] > chord[base]::before {
+  margin-left: 0;
+  margin-top: -1.1em;
+}
+/* line break in chords
+ * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
+ * a tweak... <chord name="A" tweak="linebreak">Text<br />text</chord>
+ */
+:root[version="0.9"] lines > chord[tweak="linebreak"] /*,
+:root[version="0.9"] lines > chord:has(> br) */ /* CSS4 selector */ /*,
+:root[version="0.9"] lines > chord:contains("\A") */ { /* works in Prince? https://www.princexml.com/doc/selectors/#selectors */
+  display: inline;
+}
+:root[version="0.9"] lines > chord[tweak="linebreak"]::before {
+  position: absolute;
+  display: inline-block;
+}
+
+/* debug
+chord {
+  border: 1px solid silver;
+} /* /debug */

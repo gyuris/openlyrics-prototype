@@ -1,0 +1,49 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * Print media
+ */
+
+@page { 
+  size: A4;
+  margin: 68pt 96pt 136pt 40pt;
+  @top-left { 
+    content: "OpenLyrics " string(openlyrics-version);
+  }
+  @bottom-right { 
+    content: counter(page);
+  }
+}
+:root { 
+  color: cmyk(0, 0, 0, 1);
+  string-set: openlyrics-version attr(version);
+}
+title:not(:first-child), 
+author, 
+copyright { 
+  color: cmyk(0, 0, 0, 0.35);
+}
+songbook:first-child::before { 
+  background: cmyk(0, 0, 0, 1); 
+  color: cmyk(0, 0, 0, 0); 
+  border-color: cmyk(0, 0, 0, 0.35);
+}
+songbook:first-child::after { 
+  color: cmyk(0, 0, 0, 0);
+}
+properties { 
+  border-bottom-color: cmyk(0, 0, 0, 0.35);
+}
+lyrics > verse::before, 
+lyrics > instrument::before { 
+  color: cmyk(1, 0, 0, 0);
+}
+chord::before {
+  color: cmyk(0, 1, 1, 0);
+}
+beat::after { 
+  color: cmyk(0, 0, 0, 1);
+}
+lyrics > verse, 
+lyrics > instrument { 
+  page-break-inside: avoid;
+}

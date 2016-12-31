@@ -1,0 +1,116 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * Common
+ */
+
+/* head */
+properties {
+  display: block;
+  border-bottom-style: solid;
+  border-bottom-width: 1pt;
+  padding-bottom: .3em;
+  position: relative;
+  font-size: 10pt;
+}
+title:first-child { /* title */
+  display: block; 
+  font-size: 24pt;
+  font-weight: bold;
+  text-align: center;
+  margin: .5em 0;
+}
+title:not(:first-child)[lang="hu"] { /* alternate title */
+  text-align: center;
+}
+title:not(:first-child), author, copyright { /* other head infos */
+  display: block;
+}
+title:not([lang="hu"])::before {
+  font-weight: bold;
+}
+author[type=words]::before,
+author[type=music]::before,
+author[type=translation][lang=hu]::before {
+  font-weight: bold;
+}
+copyright::before {
+  font-weight: bold;
+}
+key, verseOrder {
+  display: none;
+}
+songbooks { /* songbooks */
+  line-height: 0em;
+  float: right;
+  margin-top: -1em;
+}
+songbook:first-child::before { /* 1st songbook */
+  display: block;
+  content: attr(entry);
+  position: absolute;
+  bottom: -.2em;
+  right: -.2em;
+  min-width: 1.2em;
+  min-height: 1.2em;
+  padding: 0 .1em;
+  line-height: normal;
+  font-size: 62pt;
+  text-align: center;
+  border-width: 3pt;
+  border-style: solid;
+  border-radius: 0.2em;
+}
+songbook:first-child::after {
+  display: inline-block;
+  content: attr(name);
+  position: absolute;
+  bottom: -.8em;
+  right: 0;
+  line-height: 0.8em;
+  font-size: 9pt;
+  min-width: 8em;
+  text-align: center;
+}
+songbook:not(:first-child)::before { /* other songbooks */
+  display: block;
+  content: attr(name) " " attr(entry);
+  text-align: right;
+  margin-right: 6em;
+  line-height: 1em;
+}
+
+/* lyrics, verse, instrument */
+lyrics { 
+  display: block;
+  margin: .2em 1em;
+  padding: 1em 0;
+}
+lyrics > verse,
+lyrics > instrument {
+  display: block;
+  margin: 0 0 1em 60pt;
+  font-size: 14pt;
+  position: relative;
+}
+lyrics > verse br::before,
+lyrics > instrument br::before  { 
+  content: "\A"; 
+  white-space: pre-line;
+}
+lyrics > verse::before, /* verse names */
+lyrics > instrument::before { 
+  position: absolute;
+  width: 60pt;
+  top: -60pt;
+  left: -60pt;
+  transform: rotate(270deg) translateX(-65pt) translateY(-60pt);
+  transform-origin: top right;
+  text-align: right;
+  font-size: 10pt;
+}
+lyrics > instrument::before {
+  top: -67pt;
+}
+lyrics > verse[name^='v']  { 
+  counter-increment: verse;
+}

@@ -1,0 +1,26 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * English
+ */
+ 
+:lang(en) title:not([lang="en"])[original]::before  { content: "Original title: " }
+:lang(en) title:not([lang="en"])::before            { content: "Title: " }
+:lang(en) title:not([lang="en"])[lang="hu"]::after  { content: " (Hungarian)" }
+:lang(en) title:not([lang="en"])[lang="es"]::after  { content: " (Spanish)" }
+:lang(en) title:not([lang="en"])[lang="it"]::after  { content: " (Italian)" }
+:lang(en) title:not([lang="en"])[lang="he"]::after  { content: " (Hebrew, Ivrit)" }
+:lang(en) author[type=words]::before,
+:lang(en) author[type=music]::before                { content: "Author: " }
+:lang(en) author[type=words]::after                 { content: " (text)" }
+:lang(en) author[type=music]::after                 { content: " (song)" }
+:lang(en) author[type=translation]::before          { content: "Translator: " }
+:lang(en) copyright::before                         { content: "Copyright: " }
+:lang(en) lyrics > verse[name^='v']::before         { content: "Verse counter(verse)"  }
+:lang(en) lyrics > verse[name^='c']::before         { content: "Chorus" }
+:lang(en) lyrics > verse[name^='p']::before         { content: "Pre-chorus" }
+:lang(en) lyrics > verse[name^='b']::before         { content: "Bridge" }
+:lang(en) lyrics > verse[name^='e']::before         { content: "Ending" }
+:lang(en) lyrics > instrument[name^='i']::before    { content: "Intro" }
+:lang(en) lyrics > instrument[name^='m']::before    { content: "Middle" }
+:lang(en) lyrics > instrument[name^='o']::before    { content: "Outro" }
+:lang(en) lyrics > instrument[name^='s']::before    { content: "Solo" }

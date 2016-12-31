@@ -1,0 +1,84 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="../css/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03">
+  <properties>
+    <titles>
+      <title lang="hu">Új szívet adok és új lelket</title>
+    </titles>
+    <verseOrder>i c v1 c v2 c s 2 v3 c</verseOrder>
+    <authors>
+      <author></author>
+    </authors>
+    <songbooks>
+      <songbook name="Sárga könyv" entry="175"/>
+    </songbooks>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines repeat="2">
+        <beat><chord name="C"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Dm"/></beat>
+        <beat><chord name="F"/></beat>
+        <beat><chord name="Dm7"/></beat>
+        <beat><chord name="G7"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="G7"/></beat>
+      </lines>
+    </instrument>
+    <verse name="c">
+      <lines>
+        <chord name="C">Új szívet</chord> <chord name="G">adok és</chord> <chord name="Dm">új lel</chord><chord name="F6">ket</chord>,<br/>
+        hogy <chord name="F">bűneitek</chord><chord name="Dm7">ből</chord> <chord name="G7">megtérje</chord><chord name="C">tek</chord>!<chord name="G7"/><br/>
+        <chord name="C">Elveszem</chord> <chord name="G">kőszí</chord><chord name="Dm">vei</chord><chord name="F6">tek</chord>,<br/>és 
+        <chord name="F">hús-szíve</chord><chord name="Am7">ket</chord> <chord name="H74">oltok belé</chord><chord name="E">tek!</chord>
+      </lines>
+    </verse>
+    <verse name="v1">
+      <lines>
+        <chord name="Am">Tiszta vizet </chord><chord name="Em">hintek reá</chord><chord name="C">tok,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">minden szennytől</chord> <chord name="G">megtisztulja</chord><chord name="Am">tok!</chord><chord name="E7"/><br/>
+        És <chord name="Am">élő Lelkem</chord> <chord name="Em">oltom belé</chord><chord name="C">tek,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">törvényeim</chord> <chord name="G">szerint élje</chord><chord name="Am">tek!</chord><chord name="G7"/>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="Am">Összegyűjtlek</chord> <chord name="Em">ezer ország</chord><chord name="C">ból.</chord><chord name="E7"/><br/>
+        <chord name="Am">Visszahozlak</chord> <chord name="G">minden nép kö</chord><chord name="Am">zül,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">atyáitok</chord> <chord name="Em">földjét lakjá</chord><chord name="C">tok.</chord><chord name="E7"/><br/>
+        <chord name="Am">Népem vagy, és</chord> <chord name="G">Urad én va</chord><chord name="Am">gyok!</chord><chord name="E7"/>
+     </lines>
+    </verse>
+    <instrument name="s">
+      <lines>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="Em"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="E7"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="E"/></beat>
+      </lines>
+      <lines>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="E7"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G7"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v3">
+      <lines>
+        A <chord name="Am">népek pedig</chord> <chord name="Em">csodáim lát</chord><chord name="C">tán</chord><chord name="E7"/><br/>
+        <chord name="Am">megtudják, hogy</chord> <chord name="G">én vagyok az</chord> <chord name="Am">Úr.</chord><chord name="E7"/><br/>
+        <chord name="Am">Tisztelik majd</chord> <chord name="G">érte neve</chord><chord name="C">met</chord>.<chord name="E7"/><br/>
+        <chord name="Am">Én az Úr mondom, és</chord> <chord name="G">végbe is vi</chord><chord name="Am">szem</chord>!<chord name="E7"/>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

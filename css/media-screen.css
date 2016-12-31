@@ -1,0 +1,47 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * Screen media
+ */
+
+:root {
+  width: 40em;
+  margin: 2em auto 1em auto;
+  color: black;
+}
+:root::before { /* for version debug only on screen */
+  display: block;
+  border: 1px solid red;
+  padding: 1px;
+  color: red;
+  position: absolute;
+  top: 1px;
+  content: "OpenLyrics " attr(version) " • " attr(createdIn) " • " attr(lang) " " attr(xml\:lang); /* https://searchcode.com/codesearch/view/6658711/ */
+  text-align: center;
+  font-size: 8pt;
+}
+title:not(:first-child), 
+author, 
+copyright { 
+  color: darkgray;
+}
+songbook:first-child::before { 
+  background: black; 
+  color: white; 
+  border-color: darkgray;
+}
+songbook:first-child::after { 
+  color: white;
+}
+properties { 
+  border-bottom-color: darkgray;
+}
+lyrics > verse::before, 
+lyrics > instrument::before { 
+  color: blue;
+}
+chord::before { 
+  color: red;
+}
+beat::after { 
+  color: black;
+}

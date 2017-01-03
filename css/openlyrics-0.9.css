@@ -77,6 +77,9 @@
   bottom: 0.9em;
   margin-right: -.2em;
 }
+:root[version="0.9"] chord[base]:empty + chord[base]:empty {
+  margin-left: .4em;
+}
 :root[version="0.9"] chord[name][type=upbeat],
 :root[version="0.9"] chord[base][type=upbeat],
 :root[version="0.9"] lines > chord[name]:empty:first-child,

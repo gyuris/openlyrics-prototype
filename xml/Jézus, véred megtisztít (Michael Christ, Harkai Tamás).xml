@@ -25,7 +25,7 @@
       véred </chord><chord name="D">ad új éle</chord><chord name="E4">tet,</chord><chord name="E" /><br />
       véred <chord name="D">tesz ma szabad</chord><chord name="E4">dá,</chord><chord name="E" /><br />
       értem <chord name="A">folyt e</chord> <chord name="cisz7">drága</chord> <chord name="fisz">vér!</chord><chord name="fisz/E" /><br />
-      Így a <chord name="D">lel</chord><chord name="d">kem fehér, mint a</chord> <chord name="E/Gisz" tweak="nested"><chord name="A">hó,</chord> mint a</chord> <chord name="fisz">hó.</chord><chord name="fisz/E" /><br />
+      Így a <chord name="D">lel</chord><chord name="d">kem fehér, mint a</chord> <chord name="E/Gisz" tweak="nested"><chord name="A">hó,</chord></chord> mint a <chord name="fisz">hó.</chord><chord name="fisz/E" /><br />
       Úr <chord name="h7">Jézus, Te</chord> <chord name="D/E">megölt</chord> <chord name="E7">Bá</chord><chord name="A">rány!</chord></lines>
     </verse>
   </lyrics>

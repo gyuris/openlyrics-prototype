@@ -101,27 +101,30 @@
   margin-top: 0em;
   background: purple;
 }
+
 /* nested chords
  * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
  * a tweak... <chord tweak="nested" name="D"><chord name="A">Text<chord>text</chord>
  * First playing chord is D.
+ * Displaying is a little bit tricky.
  */
-:root[version="0.9"] lines > chord[name][tweak="nested"]::before,
-:root[version="0.9"] lines > chord[base][tweak="nested"]::before /*,
-:root[version="0.9"] lines > chord[name]:has(> chord[name])::before,
-:root[version="0.9"] lines > chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
-  margin-left: 1em;
+:root[version="0.9"] lines chord[name][tweak="nested"],
+:root[version="0.9"] lines chord[base][tweak="nested"] /*,
+:root[version="0.9"] lines chord[name]:has(> chord[name]),
+:root[version="0.9"] lines chord[base]:has(> chord[base]) */ { /* CSS4 selector */
+  line-height: 0;
 }
-:root[version="0.9"] lines > chord[name] > chord[name]::before,
-:root[version="0.9"] lines > chord[base] > chord[base]::before {
-  margin-left: 0em;
-  margin-top: -1.1em;
+:root[version="0.9"] lines chord[name][tweak="nested"]::before,
+:root[version="0.9"] lines chord[base][tweak="nested"]::before /*,
+:root[version="0.9"] lines chord[name]:has(> chord[name])::before,
+:root[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  top: .5em;
+  text-align: right;
 }
-:root[version="0.9"] lines > chord[name] > chord[name] > chord[name]::before,
-:root[version="0.9"] lines > chord[base] > chord[base] > chord[base]::before {
-  margin-left: 0;
-  margin-top: -1.1em;
-}
+
 /* line break in chords
  * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
  * a tweak... <chord name="A" tweak="linebreak">Text<br />text</chord>

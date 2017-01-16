@@ -22,6 +22,13 @@
 }
 
 @font-face {
+    font-family: "FontAwesome";
+    font-style: normal;
+    font-weight: normal;
+    src: local("FontAwesome"),
+         url(fonts/FontAwesome.otf) format('opentype');
+}
+@font-face {
     font-family: "Linux Libertine";
     font-style: normal;
     font-weight: normal;

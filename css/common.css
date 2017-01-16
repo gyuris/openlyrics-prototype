@@ -3,80 +3,101 @@
  * Common
  */
 
-/* head */
+/* properties */
 properties {
   display: block;
   border-bottom-style: solid;
   border-bottom-width: 1pt;
   padding-bottom: .3em;
-  position: relative;
   font-size: 10pt;
 }
+title {
+  display: block;
+}
 title:first-child { /* title */
-  display: block; 
-  font-size: 24pt;
+  font-size: 18pt;
   font-weight: bold;
   text-align: center;
   margin: .5em 0;
 }
-title:not(:first-child)[lang="hu"] { /* alternate title */
+title:not(:first-child) { /* alternate title */
   text-align: center;
 }
-title:not(:first-child), author, copyright { /* other head infos */
-  display: block;
-}
-title:not([lang="hu"])::before {
+title:not(:first-child)::before {
   font-weight: bold;
 }
-author[type=words]::before,
-author[type=music]::before,
-author[type=translation][lang=hu]::before {
-  font-weight: bold;
+title:last-child {
+  margin-bottom: 1em;
 }
-copyright::before {
-  font-weight: bold;
+authors,
+copyright,
+ccliNo,
+released,
+transposition,
+tempo,
+key,
+variant,
+publisher,
+version,
+keywords,
+verseOrder,
+songbooks,
+themes,
+comments {
+  display: inline;
+  padding-right: .5em;
 }
-key, verseOrder {
-  display: none;
-}
-songbooks { /* songbooks */
-  line-height: 0em;
-  float: right;
-  margin-top: -1em;
-}
-songbook:first-child::before { /* 1st songbook */
-  display: block;
-  content: attr(entry);
-  position: absolute;
-  bottom: -.2em;
-  right: -.2em;
-  min-width: 1.2em;
-  min-height: 1.2em;
-  padding: 0 .1em;
-  line-height: normal;
-  font-size: 62pt;
-  text-align: center;
-  border-width: 3pt;
-  border-style: solid;
-  border-radius: 0.2em;
-}
-songbook:first-child::after {
+title[original]::before,
+authors::before,
+author::before,
+copyright::before,
+ccliNo::before,
+released::before,
+transposition::before,
+tempo::before,
+key::before,
+variant::before,
+publisher::before,
+version::before,
+keywords::before,
+verseOrder::before,
+songbooks::before,
+themes::before,
+comments::before {
   display: inline-block;
-  content: attr(name);
-  position: absolute;
-  bottom: -.8em;
-  right: 0;
-  line-height: 0.8em;
-  font-size: 9pt;
-  min-width: 8em;
-  text-align: center;
+  font: normal normal normal 14px/1 FontAwesome;
+  margin-right: .25em;
 }
-songbook:not(:first-child)::before { /* other songbooks */
-  display: block;
-  content: attr(name) " " attr(entry);
-  text-align: right;
-  margin-right: 6em;
-  line-height: 1em;
+title[original]::before          { content: "\f024"; /* flag */ }
+authors::before                  { content: "\f007"; /* user */ }
+author[type=words]::before       { content: "\f031"; /* font */ }
+author[type=music]::before       { content: "\f001"; /* music */ }
+author[type=translation]::before { content: "\f0ac"; /* globe */ }
+copyright::before                { content: "\f07a"; /* shopping-cart */ }
+ccliNo::before                   { content: "\f02a"; /* barcode */ }
+released::before                 { content: "\f073"; /* calendar */}
+transposition::before            { content: "\f0dc"; /* sort */}
+tempo::before                    { content: "\f017"; /* clock-o */}
+key::before                      { content: "\f084"; /* key */ }
+variant::before                  { content: "\f074"; /* random */ }
+publisher::before                { content: "\f1ad"; /* building */ }
+version::before                  { content: "\f126"; /* code-fork */ }
+keywords::before                 { content: "\f02b"; /* tag */ }
+verseOrder::before               { content: "\f061"; /* arrow-right */ }
+songbooks::before                { content: "\f02d"; /* book */ }
+themes::before                   { content: "\f069"; /* asterisk */ }
+comments::before                 { content: "\f075"; /* comment */ }
+
+tempo[type=bpm]::after {
+  content: " bpm";
+}
+songbook::before {
+  content: attr(name) " (" attr(entry) ")";
+}
+songbook:not(:last-child)::after,
+theme:not(:first-child)::before,
+comment:not(:first-child)::before {
+  content: " • ";
 }
 
 /* lyrics, verse, instrument */

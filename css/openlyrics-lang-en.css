@@ -2,19 +2,22 @@
  * OpenLyrics XML+CSS stylesheet
  * English
  */
- 
-:lang(en) title:not([lang="en"])[original]::before  { content: "Original title: " }
-:lang(en) title:not([lang="en"])::before            { content: "Title: " }
-:lang(en) title:not([lang="en"])[lang="hu"]::after  { content: " (Hungarian)" }
-:lang(en) title:not([lang="en"])[lang="es"]::after  { content: " (Spanish)" }
-:lang(en) title:not([lang="en"])[lang="it"]::after  { content: " (Italian)" }
-:lang(en) title:not([lang="en"])[lang="he"]::after  { content: " (Hebrew, Ivrit)" }
-:lang(en) author[type=words]::before,
-:lang(en) author[type=music]::before                { content: "Author: " }
-:lang(en) author[type=words]::after                 { content: " (text)" }
-:lang(en) author[type=music]::after                 { content: " (song)" }
-:lang(en) author[type=translation]::before          { content: "Translator: " }
-:lang(en) copyright::before                         { content: "Copyright: " }
+
+:lang(en) theme[lang=en]::after,
+:lang(en) author[type=translator][lang=en]::after  { content: " (English)" }
+:lang(en) title[lang=hu]::after,
+:lang(en) theme[lang=hu]::after,
+:lang(en) author[type=translation][lang=hu]::after { content: " (Hungarian)" }
+:lang(en) title[lang=es]::after,
+:lang(en) theme[lang=es]::after,
+:lang(en) author[type=translator][lang=ee]::after  { content: " (Spanish)" }
+:lang(en) title[lang=it]::after,
+:lang(en) theme[lang=it]::after,
+:lang(en) author[type=translator][lang=it]::after  { content: " (Italian)" }
+:lang(en) title[lang=he]::after,
+:lang(en) theme[lang=he]::after,
+:lang(en) author[type=translator][lang=he]::after  { content: " (Hebrew, Ivrit)" }
+
 :lang(en) lyrics > verse[name='v']::before          { content: "Verse" !important  }
 :lang(en) lyrics > verse[name^='v']::before         { content: "Verse " counter(verse)  }
 :lang(en) lyrics > verse[name='c']::before          { content: "Chorus" !important }

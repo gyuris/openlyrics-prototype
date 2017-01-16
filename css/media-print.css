@@ -17,21 +17,12 @@
   color: cmyk(0, 0, 0, 1);
   string-set: openlyrics-version attr(version);
 }
-title:not(:first-child), 
-author, 
-copyright { 
-  color: cmyk(0, 0, 0, 0.35);
-}
-songbook:first-child::before { 
-  background: cmyk(0, 0, 0, 1); 
-  color: cmyk(0, 0, 0, 0); 
-  border-color: cmyk(0, 0, 0, 0.35);
-}
-songbook:first-child::after { 
-  color: cmyk(0, 0, 0, 0);
+title:first-child {
+  color: cmyk(0, 0, 0, 1);
 }
 properties { 
   border-bottom-color: cmyk(0, 0, 0, 0.35);
+  color: cmyk(0, 0, 0, 0.35);
 }
 lyrics > verse::before, 
 lyrics > instrument::before { 

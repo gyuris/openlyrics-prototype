@@ -4,7 +4,7 @@
   <properties>
     <titles>
       <title lang="hu">Jézus, véred megtisztít</title>
-      <title lang="en">It's Your Blood</title>
+      <title lang="en" original="true">It's Your Blood</title>
     </titles>
     <authors>
       <author type="words">Michael Christ</author>
@@ -17,6 +17,7 @@
       <songbook name="Kék könyv" entry="67D"/>
     </songbooks>
     <copyright>© 1985 Mercy / Vineyard Publishing</copyright>
+    <ccliNo>59287</ccliNo>
     <verseOrder>v1</verseOrder>
   </properties>
   <lyrics>

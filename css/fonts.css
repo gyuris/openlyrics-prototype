@@ -32,15 +32,22 @@
     font-family: "Linux Libertine";
     font-style: normal;
     font-weight: normal;
-    src: local("Linux Libertine O"), 
+    src: local("Linux Libertine O"),
          url(fonts/LinLibertine_R.otf) format('opentype');
 }
 @font-face {
     font-family: "Linux Libertine";
     font-style: normal;
     font-weight: bold;
-    src: local("Linux Libertine O Bold"), 
+    src: local("Linux Libertine O Bold"),
          url(fonts/LinLibertine_RB.otf) format('opentype');
+}
+@font-face {
+    font-family: "Linux Libertine";
+    font-style: italic;
+    font-weight: normal;
+    src: local("Linux Libertine O Italic"),
+         url(fonts/LinLibertine_RI.otf) format('opentype');
 }
 @font-face {
     font-family: "Linux Biolinum";

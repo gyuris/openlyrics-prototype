@@ -22,17 +22,20 @@
 title:first-child {
   color: black;
 }
-properties { 
+properties,
+lines comment {
   border-bottom-color: darkgray;
   color: darkgray;
 }
 lyrics > verse::before, 
-lyrics > instrument::before { 
+lyrics > instrument::before,
+lyrics > verse[lang]::after,
+lines[part]::before {
   color: blue;
 }
-chord::before { 
+chord::before {
   color: red;
 }
-beat::after { 
+beat::after {
   color: black;
 }

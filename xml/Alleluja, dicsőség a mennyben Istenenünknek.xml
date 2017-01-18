@@ -29,7 +29,7 @@
         és <chord base="G">békes</chord><chord base="A">ség a földön</chord> <chord base="G">néped</chord><chord base="A">nek!</chord>
       </lines>
     </verse>
-    <verse namse="v1">
+    <verse name="v1">
       <lines>
         <chord base="D">A</chord><chord base="G">tyánk,</chord> <chord base="A">jóságos</chord> <chord base="D">Atya,</chord><br/>
         <chord base="G">minden</chord> <chord base="A">dicsőség a</chord> <chord base="D">Tiéd,</chord><br/>

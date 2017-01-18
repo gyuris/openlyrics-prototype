@@ -96,7 +96,7 @@ songbook::before {
 }
 songbook:not(:last-child)::after,
 theme:not(:first-child)::before,
-comment:not(:first-child)::before {
+properties comment:not(:first-child)::before {
   content: " • ";
 }
 
@@ -122,31 +122,63 @@ lyrics > verse::before, /* verse names */
 lyrics > instrument::before { 
   position: absolute;
   width: 60pt;
-  top: -60pt;
+  top: 12pt;
   left: -60pt;
-  transform: rotate(270deg) translateX(-65pt) translateY(-60pt);
-  transform-origin: top right;
-  text-align: right;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  text-align: left;
   font-size: 10pt;
 }
 lyrics > instrument::before {
-  top: -67pt;
+  top: 0;
 }
+lyrics > verse[lang]::after { /* verse translations and transliterations */
+  content: attr(lang);
+}
+lyrics > verse[lang][translit]::after {
+  content: attr(lang) " → " attr(translit);
+}
+lyrics > verse[lang]::after {
+  position: absolute;
+  width: 50pt;
+  top: 12pt;
+  left: -50pt;
+  transform: rotate(90deg);
+  transform-origin: top left;
+  text-align: left;
+  font-size: 10pt;
+}
+
 /* verse, instrument numbers */
 lyrics > verse[name^='v'] {
   counter-increment: verse;
 }
+lyrics > verse[name^='v'][lang] {
+  counter-increment: verse 0; /* don't increment verse translations and transliterations */
+}
 lyrics > verse[name^='c'] {
   counter-increment: chorus;
+}
+lyrics > verse[name^='c'][lang] {
+  counter-increment: chorus 0;
 }
 lyrics > verse[name^='p'] {
   counter-increment: prechorus;
 }
+lyrics > verse[name^='p'][lang] {
+  counter-increment: prechorus 0;
+}
 lyrics > verse[name^='b'] {
   counter-increment: bridge;
 }
+lyrics > verse[name^='b'][lang] {
+  counter-increment: bridge 0;
+}
 lyrics > verse[name^='e'] {
   counter-increment: ending;
+}
+lyrics > verse[name^='e'][lang] {
+  counter-increment: ending 0;
 }
 lyrics > instrument[name^='i'] {
   counter-increment: intro;
@@ -170,4 +202,24 @@ lyrics > instrument[name='m'],
 lyrics > instrument[name='o'],
 lyrics > instrument[name='s'] {
   counter-increment: none !important;
+}
+
+/* line part */
+lines[part]::before {
+  content: attr(part);
+  position: absolute;
+  width: 50pt;
+  margin-top: 12pt;
+  left: -50pt;
+  font-size: 10pt;
+}
+lines comment {
+  position: absolute;
+  width: 10em;
+  margin-top: 12pt;
+  right: -12pt;
+  font-size: 8pt;
+  line-height: 10pt;
+  font-style: italic;
+  text-align: right;
 }

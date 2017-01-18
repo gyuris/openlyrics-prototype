@@ -3,35 +3,40 @@
  * Print media
  */
 
-@page { 
+@page {
   size: A4;
   margin: 68pt 96pt 136pt 40pt;
   @top-left { 
     content: "OpenLyrics " string(openlyrics-version);
   }
-  @bottom-right { 
+  @bottom-right {
     content: counter(page);
   }
 }
-:root { 
+:root {
   color: cmyk(0, 0, 0, 1);
   string-set: openlyrics-version attr(version);
 }
 title:first-child {
   color: cmyk(0, 0, 0, 1);
 }
-properties { 
+properties {
   border-bottom-color: cmyk(0, 0, 0, 0.35);
   color: cmyk(0, 0, 0, 0.35);
 }
+lines comment {
+  color: cmyk(0, 0, 0, 0.35);
+}
 lyrics > verse::before, 
-lyrics > instrument::before { 
+lyrics > instrument::before,
+lyrics > verse[lang]::after,
+lines[part]::before {
   color: cmyk(1, 0, 0, 0);
 }
 chord::before {
   color: cmyk(0, 1, 1, 0);
 }
-beat::after { 
+beat::after {
   color: cmyk(0, 0, 0, 1);
 }
 lyrics > verse, 

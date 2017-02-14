@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="../css/openlyrics.css" type="text/css"?>
+<?xml-stylesheet href="css/openlyrics.css" type="text/css"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song"
   xml:lang="hu" lang="hu"
   version="0.9"

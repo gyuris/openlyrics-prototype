@@ -1,0 +1,51 @@
+header.properties {
+  background: silver;
+  padding: 1em .25em;
+}
+
+section.lyrics {
+  display: block;
+  border: 1px solid green;
+  font-size: 12pt;
+}
+/* 0.8 */
+:root[data-ol-version="0.8"] div.chord-box {
+  display: inline-block;
+  border: 1px solid red;
+}
+:root[data-ol-version="0.8"] div.chord-box > .chord:only-child {
+  margin-top: 1.2em;
+  position: relative;
+  top: -1.2em;
+}
+/* 0.9 */
+:root[data-ol-version="0.9"] div.chord-box {
+  display: inline-block;
+  border: 1px solid red;
+}
+:root[data-ol-version="0.9"] div.chord-box > .chord:only-child {
+  margin-top: 1.2em;
+  position: relative;
+  top: -1.2em;
+}
+:root[data-ol-version="0.9"] div.chord {
+  display: inline-block;
+  height: 1em;
+  color: red;
+}
+:root[data-ol-version="0.9"] span.chord-base:not(:empty) {
+  font-weight: bold;
+}
+:root[data-ol-version="0.9"] span.chord-ext:not(:empty) {
+  vertical-align: super;
+  font-size: 10pt;
+  color: blue;
+}
+:root[data-ol-version="0.9"] span.chord-bass:not(:empty) {
+  font-size: 10pt;
+  vertical-align: sub;
+  color: black;
+}
+:root[data-ol-version="0.9"] span.chord-ext:not(:empty) + span.chord-bass:not(:empty) {
+  margin-left: -.15em;
+}

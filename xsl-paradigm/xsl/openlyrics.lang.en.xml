@@ -2,5 +2,30 @@
 <locale xml:lang="en">
   <properties>
     <songbook>Songbook</songbook>
+    <language>Language</language>
+    <title>Title</title>
+    <originalTitle>Original title</originalTitle>
+    <subtitle>Subtitle</subtitle>
+    <author>Author</author>
+    <words>Words</words>
+    <music>Music</music>
+    <translation>Translation</translation>
+    <released>Released</released>
+    <variant>Variant</variant>
+    <copyright>Copyright</copyright>
+    <comment>Comment</comment>
+    <key>Key</key>
+    <tempo>Tempo</tempo>
+    <transposition>Transposition</transposition>
+    <ccliNo>CCLI No.</ccliNo>
+    <creator>Creator</creator>
   </properties>
+  <lyrics></lyrics>
+  <languages>
+    <en>English</en>
+    <hu>Hungarian</hu>
+    <es>Spanish</es>
+    <it>Italian</it>
+    <he>Hebrew, Ivrit</he>
+  </languages>
 </locale>

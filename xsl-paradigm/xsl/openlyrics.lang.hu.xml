@@ -2,5 +2,30 @@
 <locale xml:lang="hu">
   <properties>
     <songbook>Énekeskönyv</songbook>
+    <language>Nyelv</language>
+    <title>Cím</title>
+    <originalTitle>Eredeti cím</originalTitle>
+    <subtitle>Alcím</subtitle>
+    <author>Szerző</author>
+    <words>Szövegíró</words>
+    <music>Zeneszerző</music>
+    <translation>Fordító</translation>
+    <released>Kiadva</released>
+    <variant>Verzió</variant>
+    <copyright>Szerzői jogok</copyright>
+    <comment>Megjegyzés</comment>
+    <key>Hangnem</key>
+    <tempo>Tempó</tempo>
+    <transposition>Transzponálás</transposition>
+    <ccliNo>CCLI-szám</ccliNo>
+    <creator>Létrehozó</creator>
   </properties>
+  <lyrics></lyrics>
+  <languages>
+    <en>angol</en>
+    <hu>magyar</hu>
+    <es>spanyol</es>
+    <it>olasz</it>
+    <he>héber, ivrit</he>
+  </languages>
 </locale>

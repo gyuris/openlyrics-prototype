@@ -3,6 +3,7 @@
  version="1.0"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
  xmlns:ol="http://openlyrics.info/namespace/2009/song"
+ xmlns:str="http://exslt.org/strings"
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
@@ -172,57 +173,17 @@
   </xsl:template>
 
   <xsl:template match="ol:verseOrder">
-<!--
-    <xsl:variable name="verseNamesOrig">
-      <xsl:for-each select="$locale/lyrics/verseNames/*">
-        <xsl:value-of select="local-name()"/>
-      </xsl:for-each>
-    </xsl:variable>
-    <xsl:variable name="verseNamesLang">
-      <xsl:for-each select="$locale/lyrics/verseNames/*">
-        <xsl:value-of select="substring(current(), 1, 1)"/>
-      </xsl:for-each>
-    </xsl:variable>
-    <xsl:variable name="verseOrder" select="translate(current(), $verseNamesOrig, $verseNamesLang )"/>
-    <span class="{local-name()}" title="{$locale/properties/verseOrder/text()}">
-      <em><xsl:value-of select="$locale/properties/verseOrder/text()"/>: </em>
-      <xsl:value-of select="$verseOrder"/>
-    </span>
-    <xsl:text> </xsl:text>
--->
     <span class="{local-name()}" title="{$locale/properties/verseOrder/text()}">
       <em><xsl:value-of select="$locale/properties/verseOrder/text()"/>: </em>
       <div>
-        <xsl:call-template name="tokenizeVerseName">
-          <xsl:with-param name="text" select="." />
-        </xsl:call-template>
-      </div>
-    </span>
-    <xsl:text> </xsl:text>
-  </xsl:template>
-  <xsl:template name="tokenizeVerseName">
-    <xsl:param name="text" select="."/>
-    <xsl:param name="separator" select="' '"/>
-    <xsl:choose>
-      <xsl:when test="not(contains($text, $separator))">
-        <item>
+        <xsl:for-each select="str:tokenize(.,' ')">
           <xsl:call-template name="displayVerseName">
-            <xsl:with-param name="name" select="$text"/>
-          </xsl:call-template>
-        </item>
-      </xsl:when>
-      <xsl:otherwise>
-        <item>
-          <xsl:call-template name="displayVerseName">
-            <xsl:with-param name="name" select="substring-before($text, $separator)"/>
+            <xsl:with-param name="name" select="."/>
           </xsl:call-template>
           <br/>
-        </item>
-        <xsl:call-template name="tokenizeVerseName">
-          <xsl:with-param name="text" select="substring-after($text, $separator)"/>
-        </xsl:call-template>
-      </xsl:otherwise>
-    </xsl:choose>
+        </xsl:for-each>
+      </div>
+    </span>
   </xsl:template>
 
   <xsl:template name="displayVerseName">

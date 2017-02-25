@@ -11,16 +11,38 @@
     <music>Music</music>
     <translation>Translation</translation>
     <released>Released</released>
+    <version>Version</version>
     <variant>Variant</variant>
+    <publisher>Publisher</publisher>
     <copyright>Copyright</copyright>
     <comment>Comment</comment>
+    <keywords>Keywords</keywords>
     <key>Key</key>
     <tempo>Tempo</tempo>
     <transposition>Transposition</transposition>
     <ccliNo>CCLI No.</ccliNo>
+    <themes>Themes</themes>
+    <verseOrder>Verse Order</verseOrder>
     <creator>Creator</creator>
   </properties>
-  <lyrics></lyrics>
+  <lyrics>
+    <part>Part</part>
+    <verseNames>
+      <v>Verse</v>
+      <c>Chorus</c>
+      <p>Pre-chorus</p>
+      <b>Bridge</b>
+      <e>Ending</e>
+      <i>Intro</i>
+      <m>Middle</m>
+      <o>Outro</o>
+      <s>Solo</s>
+    </verseNames>
+    <!-- Format of verse name.
+    @position: Number is "before" or "after" of the name.
+    @separator: Separating name and number -->
+    <verseNumber position="after" separator=" " />
+  </lyrics>
   <languages>
     <en>English</en>
     <hu>Hungarian</hu>

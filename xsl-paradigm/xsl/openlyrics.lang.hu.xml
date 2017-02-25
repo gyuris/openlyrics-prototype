@@ -11,16 +11,35 @@
     <music>Zeneszerző</music>
     <translation>Fordító</translation>
     <released>Kiadva</released>
+    <version>Verzió</version>
     <variant>Verzió</variant>
+    <publisher>Kiadó</publisher>
     <copyright>Szerzői jogok</copyright>
     <comment>Megjegyzés</comment>
+    <keywords>Kulcsszavak</keywords>
     <key>Hangnem</key>
     <tempo>Tempó</tempo>
     <transposition>Transzponálás</transposition>
     <ccliNo>CCLI-szám</ccliNo>
+    <themes>Témák</themes>
+    <verseOrder>Verszaksorrend</verseOrder>
     <creator>Létrehozó</creator>
   </properties>
-  <lyrics></lyrics>
+  <lyrics>
+    <part>Rész</part>
+    <verseNames>
+      <v>Versszak</v>
+      <c>Refrén</c>
+      <p>Előrefrén</p>
+      <b>Híd</b>
+      <e>Lezárás</e>
+      <i>Intró</i>
+      <m>Közjáték</m>
+      <o>Utójáték</o>
+      <s>Szóló</s>
+    </verseNames>
+    <verseNumber position="before" separator=". " />
+  </lyrics>
   <languages>
     <en>angol</en>
     <hu>magyar</hu>

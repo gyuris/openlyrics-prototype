@@ -1,9 +1,14 @@
 code {
   display: none;
 }
+aside.verse-order {
+  float: right;
+  width: 15em;
+}
 
 section.lyrics {
   font-size: 12pt;
+  border-top: 1px solid black;
 }
 
 header .title {}

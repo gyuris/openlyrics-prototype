@@ -27,6 +27,10 @@
   </properties>
   <lyrics>
     <part>Rész</part>
+    <name>Verszak neve</name>
+    <lang>Verszak nyelve</lang>
+    <translit>Átbetűzés, transzliteráció</translit>
+    <comment>Megjegyzés</comment>
     <verseNames>
       <v>Versszak</v>
       <c>Refrén</c>
@@ -38,7 +42,7 @@
       <o>Utójáték</o>
       <s>Szóló</s>
     </verseNames>
-    <verseNumber position="before" separator=". " />
+    <verseNameFormat initial="number" separator=". " translateFrom="VREHLIKUS" translateTo="vrehlikus" />
   </lyrics>
   <languages>
     <en>angol</en>

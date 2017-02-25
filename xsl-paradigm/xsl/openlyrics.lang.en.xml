@@ -27,6 +27,10 @@
   </properties>
   <lyrics>
     <part>Part</part>
+    <name>Name</name>
+    <lang>Language</lang>
+    <translit>Transliteration</translit>
+    <comment>Comment</comment>
     <verseNames>
       <v>Verse</v>
       <c>Chorus</c>
@@ -39,9 +43,10 @@
       <s>Solo</s>
     </verseNames>
     <!-- Format of verse name.
-    @position: Number is "before" or "after" of the name.
-    @separator: Separating name and number -->
-    <verseNumber position="after" separator=" " />
+    @initial: Whitch is the 1st? "name" or "number"
+    @separator: Separating name and number
+    @translateFrom, @translateTo: If initial is "number" and name has number replace characters -->
+    <verseNameFormat initial="name" separator=" " />
   </lyrics>
   <languages>
     <en>English</en>

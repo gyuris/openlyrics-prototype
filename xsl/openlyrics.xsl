@@ -21,7 +21,7 @@
       <head>
         <title><xsl:value-of select="//ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="css/openlyrics_xsl.css" />
+        <link rel="stylesheet" href="css/openlyrics.html.css" />
       </head>
       <body>
         <xsl:apply-templates/>

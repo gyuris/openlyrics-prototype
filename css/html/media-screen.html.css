@@ -1,0 +1,10 @@
+/**
+ * OpenLyrics XML+XSLT+CSS stylesheet
+ * Screen media
+ */
+
+:root {
+  width: 40em;
+  margin: 2em auto 1em auto;
+  color: black;
+}

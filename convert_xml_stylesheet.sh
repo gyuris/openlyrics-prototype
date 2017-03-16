@@ -7,6 +7,6 @@ do
     echo "Skipping: $file"
   else
     echo "-> $file"
-    sed -s 's/href="css\/openlyrics\.css" type="text\/css"/href="xsl\/openlyrics\.xsl" type="text\/xsl"/' "$file" &>"$(basename "$file" .xml).xsl.xml"
+    sed -s 's/href="stylesheets\/openlyrics\.css" type="text\/css"/href="stylesheets\/openlyrics\.xsl" type="text\/xsl"/' "$file" &>"$(basename "$file" .xml).xsl.xml"
   fi
 done

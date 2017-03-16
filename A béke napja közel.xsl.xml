@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0"?>
-<?xml-stylesheet href="xsl/openlyrics.xsl" type="text/xsl"?>
+<?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:45">
   <properties>
     <titles>

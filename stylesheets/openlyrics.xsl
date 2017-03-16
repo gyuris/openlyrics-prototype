@@ -9,7 +9,7 @@
 
   <!-- Locale-specific content -->
   <xsl:variable name="locale-strings">
-    <xsl:text>openlyrics.lang.</xsl:text>
+    <xsl:text>xsl/openlyrics.lang.</xsl:text>
     <xsl:value-of select="//@xml:lang"/>
     <xsl:text>.xml</xsl:text>
   </xsl:variable>
@@ -31,7 +31,7 @@
       <head>
         <title><xsl:value-of select="//ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="css/openlyrics.html.css" />
+        <link rel="stylesheet" href="stylesheets/css/html/openlyrics.html.css" />
       </head>
       <body>
         <xsl:apply-templates/>
@@ -288,7 +288,7 @@
   </xsl:template>
 
   <!-- Chords support for OpenLyrics 0.8 is in separated file -->
-  <xsl:include href="openlyrics.08chords.xsl" />
+  <xsl:include href="xsl/openlyrics.08chords.xsl" />
 
   <xsl:template match="ol:song[@version='0.9']//ol:chord[not(ol:chord)]">
     <xsl:variable name="linebreak">

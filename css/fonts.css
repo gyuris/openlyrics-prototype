@@ -8,13 +8,18 @@
   font-family: "Linux Libertine";
 }
 :root[version] chord[name]::before,
-:root[version] chord[base]::before {
+:root[version] chord[base]::before,
+:root[data-ol-version] .chord {
   font-family: "Linux Biolinum";
 }
+
 @media print {
   @page {
     @top-left {
-      font-family: "Linux Libertine";
+      font-family: "Linux Biolinum";
+    }
+    @bottom-left {
+      font-family: "Linux Biolinum";
     }
     @bottom-right {
       font-family: "Linux Libertine";

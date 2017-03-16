@@ -7,14 +7,14 @@ do
     echo "XML->HTML: $file"
     xsltproc xsl/openlyrics.xsl "$file"  &>"$(basename "$file" .xml).html"
   else
-    echo "Generate PDF: $file"
-    prince "$file" -o "pdf/$(basename "$file" .xml).pdf"
+    echo "Generate PDF from XML: $file"
+    prince "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"
   fi
 done
 
 for file in *.html
 do
- echo "Generate PDF: $file"
- prince "$file" -o "pdf/$(basename "$file" .html).pdf"
+ echo "Generate PDF from HTML: $file"
+ prince "$file" -o "pdf/$(basename "$file" .html).pdf" --pdf-author="Gyuris Gellért"
  rm "$file"
 done

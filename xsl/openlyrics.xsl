@@ -15,9 +15,19 @@
   </xsl:variable>
   <xsl:variable name="locale" select="document ($locale-strings)/locale"/>
 
+  <xsl:variable name="rootProperties">
+    OpenLyrics <xsl:value-of select="//@version"/>
+    <xsl:if test="//@createdIn">
+      • <xsl:value-of select="$locale/properties/creator/text()"/>: <xsl:value-of select="//@createdIn"/>
+    </xsl:if>
+    <xsl:if test="//@xml:lang">
+      • <xsl:value-of select="$locale/properties/language/text()"/>: <xsl:value-of select="$locale/languages/*[local-name()=//@xml:lang]/text()"/>
+    </xsl:if>
+  </xsl:variable>
+
   <!-- Main -->
   <xsl:template match="/">
-    <html lang="{//@xml:lang}" data-ol-version="{//@version}">
+    <html lang="{//@xml:lang}" data-ol-version="{//@version}" data-root-properties="{$rootProperties}">
       <head>
         <title><xsl:value-of select="//ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
@@ -27,13 +37,7 @@
         <xsl:apply-templates/>
         <footer>
           <p id="root-properties">
-            OpenLyrics <xsl:value-of select="//@version"/>
-            <xsl:if test="//@createdIn">
-              • <xsl:value-of select="$locale/properties/creator/text()"/>: <xsl:value-of select="//@createdIn"/>
-            </xsl:if>
-            <xsl:if test="//@xml:lang">
-              • <xsl:value-of select="$locale/properties/language/text()"/>: <xsl:value-of select="$locale/languages/*[local-name()=//@xml:lang]/text()"/>
-            </xsl:if>
+            <xsl:value-of select="$rootProperties"/>
           </p>
         </footer>
       </body>
@@ -60,8 +64,8 @@
       </p>
       <p class="properties-main">
         <xsl:apply-templates select="ol:key"/>
-        <xsl:apply-templates select="ol:tempo"/>
         <xsl:apply-templates select="ol:transposition"/>
+        <xsl:apply-templates select="ol:tempo"/>
         <xsl:apply-templates select="ol:ccliNo"/>
       </p>
       <p class="properties-themes">

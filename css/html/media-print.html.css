@@ -7,13 +7,36 @@
   size: A4;
   margin: 68pt 96pt 136pt 40pt;
   @top-left { 
-    content: "OpenLyrics " string(openlyrics-version);
+    content: string(title);
+    font-size: 8pt;
+  }
+  @bottom-left {
+    content: string(root-properties);
+    font-size: 8pt;
   }
   @bottom-right {
     content: counter(page);
   }
 }
+@page:first {
+   @top-left {
+    content: none;
+  }
+}
 :root {
   color: cmyk(0, 0, 0, 1);
-  string-set: openlyrics-version attr(version);
+  string-set: root-properties attr(data-root-properties);
+}
+h1 {
+  string-set: title content();
+}
+footer #root-properties {
+  display: none;
+}
+section.properties p.properties-other:not(:empty) {
+  background: cmyk(0,0,0,0.0588);
+}
+section.properties p.properties-main span {
+  border-color: cmyk(0,0,0,0.0588);
+  background: cmyk(0,0,0,0.0196);
 }

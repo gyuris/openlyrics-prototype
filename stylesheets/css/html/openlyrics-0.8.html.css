@@ -3,6 +3,9 @@
  * OpenLyrics 0.8
  */
 
+:root[data-ol-version="0.8"] code {
+  display: none;
+}
 :root[data-ol-version="0.8"] .segment {
   display: inline;
   line-height: 2.4em;

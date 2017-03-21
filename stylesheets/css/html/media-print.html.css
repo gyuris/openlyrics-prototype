@@ -40,3 +40,17 @@ section.properties p.properties-main span {
   border-color: cmyk(0,0,0,0.0588);
   background: cmyk(0,0,0,0.0196);
 }
+section.properties p.properties-main:empty ~ p.properties-songbooks {
+  border-bottom-color: cmyk(0,0,0,0.0588);
+}
+section.lyrics > article.verse .verse-name,
+section.lyrics > article.instrument .verse-name,
+section.lyrics > article.verse .verse-lang,
+section.lyrics > article.verse .verse-translit,
+section.lyrics p.lines > .line-part {
+  color: cmyk(1, 0, 0, 0);
+}
+section.lyrics p.lines > .lyrics-comment {
+  color: cmyk(0, 0, 0, 0.35);
+}
+

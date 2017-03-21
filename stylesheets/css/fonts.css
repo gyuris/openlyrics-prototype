@@ -9,7 +9,8 @@
 }
 :root[version] chord[name]::before,
 :root[version] chord[base]::before,
-:root[data-ol-version] .chord {
+:root[data-ol-version] .chord,
+:root[data-ol-version] footer #root-properties {
   font-family: "Linux Biolinum";
 }
 

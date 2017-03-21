@@ -3,6 +3,9 @@
  * OpenLyrics 0.9
  */
 
+:root[data-ol-version="0.9"] code {
+  display: none;
+}
 :root[data-ol-version="0.9"] .segment {
   display: inline-block;
   border: 1px solid red;

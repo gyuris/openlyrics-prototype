@@ -5,7 +5,7 @@ for file in *.xml
 do
   if [[ "$file" =~ \.xsl\.xml$ ]] ; then
     echo "XML->HTML: $file"
-    xsltproc xsl/openlyrics.xsl "$file"  &>"$(basename "$file" .xml).html"
+    xsltproc "$file"  &>"$(basename "$file" .xml).html"
   else
     echo "Generate PDF from XML: $file"
     prince "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"

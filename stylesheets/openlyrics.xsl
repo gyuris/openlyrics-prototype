@@ -145,7 +145,8 @@
       <em><xsl:value-of select="$locale/properties/themes/text()"/>: </em>
       <xsl:for-each select="ol:theme">
         <xsl:if test="not(@lang)">
-          <xsl:value-of select="."/>, <xsl:text/>
+          <xsl:value-of select="."/>
+          <xsl:if test="position()!=last()">, <xsl:text/></xsl:if>
         </xsl:if>
         <xsl:if test="@lang">
           <xsl:value-of select="."/>

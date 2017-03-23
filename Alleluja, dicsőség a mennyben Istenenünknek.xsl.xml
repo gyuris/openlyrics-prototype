@@ -24,7 +24,7 @@
     </instrument>
     <verse name="c">
       <lines>
-        <chord base="A" tweak="nested"><chord base="G" tweak="nested"><chord base="D">A</chord></chord></chord>lle<chord base="D">luja,</chord> <chord base="G">dicsőség a</chord><br/>
+        <chord base="A"><chord base="G" tweak="nested"><chord base="D">A</chord></chord></chord>lle<chord base="D">luja,</chord> <chord base="G">dicsőség a</chord><br/>
         <chord base="A">mennyben Iste</chord><chord base="D">nünknek,</chord><br/>
         és <chord base="G">békes</chord><chord base="A">ség a földön</chord> <chord base="G">néped</chord><chord base="A">nek!</chord>
       </lines>

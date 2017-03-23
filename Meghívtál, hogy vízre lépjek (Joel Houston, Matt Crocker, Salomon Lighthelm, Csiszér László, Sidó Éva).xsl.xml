@@ -48,9 +48,9 @@
     </instrument>
     <verse name="v1">
       <lines part="lányok">
-        <chord base="h" /><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D" tweak="linebreak">lépjek,<br />
+        <chord base="h" /><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br />
         hol Nélkü</chord><chord base="A">led elsüllye</chord><chord base="G">dek.</chord><br />
-        <chord base="h" type="upbeat" />Ebben megta<chord base="A" bass="Cisz">lállak</chord> <chord base="D" tweak="linebreak">Téged,<br />
+        <chord base="h" type="upbeat" />Ebben megta<chord base="A" bass="Cisz">lállak</chord> <chord base="D">Téged,<br />
         a mélység</chord><chord base="A">ben megtart hi</chord><chord base="G">tem.</chord>
       </lines>
     </verse>
@@ -64,9 +64,9 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord base="h" />A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D" tweak="linebreak">gyelmed,<br />
+        <chord base="h" />A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br />
         mely elve</chord><chord base="A">zet és tart en</chord><chord base="G">gem.</chord><br />
-        <chord base="h"  type="upbeat" />Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D" tweak="linebreak">félnék,<br />
+        <chord base="h"  type="upbeat" />Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br />
         Te nem hagysz</chord> <chord base="A">el, nem inogsz</chord> <chord base="G">meg</chord>.
       </lines>
     </verse>

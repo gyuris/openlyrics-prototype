@@ -48,7 +48,7 @@
     </instrument>
     <verse name="v1">
       <lines part="lányok">
-        <chord base="h" /><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br />
+        <chord base="h" type="upbeat" /><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br />
         hol Nélkü</chord><chord base="A">led elsüllye</chord><chord base="G">dek.</chord><br />
         <chord base="h" type="upbeat" />Ebben megta<chord base="A" bass="Cisz">lállak</chord> <chord base="D">Téged,<br />
         a mélység</chord><chord base="A">ben megtart hi</chord><chord base="G">tem.</chord>
@@ -56,7 +56,7 @@
     </verse>
     <verse name="c">
       <lines>
-        <chord base="G" />Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br />
+        <chord base="G" type="upbeat" />Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br />
         <chord base="G" type="upbeat" />és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br />
         Ott látlak <chord base="G">én, a lelkem</chord> <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br />
         Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz" /><chord base="D" /><chord base="A" /><chord base="e" />
@@ -64,9 +64,9 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord base="h" />A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br />
+        <chord base="h" type="upbeat" />A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br />
         mely elve</chord><chord base="A">zet és tart en</chord><chord base="G">gem.</chord><br />
-        <chord base="h"  type="upbeat" />Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br />
+        <chord base="h" type="upbeat" />Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br />
         Te nem hagysz</chord> <chord base="A">el, nem inogsz</chord> <chord base="G">meg</chord>.
       </lines>
     </verse>
@@ -86,7 +86,7 @@
     </instrument>
     <verse name="b1">
       <lines>
-        <chord base="h" />Lélek add, hogy Benned <chord base="G">teljesen megbízzak,</chord><br />
+        <chord base="h" type="upbeat" />Lélek add, hogy Benned <chord base="G">teljesen megbízzak,</chord><br />
         A vízen <chord base="D">bátran Veled járjak,</chord> <chord base="A">bárhová hívsz, menjek</chord>.<br />
         <chord base="h" type="upbeat" />Vigyél tovább, mint a <chord base="G">lábam tudna menni.</chord><br />
         Taníts <chord base="D">teljes hittel járni, je</chord><chord base="A">lenlétedben élni.</chord>
@@ -94,7 +94,7 @@
     </verse>
     <verse name="b2">
      <lines>
-        <chord base="G" />Lélek add, hogy Benned <chord base="D">teljesen megbízzak,</chord><br />
+        <chord base="G" type="upbeat" />Lélek add, hogy Benned <chord base="D">teljesen megbízzak,</chord><br />
         A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="G">bárhová hívsz, menjek</chord>.<br />
         <chord base="G" type="upbeat" />Vigyél tovább, mint a <chord base="D">lábam tudna menni.</chord><br />
         Taníts <chord base="A">teljes hittel járni, je</chord><chord base="G">lenlétedben élni.</chord>
@@ -102,7 +102,7 @@
     </verse>
     <verse name="b3">
       <lines>
-        <chord base="h" />Lélek add, hogy <chord base="A" bass="Cisz">Benned</chord> <chord base="D">teljesen megbízzak,</chord><br />
+        <chord base="h" type="upbeat" />Lélek add, hogy <chord base="A" bass="Cisz">Benned</chord> <chord base="D">teljesen megbízzak,</chord><br />
         A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="e">bárhová hívsz, menjek</chord>.<br />
         <chord base="h" type="upbeat" />Vigyél tovább, <chord base="A" bass="Cisz">mint a</chord> <chord base="D">lábam tudna menni.</chord><br />
         Taníts <chord base="A">teljes hittel járni, je</chord><chord base="e">lenlétedben élni.</chord>
@@ -118,7 +118,7 @@
     </instrument>
     <verse name="e">
       <lines>
-        <chord base="G" />Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br />
+        <chord base="G" type="upbeat" />Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br />
         <chord base="G" type="upbeat" />és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br />
         <chord base="G" type="upbeat" />A lelkem <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br />
         Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz" /><chord base="D" /><chord base="A" /><chord base="G" /><chord base="h" /><chord base="A" bass="Cisz" /><chord base="D" />

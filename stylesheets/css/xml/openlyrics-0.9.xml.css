@@ -61,16 +61,14 @@
 :root[version="0.9"] chord[base][ext][bass]::before {
     content: attr(base) attr(ext) "/" attr(bass);
 }
-/* upbeat for text: 2 syntax:
- * 1st: first empty chord in line <chord name="A" /> or 
- * 2nd: <chord type="upbeat" />
- */
+/* intrument chords */
 :root[version="0.9"] instrument chord[name]:empty,
 :root[version="0.9"] instrument chord[base]:empty {
   margin-bottom: 0;
   bottom: 0;
   margin-right: .1em;
 }
+/* empty */
 :root[version="0.9"] chord[name]:empty,
 :root[version="0.9"] chord[base]:empty {
   position: relative;
@@ -80,26 +78,18 @@
 :root[version="0.9"] chord[base]:empty + chord[base]:empty {
   margin-left: .4em;
 }
+/* upbeat */
 :root[version="0.9"] chord[name][type=upbeat],
-:root[version="0.9"] chord[base][type=upbeat],
-:root[version="0.9"] lines > chord[name]:empty:first-child,
-:root[version="0.9"] lines > chord[base]:empty:first-child  {
+:root[version="0.9"] chord[base][type=upbeat] {
   position: relative;
   bottom: .7em;
   height: 1em;
   margin-right: 0 !important;
 }
 :root[version="0.9"] chord[name][type=upbeat]::before,
-:root[version="0.9"] chord[base][type=upbeat]::before ,
-:root[version="0.9"] lines > chord[name]:empty:first-child::before,
-:root[version="0.9"] lines > chord[base]:empty:first-child::before { 
+:root[version="0.9"] chord[base][type=upbeat]::before {
   position: absolute;
   right: 0;
-}
-:root[version="0.9"] lines > chord[name]:only-of-type,
-:root[version="0.9"] lines > chord[base]:only-of-type { /* ??? */
-  margin-top: 0em;
-  background: purple;
 }
 
 /* nested chords

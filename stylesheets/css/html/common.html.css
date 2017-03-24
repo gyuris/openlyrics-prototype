@@ -26,6 +26,9 @@ p.lines > .line-part em,
 p.lines > .lyrics-comment em {
   display: none;
 }
+a:link {
+  text-decoration: none;
+}
 
 header {
   margin: .5em 0 1.5em 0;
@@ -124,11 +127,6 @@ aside.verse-order {
   width: 7em;
   margin-left: 1em;
 }
-aside.verse-order span div {
-  /*display: block; TODO: doule line-height in Prince
-  line-height: 0.5em;
-  white-space: pre-line;*/
-}
 
 /* lyrics */
 section.lyrics {
@@ -139,6 +137,7 @@ section.lyrics > article.verse,
 section.lyrics > article.instrument {
   margin: 0 0 1em 60pt;
   font-size: 14pt;
+  line-height: 1.2em;
   position: relative;
 }
 

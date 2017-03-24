@@ -27,6 +27,9 @@
   color: cmyk(0, 0, 0, 1);
   string-set: root-properties attr(data-root-properties);
 }
+a {
+  color: cmyk(0, 0, 0, 1);
+}
 h1 {
   string-set: title content();
 }
@@ -52,5 +55,20 @@ section.lyrics p.lines > .line-part {
 }
 section.lyrics p.lines > .lyrics-comment {
   color: cmyk(0, 0, 0, 0.35);
+}
+section.lyrics > article.verse,
+section.lyrics > article.instrument {
+  page-break-inside: avoid;
+}
+
+:root[data-ol-version="0.8"] .chord,
+:root[data-ol-version="0.9"] .segment .chord {
+  color: cmyk(0, 1, 1, 0);
+}
+:root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
+  color: cmyk(1, 0, 0, 0);
+}
+:root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
+  color: cmyk(78, 5, 71, 0);
 }
 

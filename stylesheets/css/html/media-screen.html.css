@@ -8,7 +8,9 @@
   margin: 1em auto 1em auto;
   color: black;
 }
-
+a {
+  color: black;
+}
 section.properties p.properties-other:not(:empty) {
   background: rgba(240,240,240,1);
 }
@@ -28,4 +30,14 @@ section.lyrics p.lines > .line-part {
 }
 section.lyrics p.lines > .lyrics-comment {
   color: rgba(166,166,166,1);
+}
+:root[data-ol-version="0.8"] .chord,
+:root[data-ol-version="0.9"] .segment .chord {
+  color: red;
+}
+:root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
+  color: blue;
+}
+:root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
+  color: green;
 }

@@ -6,41 +6,58 @@
 :root[data-ol-version="0.9"] code {
   display: none;
 }
+:root[data-ol-version="0.9"] span.repeat-sign {}
+:root[data-ol-version="0.9"] span.repeat-sign.start {}
+:root[data-ol-version="0.9"] span.repeat-sign.end {}
+:root[data-ol-version="0.9"] span.beat-sign {
+  display: inline-block;
+  padding: 0 .15em;
+}
+:root[data-ol-version="0.9"] .lines.has-segments {
+  line-height: 1em;
+}
 :root[data-ol-version="0.9"] .segment {
   display: inline-block;
-  border: 1px solid red;
 }
 :root[data-ol-version="0.9"] .segment > .chord:only-child {
   display: inline-block;
-  margin-top: 1.2em;
+  margin-top: .9em;
   position: relative;
-  top: -1.2em;
+  top: -.9em;
 }
 :root[data-ol-version="0.9"] .segment .lyrics {
-  display: block;
+  display: inline-block;
+  background: white;
 }
 :root[data-ol-version="0.9"] .segment .chord {
   display: block;
-  height: 1em;
-  color: red;
+  position: relative;
+  top: .1em;
+  padding-right: .1em;
+  /*height: 1em;*/
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-base:not(:empty) {
   font-weight: bold;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
-  vertical-align: super;
   font-size: 10pt;
-  color: blue;
+  font-weight: bold;
+  /*vertical-align: super;*/
+  position: relative;
+  bottom: .5em;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
   font-size: 10pt;
-  vertical-align: sub;
-  color: black;
+  font-weight: bold;
+  /*vertical-align: sub;*/
+  position: relative;
+  bottom: -.2em;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) + .chord-bass:not(:empty) {
   margin-left: -.15em;
 }
-/* Has BR */
+
+/* Has BR in segment */
 :root[data-ol-version="0.9"] .segment.linebreak {
   display: inline;
   position: relative;
@@ -53,3 +70,39 @@
 :root[data-ol-version="0.9"] .segment.linebreak .lyrics {
   display: inline;
 }
+
+/* emtpy chord = only chord in segment */
+:root[data-ol-version="0.9"] .segment.only-chord {}
+
+/* upbeat */
+:root[data-ol-version="0.9"] .segment.upbeat {
+  position: relative;
+}
+:root[data-ol-version="0.9"] .segment.upbeat > .chord {
+  position: absolute;
+  top: -1.8em;
+  right: 0;
+  margin: 0;
+}
+
+/* intrument chords */
+:root[data-ol-version="0.9"] .instrument .segment {
+  line-height: 1.2em;
+}
+:root[data-ol-version="0.9"] .instrument .segment > .chord:only-child {
+  margin-right: .1em;
+  margin-top: 0;
+  position: static;
+}
+/* join segments */
+:root[data-ol-version="0.9"] article.verse .segment:not(.only-chord) {
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><line x1="0" y1="100" x2="100" y2="100" stroke="black" stroke-width="1"/></svg>');
+  background-repeat: repeat;
+  background-size: 100pt 100pt;
+  background-position: 0 29pt;
+}
+
+/* debug
+:root[data-ol-version="0.9"] .segment {
+  border: 1px solid silver;
+} /* /debug */

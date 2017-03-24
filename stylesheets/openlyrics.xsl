@@ -16,12 +16,12 @@
   <xsl:variable name="locale" select="document ($locale-strings)/locale"/>
 
   <xsl:variable name="rootProperties">
-    OpenLyrics <xsl:value-of select="//@version"/>
+    <xsl:text>OpenLyrics  </xsl:text><xsl:value-of select="//@version"/>
     <xsl:if test="//@createdIn">
-      • <xsl:value-of select="$locale/properties/creator/text()"/>: <xsl:value-of select="//@createdIn"/>
+      <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/creator/text()"/><xsl:text>: </xsl:text><xsl:value-of select="//@createdIn"/>
     </xsl:if>
     <xsl:if test="//@xml:lang">
-      • <xsl:value-of select="$locale/properties/language/text()"/>: <xsl:value-of select="$locale/languages/*[local-name()=//@xml:lang]/text()"/>
+      <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=//@xml:lang]/text()"/>
     </xsl:if>
   </xsl:variable>
 
@@ -124,7 +124,14 @@
   <xsl:template match="ol:released|ol:version|ol:variant|ol:publisher|ol:copyright|ol:comment|ol:keywords|ol:key|ol:transposition|ol:ccliNo">
     <span class="{local-name()}" title="{$locale/properties/*[local-name()=local-name(current())]/text()}">
       <em><xsl:value-of select="$locale/properties/*[local-name()=local-name(current())]/text()"/>: </em>
-      <xsl:value-of select="."/>
+      <xsl:choose>
+        <xsl:when test="local-name()='ccliNo'">
+          <a href="https://songselect.ccli.com/songs/{.}"><xsl:value-of select="."/></a>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="."/>
+        </xsl:otherwise>
+      </xsl:choose>
     </span>
     <xsl:text> </xsl:text>
   </xsl:template>
@@ -185,7 +192,7 @@
           <xsl:call-template name="displayVerseName">
             <xsl:with-param name="name" select="."/>
           </xsl:call-template>
-          <br/>
+          <xsl:call-template name="break" />
         </xsl:for-each>
       </div>
     </span>
@@ -271,7 +278,12 @@
   </xsl:template>
 
   <xsl:template match="ol:lines">
-    <p class="{local-name()}">
+    <xsl:variable name="has-segments">
+      <xsl:if test="//ol:chord">
+        <xsl:text> has-segments</xsl:text>
+      </xsl:if>
+    </xsl:variable>
+    <p class="{local-name()}{$has-segments}">
       <xsl:if test="@part">
         <div class="line-part" title="{$locale/lyrics/part/text()}">
           <em><xsl:value-of select="$locale/lyrics/part/text()"/>: </em>
@@ -279,25 +291,40 @@
           </div>
       </xsl:if>
       <xsl:if test="@repeat">
-        ‖:<xsl:text> </xsl:text>
+        <span class="repeat-sign start">‖:</span><xsl:text> </xsl:text>
       </xsl:if>
       <xsl:apply-templates/>
       <xsl:if test="@repeat">
-        <xsl:text> </xsl:text>:‖×<xsl:value-of select="@repeat"/>
+        <xsl:text> </xsl:text><span class="repeat-sign end">:‖×<xsl:value-of select="@repeat"/></span>
       </xsl:if>
     </p>
+  </xsl:template>
+
+  <xsl:template match="ol:beat[position() != last()]">
+    <xsl:apply-templates/>
+    <span class="{local-name()}-sign">|</span>
   </xsl:template>
 
   <!-- Chords support for OpenLyrics 0.8 is in separated file -->
   <xsl:include href="xsl/openlyrics.08chords.xsl" />
 
   <xsl:template match="ol:song[@version='0.9']//ol:chord[not(ol:chord)]">
+    <xsl:variable name="upbeat">
+      <xsl:if test="@type='upbeat'">
+        <xsl:text> upbeat</xsl:text>
+      </xsl:if>
+    </xsl:variable>
+    <xsl:variable name="empty">
+      <xsl:if test="string-length(text())=0">
+        <xsl:text> only-chord</xsl:text>
+      </xsl:if>
+    </xsl:variable>
     <xsl:variable name="linebreak">
       <xsl:if test="ol:br">
         <xsl:text> linebreak</xsl:text>
       </xsl:if>
     </xsl:variable>
-    <span class="segment{$linebreak}">
+    <span class="segment{$linebreak}{$empty}{$upbeat}">
       <span class="chord">
         <xsl:call-template name="chords">
           <xsl:with-param name="this" select="." />
@@ -335,8 +362,15 @@
     </div>
   </xsl:template>
 
-  <xsl:template match="ol:br">
-    <xsl:element name="br"/>
+  <xsl:template match="ol:br" name="break">
+    <xsl:choose>
+      <xsl:when test="system-property('xsl:vendor')='Transformiix'">
+        <br/>
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text disable-output-escaping="yes">&lt;br /&gt;</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
   </xsl:template>
 
 </xsl:stylesheet>

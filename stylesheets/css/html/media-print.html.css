@@ -69,6 +69,6 @@ section.lyrics > article.instrument {
   color: cmyk(1, 0, 0, 0);
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
-  color: cmyk(78, 5, 71, 0);
+  color: cmyk(1, 0, 1, 0);
 }
 

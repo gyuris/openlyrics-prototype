@@ -53,7 +53,7 @@ header .title.original {
   font-weight: bold;
 }
 header .title.original::before,
-.properties .properties-authors::before,
+.properties .properties-authors:not(:empty)::before,
 .properties .author::before,
 .properties .copyright::before,
 .properties .ccliNo::before,
@@ -74,7 +74,7 @@ header .title.original::before,
   margin-right: .25em;
 }
 header .title.original::before          { content: "\f024"; /* flag */ }
-.properties .properties-authors::before { content: "\f007"; /* user */ }
+.properties .properties-authors:not(:empty)::before { content: "\f007"; /* user */ }
 .properties .author.words::before       { content: "\f031"; /* font */ }
 .properties .author.music::before       { content: "\f001"; /* music */ }
 .properties .author.translation::before { content: "\f0ac"; /* globe */ }
@@ -97,7 +97,7 @@ section.properties p.properties-other:not(:empty) {
   margin: .25em -.5em .5em -.5em;
   padding: .5em;
 }
-section.properties p.properties-main:empty ~ p.properties-songbooks {
+section.properties p.properties-other:empty + p.properties-main:empty ~ p.properties-songbooks {
   padding-bottom: 2pt;
   margin-bottom: 2pt;
   border-bottom-style: dotted;

@@ -7,18 +7,18 @@
 properties {
   display: block;
   border-bottom-style: solid;
-  border-bottom-width: 1pt;
-  padding-bottom: .3em;
-  font-size: 10pt;
+  border-bottom-width: .083333333rem;
+  padding-bottom: .3rem;
+  font-size: .813rem;
 }
 title {
   display: block;
 }
 title:first-child { /* title */
-  font-size: 18pt;
+  font-size: 1.5rem;
   font-weight: bold;
   text-align: center;
-  margin: .5em 0;
+  margin: .5rem 0;
 }
 title:not(:first-child) { /* alternate title */
   text-align: center;
@@ -27,7 +27,7 @@ title:not(:first-child)::before {
   font-weight: bold;
 }
 title:last-child {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 authors,
 copyright,
@@ -45,7 +45,7 @@ songbooks,
 themes,
 comments {
   display: inline;
-  padding-right: .5em;
+  padding-right: .5rem;
 }
 title[original]::before,
 authors::before,
@@ -65,8 +65,8 @@ songbooks::before,
 themes::before,
 comments::before {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  margin-right: .25em;
+  font-family: FontAwesome;
+  margin-right: .25rem;
 }
 title[original]::before          { content: "\f024"; /* flag */ }
 authors::before                  { content: "\f007"; /* user */ }
@@ -103,14 +103,14 @@ properties comment:not(:first-child)::before {
 /* lyrics, verse, instrument */
 lyrics { 
   display: block;
-  margin: .2em 1em;
-  padding: 1em 0;
+  margin: .2rem 1rem;
+  padding: 1rem 0;
 }
 lyrics > verse,
 lyrics > instrument {
   display: block;
-  margin: 0 0 1em 60pt;
-  font-size: 14pt;
+  margin: 0 0 1rem 5rem;
+  font-size: 1rem;
   position: relative;
 }
 lyrics > verse br::before,
@@ -121,13 +121,13 @@ lyrics > instrument br::before  {
 lyrics > verse::before, /* verse names */
 lyrics > instrument::before { 
   position: absolute;
-  width: 60pt;
-  top: 12pt;
-  left: -60pt;
+  width: 5rem;
+  top: 1rem;
+  left: -5rem;
   transform: rotate(90deg);
   transform-origin: top left;
   text-align: left;
-  font-size: 10pt;
+  font-size: .813rem;
 }
 lyrics > instrument::before {
   top: 0;
@@ -140,13 +140,13 @@ lyrics > verse[lang][translit]::after {
 }
 lyrics > verse[lang]::after {
   position: absolute;
-  width: 50pt;
-  top: 12pt;
-  left: -50pt;
+  width: 4rem;
+  top: 1rem;
+  left: -4rem;
   transform: rotate(90deg);
   transform-origin: top left;
   text-align: left;
-  font-size: 10pt;
+  font-size: .813rem;
 }
 
 /* verse, instrument numbers */
@@ -208,18 +208,18 @@ lyrics > instrument[name='s'] {
 lines[part]::before {
   content: attr(part);
   position: absolute;
-  width: 50pt;
-  margin-top: 12pt;
-  left: -50pt;
-  font-size: 10pt;
+  width: 4rem;
+  margin-top: 1rem;
+  left: -4rem;
+  font-size: .813rem;
 }
 lines comment {
   position: absolute;
-  width: 10em;
-  margin-top: 12pt;
-  right: -12pt;
-  font-size: 8pt;
-  line-height: 10pt;
+  width: 10rem;
+  margin-top: 1rem;
+  right: -1rem;
+  font-size: .625rem;
+  line-height: .625rem;
   font-style: italic;
   text-align: right;
 }

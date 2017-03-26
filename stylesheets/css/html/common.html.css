@@ -13,7 +13,7 @@ p {
 header,
 section.properties,
 aside.verse-order {
-  font-size: 10pt;
+  font-size: .813rem;
 }
 span[class] > em { /* descriptions */
   display: none; /* hide with "none", display with "inline" */
@@ -31,10 +31,10 @@ a:link {
 }
 
 header {
-  margin: .5em 0 1.5em 0;
+  margin: .5rem 0 1.5rem 0;
 }
 header h1 { /* title */
-  font-size: 22pt;
+  font-size: 1.75rem;
   font-weight: bold;
   text-align: left;
   margin: 0;
@@ -43,11 +43,11 @@ header h1 { /* title */
 header .title:not(:last-of-type)::after,
 .properties .author:not(:last-of-type)::after {
   content: " • ";
-  padding: 0 .2em;
+  padding: 0 .2rem;
 }
 .properties-other span,
 .properties-main span {
-  padding-right: .4em;
+  padding-right: .4rem;
 }
 header .title.original {
   font-weight: bold;
@@ -70,8 +70,8 @@ header .title.original::before,
 .properties .themes::before,
 .properties .comment::before {
   display: inline-block;
-  font: normal normal normal 14px/1 FontAwesome;
-  margin-right: .25em;
+  font-family: FontAwesome;
+  margin-right: .25rem;
 }
 header .title.original::before          { content: "\f024"; /* flag */ }
 .properties .properties-authors:not(:empty)::before { content: "\f007"; /* user */ }
@@ -94,27 +94,27 @@ header .title.original::before          { content: "\f024"; /* flag */ }
 .properties .comment::before            { content: "\f075"; /* comment */ }
 
 section.properties p.properties-other:not(:empty) {
-  margin: .25em -.5em .5em -.5em;
-  padding: .5em;
+  margin: .25rem -.5rem .5rem -.5rem;
+  padding: .5rem;
 }
 section.properties p.properties-other:empty + p.properties-main:empty ~ p.properties-songbooks {
-  padding-bottom: 2pt;
-  margin-bottom: 2pt;
+  padding-bottom: .166666667rem;
+  margin-bottom: .166666667rem;
   border-bottom-style: dotted;
-  border-bottom-width: 1pt;
+  border-bottom-width: .083333333rem;
 }
 section.properties p.properties-main:not(:empty) {
   text-align: right;
   position: relative;
-  top: -0.8em;
+  top: -.8rem;
 }
 section.properties p.properties-main span {
   border-style: solid;
-  border-width: .3em;
+  border-width: .3rem;
   border-right-style: none;
   float: right;
-  padding: .1em .25em;
-  margin-right: -.5em;
+  padding: .1rem .25rem;
+  margin-right: -.5rem;
 }
 section.properties p.properties-main span:first-child {
   border-right-style: solid;
@@ -124,20 +124,20 @@ section.properties p.properties-main span:first-child {
 aside.verse-order {
   clear: right;
   float: right;
-  width: 7em;
-  margin-left: 1em;
+  width: 7rem;
+  margin-left: 1rem;
 }
 
 /* lyrics */
 section.lyrics {
-  margin: 1.5em 1em;
+  margin: 1.5rem 1rem;
 }
 
 section.lyrics > article.verse,
 section.lyrics > article.instrument {
-  margin: 0 0 1em 60pt;
-  font-size: 14pt;
-  line-height: 1.2em;
+  margin: 0 0 1rem 5rem;
+  font-size: 1rem;
+  line-height: 1.2rem;
   position: relative;
 }
 
@@ -147,37 +147,37 @@ section.lyrics > article.verse .verse-lang,
 section.lyrics > article.verse .verse-translit {
   position: absolute;
   width: auto;
-  top: 12pt;
-  left: -60pt;
+  top: 1rem;
+  left: -5rem;
   transform: rotate(90deg);
   transform-origin: top left;
   text-align: left;
-  font-size: 10pt;
+  font-size: .813rem;
 }
 section.lyrics > article.instrument .verse-name {
   top: 0;
 }
 section.lyrics > article.verse .verse-lang,
 section.lyrics > article.verse .verse-translit {
-  left: -50pt;
+  left: -4rem;
 }
 section.lyrics p.lines > .line-part { /* line part */
   position: absolute;
-  width: 50pt;
-  margin-top: 12pt;
-  left: -50pt;
-  font-size: 10pt;
+  width: 4rem;
+  margin-top: 1rem;
+  left: -4rem;
+  font-size: .813rem;
 }
 section.lyrics p.lines > .lyrics-comment { /* comment in lines */
   float: right;
-  width: 10em;
-  margin-top: 12pt;
-  font-size: 8pt;
-  line-height: 10pt;
+  width: 10rem;
+  margin-top: 1rem;
+  font-size: .813rem;
+  line-height: .813rem;
   font-style: italic;
   text-align: right;
 }
 
 footer #root-properties {
-  font-size: 8pt;
+  font-size: .625rem;
 }

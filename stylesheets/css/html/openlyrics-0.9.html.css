@@ -11,19 +11,19 @@
 :root[data-ol-version="0.9"] span.repeat-sign.end {}
 :root[data-ol-version="0.9"] span.beat-sign {
   display: inline-block;
-  padding: 0 .15em;
+  padding: 0 .15rem;
 }
 :root[data-ol-version="0.9"] .lines.has-segments {
-  line-height: 1em;
+  line-height: 1rem;
 }
 :root[data-ol-version="0.9"] .segment {
   display: inline-block;
 }
 :root[data-ol-version="0.9"] .segment > .chord:only-child {
   display: inline-block;
-  margin-top: .9em;
+  margin-top: .9rem;
   position: relative;
-  top: -.9em;
+  top: -.9rem;
 }
 :root[data-ol-version="0.9"] .segment .lyrics {
   display: inline-block;
@@ -32,25 +32,24 @@
 :root[data-ol-version="0.9"] .segment .chord {
   display: block;
   position: relative;
-  top: .1em;
-  padding-right: .1em;
-  /*height: 1em;*/
+  top: .1rem;
+  padding-right: .1rem;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-base:not(:empty) {
   font-weight: bold;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
-  font-size: 10pt;
+  font-size: .813rem;
   font-weight: bold;
   position: relative;
-  bottom: .5em;
+  bottom: .3rem;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
-  font-size: 10pt;
+  font-size: .813rem;
   font-weight: bold;
 }
 :root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) + .chord-bass:not(:empty) {
-  margin-left: -.15em;
+  margin-left: -.15rem;
 }
 
 /* Has BR in segment */
@@ -61,13 +60,16 @@
   position: absolute;
   display: inline-block;
   top: auto;
+  margin-top: .1rem;
 }
 :root[data-ol-version="0.9"] .segment.linebreak .lyrics {
   display: inline;
 }
 
 /* emtpy chord = only chord in segment */
-:root[data-ol-version="0.9"] .segment.only-chord {}
+:root[data-ol-version="0.9"] .segment.only-chord {
+  top: -.1rem;
+}
 
 /* upbeat */
 :root[data-ol-version="0.9"] .segment.upbeat {
@@ -75,17 +77,17 @@
 }
 :root[data-ol-version="0.9"] .segment.upbeat > .chord {
   position: absolute;
-  top: -1.8em;
+  top: -1.65rem;
   right: 0;
   margin: 0;
 }
 
 /* intrument chords */
 :root[data-ol-version="0.9"] .instrument .segment {
-  line-height: 1.2em;
+  line-height: 1.2rem;
 }
 :root[data-ol-version="0.9"] .instrument .segment > .chord:only-child {
-  margin-right: .1em;
+  margin-right: .1rem;
   margin-top: 0;
   position: static;
 }
@@ -93,11 +95,11 @@
 :root[data-ol-version="0.9"] article.verse .segment:not(.only-chord) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><line x1="0" y1="100" x2="100" y2="100" stroke="black" stroke-width="1"/></svg>');
   background-repeat: repeat;
-  background-size: 100pt 100pt;
-  background-position: 0 29pt;
+  background-size: 12rem 12rem;
+  background-position: 0 2rem;
 }
 
 /* debug
 :root[data-ol-version="0.9"] .segment {
-  border: 1px solid silver;
+  border: .063rem solid silver;
 } /* /debug */

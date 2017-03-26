@@ -72,7 +72,7 @@
 :root[version="0.9"] chord[name]:empty,
 :root[version="0.9"] chord[base]:empty {
   position: relative;
-  bottom: 0.9em;
+  bottom: .9em;
   margin-right: -.2em;
 }
 :root[version="0.9"] chord[base]:empty + chord[base]:empty {
@@ -131,5 +131,5 @@
 
 /* debug
 chord {
-  border: 1px solid silver;
+  border: .063rem solid silver;
 } /* /debug */

@@ -4,20 +4,21 @@
  */
 
 :root {
-  width: 40em;
-  margin: 2em auto 1em auto;
+  font-size: 16px; /* Root element size */
+  width: 40rem;
+  margin: 2rem auto 1rem auto;
   color: black;
 }
 :root::before { /* for version debug only on screen */
   display: block;
-  border: 1px solid red;
-  padding: 1px;
+  border: .063rem solid red;
+  padding: .063rem;
   color: red;
   position: absolute;
-  top: 1px;
+  top: .063rem;
   content: "OpenLyrics " attr(version) " • " attr(createdIn) " • " attr(lang) " " attr(xml\:lang); /* https://searchcode.com/codesearch/view/6658711/ */
   text-align: center;
-  font-size: 8pt;
+  font-size: .625rem;
 }
 title:first-child {
   color: black;

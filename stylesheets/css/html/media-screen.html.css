@@ -4,8 +4,9 @@
  */
 
 :root {
-  width: 40em;
-  margin: 1em auto 1em auto;
+  font-size: 16px; /* Root element size */
+  width: 40rem;
+  margin: 1rem auto 1rem auto;
   color: black;
 }
 a {

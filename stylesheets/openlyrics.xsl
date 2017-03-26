@@ -285,10 +285,10 @@
     </xsl:variable>
     <p class="{local-name()}{$has-segments}">
       <xsl:if test="@part">
-        <div class="line-part" title="{$locale/lyrics/part/text()}">
+        <span class="line-part" title="{$locale/lyrics/part/text()}">
           <em><xsl:value-of select="$locale/lyrics/part/text()"/>: </em>
           <xsl:value-of select="@part"/>
-          </div>
+        </span>
       </xsl:if>
       <xsl:if test="@repeat">
         <span class="repeat-sign start">‖:</span><xsl:text> </xsl:text>
@@ -356,10 +356,10 @@
   </xsl:template>
 
   <xsl:template match="ol:lyrics//ol:comment">
-    <div class="lyrics-{local-name()}" title="{$locale/lyrics/comment/text()}">
+    <span class="lyrics-{local-name()}" title="{$locale/lyrics/comment/text()}">
       <em><xsl:value-of select="$locale/lyrics/comment/text()"/>: </em>
       <xsl:value-of select="."/>
-    </div>
+    </span>
   </xsl:template>
 
   <xsl:template match="ol:br" name="break">

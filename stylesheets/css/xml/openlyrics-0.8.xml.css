@@ -3,21 +3,21 @@
  * OpenLyrics 0.8
  */
 
-:root[version="0.8"] lines:after { 
+song[version="0.8"] lines:after {
   content: "\A"; 
   white-space: pre-line;
 }
-:root[version="0.8"] lines {
+song[version="0.8"] lines {
   line-height: 2em;
   padding: 0;
   margin: 0;
 }
-:root[version="0.8"] chord[name]:empty {
+song[version="0.8"] chord[name]:empty {
   display: inline-block;
   position: absolute;
   line-height: 1em;
 }
-:root[version="0.8"] chord[name]:empty::before {
+song[version="0.8"] chord[name]:empty::before {
   display: block;
   position: absolute;
   line-height: 1em;

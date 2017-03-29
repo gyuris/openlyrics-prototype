@@ -49,6 +49,6 @@ lyrics > instrument {
 /* to avoid unnecessary line break after "/" in chord.
  * See: https://www.princexml.com/doc/properties/prince-linebreak-magic/
  */
-:root[version="0.8"] chord[name]:empty::before {
+song[version="0.8"] chord[name]:empty::before {
   prince-linebreak-magic: none;
 }

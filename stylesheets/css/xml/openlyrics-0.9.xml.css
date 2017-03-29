@@ -3,29 +3,29 @@
  * OpenLyrics 0.9
  */
 
-:root[version="0.9"] lines:after { 
+song[version="0.9"] lines:after {
   content: "\A"; 
   white-space: pre-line;
 }
-:root[version="0.9"] lines {
+song[version="0.9"] lines {
   line-height: 1em;
   padding: 0;
   margin: 0;
 }
-:root[version="0.9"] lines[repeat]::before { /* repeat */
+song[version="0.9"] lines[repeat]::before { /* repeat */
   content: '‖:';
 }
-:root[version="0.9"] lines[repeat]::after { 
+song[version="0.9"] lines[repeat]::after {
   content: ':‖×' attr(repeat);
 }
-:root[version="0.9"] beat {
+song[version="0.9"] beat {
   display: inline-block;
 }
-:root[version="0.9"] beat::after {
+song[version="0.9"] beat::after {
   content: '|';
   padding: 0 .1em;
 }
-:root[version="0.9"] beat:last-child::after {
+song[version="0.9"] beat:last-child::after {
   content: none;
 }
 
@@ -33,61 +33,61 @@
  * 1st: tradicional <chord name="Em7/D" />
  * 2nd: new         <chord base="Em" ext="7" bass="D" />
  */
-:root[version="0.9"] chord[name],
-:root[version="0.9"] chord[base] {
+song[version="0.9"] chord[name],
+song[version="0.9"] chord[base] {
   display: inline-block;
   line-height: 1em;
 }
-:root[version="0.9"] chord[name]::before,
-:root[version="0.9"] chord[base]::before {
+song[version="0.9"] chord[name]::before,
+song[version="0.9"] chord[base]::before {
   display: block;
   text-align: left;
   font-weight: bold;
   margin-bottom: -.1em;
   margin-right: .1em;
 }
-:root[version="0.9"] chord[name]::before {
+song[version="0.9"] chord[name]::before {
   content: attr(name);
 }
-:root[version="0.9"] chord[base]::before {
+song[version="0.9"] chord[base]::before {
   content: attr(base);
 }
-:root[version="0.9"] chord[base][ext]::before {
+song[version="0.9"] chord[base][ext]::before {
     content: attr(base) attr(ext);
 }
-:root[version="0.9"] chord[base][bass]::before {
+song[version="0.9"] chord[base][bass]::before {
     content: attr(base) "/" attr(bass);
 }
-:root[version="0.9"] chord[base][ext][bass]::before {
+song[version="0.9"] chord[base][ext][bass]::before {
     content: attr(base) attr(ext) "/" attr(bass);
 }
 /* intrument chords */
-:root[version="0.9"] instrument chord[name]:empty,
-:root[version="0.9"] instrument chord[base]:empty {
+song[version="0.9"] instrument chord[name]:empty,
+song[version="0.9"] instrument chord[base]:empty {
   margin-bottom: 0;
   bottom: 0;
   margin-right: .1em;
 }
 /* empty */
-:root[version="0.9"] chord[name]:empty,
-:root[version="0.9"] chord[base]:empty {
+song[version="0.9"] chord[name]:empty,
+song[version="0.9"] chord[base]:empty {
   position: relative;
   bottom: .9em;
   margin-right: -.2em;
 }
-:root[version="0.9"] chord[base]:empty + chord[base]:empty {
+song[version="0.9"] chord[base]:empty + chord[base]:empty {
   margin-left: .4em;
 }
 /* upbeat */
-:root[version="0.9"] chord[name][type=upbeat],
-:root[version="0.9"] chord[base][type=upbeat] {
+song[version="0.9"] chord[name][type=upbeat],
+song[version="0.9"] chord[base][type=upbeat] {
   position: relative;
   bottom: .7em;
   height: 1em;
   margin-right: 0 !important;
 }
-:root[version="0.9"] chord[name][type=upbeat]::before,
-:root[version="0.9"] chord[base][type=upbeat]::before {
+song[version="0.9"] chord[name][type=upbeat]::before,
+song[version="0.9"] chord[base][type=upbeat]::before {
   position: absolute;
   right: 0;
 }
@@ -98,16 +98,16 @@
  * First playing chord is D.
  * Displaying is a little bit tricky.
  */
-:root[version="0.9"] lines chord[name][tweak="nested"],
-:root[version="0.9"] lines chord[base][tweak="nested"] /*,
-:root[version="0.9"] lines chord[name]:has(> chord[name]),
-:root[version="0.9"] lines chord[base]:has(> chord[base]) */ { /* CSS4 selector */
+song[version="0.9"] lines chord[name][tweak="nested"],
+song[version="0.9"] lines chord[base][tweak="nested"] /*,
+song[version="0.9"] lines chord[name]:has(> chord[name]),
+song[version="0.9"] lines chord[base]:has(> chord[base]) */ { /* CSS4 selector */
   line-height: 0;
 }
-:root[version="0.9"] lines chord[name][tweak="nested"]::before,
-:root[version="0.9"] lines chord[base][tweak="nested"]::before /*,
-:root[version="0.9"] lines chord[name]:has(> chord[name])::before,
-:root[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
+song[version="0.9"] lines chord[name][tweak="nested"]::before,
+song[version="0.9"] lines chord[base][tweak="nested"]::before /*,
+song[version="0.9"] lines chord[name]:has(> chord[name])::before,
+song[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
   display: inline-block;
   width: 100%;
   position: relative;
@@ -119,12 +119,12 @@
  * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
  * a tweak... <chord name="A" tweak="linebreak">Text<br />text</chord>
  */
-:root[version="0.9"] lines > chord[tweak="linebreak"] /*,
-:root[version="0.9"] lines > chord:has(> br) */ /* CSS4 selector */ /*,
-:root[version="0.9"] lines > chord:contains("\A") */ { /* works in Prince? https://www.princexml.com/doc/selectors/#selectors */
+song[version="0.9"] lines > chord[tweak="linebreak"] /*,
+song[version="0.9"] lines > chord:has(> br) */ /* CSS4 selector */ /*,
+song[version="0.9"] lines > chord:contains("\A") */ { /* works in Prince? https://www.princexml.com/doc/selectors/#selectors */
   display: inline;
 }
-:root[version="0.9"] lines > chord[tweak="linebreak"]::before {
+song[version="0.9"] lines > chord[tweak="linebreak"]::before {
   position: absolute;
   display: inline-block;
 }

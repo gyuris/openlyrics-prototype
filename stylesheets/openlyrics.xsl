@@ -4,6 +4,7 @@
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
  xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:str="http://exslt.org/strings"
+ xmlns:xhtml="http://www.w3.org/1999/xhtml"
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
@@ -15,19 +16,9 @@
   </xsl:variable>
   <xsl:variable name="locale" select="document ($locale-strings)/locale"/>
 
-  <xsl:variable name="rootProperties">
-    <xsl:text>OpenLyrics  </xsl:text><xsl:value-of select="//@version"/>
-    <xsl:if test="//@createdIn">
-      <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/creator/text()"/><xsl:text>: </xsl:text><xsl:value-of select="//@createdIn"/>
-    </xsl:if>
-    <xsl:if test="//@xml:lang">
-      <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=//@xml:lang]/text()"/>
-    </xsl:if>
-  </xsl:variable>
-
   <!-- Main -->
   <xsl:template match="/">
-    <html lang="{//@xml:lang}" data-ol-version="{//@version}" data-root-properties="{$rootProperties}">
+    <html lang="{//@xml:lang}">
       <head>
         <title><xsl:value-of select="//ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
@@ -35,13 +26,29 @@
       </head>
       <body>
         <xsl:apply-templates/>
-        <footer>
-          <p id="root-properties">
-            <xsl:value-of select="$rootProperties"/>
-          </p>
-        </footer>
       </body>
     </html>
+  </xsl:template>
+  
+  <xsl:template match="ol:song">
+    <xsl:variable name="rootProperties">
+      <xsl:text>OpenLyrics  </xsl:text><xsl:value-of select="@version"/>
+      <xsl:if test="@createdIn">
+        <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/creator/text()"/><xsl:text>: </xsl:text><xsl:value-of select="@createdIn"/>
+      </xsl:if>
+      <xsl:if test="@xml:lang">
+        <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>
+      </xsl:if>
+    </xsl:variable>
+
+    <div class="song" id="{@id}" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
+      <xsl:apply-templates/>
+        <footer>
+          <p class="root-properties">
+            <xsl:value-of select="$rootProperties"/>
+          </p>
+       </footer>
+    </div>
   </xsl:template>
 
   <!-- Header properties -->
@@ -177,7 +184,7 @@
   <!-- Lyrics and chords -->
   <xsl:template match="ol:lyrics">
     <aside class="verse-order">
-      <xsl:apply-templates select="//ol:verseOrder"/>
+      <xsl:apply-templates select="../ol:properties/ol:verseOrder"/>
     </aside>
     <section class="{local-name()}">
       <xsl:apply-templates/>
@@ -371,6 +378,21 @@
         <xsl:text disable-output-escaping="yes">&lt;br /&gt;</xsl:text>
       </xsl:otherwise>
     </xsl:choose>
+  </xsl:template>
+  
+  <!-- book -->
+  <xsl:template match="ol:foreword">
+    <p><xsl:value-of select="text()" /></p>
+  </xsl:template>
+  <xsl:template match="ol:toc">
+    <nav class="toc">
+      <ul>
+        <xsl:apply-templates/>
+      </ul>
+    </nav>
+  </xsl:template>
+  <xsl:template match="ol:entry">
+    <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
   </xsl:template>
 
 </xsl:stylesheet>

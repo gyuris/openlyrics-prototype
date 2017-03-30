@@ -18,6 +18,9 @@
       <author type="words">Jesse Reeves</author>
       <author type="music">Jesse Reeves</author>
     </authors>
+    <songbooks>
+      <songbook name="Teszt könyv" entry="56"/>
+    </songbooks>
     <key>C</key>
     <tempo type="bpm">76</tempo>
     <transposition>2</transposition>

@@ -8,6 +8,7 @@
     <verseOrder>v1</verseOrder>
     <songbooks>
       <songbook name="Zöld Könyv" entry="278"/>
+      <songbook name="Teszt könyv" entry="11"/>
     </songbooks>
   </properties>
   <lyrics>

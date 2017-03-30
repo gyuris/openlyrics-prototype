@@ -32,13 +32,24 @@ section.lyrics p.lines > .line-part {
 section.lyrics p.lines > .lyrics-comment {
   color: rgba(166,166,166,1);
 }
-:root[data-ol-version="0.8"] .chord,
-:root[data-ol-version="0.9"] .segment .chord {
+.song[data-ol-version="0.8"] .chord,
+.song[data-ol-version="0.9"] .segment .chord {
   color: red;
 }
-:root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
   color: blue;
 }
-:root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
   color: green;
+}
+
+/* book */
+nav.toc {
+  border-color: black;
+}
+nav.toc a {
+  color: blue;
+}
+nav.toc a:hover {
+  background: rgba(228,241,254,1);
 }

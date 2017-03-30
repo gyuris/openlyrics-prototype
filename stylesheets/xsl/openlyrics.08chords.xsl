@@ -8,7 +8,9 @@
 
    <xsl:template match="ol:song[@version='0.8']//ol:lines/ol:chord"> <!-- chords 0.8 -->
     <span class="chord">
+      <code>{</code>
       <xsl:value-of select="@name"/>
+      <code>}</code>
     </span>
   </xsl:template>
   <xsl:template match="ol:song[@version='0.8']//ol:lines[ol:chord]/text()">

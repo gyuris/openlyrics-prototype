@@ -26,6 +26,9 @@
 :root {
   font-size: 12pt; /* Root element size */
   color: cmyk(0, 0, 0, 1);
+}
+.song {
+  page-break-before: always;
   string-set: root-properties attr(data-root-properties);
 }
 a {
@@ -34,7 +37,7 @@ a {
 h1 {
   string-set: title content();
 }
-footer #root-properties {
+footer .root-properties {
   display: none;
 }
 section.properties p.properties-other:not(:empty) {
@@ -62,14 +65,33 @@ section.lyrics > article.instrument {
   page-break-inside: avoid;
 }
 
-:root[data-ol-version="0.8"] .chord,
-:root[data-ol-version="0.9"] .segment .chord {
+.song[data-ol-version="0.8"] .chord,
+.song[data-ol-version="0.9"] .segment .chord {
   color: cmyk(0, 1, 1, 0);
 }
-:root[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
   color: cmyk(1, 0, 0, 0);
 }
-:root[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
   color: cmyk(1, 0, 1, 0);
 }
 
+/* book */
+nav.toc {
+  border-color: cmyk(0, 0, 0, 1);
+}
+nav.toc ul {
+  margin: 1em 0;
+  padding: 0;
+}
+nav.toc li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav.toc a {
+  color: cmyk(1, 0, 0, 0);
+}
+nav.toc a[href]::after {
+  content: leader(".") target-counter(attr(href), page);
+}

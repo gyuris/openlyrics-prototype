@@ -3,14 +3,14 @@
  * OpenLyrics 0.8
  */
 
-:root[data-ol-version="0.8"] code {
+.song[data-ol-version="0.8"] code {
   display: none;
 }
-:root[data-ol-version="0.8"] .segment {
+.song[data-ol-version="0.8"] .segment {
   display: inline;
   line-height: 2rem;
 }
-:root[data-ol-version="0.8"] .chord {
+.song[data-ol-version="0.8"] .chord {
   display: inline-block;
   position: absolute;
   line-height: 1rem;

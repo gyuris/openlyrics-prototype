@@ -17,6 +17,9 @@
       <author type="words">Tricia Richards</author>
       <author type="music">Tricia Richards</author>
     </authors>
+    <songbooks>
+      <songbook name="Teszt könyv" entry="222"/>
+    </songbooks>
     <key>D</key>
     <ccliNo>1537935</ccliNo>
     <copyright> 1995 Thankyou Music</copyright>

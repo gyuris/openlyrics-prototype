@@ -223,3 +223,18 @@ lines comment {
   font-style: italic;
   text-align: right;
 }
+
+/* book */
+toc {
+  display: block;
+  margin: 1em 0;
+}
+toc entry {
+  display: list-item;
+  margin-left: 1em;
+  line-height: 1.4em;
+}
+toc entry a {
+  padding: .15em .5em;
+  text-decoration: none;
+}

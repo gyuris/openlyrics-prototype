@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
+<book xmlns:ol="http://openlyrics.info/namespace/2009/song" xmlns:str="http://exslt.org/strings" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <title xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="tk">Teszt könyv</title>
+  <foreword xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
+  <ol:toc><ol:entry><xhtml:a href="#tk-11">A béke napja közel</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-21">Add a kezed, hogy zengjünk az</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-32">Alleluja, dicsőség a mennyben Istenenünknek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-44">Habár szemem</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-56">How Great Is Our God</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-76">Jézus, véred megtisztít</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-99">Legyen a béke teveled, legyen</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-111">Meghívtál, hogy vízre lépjek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-125">Új szívet adok és új lelket</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-222">You Are My Passion</xhtml:a></ol:entry></ol:toc>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:45" id="tk-11"><properties>
+    <titles>
+      <title>A béke napja közel</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <songbooks>
+      <songbook name="Zöld Könyv" entry="278"/>
+      <songbook name="Teszt könyv" entry="11"/>
+    </songbooks>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>A béke napja közel,<br/>Nézdd már fénylik a jel,<br/>Jézus a szíve a Földön, az Égen,<br/>Mindent egybe ölel.</lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:01" id="tk-21"><properties>
+    <titles>
+      <title lang="hu">Add a kezed, hogy zengjünk az</title>
+    </titles>
+    <verseOrder>v1 c v2 c</verseOrder>
+    <authors>
+      <author/>
+    </authors>
+    <songbooks>
+      <songbook name="Sárga könyv" entry="2"/>
+      <songbook name="Teszt könyv" entry="21"/>
+    </songbooks>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="E"/>Add a kezed, hogy <chord name="A"/>zengjünk az <chord name="E"/>Úrnak,<br/>
+        <chord name="A"/>zengjünk az <chord name="E"/>Úrnak <chord name="H7"/>alleluját!<br/>
+        <chord name="E"/>Add a kezed, hogy <chord name="A"/>zengjünk az <chord name="E"/>Úrnak,<br/>
+        <chord name="A"/>zengjünk az <chord name="E"/>Úrnak <chord name="H7"/>allelu<chord name="E"/>ját!
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        ‖: <chord name="A"/>Alleluja, <chord name="E"/>alleluja,<br/>
+        <chord name="H7"/>alleluja, <chord name="E"/>allelu<chord name="E7"/>ja! :‖
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="E"/>Kitárt karokkal <chord name="A"/>mindenki <chord name="E"/>áldja,<br/>
+        <chord name="A"/>mindenki <chord name="E"/>áldja az <chord name="H7"/>élet Urát!<br/>
+        <chord name="E"/>Kitárt karokkal <chord name="A"/>mindenki <chord name="E"/>áldja,<br/>
+        <chord name="A"/>mindenki <chord name="E"/>áldja az <chord name="H7"/>élet U<chord name="E"/>rát!
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-32"><properties>
+    <titles>
+      <title lang="hu">Alleluja, dicsőség a mennyben Istenenünknek</title>
+    </titles>
+    <verseOrder>i c v1 c v2 c v3 c v4 c e</verseOrder>
+    <authors>
+      <author/>
+    </authors>
+    <songbooks>
+      <songbook name="Sárga könyv" entry="192"/>
+      <songbook name="Teszt könyv" entry="32"/>
+    </songbooks>
+  </properties><lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord base="D"/><chord base="D" ext="4"/></beat>
+        <beat><chord base="D"/><chord base="D" ext="4"/></beat>
+        <beat><chord base="G"/><chord base="A"/></beat>
+        <beat><chord base="D"/><chord base="D" ext="4"/></beat>
+      </lines>
+    </instrument>
+    <verse name="c">
+      <lines>
+        <chord base="A"><chord base="G"><chord base="D">A</chord></chord></chord>lle<chord base="D">luja,</chord> <chord base="G">dicsőség a</chord><br/>
+        <chord base="A">mennyben Iste</chord><chord base="D">nünknek,</chord><br/>
+        és <chord base="G">békes</chord><chord base="A">ség a földön</chord> <chord base="G">néped</chord><chord base="A">nek!</chord>
+      </lines>
+    </verse>
+    <verse name="v1">
+      <lines>
+        <chord base="D">A</chord><chord base="G">tyánk,</chord> <chord base="A">jóságos</chord> <chord base="D">Atya,</chord><br/>
+        <chord base="G">minden</chord> <chord base="A">dicsőség a</chord> <chord base="D">Tiéd,</chord><br/>
+        <chord base="G">szere</chord><chord base="A">tő Atya</chord> <chord base="G">Is</chord><chord base="A">ten!</chord>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord base="D">Jé</chord><chord base="G">zus,</chord> <chord base="A">Jézus</chord> <chord base="D">Krisztus,</chord><br/>
+        <chord base="G">kitárjuk</chord> <chord base="A">feléd a</chord> <chord base="D">szívünk,</chord><br/>
+        <chord base="G">Isten</chord> <chord base="A">egyszülött</chord> <chord base="G">Fi</chord><chord base="A">a!</chord>
+      </lines>
+    </verse>
+    <verse name="v3">
+      <lines>
+        <chord base="D">Lé</chord><chord base="G">lek,</chord> <chord base="A">Isten Szent</chord><chord base="D">lelke,</chord><br/>
+        <chord base="G">jöjj és</chord> <chord base="A">taníts meg</chord> <chord base="D">minket</chord><br/>
+        <chord base="G">élni,</chord> <chord base="A">alkotó</chord> <chord base="G">Lé</chord><chord base="A">lek!</chord>
+      </lines>
+    </verse>
+    <verse name="v4">
+      <lines>
+        <chord base="D">Ti</chord><chord base="G">éiddel</chord> <chord base="A">együtt a</chord> <chord base="D">földön,</chord><br/>
+        s az <chord base="G">égen, az</chord> <chord base="A">angyalok kóru</chord><chord base="D">sával</chord><br/>
+        <chord base="G">dicsér</chord><chord base="A">jük a Te</chord> <chord base="G">ne</chord><chord base="A">ved!</chord>
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        <chord base="G">Dicső</chord> <chord base="A">az</chord> <chord base="D">Úr</chord>!<chord base="D" ext="4"/> <chord base="D"/> <chord base="D" ext="4"/> <chord base="D"/> <chord base="D" ext="4"/> <chord base="D"/>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLP 2.4" modifiedIn="OpenLP 2.4" modifiedDate="2016-03-15T07:36:08" id="tk-44"><properties>
+    <titles>
+      <title lang="hu">Habár szemem</title>
+      <title lang="hu">Itt vagy velem</title>
+      <title lang="es" original="true">Tu Estas Aqui</title>
+      <title lang="en">You are here</title>
+    </titles>
+    <authors>
+      <author type="words">Jesus Adrian Romero</author>
+      <author type="music">Jesus Adrian Romero</author>
+      <author type="words">Marcela Gandara</author>
+      <author type="music">Marcela Gandara</author>
+      <author type="translation" lang="hu">Majoros Ildikó</author>
+      <author type="translation" lang="hu">Gyuris Gellért</author>
+    </authors>
+    <songbooks>
+      <songbook entry="000" name="Szent András Énekfüzet"/>
+      <songbook name="Teszt könyv" entry="44"/>
+    </songbooks>
+    <copyright>© 2005 Vástago Producciones</copyright>
+    <verseOrder>i v1 c1</verseOrder>
+  </properties><lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord base="C"/></beat>
+        <beat><chord base="a" ext="7"/></beat>
+        <beat><chord base="F"/></beat>
+        <beat><chord base="G" ext="4"/><chord base="G"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines><chord base="G" type="upbeat"/>Habár sze<chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
+      mégis érez</chord><chord base="F">lek; tudom, itt vagy ve</chord><chord base="C">lem.</chord><br/>
+      <chord base="G" type="upbeat"/>Habár ke<chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
+      arcodat, U</chord><chord base="F">ram, tudom, itt vagy ve</chord><chord base="C">lem</chord>. <chord base="C">Óh…</chord><chord base="G" ext="4"/></lines>
+    </verse>
+    <verse name="c">
+      <lines break="optional"><chord base="G" type="upbeat"/>Szívemben <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
+      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
+      És <chord base="a">érezhetem</chord> <chord base="F">fenségedet…</chord><br/>
+      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<chord base="G" ext="4"/></lines>
+      <lines><chord base="G" type="upbeat"/>Szívemben <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
+      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
+      Mert <chord base="a">érezhetem</chord> <chord base="F">nagy szerelmed…</chord><br/>
+      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.</lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" lang="en" version="0.8" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:09:28-06:00" id="tk-56"><properties>
+    <titles>
+      <title lang="en">How Great Is Our God</title>
+    </titles>
+    <authors>
+      <author type="words">Chris Tomlin</author>
+      <author type="music">Chris Tomlin</author>
+      <author type="words">Ed Cash</author>
+      <author type="music">Ed Cash</author>
+      <author type="words">Jesse Reeves</author>
+      <author type="music">Jesse Reeves</author>
+    </authors>
+    <songbooks>
+      <songbook name="Teszt könyv" entry="56"/>
+    </songbooks>
+    <key>C</key>
+    <tempo type="bpm">76</tempo>
+    <transposition>2</transposition>
+    <ccliNo>4348399</ccliNo>
+    <comments>
+      <comment>Scripture Reference: Psalm 93:1, Psalm 104:1-3 </comment>
+    </comments>
+    <themes>
+      <theme>Adoration &amp; Praise</theme>
+      <theme>God's Attributes</theme>
+    </themes>
+    <verseOrder>v1 c v2 c b c</verseOrder>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        The <chord name="G"/>splendor of the <chord name="D/F#"/>King<br/>
+        <chord name="Em7"/>Clothed in majesty<br/>
+        Let all the earth <chord name="Cmaj7"/>rejoice<br/>
+        All the earth rejoice<br/>
+        He <chord name="D"/>wraps <chord name="G"/>Himself in <chord name="D/F#"/>light<br/>
+        And <chord name="Em7"/>darkness tries to hide<br/>
+        And trembles at His <chord name="Cmaj7"/>voice<br/>
+        And trembles at His <chord name="D"/>voice
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        How <chord name="G"/>great is our God<br/>
+        <chord name="D/F#"/>Sing with me<br/>
+        How <chord name="Em7"/>great is our God<br/>
+        And <chord name="Cmaj7"/>all will see how great<br/>
+        How <chord name="D"/>great is our <chord name="G"/>God
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        And <chord name="G"/>age to age He <chord name="D/F#"/>stands<br/>
+        And <chord name="Em7"/>time is in His hands<br/>
+        <chord name="Cmaj7"/>Beginning and the End<br/>
+        Beginning and the End<br/>
+        The <chord name="G"/>Godhead three in one <chord name="D/F#"/><br/>
+        <chord name="Em7"/>Father Spirit Son<br/>
+        The <chord name="Cmaj7"/>Lion and the Lamb<br/>
+        The Lion and the <chord name="D"/>Lamb
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines>
+        <chord name="D/F#"/>Name above all names<br/>
+        <chord name="Em7"/>Worthy of all <chord name="G/D"/>praise<br/>
+        My <chord name="Cmaj7"/>heart will sing<br/>
+        How <chord name="D"/>great is our <chord name="G"/>God<br/>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLP 2.0.1" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:00" id="tk-76"><properties>
+    <titles>
+      <title lang="hu">Jézus, véred megtisztít</title>
+      <title lang="en" original="true">It's Your Blood</title>
+    </titles>
+    <authors>
+      <author type="words">Michael Christ</author>
+      <author type="music">Michael Christ</author>
+      <author lang="hu" type="translation">Harkai Tamás</author>
+    </authors>
+    <songbooks>
+      <songbook entry="12" name="Szent András énekfüzet"/>
+      <songbook name="Zöld könyv" entry="434"/>
+      <songbook name="Kék könyv" entry="67D"/>
+      <songbook name="Teszt könyv" entry="76"/>
+    </songbooks>
+    <copyright>© 1985 Mercy / Vineyard Publishing</copyright>
+    <ccliNo>59287</ccliNo>
+    <verseOrder>v1</verseOrder>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>Jézus, <chord name="A">véred</chord> <chord name="E/Gisz">megtisz</chord><chord name="fisz">tít,</chord> <chord name="fisz/E"><br/>
+      véred </chord><chord name="D">ad új éle</chord><chord name="E4">tet,</chord><chord name="E"/><br/>
+      véred <chord name="D">tesz ma szabad</chord><chord name="E4">dá,</chord><chord name="E"/><br/>
+      értem <chord name="A">folyt e</chord> <chord name="cisz7">drága</chord> <chord name="fisz">vér!</chord><chord name="fisz/E"/><br/>
+      Így a <chord name="D">lel</chord><chord name="d">kem fehér, mint a</chord> <chord name="E/Gisz"><chord name="A">hó,</chord></chord> mint a <chord name="fisz">hó.</chord><chord name="fisz/E"/><br/>
+      Úr <chord name="h7">Jézus, Te</chord> <chord name="D/E">megölt</chord> <chord name="E7">Bá</chord><chord name="A">rány!</chord></lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:02" id="tk-99"><properties>
+    <titles>
+      <title>Legyen a béke teveled, legyen</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <authors>
+      <author>Fran Avni</author>
+    </authors>
+    <songbooks>
+      <songbook name="Sárga könyv" entry="114"/>
+      <songbook name="Teszt könyv" entry="99"/>
+    </songbooks>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        Legyen a <chord name="Dm"/>béke teveled,<br/>
+        legyen a <chord name="Gm"/>béke teveled,<br/>
+        legyen a <chord name="A"/>béke te<chord name="Dm"/>veled,<br/>
+        legyen a <chord name="A"/>béke, béke, béke teve<chord name="Dm"/>led!
+      </lines>
+    </verse>
+    <verse name="v1" lang="he">
+      <lines>
+        <br/>הבאנו שלום עליכם
+        <br/>הבאנו שלום עליכם
+        <br/>הבאנו שלום עליכם
+        <br/>הבאנו שלום שלום שלום עליכם
+      </lines>
+    </verse>    
+    <verse name="v1" lang="he" translit="hu">
+      <lines>
+        Hevenu <chord name="Dm"/>shalom aleikhem,<br/>
+        hevenu <chord name="Gm"/>shalom aleikhem,<br/>
+        hevenu <chord name="A"/>shalom a<chord name="Dm"/>leikhem,<br/>
+        hevenu <chord name="A"/>shalom, shalom, shalom aleik<chord name="Dm"/>hem!</lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLyrics Python Library 0.2" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:01" id="tk-111"><properties>
+    <titles>
+      <title lang="hu">Meghívtál, hogy vízre lépjek</title>
+      <title lang="en" original="true">Oceans</title>
+      <title lang="en">Where Feet May Fail</title>
+    </titles>
+    <authors>
+      <author type="words">Joel Houston</author>
+      <author type="music">Joel Houston</author>
+      <author type="words">Matt Crocker</author>
+      <author type="music">Matt Crocker</author>
+      <author type="words">Salomon Lighthelm</author>
+      <author type="music">Salomon Lighthelm</author>
+      <author lang="hu" type="translation">Csiszér László</author>
+      <author lang="hu" type="translation">Sidó Éva</author>
+    </authors>
+    <released>2015</released>
+    <key>D</key>
+    <transposition>-6</transposition>
+    <tempo type="bpm">132</tempo>
+    <variant>Csiszér László</variant>
+    <songbooks>
+      <songbook entry="309" name="Szent András énekfüzet"/>
+      <songbook name="Teszt könyv" entry="111"/>
+    </songbooks>
+    <copyright>© 2012 Hillsong Music Publishing</copyright>
+    <ccliNo>6428767</ccliNo>
+    <verseOrder>i v1 c v2 c m1 b1 b1 b1 b2 b3 b3 m2 e</verseOrder>
+    <comments>
+      <comment>Hivatkozás: Mt 14,22‒33</comment>
+    </comments>
+  </properties><lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord base="h"/><chord base="A" bass="Cisz"/></beat>
+        <beat><chord base="D"/></beat>
+        <beat><chord base="A"/></beat>
+        <beat><chord base="G"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines part="lányok">
+        <chord base="h" type="upbeat"/><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br/>
+        hol Nélkü</chord><chord base="A">led elsüllye</chord><chord base="G">dek.</chord><br/>
+        <chord base="h" type="upbeat"/>Ebben megta<chord base="A" bass="Cisz">lállak</chord> <chord base="D">Téged,<br/>
+        a mélység</chord><chord base="A">ben megtart hi</chord><chord base="G">tem.</chord>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord base="G" type="upbeat"/>Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
+        <chord base="G" type="upbeat"/>és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
+        Ott látlak <chord base="G">én, a lelkem</chord> <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br/>
+        Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz"/><chord base="D"/><chord base="A"/><chord base="e"/>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord base="h" type="upbeat"/>A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br/>
+        mely elve</chord><chord base="A">zet és tart en</chord><chord base="G">gem.</chord><br/>
+        <chord base="h" type="upbeat"/>Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br/>
+        Te nem hagysz</chord> <chord base="A">el, nem inogsz</chord> <chord base="G">meg</chord>.
+      </lines>
+    </verse>
+    <instrument name="m1">
+      <lines>
+        <beat><chord base="h"/><chord base="A" bass="Cisz"/></beat>
+        <beat><chord base="D"/></beat>
+        <beat><chord base="A"/></beat>
+        <beat><chord base="e"/></beat>
+      </lines>
+      <lines repeat="2">
+        <beat><chord base="h"/></beat>
+        <beat><chord base="G"/></beat>
+        <beat><chord base="D"/></beat>
+        <beat><chord base="A"/></beat>
+      </lines>
+    </instrument>
+    <verse name="b1">
+      <lines>
+        <chord base="h" type="upbeat"/>Lélek add, hogy Benned <chord base="G">teljesen megbízzak,</chord><br/>
+        A vízen <chord base="D">bátran Veled járjak,</chord> <chord base="A">bárhová hívsz, menjek</chord>.<br/>
+        <chord base="h" type="upbeat"/>Vigyél tovább, mint a <chord base="G">lábam tudna menni.</chord><br/>
+        Taníts <chord base="D">teljes hittel járni, je</chord><chord base="A">lenlétedben élni.</chord>
+      </lines>
+    </verse>
+    <verse name="b2">
+     <lines>
+        <chord base="G" type="upbeat"/>Lélek add, hogy Benned <chord base="D">teljesen megbízzak,</chord><br/>
+        A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="G">bárhová hívsz, menjek</chord>.<br/>
+        <chord base="G" type="upbeat"/>Vigyél tovább, mint a <chord base="D">lábam tudna menni.</chord><br/>
+        Taníts <chord base="A">teljes hittel járni, je</chord><chord base="G">lenlétedben élni.</chord>
+      </lines>
+    </verse>
+    <verse name="b3">
+      <lines>
+        <chord base="h" type="upbeat"/>Lélek add, hogy <chord base="A" bass="Cisz">Benned</chord> <chord base="D">teljesen megbízzak,</chord><br/>
+        A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="e">bárhová hívsz, menjek</chord>.<br/>
+        <chord base="h" type="upbeat"/>Vigyél tovább, <chord base="A" bass="Cisz">mint a</chord> <chord base="D">lábam tudna menni.</chord><br/>
+        Taníts <chord base="A">teljes hittel járni, je</chord><chord base="e">lenlétedben élni.</chord>
+      </lines>
+    </verse>
+    <instrument name="m2">
+      <lines repeat="2">
+        <beat><chord base="h"/><chord base="A" bass="Cisz"/></beat>
+        <beat><chord base="D"/></beat>
+        <beat><chord base="A"/></beat>
+        <beat><chord base="e"/></beat>
+      </lines>
+    </instrument>
+    <verse name="e">
+      <lines>
+        <chord base="G" type="upbeat"/>Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
+        <chord base="G" type="upbeat"/>és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
+        <chord base="G" type="upbeat"/>A lelkem <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br/>
+        Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz"/><chord base="D"/><chord base="A"/><chord base="G"/><chord base="h"/><chord base="A" bass="Cisz"/><chord base="D"/>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-125"><properties>
+    <titles>
+      <title lang="hu">Új szívet adok és új lelket</title>
+    </titles>
+    <verseOrder>i c v1 c v2 c s v3 c</verseOrder>
+    <authors>
+      <author/>
+    </authors>
+    <songbooks>
+      <songbook name="Sárga könyv" entry="175"/>
+      <songbook name="Teszt könyv" entry="125"/>
+    </songbooks>
+  </properties><lyrics>
+    <instrument name="i">
+      <lines repeat="2">
+        <beat><chord name="C"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Dm"/></beat>
+        <beat><chord name="F"/></beat>
+        <beat><chord name="Dm7"/></beat>
+        <beat><chord name="G7"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="G7"/></beat>
+      </lines>
+    </instrument>
+    <verse name="c">
+      <lines>
+        <chord name="C">Új szívet</chord> <chord name="G">adok és</chord> <chord name="Dm">új lel</chord><chord name="F6">ket</chord>,<br/>
+        hogy <chord name="F">bűneitek</chord><chord name="Dm7">ből</chord> <chord name="G7">megtérje</chord><chord name="C">tek</chord>!<chord name="G7"/><br/>
+        <chord name="C">Elveszem</chord> <chord name="G">kőszí</chord><chord name="Dm">vei</chord><chord name="F6">tek</chord>,<br/>és 
+        <chord name="F">hús-szíve</chord><chord name="Am7">ket</chord> <chord name="H74">oltok belé</chord><chord name="E">tek!</chord>
+      </lines>
+    </verse>
+    <verse name="v1">
+      <lines>
+        <chord name="Am">Tiszta vizet</chord> <chord name="Em">hintek reá</chord><chord name="C">tok,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">minden szennytől</chord> <chord name="G">megtisztulja</chord><chord name="Am">tok!</chord><chord name="E7"/><br/>
+        És <chord name="Am">élő Lelkem</chord> <chord name="Em">oltom belé</chord><chord name="C">tek,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">törvényeim</chord> <chord name="G">szerint élje</chord><chord name="Am">tek!</chord><chord name="G7"/>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="Am">Összegyűjtlek</chord> <chord name="Em">ezer ország</chord><chord name="C">ból.</chord><chord name="E7"/><br/>
+        <chord name="Am">Visszahozlak</chord> <chord name="G">minden nép kö</chord><chord name="Am">zül,</chord><chord name="E7"/><br/>
+        hogy <chord name="Am">atyáitok</chord> <chord name="Em">földjét lakjá</chord><chord name="C">tok.</chord><chord name="E7"/><br/>
+        <chord name="Am">Népem vagy, és</chord> <chord name="G">Urad én va</chord><chord name="Am">gyok!</chord><chord name="E7"/>
+     </lines>
+    </verse>
+    <instrument name="s">
+      <lines>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="Em"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="E7"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="E"/></beat>
+      </lines>
+      <lines>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="C"/></beat>
+        <beat><chord name="E7"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G"/></beat>
+        <beat><chord name="Am"/></beat>
+        <beat><chord name="G7"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v3">
+      <lines>
+        A <chord name="Am">népek pedig</chord> <chord name="Em">csodáim lát</chord><chord name="C">tán</chord><chord name="E7"/><br/>
+        <chord name="Am">megtudják, hogy</chord> <chord name="G">én vagyok az</chord> <chord name="Am">Úr.</chord><chord name="E7"/><br/>
+        <chord name="Am">Tisztelik majd</chord> <chord name="G">érte neve</chord><chord name="C">met</chord>.<chord name="E7"/><br/>
+        <chord name="Am">Én az Úr mondom, és</chord> <chord name="G">végbe is vi</chord><chord name="Am">szem</chord>!<chord name="E7"/>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" lang="en" version="0.9" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:19:28-06:00" id="tk-222"><properties>
+    <titles>
+      <title lang="en">You Are My Passion</title>
+      <title>Now Will You Draw Me Close To You</title>
+    </titles>
+    <authors>
+      <author type="words">Noel Richards</author>
+      <author type="music">Noel Richards</author>
+      <author type="words">Tricia Richards</author>
+      <author type="music">Tricia Richards</author>
+    </authors>
+    <songbooks>
+      <songbook name="Teszt könyv" entry="222"/>
+    </songbooks>
+    <key>D</key>
+    <ccliNo>1537935</ccliNo>
+    <copyright> 1995 Thankyou Music</copyright>
+    <themes>
+      <theme>Declaration</theme>
+      <theme>Love</theme>
+    </themes>
+    <verseOrder>v1 c</verseOrder>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        <chord base="D" type="upbeat"/>You are my pas<chord base="D" ext="2" bass="C#">sion</chord><br/>
+        <chord base="Bm" ext="7" type="upbeat"/>Love of my <chord base="G">life</chord><br/>
+        <chord base="D" type="upbeat"/>Friend and com<chord base="D" ext="2" bass="C#">panion my</chord> <chord base="G" ext="2">Lover</chord><br/>
+        <chord base="D" type="upbeat"/>All of my <chord base="D" ext="2" bass="C#">being</chord><br/>
+        <chord base="Bm" ext="7" type="upbeat"/>Longs for Your <chord base="G">touch</chord><br/>
+        <chord base="D" type="upbeat"/>With all <chord base="D" ext="2" bass="C#">my heart I</chord> <chord base="G" ext="2">love You</chord>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord base="G" bass="B" type="upbeat"/>Now will You <chord base="A" ext="2">draw me</chord> <chord base="A" bass="C#" ext="2">close to</chord> <chord base="D">You?</chord><br/>
+        <chord base="G" ext="2" type="upbeat"/>Gather me <chord base="A" ext="2">in</chord> <chord base="A" bass="C#" ext="2">Your</chord> <chord base="D">arms.</chord><br/>
+        <chord base="G" bass="B" type="upbeat"/>Let me hear the <chord base="A" ext="2">beating</chord> <chord base="A" bass="C#" ext="2">of Your</chord> <chord base="D">heart;</chord><br/>
+        <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus,</chord><br/>
+        <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus.</chord>
+      </lines>
+    </verse>
+  </lyrics></song>
+</book>

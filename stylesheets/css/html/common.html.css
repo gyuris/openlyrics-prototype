@@ -6,9 +6,14 @@
 /* properties */
 html,
 body,
+div,
 p {
   margin: 0;
   padding: 0;
+}
+.song {}
+.song + .song {
+  margin-top: 1em;
 }
 header,
 section.properties,
@@ -178,6 +183,22 @@ section.lyrics p.lines > .lyrics-comment { /* comment in lines */
   text-align: right;
 }
 
-footer #root-properties {
+footer .root-properties {
   font-size: .625rem;
+}
+
+/* book */
+nav.toc {
+  border-top-style: double;
+  border-top-width: .249999999rem;
+  border-bottom-style: double;
+  border-bottom-width: .249999999rem;
+  margin: 1em 0;
+}
+nav.toc ul li {
+  line-height: 1.4em;
+}
+nav.toc ul li a {
+  padding: .15em .5em;
+  text-decoration: none;
 }

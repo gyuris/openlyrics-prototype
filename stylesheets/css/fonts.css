@@ -7,10 +7,10 @@
 :root {
   font-family: "Linux Libertine";
 }
-:root[version] chord[name]::before,
-:root[version] chord[base]::before,
-:root[data-ol-version] .chord,
-:root[data-ol-version] footer #root-properties {
+song[version] chord[name]::before,
+song[version] chord[base]::before,
+.song[data-ol-version] .chord,
+.song[data-ol-version] footer #root-properties {
   font-family: "Linux Biolinum";
 }
 

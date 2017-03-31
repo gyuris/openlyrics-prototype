@@ -9,14 +9,14 @@
   <title id="tk">Teszt könyv</title>
   <foreword>Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
   <toc>Tartalomjegyzék</toc>
-  <xi:include entry="11"  href="A béke napja közel.xml" parse="xml" />
-  <xi:include entry="21"  href="Add a kezed, hogy zengjünk az.xml" parse="xml" />
-  <xi:include entry="32"  href="Alleluja, dicsőség a mennyben Istenenünknek.xml" parse="xml" />
-  <xi:include entry="44"  href="Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
-  <xi:include entry="56"  href="How Great Is Our God (Chris Tomlin, Ed Cash, Jesse Reeves).xml" parse="xml" />
-  <xi:include entry="76"  href="Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
-  <xi:include entry="99"  href="Legyen a béke teveled, legyen.xml" parse="xml" />
-  <xi:include entry="111" href="Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />
-  <xi:include entry="125" href="Új szívet adok és új lelket.xml" parse="xml" />
-  <xi:include entry="222" href="You Are My Passion (Noel Richards, Tricia Richards).xml" parse="xml" />
+  <xi:include href="A béke napja közel.xml" parse="xml" />
+  <xi:include href="Add a kezed, hogy zengjünk az.xml" parse="xml" />
+  <xi:include href="Alleluja, dicsőség a mennyben Istenenünknek.xml" parse="xml" />
+  <xi:include href="Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
+  <xi:include href="How Great Is Our God (Chris Tomlin, Ed Cash, Jesse Reeves).xml" parse="xml" />
+  <xi:include href="Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
+  <xi:include href="Legyen a béke teveled, legyen.xml" parse="xml" />
+  <xi:include href="Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />
+  <xi:include href="Új szívet adok és új lelket.xml" parse="xml" />
+  <xi:include href="You Are My Passion (Noel Richards, Tricia Richards).xml" parse="xml" />
 </book>

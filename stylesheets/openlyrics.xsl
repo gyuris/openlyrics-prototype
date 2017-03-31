@@ -41,7 +41,7 @@
       </xsl:if>
     </xsl:variable>
 
-    <div class="song" id="{@id}" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
+    <div class="song" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
       <xsl:apply-templates/>
         <footer>
           <p class="root-properties">

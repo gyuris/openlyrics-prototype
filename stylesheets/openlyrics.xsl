@@ -395,5 +395,7 @@
     <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
   </xsl:template>
 
+  <xsl:template match="ol:format"></xsl:template>
+
 </xsl:stylesheet>
 

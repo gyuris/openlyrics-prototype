@@ -119,12 +119,12 @@ lyrics > instrument {
   position: relative;
 }
 lyrics > verse br::before,
-lyrics > instrument br::before  { 
+lyrics > instrument br::before {
   content: "\A"; 
   white-space: pre-line;
 }
 lyrics > verse::before, /* verse names */
-lyrics > instrument::before { 
+lyrics > instrument::before {
   position: absolute;
   width: 5rem;
   top: 1rem;

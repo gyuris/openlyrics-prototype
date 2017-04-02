@@ -48,8 +48,8 @@ chord::before {
 beat::after {
   color: cmyk(0, 0, 0, 1);
 }
-lyrics > verse, 
-lyrics > instrument { 
+lyrics > verse,
+lyrics > instrument {
   page-break-inside: avoid;
 }
 

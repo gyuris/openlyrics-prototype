@@ -37,7 +37,7 @@
         <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/creator/text()"/><xsl:text>: </xsl:text><xsl:value-of select="@createdIn"/>
       </xsl:if>
       <xsl:if test="@xml:lang">
-        <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>
+        <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=current()/@xml:lang]/text()"/>
       </xsl:if>
     </xsl:variable>
 

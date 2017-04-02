@@ -4,7 +4,7 @@
   <title xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="tk">Teszt könyv</title>
   <foreword xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
   <ol:toc><ol:entry><xhtml:a href="#tk-11">A béke napja közel</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-21">Add a kezed, hogy zengjünk az</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-32">Alleluja, dicsőség a mennyben Istenenünknek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-44">Habár szemem</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-56">How Great Is Our God</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-76">Jézus, véred megtisztít</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-99">Legyen a béke teveled, legyen</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-111">Meghívtál, hogy vízre lépjek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-125">Új szívet adok és új lelket</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-222">You Are My Passion</xhtml:a></ol:entry></ol:toc>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:45" id="tk-11"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:45" id="tk-11"><properties>
     <titles>
       <title>A béke napja közel</title>
     </titles>
@@ -18,7 +18,7 @@
       <lines>A béke napja közel,<br/>Nézdd már fénylik a jel,<br/>Jézus a szíve a Földön, az Égen,<br/>Mindent egybe ölel.</lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:01" id="tk-21"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:01" id="tk-21"><properties>
     <titles>
       <title lang="hu">Add a kezed, hogy zengjünk az</title>
     </titles>
@@ -54,7 +54,7 @@
       </lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-32"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-32"><properties>
     <titles>
       <title lang="hu">Alleluja, dicsőség a mennyben Istenenünknek</title>
     </titles>
@@ -116,7 +116,7 @@
       </lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLP 2.4" modifiedIn="OpenLP 2.4" modifiedDate="2016-03-15T07:36:08" id="tk-44"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="OpenLP 2.4" modifiedIn="OpenLP 2.4" modifiedDate="2016-03-15T07:36:08" id="tk-44"><properties>
     <titles>
       <title lang="hu">Habár szemem</title>
       <title lang="hu">Itt vagy velem</title>
@@ -163,7 +163,7 @@
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.</lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" lang="en" version="0.8" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:09:28-06:00" id="tk-56"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" version="0.8" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:09:28-06:00" id="tk-56"><properties>
     <titles>
       <title lang="en">How Great Is Our God</title>
     </titles>
@@ -233,7 +233,7 @@
       </lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLP 2.0.1" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:00" id="tk-76"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="OpenLP 2.0.1" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:00" id="tk-76"><properties>
     <titles>
       <title lang="hu">Jézus, véred megtisztít</title>
       <title lang="en" original="true">It's Your Blood</title>
@@ -262,7 +262,7 @@
       Úr <chord name="h7">Jézus, Te</chord> <chord name="D/E">megölt</chord> <chord name="E7">Bá</chord><chord name="A">rány!</chord></lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:02" id="tk-99"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.8" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:02" id="tk-99"><properties>
     <titles>
       <title>Legyen a béke teveled, legyen</title>
     </titles>
@@ -299,7 +299,7 @@
         hevenu <chord name="A"/>shalom, shalom, shalom aleik<chord name="Dm"/>hem!</lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="OpenLyrics Python Library 0.2" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:01" id="tk-111"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="OpenLyrics Python Library 0.2" modifiedIn="openlyrics.py 0.2" modifiedDate="2015-01-20T14:40:01" id="tk-111"><properties>
     <titles>
       <title lang="hu">Meghívtál, hogy vízre lépjek</title>
       <title lang="en" original="true">Oceans</title>
@@ -418,7 +418,7 @@
       </lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-125"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:03" id="tk-125"><properties>
     <titles>
       <title lang="hu">Új szívet adok és új lelket</title>
     </titles>
@@ -498,7 +498,7 @@
       </lines>
     </verse>
   </lyrics></song>
-  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" lang="en" version="0.9" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:19:28-06:00" id="tk-222"><properties>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="en" version="0.9" createdIn="Geany" modifiedIn="Geany" modifiedDate="2017-03-22T17:19:28-06:00" id="tk-222"><properties>
     <titles>
       <title lang="en">You Are My Passion</title>
       <title>Now Will You Draw Me Close To You</title>

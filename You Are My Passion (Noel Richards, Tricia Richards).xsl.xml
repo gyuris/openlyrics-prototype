@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song"
-  xml:lang="en" lang="en"
+  xml:lang="en"
   version="0.9"
   createdIn="Geany"
   modifiedIn="Geany"

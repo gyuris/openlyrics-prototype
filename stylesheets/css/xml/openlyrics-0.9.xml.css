@@ -4,7 +4,7 @@
  */
 
 song[version="0.9"] lines:after {
-  content: "\A"; 
+  content: "\A";
   white-space: pre-line;
 }
 song[version="0.9"] lines {

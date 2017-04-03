@@ -20,7 +20,7 @@
 
   <xsl:template match="ol:toc">
     <ol:toc>
-      <xsl:for-each select="//xi:include">
+      <xsl:for-each select="../xi:include">
         <xsl:variable name="url">
           <xsl:choose>
             <xsl:when test="system-property('xsl:vendor')='Transformiix'"><xsl:value-of select="concat('../', @href)"/></xsl:when>
@@ -28,8 +28,8 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:variable name="song" select="document ($url)/ol:song" />
-        <xsl:variable name="title" select="//ol:title/text()" />
-        <ol:entry><xhtml:a href="#{//ol:title/@id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}"><xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" /></xhtml:a></ol:entry>
+        <xsl:variable name="title" select="../ol:title/text()" />
+        <ol:entry><xhtml:a href="#{../ol:title/@id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}"><xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" /></xhtml:a></ol:entry>
       </xsl:for-each>
     </ol:toc>
   </xsl:template>
@@ -42,14 +42,14 @@
       </xsl:choose>
     </xsl:variable>
     <xsl:variable name="song" select="document ($url)/ol:song" />
-    <xsl:variable name="title" select="//ol:title/text()" />
+    <xsl:variable name="title" select="../ol:title/text()" />
     <xsl:element name="song" namespace="http://openlyrics.info/namespace/2009/song">
       <xsl:attribute name="xml:lang"><xsl:value-of select="$song/@xml:lang" /></xsl:attribute>
       <xsl:attribute name="version"><xsl:value-of select="$song/@version" /></xsl:attribute>
       <xsl:attribute name="createdIn"><xsl:value-of select="$song/@createdIn" /></xsl:attribute>
       <xsl:attribute name="modifiedIn"><xsl:value-of select="$song/@modifiedIn" /></xsl:attribute>
       <xsl:attribute name="modifiedDate"><xsl:value-of select="$song/@modifiedDate" /></xsl:attribute>
-      <xsl:attribute name="id"><xsl:value-of select="concat(//ol:title/@id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
+      <xsl:attribute name="id"><xsl:value-of select="concat(../ol:title/@id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
       <xsl:copy-of select="$song/ol:properties" />
       <xsl:copy-of select="$song/ol:lyrics" />
     </xsl:element>

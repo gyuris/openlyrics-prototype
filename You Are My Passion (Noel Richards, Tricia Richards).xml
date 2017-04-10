@@ -32,19 +32,19 @@
   <lyrics>
     <verse name="v1">
       <lines>
-        <chord base="D" type="upbeat" />You are my pas<chord base="D" ext="2" bass="C#">sion</chord><br/>
-        <chord base="Bm" ext="7" type="upbeat" />Love of my <chord base="G">life</chord><br/>
-        <chord base="D" type="upbeat" />Friend and com<chord base="D" ext="2" bass="C#">panion my</chord> <chord base="G" ext="2">Lover</chord><br/>
-        <chord base="D" type="upbeat" />All of my <chord base="D" ext="2" bass="C#">being</chord><br/>
-        <chord base="Bm" ext="7" type="upbeat" />Longs for Your <chord base="G">touch</chord><br/>
-        <chord base="D" type="upbeat" />With all <chord base="D" ext="2" bass="C#">my heart I</chord> <chord base="G" ext="2">love You</chord>
+        <chord base="D" upbeat="true">You are my pas</chord><chord base="D" ext="2" bass="C#">sion</chord><br/>
+        <chord base="Bm" ext="7" upbeat="true">Love of my</chord> <chord base="G">life</chord><br/>
+        <chord base="D" upbeat="true">Friend and com</chord><chord base="D" ext="2" bass="C#">panion my</chord> <chord base="G" ext="2">Lover</chord><br/>
+        <chord base="D" upbeat="true">All of my</chord> <chord base="D" ext="2" bass="C#">being</chord><br/>
+        <chord base="Bm" ext="7" upbeat="true">Longs for Your</chord> <chord base="G">touch</chord><br/>
+        <chord base="D" upbeat="true">With all</chord> <chord base="D" ext="2" bass="C#">my heart I</chord> <chord base="G" ext="2">love You</chord>
       </lines>
     </verse>
     <verse name="c">
       <lines>
-        <chord base="G" bass="B" type="upbeat" />Now will You <chord base="A" ext="2">draw me</chord> <chord base="A" bass="C#" ext="2">close to</chord> <chord base="D">You?</chord><br/>
-        <chord base="G" ext="2" type="upbeat" />Gather me <chord base="A" ext="2">in</chord> <chord base="A" bass="C#" ext="2">Your</chord> <chord base="D">arms.</chord><br/>
-        <chord base="G" bass="B" type="upbeat" />Let me hear the <chord base="A" ext="2">beating</chord> <chord base="A" bass="C#" ext="2">of Your</chord> <chord base="D">heart;</chord><br/>
+        <chord base="G" bass="B" upbeat="true">Now will You</chord> <chord base="A" ext="2">draw me</chord> <chord base="A" bass="C#" ext="2">close to</chord> <chord base="D">You?</chord><br/>
+        <chord base="G" ext="2" upbeat="true">Gather me</chord> <chord base="A" ext="2">in</chord> <chord base="A" bass="C#" ext="2">Your</chord> <chord base="D">arms.</chord><br/>
+        <chord base="G" bass="B" upbeat="true">Let me hear the</chord> <chord base="A" ext="2">beating</chord> <chord base="A" bass="C#" ext="2">of Your</chord> <chord base="D">heart;</chord><br/>
         <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2" tweak="nested"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus,</chord><br/>
         <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2" tweak="nested"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus.</chord>
       </lines>

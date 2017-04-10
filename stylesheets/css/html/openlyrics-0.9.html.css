@@ -77,8 +77,8 @@
 }
 .song[data-ol-version="0.9"] .segment.upbeat > .chord {
   position: absolute;
-  top: -1.65rem;
-  right: 0;
+  top: -1rem;
+  right: 100%;
   margin: 0;
 }
 

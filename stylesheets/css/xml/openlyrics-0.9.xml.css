@@ -79,17 +79,15 @@ song[version="0.9"] chord[base]:empty + chord[base]:empty {
   margin-left: .4em;
 }
 /* upbeat */
-song[version="0.9"] chord[name][type=upbeat],
-song[version="0.9"] chord[base][type=upbeat] {
+song[version="0.9"] chord[name][upbeat],
+song[version="0.9"] chord[base][upbeat] {
   position: relative;
-  bottom: .7em;
-  height: 1em;
-  margin-right: 0 !important;
 }
-song[version="0.9"] chord[name][type=upbeat]::before,
-song[version="0.9"] chord[base][type=upbeat]::before {
+song[version="0.9"] chord[name][upbeat]::before,
+song[version="0.9"] chord[base][upbeat]::before {
   position: absolute;
-  right: 0;
+  right: 100%;
+  bottom: .9em;
 }
 
 /* nested chords
@@ -129,7 +127,7 @@ song[version="0.9"] lines > chord[tweak="linebreak"]::before {
   display: inline-block;
 }
 
-/* debug
+/*
 chord {
   border: .063rem solid silver;
 } /* /debug */

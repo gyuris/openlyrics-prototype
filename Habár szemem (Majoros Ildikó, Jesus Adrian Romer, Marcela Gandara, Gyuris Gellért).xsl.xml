@@ -33,17 +33,17 @@
       </lines>
     </instrument>
     <verse name="v1">
-      <lines><chord base="G" type="upbeat" />Habár sze<chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
+      <lines><chord base="G" upbeat="true">Habár sze</chord><chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
       mégis érez</chord><chord base="F">lek; tudom, itt vagy ve</chord><chord base="C">lem.</chord><br/>
-      <chord base="G" type="upbeat" />Habár ke<chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
+      <chord base="G" upbeat="true">Habár ke</chord><chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
       arcodat, U</chord><chord base="F">ram, tudom, itt vagy ve</chord><chord base="C">lem</chord>. <chord base="C">Óh…</chord><chord base="G" ext="4" /></lines>
     </verse>
     <verse name="c">
-      <lines break="optional"><chord base="G" type="upbeat" />Szívemben <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
+      <lines break="optional"><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
       És <chord base="a">érezhetem</chord> <chord base="F">fenségedet…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<chord base="G" ext="4" /></lines>
-      <lines><chord base="G" type="upbeat" />Szívemben <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
+      <lines><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
       Mert <chord base="a">érezhetem</chord> <chord base="F">nagy szerelmed…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.</lines>

@@ -147,17 +147,17 @@
       </lines>
     </instrument>
     <verse name="v1">
-      <lines><chord base="G" type="upbeat"/>Habár sze<chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
+      <lines><chord base="G" upbeat="true">Habár sze</chord><chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
       mégis érez</chord><chord base="F">lek; tudom, itt vagy ve</chord><chord base="C">lem.</chord><br/>
-      <chord base="G" type="upbeat"/>Habár ke<chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
+      <chord base="G" upbeat="true">Habár ke</chord><chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
       arcodat, U</chord><chord base="F">ram, tudom, itt vagy ve</chord><chord base="C">lem</chord>. <chord base="C">Óh…</chord><chord base="G" ext="4"/></lines>
     </verse>
     <verse name="c">
-      <lines break="optional"><chord base="G" type="upbeat"/>Szívemben <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
+      <lines break="optional"><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
       És <chord base="a">érezhetem</chord> <chord base="F">fenségedet…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<chord base="G" ext="4"/></lines>
-      <lines><chord base="G" type="upbeat"/>Szívemben <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
+      <lines><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
       Mert <chord base="a">érezhetem</chord> <chord base="F">nagy szerelmed…</chord><br/>
       <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.</lines>
@@ -341,25 +341,25 @@
     </instrument>
     <verse name="v1">
       <lines part="lányok">
-        <chord base="h" type="upbeat"/><comment>Halkan énekeljük.</comment>Meghívtál, hogy <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br/>
+        <comment>Halkan énekeljük.</comment><chord base="h" upbeat="true">Meghívtál, hogy</chord> <chord base="A" bass="Cisz">vízre</chord> <chord base="D">lépjek,<br/>
         hol Nélkü</chord><chord base="A">led elsüllye</chord><chord base="G">dek.</chord><br/>
-        <chord base="h" type="upbeat"/>Ebben megta<chord base="A" bass="Cisz">lállak</chord> <chord base="D">Téged,<br/>
+        <chord base="h" upbeat="true">Ebben megta</chord><chord base="A" bass="Cisz">lállak</chord> <chord base="D">Téged,<br/>
         a mélység</chord><chord base="A">ben megtart hi</chord><chord base="G">tem.</chord>
       </lines>
     </verse>
     <verse name="c">
       <lines>
-        <chord base="G" type="upbeat"/>Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
-        <chord base="G" type="upbeat"/>és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
+        <chord base="G" upbeat="true">Nagy Ne</chord><chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
+        <chord base="G" upbeat="true">és felné</chord><chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
         Ott látlak <chord base="G">én, a lelkem</chord> <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br/>
         Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz"/><chord base="D"/><chord base="A"/><chord base="e"/>
       </lines>
     </verse>
     <verse name="v2">
       <lines>
-        <chord base="h" type="upbeat"/>A mélységnél na<chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br/>
+        <chord base="h" upbeat="true">A mélységnél na</chord><chord base="A" bass="Cisz">gyobb ke</chord><chord base="D">gyelmed,<br/>
         mely elve</chord><chord base="A">zet és tart en</chord><chord base="G">gem.</chord><br/>
-        <chord base="h" type="upbeat"/>Ha elbuknék és <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br/>
+        <chord base="h" upbeat="true">Ha elbuknék és</chord> <chord base="A" bass="Cisz">nagyon</chord> <chord base="D">félnék,<br/>
         Te nem hagysz</chord> <chord base="A">el, nem inogsz</chord> <chord base="G">meg</chord>.
       </lines>
     </verse>
@@ -379,25 +379,25 @@
     </instrument>
     <verse name="b1">
       <lines>
-        <chord base="h" type="upbeat"/>Lélek add, hogy Benned <chord base="G">teljesen megbízzak,</chord><br/>
+        <chord base="h" upbeat="true">Lélek add, hogy Benned</chord> <chord base="G">teljesen megbízzak,</chord><br/>
         A vízen <chord base="D">bátran Veled járjak,</chord> <chord base="A">bárhová hívsz, menjek</chord>.<br/>
-        <chord base="h" type="upbeat"/>Vigyél tovább, mint a <chord base="G">lábam tudna menni.</chord><br/>
+        <chord base="h" upbeat="true">Vigyél tovább, mint a</chord> <chord base="G">lábam tudna menni.</chord><br/>
         Taníts <chord base="D">teljes hittel járni, je</chord><chord base="A">lenlétedben élni.</chord>
       </lines>
     </verse>
     <verse name="b2">
      <lines>
-        <chord base="G" type="upbeat"/>Lélek add, hogy Benned <chord base="D">teljesen megbízzak,</chord><br/>
+        <chord base="G" upbeat="true">Lélek add, hogy Benned</chord> <chord base="D">teljesen megbízzak,</chord><br/>
         A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="G">bárhová hívsz, menjek</chord>.<br/>
-        <chord base="G" type="upbeat"/>Vigyél tovább, mint a <chord base="D">lábam tudna menni.</chord><br/>
+        <chord base="G" upbeat="true">Vigyél tovább, mint a</chord> <chord base="D">lábam tudna menni.</chord><br/>
         Taníts <chord base="A">teljes hittel járni, je</chord><chord base="G">lenlétedben élni.</chord>
       </lines>
     </verse>
     <verse name="b3">
       <lines>
-        <chord base="h" type="upbeat"/>Lélek add, hogy <chord base="A" bass="Cisz">Benned</chord> <chord base="D">teljesen megbízzak,</chord><br/>
+        <chord base="h" upbeat="true">Lélek add, hogy</chord> <chord base="A" bass="Cisz">Benned</chord> <chord base="D">teljesen megbízzak,</chord><br/>
         A vízen <chord base="A">bátran Veled járjak,</chord> <chord base="e">bárhová hívsz, menjek</chord>.<br/>
-        <chord base="h" type="upbeat"/>Vigyél tovább, <chord base="A" bass="Cisz">mint a</chord> <chord base="D">lábam tudna menni.</chord><br/>
+        <chord base="h" upbeat="true">Vigyél tovább,</chord> <chord base="A" bass="Cisz">mint a</chord> <chord base="D">lábam tudna menni.</chord><br/>
         Taníts <chord base="A">teljes hittel járni, je</chord><chord base="e">lenlétedben élni.</chord>
       </lines>
     </verse>
@@ -411,9 +411,9 @@
     </instrument>
     <verse name="e">
       <lines>
-        <chord base="G" type="upbeat"/>Nagy Ne<chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
-        <chord base="G" type="upbeat"/>és felné<chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
-        <chord base="G" type="upbeat"/>A lelkem <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br/>
+        <chord base="G" upbeat="true">Nagy Ne</chord><chord base="D">ved hívom</chord> <chord base="A">én,</chord><br/>
+        <chord base="G" upbeat="true">és felné</chord><chord base="D">zek a vizek fö</chord><chord base="A">lé.</chord><br/>
+        <chord base="G" upbeat="true">A lelkem</chord> <chord base="D">Benned megpi</chord><chord base="A">hen.</chord><br/>
         Enyém <chord base="G">vagy és</chord> <chord base="A">én Ti</chord><chord base="h">ed.</chord><chord base="A" bass="Cisz"/><chord base="D"/><chord base="A"/><chord base="G"/><chord base="h"/><chord base="A" bass="Cisz"/><chord base="D"/>
       </lines>
     </verse>
@@ -523,19 +523,19 @@
   </properties><lyrics>
     <verse name="v1">
       <lines>
-        <chord base="D" type="upbeat"/>You are my pas<chord base="D" ext="2" bass="C#">sion</chord><br/>
-        <chord base="Bm" ext="7" type="upbeat"/>Love of my <chord base="G">life</chord><br/>
-        <chord base="D" type="upbeat"/>Friend and com<chord base="D" ext="2" bass="C#">panion my</chord> <chord base="G" ext="2">Lover</chord><br/>
-        <chord base="D" type="upbeat"/>All of my <chord base="D" ext="2" bass="C#">being</chord><br/>
-        <chord base="Bm" ext="7" type="upbeat"/>Longs for Your <chord base="G">touch</chord><br/>
-        <chord base="D" type="upbeat"/>With all <chord base="D" ext="2" bass="C#">my heart I</chord> <chord base="G" ext="2">love You</chord>
+        <chord base="D" upbeat="true">You are my pas</chord><chord base="D" ext="2" bass="C#">sion</chord><br/>
+        <chord base="Bm" ext="7" upbeat="true">Love of my</chord> <chord base="G">life</chord><br/>
+        <chord base="D" upbeat="true">Friend and com</chord><chord base="D" ext="2" bass="C#">panion my</chord> <chord base="G" ext="2">Lover</chord><br/>
+        <chord base="D" upbeat="true">All of my</chord> <chord base="D" ext="2" bass="C#">being</chord><br/>
+        <chord base="Bm" ext="7" upbeat="true">Longs for Your</chord> <chord base="G">touch</chord><br/>
+        <chord base="D" upbeat="true">With all</chord> <chord base="D" ext="2" bass="C#">my heart I</chord> <chord base="G" ext="2">love You</chord>
       </lines>
     </verse>
     <verse name="c">
       <lines>
-        <chord base="G" bass="B" type="upbeat"/>Now will You <chord base="A" ext="2">draw me</chord> <chord base="A" bass="C#" ext="2">close to</chord> <chord base="D">You?</chord><br/>
-        <chord base="G" ext="2" type="upbeat"/>Gather me <chord base="A" ext="2">in</chord> <chord base="A" bass="C#" ext="2">Your</chord> <chord base="D">arms.</chord><br/>
-        <chord base="G" bass="B" type="upbeat"/>Let me hear the <chord base="A" ext="2">beating</chord> <chord base="A" bass="C#" ext="2">of Your</chord> <chord base="D">heart;</chord><br/>
+        <chord base="G" bass="B" upbeat="true">Now will You</chord> <chord base="A" ext="2">draw me</chord> <chord base="A" bass="C#" ext="2">close to</chord> <chord base="D">You?</chord><br/>
+        <chord base="G" ext="2" upbeat="true">Gather me</chord> <chord base="A" ext="2">in</chord> <chord base="A" bass="C#" ext="2">Your</chord> <chord base="D">arms.</chord><br/>
+        <chord base="G" bass="B" upbeat="true">Let me hear the</chord> <chord base="A" ext="2">beating</chord> <chord base="A" bass="C#" ext="2">of Your</chord> <chord base="D">heart;</chord><br/>
         <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus,</chord><br/>
         <chord base="A">O</chord> <chord base="G">my</chord> <chord base="A" bass="C#" ext="2"><chord base="A" ext="2">Je</chord></chord><chord base="D">sus.</chord>
       </lines>

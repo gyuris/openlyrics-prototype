@@ -317,7 +317,7 @@
 
   <xsl:template match="ol:song[@version='0.9']//ol:chord[not(ol:chord)]">
     <xsl:variable name="upbeat">
-      <xsl:if test="@type='upbeat'">
+      <xsl:if test="@upbeat='true'">
         <xsl:text> upbeat</xsl:text>
       </xsl:if>
     </xsl:variable>

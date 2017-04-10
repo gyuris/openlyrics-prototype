@@ -71,7 +71,7 @@
   top: -.1rem;
 }
 
-/* upbeat */
+/* upbeat: with text and empty tag */
 .song[data-ol-version="0.9"] .segment.upbeat {
   position: relative;
 }
@@ -81,6 +81,11 @@
   right: 100%;
   margin: 0;
 }
+.song[data-ol-version="0.9"] .segment.upbeat.only-chord > .chord {
+  top: -1.65rem;
+  right: 0;
+}
+
 
 /* intrument chords */
 .song[data-ol-version="0.9"] .instrument .segment {

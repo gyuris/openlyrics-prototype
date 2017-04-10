@@ -78,7 +78,7 @@ song[version="0.9"] chord[base]:empty {
 song[version="0.9"] chord[base]:empty + chord[base]:empty {
   margin-left: .4em;
 }
-/* upbeat */
+/* upbeat: with text and empty tag */
 song[version="0.9"] chord[name][upbeat],
 song[version="0.9"] chord[base][upbeat] {
   position: relative;
@@ -88,6 +88,17 @@ song[version="0.9"] chord[base][upbeat]::before {
   position: absolute;
   right: 100%;
   bottom: .9em;
+}
+song[version="0.9"] chord[name][upbeat]:empty,
+song[version="0.9"] chord[base][upbeat]:empty {
+  bottom: -.1em;
+  height: 1em;
+  margin-right: 0 !important;
+}
+song[version="0.9"] chord[name][upbeat]:empty::before,
+song[version="0.9"] chord[base][upbeat]:empty::before {
+  position: absolute;
+  right: 0;
 }
 
 /* nested chords

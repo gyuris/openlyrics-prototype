@@ -8,7 +8,7 @@ song[version="0.9"] lines:after {
   white-space: pre-line;
 }
 song[version="0.9"] lines {
-  line-height: 1em;
+  line-height: 1rem;
   padding: 0;
   margin: 0;
 }
@@ -23,7 +23,7 @@ song[version="0.9"] beat {
 }
 song[version="0.9"] beat::after {
   content: '|';
-  padding: 0 .1em;
+  padding: 0 .1rem;
 }
 song[version="0.9"] beat:last-child::after {
   content: none;
@@ -36,15 +36,15 @@ song[version="0.9"] beat:last-child::after {
 song[version="0.9"] chord[name],
 song[version="0.9"] chord[base] {
   display: inline-block;
-  line-height: 1em;
+  line-height: 1rem;
 }
 song[version="0.9"] chord[name]::before,
 song[version="0.9"] chord[base]::before {
   display: block;
   text-align: left;
   font-weight: bold;
-  margin-bottom: -.1em;
-  margin-right: .1em;
+  margin-bottom: -.1rem;
+  margin-right: .1rem;
 }
 song[version="0.9"] chord[name]::before {
   content: attr(name);
@@ -66,17 +66,17 @@ song[version="0.9"] instrument chord[name]:empty,
 song[version="0.9"] instrument chord[base]:empty {
   margin-bottom: 0;
   bottom: 0;
-  margin-right: .1em;
+  margin-right: .1rem;
 }
 /* empty */
 song[version="0.9"] chord[name]:empty,
 song[version="0.9"] chord[base]:empty {
   position: relative;
-  bottom: .9em;
-  margin-right: -.2em;
+  bottom: .9rem;
+  margin-right: -.2rem;
 }
 song[version="0.9"] chord[base]:empty + chord[base]:empty {
-  margin-left: .4em;
+  margin-left: .4rem;
 }
 /* upbeat: with text and empty tag */
 song[version="0.9"] chord[name][upbeat],
@@ -87,12 +87,12 @@ song[version="0.9"] chord[name][upbeat]::before,
 song[version="0.9"] chord[base][upbeat]::before {
   position: absolute;
   right: 100%;
-  bottom: .9em;
+  bottom: .9rem;
 }
 song[version="0.9"] chord[name][upbeat]:empty,
 song[version="0.9"] chord[base][upbeat]:empty {
-  bottom: -.1em;
-  height: 1em;
+  bottom: -.1rem;
+  height: 1rem;
   margin-right: 0 !important;
 }
 song[version="0.9"] chord[name][upbeat]:empty::before,
@@ -120,7 +120,7 @@ song[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 se
   display: inline-block;
   width: 100%;
   position: relative;
-  top: .5em;
+  top: .5rem;
   text-align: right;
 }
 

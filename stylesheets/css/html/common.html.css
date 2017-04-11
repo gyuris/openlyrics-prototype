@@ -13,7 +13,7 @@ p {
 }
 .song {}
 .song + .song {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 header,
 section.properties,
@@ -193,12 +193,12 @@ nav.toc {
   border-top-width: .249999999rem;
   border-bottom-style: double;
   border-bottom-width: .249999999rem;
-  margin: 1em 0;
+  margin: 1rem 0;
 }
 nav.toc ul li {
-  line-height: 1.4em;
+  line-height: 1.4rem;
 }
 nav.toc ul li a {
-  padding: .15em .5em;
+  padding: .15rem .5rem;
   text-decoration: none;
 }

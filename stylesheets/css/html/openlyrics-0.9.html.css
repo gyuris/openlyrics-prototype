@@ -34,6 +34,8 @@
   position: relative;
   top: .1rem;
   padding-right: .1rem;
+  height: 1rem;
+  line-height: 1rem;
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-base:not(:empty) {
   font-weight: bold;
@@ -77,7 +79,7 @@
 }
 .song[data-ol-version="0.9"] .segment.upbeat > .chord {
   position: absolute;
-  top: -1rem;
+  top: -.9rem;
   right: 100%;
   margin: 0;
 }
@@ -99,9 +101,9 @@
 /* join segments */
 .song[data-ol-version="0.9"] article.verse .segment:not(.only-chord) {
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><line x1="0" y1="100" x2="100" y2="100" stroke="black" stroke-width="1"/></svg>');
-  background-repeat: repeat;
+  background-repeat: repeat-y;
   background-size: 12rem 12rem;
-  background-position: 0 2rem;
+  background-position: 0 1.95rem;
 }
 
 /* debug

@@ -11,7 +11,7 @@
   <!-- Locale-specific content -->
   <xsl:variable name="locale-strings">
     <xsl:text>xsl/openlyrics.lang.</xsl:text>
-    <xsl:value-of select="ol:song/@xml:lang"/>
+    <xsl:value-of select="//ol:song/@xml:lang"/>
     <xsl:text>.xml</xsl:text>
   </xsl:variable>
   <xsl:variable name="locale" select="document ($locale-strings)/locale"/>
@@ -41,7 +41,7 @@
       </xsl:if>
     </xsl:variable>
 
-    <div class="song" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
+    <div class="song" id="{@id}" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
       <xsl:apply-templates/>
         <footer>
           <p class="root-properties">

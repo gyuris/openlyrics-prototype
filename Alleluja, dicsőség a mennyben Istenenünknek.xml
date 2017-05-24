@@ -17,50 +17,50 @@
   <lyrics>
     <instrument name="i">
       <lines>
-        <beat><chord base="D"/><chord base="D" ext="4" /></beat>
-        <beat><chord base="D"/><chord base="D" ext="4"/></beat>
-        <beat><chord base="G"/><chord base="A"/></beat>
-        <beat><chord base="D"/><chord base="D" ext="4" /></beat>
+        <beat><chord root="D"/><chord root="D" structure="sus4" /></beat>
+        <beat><chord root="D"/><chord root="D" structure="sus4"/></beat>
+        <beat><chord root="G"/><chord root="A"/></beat>
+        <beat><chord root="D"/><chord root="D" structure="sus4" /></beat>
       </lines>
     </instrument>
     <verse name="c">
       <lines>
-        <chord base="A" tweak="nested"><chord base="G" tweak="nested"><chord base="D">A</chord></chord></chord>lle<chord base="D">luja,</chord> <chord base="G">dicsőség a</chord><br/>
-        <chord base="A">mennyben Iste</chord><chord base="D">nünknek,</chord><br/>
-        és <chord base="G">békes</chord><chord base="A">ség a földön</chord> <chord base="G">néped</chord><chord base="A">nek!</chord>
+        <chord root="A" tweak="nested"><chord root="G" tweak="nested"><chord root="D">A</chord></chord></chord>lle<chord root="D">luja,</chord> <chord root="G">dicsőség a</chord><br/>
+        <chord root="A">mennyben Iste</chord><chord root="D">nünknek,</chord><br/>
+        és <chord root="G">békes</chord><chord root="A">ség a földön</chord> <chord root="G">néped</chord><chord root="A">nek!</chord>
       </lines>
     </verse>
     <verse name="v1">
       <lines>
-        <chord base="D">A</chord><chord base="G">tyánk,</chord> <chord base="A">jóságos</chord> <chord base="D">Atya,</chord><br/>
-        <chord base="G">minden</chord> <chord base="A">dicsőség a</chord> <chord base="D">Tiéd,</chord><br/>
-        <chord base="G">szere</chord><chord base="A">tő Atya</chord> <chord base="G">Is</chord><chord base="A">ten!</chord>
+        <chord root="D">A</chord><chord root="G">tyánk,</chord> <chord root="A">jóságos</chord> <chord root="D">Atya,</chord><br/>
+        <chord root="G">minden</chord> <chord root="A">dicsőség a</chord> <chord root="D">Tiéd,</chord><br/>
+        <chord root="G">szere</chord><chord root="A">tő Atya</chord> <chord root="G">Is</chord><chord root="A">ten!</chord>
       </lines>
     </verse>
     <verse name="v2">
       <lines>
-        <chord base="D">Jé</chord><chord base="G">zus,</chord> <chord base="A">Jézus</chord> <chord base="D">Krisztus,</chord><br/>
-        <chord base="G">kitárjuk</chord> <chord base="A">feléd a</chord> <chord base="D">szívünk,</chord><br/>
-        <chord base="G">Isten</chord> <chord base="A">egyszülött</chord> <chord base="G">Fi</chord><chord base="A">a!</chord>
+        <chord root="D">Jé</chord><chord root="G">zus,</chord> <chord root="A">Jézus</chord> <chord root="D">Krisztus,</chord><br/>
+        <chord root="G">kitárjuk</chord> <chord root="A">feléd a</chord> <chord root="D">szívünk,</chord><br/>
+        <chord root="G">Isten</chord> <chord root="A">egyszülött</chord> <chord root="G">Fi</chord><chord root="A">a!</chord>
       </lines>
     </verse>
     <verse name="v3">
       <lines>
-        <chord base="D">Lé</chord><chord base="G">lek,</chord> <chord base="A">Isten Szent</chord><chord base="D">lelke,</chord><br/>
-        <chord base="G">jöjj és</chord> <chord base="A">taníts meg</chord> <chord base="D">minket</chord><br/>
-        <chord base="G">élni,</chord> <chord base="A">alkotó</chord> <chord base="G">Lé</chord><chord base="A">lek!</chord>
+        <chord root="D">Lé</chord><chord root="G">lek,</chord> <chord root="A">Isten Szent</chord><chord root="D">lelke,</chord><br/>
+        <chord root="G">jöjj és</chord> <chord root="A">taníts meg</chord> <chord root="D">minket</chord><br/>
+        <chord root="G">élni,</chord> <chord root="A">alkotó</chord> <chord root="G">Lé</chord><chord root="A">lek!</chord>
       </lines>
     </verse>
     <verse name="v4">
       <lines>
-        <chord base="D">Ti</chord><chord base="G">éiddel</chord> <chord base="A">együtt a</chord> <chord base="D">földön,</chord><br/>
-        s az <chord base="G">égen, az</chord> <chord base="A">angyalok kóru</chord><chord base="D">sával</chord><br/>
-        <chord base="G">dicsér</chord><chord base="A">jük a Te</chord> <chord base="G">ne</chord><chord base="A">ved!</chord>
+        <chord root="D">Ti</chord><chord root="G">éiddel</chord> <chord root="A">együtt a</chord> <chord root="D">földön,</chord><br/>
+        s az <chord root="G">égen, az</chord> <chord root="A">angyalok kóru</chord><chord root="D">sával</chord><br/>
+        <chord root="G">dicsér</chord><chord root="A">jük a Te</chord> <chord root="G">ne</chord><chord root="A">ved!</chord>
       </lines>
     </verse>
     <verse name="e">
       <lines>
-        <chord base="G">Dicső</chord> <chord base="A">az</chord> <chord base="D">Úr</chord>!<chord base="D" ext="4"/> <chord base="D"/> <chord base="D" ext="4"/> <chord base="D"/> <chord base="D" ext="4"/> <chord base="D"/>
+        <chord root="G">Dicső</chord> <chord root="A">az</chord> <chord root="D">Úr</chord>!<chord root="D" structure="sus4"/> <chord root="D"/> <chord root="D" structure="sus4"/> <chord root="D"/> <chord root="D" structure="sus4"/> <chord root="D"/>
       </lines>
     </verse>
   </lyrics>

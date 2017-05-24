@@ -37,20 +37,21 @@
   height: 1rem;
   line-height: 1rem;
 }
-.song[data-ol-version="0.9"] .segment .chord .chord-base:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-root:not(:empty) {
   font-weight: bold;
 }
-.song[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-structure:not(:empty) {
   font-size: .813rem;
   font-weight: bold;
   position: relative;
   bottom: .3rem;
 }
+.song[data-ol-version="0.9"] .segment .chord .chord-bassnotation,
 .song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
   font-size: .813rem;
   font-weight: bold;
 }
-.song[data-ol-version="0.9"] .segment .chord .chord-ext:not(:empty) + .chord-bass:not(:empty) {
+.song[data-ol-version="0.9"] .segment .chord .chord-structure:not(:empty) + .chord-basssnotation:not(:empty) {
   margin-left: -.15rem;
 }
 
@@ -100,10 +101,10 @@
 }
 /* join segments */
 .song[data-ol-version="0.9"] article.verse .segment:not(.only-chord) {
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><line x1="0" y1="100" x2="100" y2="100" stroke="black" stroke-width="1"/></svg>');
-  background-repeat: repeat-y;
-  background-size: 12rem 12rem;
-  background-position: 0 1.95rem;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><line x1="0" y1="10" x2="10" y2="10" stroke="black" stroke-width="3"/></svg>');
+  background-repeat: space no-repeat;
+  background-size: .5rem .5rem;
+  background-position: 0 1.1rem;
 }
 
 /* debug

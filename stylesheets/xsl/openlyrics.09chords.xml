@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<chordnotation>
+  <notation id="english">
+    <name class="C">C</name>
+    <name class="C#">C♯</name>
+    <name class="Db">D♭</name>
+    <name class="D">D</name>
+    <name class="D#">D♯</name>
+    <name class="Eb">E♭</name>
+    <name class="E">E</name>
+    <name class="F">F</name>
+    <name class="F#">F♯</name>
+    <name class="Gb">G♭</name>
+    <name class="G">G</name>
+    <name class="G#">G♯</name>
+    <name class="Ab">A♭</name>
+    <name class="A">A</name>
+    <name class="A#">A♯</name>
+    <name class="Bb">B♭</name>
+    <name class="B">B</name>
+  </notation>
+  <notation id="german">
+    <name class="C">C</name>
+    <name class="C#">Cis</name>
+    <name class="Db">Des</name>
+    <name class="D">D</name>
+    <name class="D#">Dis</name>
+    <name class="Eb">Es</name>
+    <name class="E">E</name>
+    <name class="F">F</name>
+    <name class="F#">Fis</name>
+    <name class="Gb">Ges</name>
+    <name class="G">G</name>
+    <name class="G#">Gis</name>
+    <name class="Ab">As</name>
+    <name class="A">A</name>
+    <name class="A#">Ais</name>
+    <name class="Bb">B</name>
+    <name class="B">H</name>
+ </notation>
+ <notation id="dutch">
+    <name class="C">C</name>
+    <name class="C#">Cis</name>
+    <name class="Db">Des</name>
+    <name class="D">D</name>
+    <name class="D#">Dis</name>
+    <name class="Eb">Es</name>
+    <name class="E">E</name>
+    <name class="F">F</name>
+    <name class="F#">Fis</name>
+    <name class="Gb">Ges</name>
+    <name class="G">G</name>
+    <name class="G#">Gis</name>
+    <name class="Ab">As</name>
+    <name class="A">A</name>
+    <name class="A#">Ais</name>
+    <name class="Bb">Bes</name>
+    <name class="B">B</name>
+  </notation>
+  <notation id="hungarian">
+    <name class="C">C</name>
+    <name class="C#">Cisz</name>
+    <name class="Db">Desz</name>
+    <name class="D">D</name>
+    <name class="D#">Disz</name>
+    <name class="Eb">Esz</name>
+    <name class="E">E</name>
+    <name class="F">F</name>
+    <name class="F#">Fisz</name>
+    <name class="Gb">Gesz</name>
+    <name class="G">G</name>
+    <name class="G#">Gisz</name>
+    <name class="Ab">Asz</name>
+    <name class="A">A</name>
+    <name class="A#">Aisz</name>
+    <name class="Bb">B</name>
+    <name class="B">H</name>
+  </notation>
+  <notation id="neolatin">
+    <name class="C">Do</name>
+    <name class="C#">Do</name>
+    <name class="Db">Re♭</name>
+    <name class="D">Re</name>
+    <name class="D#">Re</name>
+    <name class="Eb">Mi♭</name>
+    <name class="E">Mi</name>
+    <name class="F">Fa</name>
+    <name class="F#">Fa</name>
+    <name class="Gb">Sol♭</name>
+    <name class="G">Sol</name>
+    <name class="G#">Sl</name>
+    <name class="Ab">La♭</name>
+    <name class="A">La</name>
+    <name class="A#">La</name>
+    <name class="Bb">Si♭</name>
+    <name class="B">Si</name>
+  </notation>
+  <!-- 2 note chords -->
+  <structure id="5" shorthand="power">5</structure><!--"omit3"-->
+  <!-- 3 note chords -->
+  <structure id="3-5" shorthand=""></structure>
+  <structure id="m3-5" shorthand="min">m</structure><!--"−"--> <!--"min"-->
+  <structure id="3-#5" shorthand="aug">+</structure><!--"5♯"--> <!--"(♯5)"-->
+  <structure id="m3-b5" shorthand="dim"></structure><!--"m,5b"--> <!--"m(b5)"-->
+  <!-- 4 note chords -->
+  <structure id="3-5-m7" shorthand="dom7">7</structure>
+  <structure id="3-5-7" shorthand="maj7">Δ</structure><!--"Maj7"--><!--"M7"--> <!--"Δ7"-->
+  <structure id="m3-5-m7" shorthand="min7">m7</structure><!--"−7"--><!--"min7"-->
+  <structure id="m3-b5-b7" shorthand="dim7">°</structure><!--"dim7"--><!--"°7"-->
+
+  <structure id="4-5" shorthand="sus4">4</structure><!--"sus4"--><!--"sus"-->
+</chordnotation>

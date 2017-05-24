@@ -1,0 +1,235 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ * OpenLyrics 0.9 chords
+ *
+ * For browsers only: https://caniuse.com/#feat=css-variables
+ * Prince doesn't support this
+ */
+
+:root {
+--chord-root: "";
+--chord-structure: "";
+--chord-bass: "";
+}
+chord[root]      { --chord-root: attr(root) }
+chord[structure] { --chord-structure: attr(structure) }
+chord[bass]      { --chord-bass: attr(bass) }
+
+/*
+ * Root and bass:
+ * https://en.wikipedia.org/wiki/Musical_note#12-tone_chromatic_scale
+ * https://hu.wikipedia.org/wiki/Zenei_hang#A_m.C3.B3dos.C3.ADtott_hangok_elnevez.C3.A9se_.C3.A9s_jel.C3.B6l.C3.A9se
+ ***************/
+
+/* English notation */
+chord[root="C"]  { --chord-root: "C"   }
+chord[root="C#"] { --chord-root: "C♯"  }
+chord[root="Db"] { --chord-root: "D♭"  }
+chord[root="D"]  { --chord-root: "D"   }
+chord[root="D#"] { --chord-root: "D♯"  }
+chord[root="Eb"] { --chord-root: "E♭"  }
+chord[root="E"]  { --chord-root: "E"   }
+chord[root="F"]  { --chord-root: "F"   }
+chord[root="F#"] { --chord-root: "F♯"  }
+chord[root="Gb"] { --chord-root: "G♭"  }
+chord[root="G"]  { --chord-root: "G"   }
+chord[root="G#"] { --chord-root: "G♯"  }
+chord[root="Ab"] { --chord-root: "A♭"  }
+chord[root="A"]  { --chord-root: "A"   }
+chord[root="A#"] { --chord-root: "A♯"  }
+chord[root="Bb"] { --chord-root: "B♭"  }
+chord[root="B"]  { --chord-root: "B"   }
+chord[bass="C"]  { --chord-bass: "/C"  }
+chord[bass="C#"] { --chord-bass: "/C♯" }
+chord[bass="Db"] { --chord-bass: "/D♭" }
+chord[bass="D"]  { --chord-bass: "/D"  }
+chord[bass="D#"] { --chord-bass: "/D♯" }
+chord[bass="Eb"] { --chord-bass: "/E♭" }
+chord[bass="E"]  { --chord-bass: "/E"  }
+chord[bass="F"]  { --chord-bass: "/F"  }
+chord[bass="F#"] { --chord-bass: "/F♯" }
+chord[bass="Gb"] { --chord-bass: "/G♭" }
+chord[bass="G"]  { --chord-bass: "/G"  }
+chord[bass="G#"] { --chord-bass: "/G♯" }
+chord[bass="Ab"] { --chord-bass: "/A♭" }
+chord[bass="A"]  { --chord-bass: "/A"  }
+chord[bass="A#"] { --chord-bass: "/A♯" }
+chord[bass="Bb"] { --chord-bass: "/B♭" }
+chord[bass="B"]  { --chord-bass: "/B"  }
+
+/* German notation
+chord[root="C"]  { --chord-root: "C"    }
+chord[root="C#"] { --chord-root: "Cis"  }
+chord[root="Db"] { --chord-root: "Des"  }
+chord[root="D"]  { --chord-root: "D"    }
+chord[root="D#"] { --chord-root: "Dis"  }
+chord[root="Eb"] { --chord-root: "Es"   }
+chord[root="E"]  { --chord-root: "E"    }
+chord[root="F"]  { --chord-root: "F"    }
+chord[root="F#"] { --chord-root: "Fis"  }
+chord[root="Gb"] { --chord-root: "Ges"  }
+chord[root="G"]  { --chord-root: "G"    }
+chord[root="G#"] { --chord-root: "Gis"  }
+chord[root="Ab"] { --chord-root: "As"   }
+chord[root="A"]  { --chord-root: "A"    }
+chord[root="A#"] { --chord-root: "Ais"  }
+chord[root="Bb"] { --chord-root: "B"    }
+chord[root="B"]  { --chord-root: "H"    }
+chord[bass="C"]  { --chord-bass: "/C"   }
+chord[bass="C#"] { --chord-bass: "/Cis" }
+chord[bass="Db"] { --chord-bass: "/Des" }
+chord[bass="D"]  { --chord-bass: "/D"   }
+chord[bass="D#"] { --chord-bass: "/Dis" }
+chord[bass="Eb"] { --chord-bass: "/Es"  }
+chord[bass="E"]  { --chord-bass: "/E"   }
+chord[bass="F"]  { --chord-bass: "/F"   }
+chord[bass="F#"] { --chord-bass: "/Fis" }
+chord[bass="Gb"] { --chord-bass: "/Ges" }
+chord[bass="G"]  { --chord-bass: "/G"   }
+chord[bass="G#"] { --chord-bass: "/Gis" }
+chord[bass="Ab"] { --chord-bass: "/As"  }
+chord[bass="A"]  { --chord-bass: "/A"   }
+chord[bass="A#"] { --chord-bass: "/Ais" }
+chord[bass="Bb"] { --chord-bass: "/B"   }
+chord[bass="B"]  { --chord-bass: "/H"   }
+*/
+
+/* Dutch notation
+chord[root="C"]  { --chord-root: "C"    }
+chord[root="C#"] { --chord-root: "Cis"  }
+chord[root="Db"] { --chord-root: "Des"  }
+chord[root="D"]  { --chord-root: "D"    }
+chord[root="D#"] { --chord-root: "Dis"  }
+chord[root="Eb"] { --chord-root: "Es"   }
+chord[root="E"]  { --chord-root: "E"    }
+chord[root="F"]  { --chord-root: "F"    }
+chord[root="F#"] { --chord-root: "Fis"  }
+chord[root="Gb"] { --chord-root: "Ges"  }
+chord[root="G"]  { --chord-root: "G"    }
+chord[root="G#"] { --chord-root: "Gis"  }
+chord[root="Ab"] { --chord-root: "As"   }
+chord[root="A"]  { --chord-root: "A"    }
+chord[root="A#"] { --chord-root: "Ais"  }
+chord[root="Bb"] { --chord-root: "Bes"  }
+chord[root="B"]  { --chord-root: "B"    }
+chord[bass="C"]  { --chord-bass: "/C"   }
+chord[bass="C#"] { --chord-bass: "/Cis" }
+chord[bass="Db"] { --chord-bass: "/Des" }
+chord[bass="D"]  { --chord-bass: "/D"   }
+chord[bass="D#"] { --chord-bass: "/Dis" }
+chord[bass="Eb"] { --chord-bass: "/Es"  }
+chord[bass="E"]  { --chord-bass: "/E"   }
+chord[bass="F"]  { --chord-bass: "/F"   }
+chord[bass="F#"] { --chord-bass: "/Fis" }
+chord[bass="Gb"] { --chord-bass: "/Ges" }
+chord[bass="G"]  { --chord-bass: "/G"   }
+chord[bass="G#"] { --chord-bass: "/Gis" }
+chord[bass="Ab"] { --chord-bass: "/As"  }
+chord[bass="A"]  { --chord-bass: "/A"   }
+chord[bass="A#"] { --chord-bass: "/Ais" }
+chord[bass="Bb"] { --chord-bass: "/Bes" }
+chord[bass="B"]  { --chord-bass: "/B"   }
+*/
+
+/* Hungarian notation
+chord[root="C"]  { --chord-root: "C"     }
+chord[root="C#"] { --chord-root: "Cisz"  }
+chord[root="Db"] { --chord-root: "Desz"  }
+chord[root="D"]  { --chord-root: "D"     }
+chord[root="D#"] { --chord-root: "Disz"  }
+chord[root="Eb"] { --chord-root: "Esz"   }
+chord[root="E"]  { --chord-root: "E"     }
+chord[root="F"]  { --chord-root: "F"     }
+chord[root="F#"] { --chord-root: "Fisz"  }
+chord[root="Gb"] { --chord-root: "Gesz"  }
+chord[root="G"]  { --chord-root: "G"     }
+chord[root="G#"] { --chord-root: "Gisz"  }
+chord[root="Ab"] { --chord-root: "Asz"   }
+chord[root="A"]  { --chord-root: "A"     }
+chord[root="A#"] { --chord-root: "Aisz"  }
+chord[root="Bb"] { --chord-root: "B"     }
+chord[root="B"]  { --chord-root: "H"     }
+chord[bass="C"]  { --chord-bass: "/C"    }
+chord[bass="C#"] { --chord-bass: "/Cis"  }
+chord[bass="Db"] { --chord-bass: "/Des"  }
+chord[bass="D"]  { --chord-bass: "/D"    }
+chord[bass="D#"] { --chord-bass: "/Dis"  }
+chord[bass="Eb"] { --chord-bass: "/Es"   }
+chord[bass="E"]  { --chord-bass: "/E"    }
+chord[bass="F"]  { --chord-bass: "/F"    }
+chord[bass="F#"] { --chord-bass: "/Fis"  }
+chord[bass="Gb"] { --chord-bass: "/Ges"  }
+chord[bass="G"]  { --chord-bass: "/G"    }
+chord[bass="G#"] { --chord-bass: "/Gis"  }
+chord[bass="Ab"] { --chord-bass: "/As"   }
+chord[bass="A"]  { --chord-bass: "/A"    }
+chord[bass="A#"] { --chord-bass: "/Ais"  }
+chord[bass="Bb"] { --chord-bass: "/B"    }
+chord[bass="B"]  { --chord-bass: "/H"    }
+*/
+
+/* Neolatin notation
+chord[root="C"]  { --chord-root: "Do"    }
+chord[root="C#"] { --chord-root: "Do♯"   }
+chord[root="Db"] { --chord-root: "Re♭"   }
+chord[root="D"]  { --chord-root: "Re"    }
+chord[root="D#"] { --chord-root: "Re♯"   }
+chord[root="Eb"] { --chord-root: "Mi♭"   }
+chord[root="E"]  { --chord-root: "Mi"    }
+chord[root="F"]  { --chord-root: "Fa"    }
+chord[root="F#"] { --chord-root: "Fa♯"   }
+chord[root="Gb"] { --chord-root: "Sol♭"  }
+chord[root="G"]  { --chord-root: "Sol"   }
+chord[root="G#"] { --chord-root: "Sl♯"   }
+chord[root="Ab"] { --chord-root: "La♭"   }
+chord[root="A"]  { --chord-root: "La"    }
+chord[root="A#"] { --chord-root: "La♯"   }
+chord[root="Bb"] { --chord-root: "Si♭"   }
+chord[root="B"]  { --chord-root: "Si"    }
+chord[bass="C"]  { --chord-bass: "/Do"   }
+chord[bass="C#"] { --chord-bass: "/Do♯"  }
+chord[bass="Db"] { --chord-bass: "/Re♭"  }
+chord[bass="D"]  { --chord-bass: "/Re"   }
+chord[bass="D#"] { --chord-bass: "/Re♯"  }
+chord[bass="Eb"] { --chord-bass: "/Mi♭"  }
+chord[bass="E"]  { --chord-bass: "/Mi"   }
+chord[bass="F"]  { --chord-bass: "/Fa"   }
+chord[bass="F#"] { --chord-bass: "/Fa♯"  }
+chord[bass="Gb"] { --chord-bass: "/Sol♭" }
+chord[bass="G"]  { --chord-bass: "/Sol"  }
+chord[bass="G#"] { --chord-bass: "/Sl♯"  }
+chord[bass="Ab"] { --chord-bass: "/La♭"  }
+chord[bass="A"]  { --chord-bass: "/La"   }
+chord[bass="A#"] { --chord-bass: "/La♯"  }
+chord[bass="Bb"] { --chord-bass: "/Si♭"  }
+chord[bass="B"]  { --chord-bass: "/Si"   }
+*/
+
+/*
+ * Strucure
+ **********/
+
+/* 2 note chords */
+chord[structure="power"], chord[structure="5"]        { --chord-structure: "5" /*"omit3"*/ }
+
+/* 3 note chords */
+chord:not([structure]),   chord[structure="3-5"]      { --chord-structure: "" }
+chord[structure="min"],   chord[structure="m3-5"]     { --chord-structure: "m" /*"−"*/ /*"min"*/ }
+chord[structure="aug"],   chord[structure="3-#5"]     { --chord-structure: "+" /*"5♯"*/ /*"(♯5)"*/ }
+chord[structure="dim"],   chord[structure="m3-b5"]    { --chord-structure: ""  /*"m,5b"*/ /*"m(b5)"*/ }
+
+/* 4 note chords */
+chord[structure="dom7"],  chord[structure="3-5-m7"]   { --chord-structure: "7" }
+chord[structure="maj7"],  chord[structure="3-5-7"]    { --chord-structure: "Δ" /*"Maj7"*/ /*"M7"*/ /*"Δ7"*/ }
+chord[structure="min7"],  chord[structure="m3-5-m7"]  { --chord-structure: "m7" /*"−7"*/ /*"min7"*/ }
+chord[structure="dim7"],  chord[structure="m3-b5-b7"] { --chord-structure: "°" /*"dim7"*/ /*"°7"*/ }
+
+chord[structure="sus4"],  chord[structure="4-5"]      { --chord-structure: "4" /*"sus4"*/ /*"sus"*/ }
+
+
+/*
+ * Setup chords
+ **************/
+song[version="0.9"] chord[root]::before {
+  content: var(--chord-root) var(--chord-structure) var(--chord-bass);
+}

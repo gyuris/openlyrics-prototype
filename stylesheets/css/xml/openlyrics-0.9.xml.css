@@ -29,94 +29,67 @@ song[version="0.9"] beat:last-child::after {
   content: none;
 }
 
-/* chords: there are two syntax: 
- * 1st: tradicional <chord name="Em7/D" />
- * 2nd: new         <chord base="Em" ext="7" bass="D" />
+/* chords: <chord root="E" structure="3-5" bass="F#" />
  */
-song[version="0.9"] chord[name],
-song[version="0.9"] chord[base] {
+song[version="0.9"] chord[root] {
   display: inline-block;
   line-height: 1rem;
 }
-song[version="0.9"] chord[name]::before,
-song[version="0.9"] chord[base]::before {
+song[version="0.9"] chord[root]::before {
   display: block;
   text-align: left;
   font-weight: bold;
   margin-bottom: -.1rem;
   margin-right: .1rem;
 }
-song[version="0.9"] chord[name]::before {
-  content: attr(name);
-}
-song[version="0.9"] chord[base]::before {
-  content: attr(base);
-}
-song[version="0.9"] chord[base][ext]::before {
-    content: attr(base) attr(ext);
-}
-song[version="0.9"] chord[base][bass]::before {
-    content: attr(base) "/" attr(bass);
-}
-song[version="0.9"] chord[base][ext][bass]::before {
-    content: attr(base) attr(ext) "/" attr(bass);
-}
+/* Chord "content:" declarations in a separate file */
+
 /* intrument chords */
-song[version="0.9"] instrument chord[name]:empty,
-song[version="0.9"] instrument chord[base]:empty {
+song[version="0.9"] instrument chord[root]:empty {
   margin-bottom: 0;
   bottom: 0;
   margin-right: .1rem;
 }
 /* empty */
-song[version="0.9"] chord[name]:empty,
-song[version="0.9"] chord[base]:empty {
+song[version="0.9"] chord[root]:empty {
   position: relative;
   bottom: .9rem;
   margin-right: -.2rem;
 }
-song[version="0.9"] chord[base]:empty + chord[base]:empty {
+song[version="0.9"] chord[root]:empty + chord[root]:empty {
   margin-left: .4rem;
 }
 /* upbeat: with text and empty tag */
-song[version="0.9"] chord[name][upbeat],
-song[version="0.9"] chord[base][upbeat] {
+song[version="0.9"] chord[root][upbeat] {
   position: relative;
 }
-song[version="0.9"] chord[name][upbeat]::before,
-song[version="0.9"] chord[base][upbeat]::before {
+song[version="0.9"] chord[root][upbeat]::before {
   position: absolute;
   right: 100%;
   bottom: .9rem;
 }
-song[version="0.9"] chord[name][upbeat]:empty,
-song[version="0.9"] chord[base][upbeat]:empty {
+song[version="0.9"] chord[root][upbeat]:empty {
   bottom: -.1rem;
   height: 1rem;
   margin-right: 0 !important;
 }
-song[version="0.9"] chord[name][upbeat]:empty::before,
-song[version="0.9"] chord[base][upbeat]:empty::before {
+song[version="0.9"] chord[root][upbeat]:empty::before {
   position: absolute;
   right: 0;
 }
 
 /* nested chords
  * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
- * a tweak... <chord tweak="nested" name="D"><chord name="A">Text<chord>text</chord>
+ * a tweak... <chord tweak="nested" root="D"><chord root="A">Text<chord>text</chord>
  * First playing chord is D.
  * Displaying is a little bit tricky.
  */
-song[version="0.9"] lines chord[name][tweak="nested"],
-song[version="0.9"] lines chord[base][tweak="nested"] /*,
-song[version="0.9"] lines chord[name]:has(> chord[name]),
-song[version="0.9"] lines chord[base]:has(> chord[base]) */ { /* CSS4 selector */
+song[version="0.9"] lines chord[root][tweak="nested"] /*,
+song[version="0.9"] lines chord[root]:has(> chord[root]) */ { /* CSS4 selector */
   line-height: 0;
 }
-song[version="0.9"] lines chord[name][tweak="nested"]::before,
-song[version="0.9"] lines chord[base][tweak="nested"]::before /*,
-song[version="0.9"] lines chord[name]:has(> chord[name])::before,
-song[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 selector */
+song[version="0.9"] lines chord[root][tweak="nested"]::before /*,
+song[version="0.9"] lines chord[root]:has(> chord[root])::before */ { /* CSS4 selector */
   display: inline-block;
   width: 100%;
   position: relative;
@@ -126,7 +99,7 @@ song[version="0.9"] lines chord[base]:has(> chord[base])::before */ { /* CSS4 se
 
 /* line break in chords
  * To normal handling would be necessary CSS4 has:() selector. In CSS3 we need 
- * a tweak... <chord name="A" tweak="linebreak">Text<br />text</chord>
+ * a tweak... <chord roots="A" tweak="linebreak">Text<br />text</chord>
  */
 song[version="0.9"] lines > chord[tweak="linebreak"] /*,
 song[version="0.9"] lines > chord:has(> br) */ /* CSS4 selector */ /*,

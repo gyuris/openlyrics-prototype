@@ -14,7 +14,11 @@
     <xsl:value-of select="//ol:song/@xml:lang"/>
     <xsl:text>.xml</xsl:text>
   </xsl:variable>
-  <xsl:variable name="locale" select="document ($locale-strings)/locale"/>
+  <xsl:variable name="locale" select="document($locale-strings)/locale"/>
+  <!-- Chords -->
+  <xsl:variable name="chordnotation" select="document('xsl/openlyrics.09chords.xml')/chordnotation"/>
+  <xsl:variable name="notation">english</xsl:variable>
+
 
   <!-- Main -->
   <xsl:template match="/">
@@ -347,12 +351,13 @@
   <xsl:template name="chords">
     <xsl:param name="this" />
     <code>{</code>
-    <span class="chord-base"><xsl:value-of select="$this/@base|$this/@name"/></span>
-    <xsl:if test="string-length($this/@ext)!=0">
-      <span class="chord-ext"><xsl:value-of select="$this/@ext"/></span>
-    </xsl:if>
+    <span class="chord-root" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/></span>
+    <!--<xsl:if test="string-length($this/@structure)!=0">-->
+      <span class="chord-structure"><xsl:value-of select="$chordnotation/structure[@id=$this/@structure]/text()|$chordnotation/structure[@shorthand=$this/@structure]/text()"/></span>
+    <!--</xsl:if>-->
     <xsl:if test="string-length($this/@bass)!=0">
-      <span class="chord-bass">/<xsl:value-of select="$this/@bass"/></span>
+      <span class="chord-bassnotation">/</span>
+      <span class="chord-bass" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/></span>
     </xsl:if>
     <xsl:if test="local-name($this/..) = 'chord'">
       <xsl:call-template name="chords">

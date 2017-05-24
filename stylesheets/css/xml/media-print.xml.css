@@ -59,3 +59,11 @@ lyrics > instrument {
 song[version="0.8"] chord[name]:empty::before {
   prince-linebreak-magic: none;
 }
+
+/*
+ * OpenLyrics 0.9 chords Prince support
+ * https://www.princexml.com/doc/gen-content/
+ */
+song[version="0.9"] chord::before {
+  content: prince-script(getChord, attr(root), attr(structure), attr(bass));
+}

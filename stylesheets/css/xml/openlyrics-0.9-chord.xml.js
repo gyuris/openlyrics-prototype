@@ -10,8 +10,6 @@
  * prince --javascript --script=stylesheets/css/xml/openlyrics-0.9-chord.xml.js Alleluja\,\ dicsőség\ a\ mennyben\ Istenenünknek.xml -o Alleluja\,\ dicsőség\ a\ mennyben\ Istenenünknek.xml.pdf
  */
 
-"use strict";
-
 var oNotation = {
 //         eng.  german dutch  hun.    neolat.
   "C"  : [ "C",  "C",   "C",   "C",    "Do"   ],
@@ -36,7 +34,9 @@ var oNotation = {
 var oStructure = {
   add : function( sId, sSortand, sName ) {
     this[sId] = sName;
-    this[sSortand] = sName;
+    if (sSortand !== null) {
+      this[sSortand] = sName;
+    }
   }
 };
 // 2 note chords

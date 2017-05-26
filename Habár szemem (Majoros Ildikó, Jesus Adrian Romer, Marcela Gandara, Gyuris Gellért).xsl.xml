@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" createdIn="OpenLP 2.4" modifiedIn="OpenLP 2.4" modifiedDate="2016-03-15T07:36:08">
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="OpenLP 2.4" modifiedIn="OpenLP 2.4" modifiedDate="2016-03-15T07:36:08">
   <properties>
     <titles>
       <title lang="hu">Habár szemem</title>
@@ -26,27 +26,27 @@
   <lyrics>
     <instrument name="i">
       <lines>
-        <beat><chord base="C" /></beat>
-        <beat><chord base="a" ext="7" /></beat>
-        <beat><chord base="F" /></beat>
-        <beat><chord base="G" ext="4" /><chord base="G" /></beat>
+        <beat><chord root="C" /></beat>
+        <beat><chord root="A" structure="min7" /></beat>
+        <beat><chord root="F" /></beat>
+        <beat><chord root="G" structure="sus4" /><chord root="G" /></beat>
       </lines>
     </instrument>
     <verse name="v1">
-      <lines><chord base="G" upbeat="true">Habár sze</chord><chord base="C">mem</chord> <chord base="G" bass="H">nem láthat Té</chord><chord base="a">ged,<br/>
-      mégis érez</chord><chord base="F">lek; tudom, itt vagy ve</chord><chord base="C">lem.</chord><br/>
-      <chord base="G" upbeat="true">Habár ke</chord><chord base="C">zem</chord> <chord base="G" bass="H">nem érintheti</chord> <chord base="a">még<br/>
-      arcodat, U</chord><chord base="F">ram, tudom, itt vagy ve</chord><chord base="C">lem</chord>. <chord base="C">Óh…</chord><chord base="G" ext="4" /></lines>
+      <lines><chord root="G" upbeat="true">Habár sze</chord><chord root="C">mem</chord> <chord root="G" bass="B">nem láthat Té</chord><chord root="A" structure="min">ged,<br/>
+      mégis érez</chord><chord root="F">lek; tudom, itt vagy ve</chord><chord root="C">lem.</chord><br/>
+      <chord root="G" upbeat="true">Habár ke</chord><chord root="C">zem</chord> <chord root="G" bass="B">nem érintheti</chord> <chord root="A" structure="min">még<br/>
+      arcodat, U</chord><chord root="F">ram, tudom, itt vagy ve</chord><chord root="C">lem</chord>. <chord root="C">Óh…</chord><chord root="G" structure="sus4" /></lines>
     </verse>
     <verse name="c">
-      <lines break="optional"><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már érezhe</chord><chord base="F">tem jelenléted…</chord><br/>
-      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
-      És <chord base="a">érezhetem</chord> <chord base="F">fenségedet…</chord><br/>
-      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<chord base="G" ext="4" /></lines>
-      <lines><chord base="G" upbeat="true">Szívemben</chord> <chord base="a">már szemlélhe</chord><chord base="F">tem a Te szépséged…</chord><br/>
-      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.<br/>
-      Mert <chord base="a">érezhetem</chord> <chord base="F">nagy szerelmed…</chord><br/>
-      <chord base="C">itt vagy velem, Te</chord> <chord base="G">itt vagy velem</chord>.</lines>
+      <lines break="optional"><chord root="G" upbeat="true">Szívemben</chord> <chord root="A" structure="min">már érezhe</chord><chord root="F">tem jelenléted…</chord><br/>
+      <chord root="C">itt vagy velem, Te</chord> <chord root="G">itt vagy velem</chord>.<br/>
+      És <chord root="A" structure="min">érezhetem</chord> <chord root="F">fenségedet…</chord><br/>
+      <chord root="C">itt vagy velem, Te</chord> <chord root="G">itt vagy velem</chord>.<chord root="G" structure="sus4" /></lines>
+      <lines><chord root="G" upbeat="true">Szívemben</chord> <chord root="A" structure="min">már szemlélhe</chord><chord root="F">tem a Te szépséged…</chord><br/>
+      <chord root="C">itt vagy velem, Te</chord> <chord root="G">itt vagy velem</chord>.<br/>
+      Mert <chord root="A" structure="min">érezhetem</chord> <chord root="F">nagy szerelmed…</chord><br/>
+      <chord root="C">itt vagy velem, Te</chord> <chord root="G">itt vagy velem</chord>.</lines>
     </verse>
   </lyrics>
 </song>

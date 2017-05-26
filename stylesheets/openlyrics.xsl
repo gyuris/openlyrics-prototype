@@ -17,7 +17,16 @@
   <xsl:variable name="locale" select="document($locale-strings)/locale"/>
   <!-- Chords -->
   <xsl:variable name="chordnotation" select="document('xsl/openlyrics.09chords.xml')/chordnotation"/>
-  <xsl:variable name="notation">english</xsl:variable>
+  <xsl:variable name="notation">
+    <xsl:choose>
+      <xsl:when test="//ol:song/@chordnotation">
+        <xsl:value-of select="//ol:song/@chordnotation" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>english</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
 
 
   <!-- Main -->

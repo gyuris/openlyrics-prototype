@@ -49,6 +49,6 @@ do
     # CSS version: XML->PDF
     echo " XML->PDF : $file"
     # Generate PDF
-    prince "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"
+    prince --javascript --script=stylesheets/css/xml/openlyrics-0.9-chord.xml.js "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"
   fi
 done

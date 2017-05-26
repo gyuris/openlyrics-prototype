@@ -244,7 +244,7 @@
       <author lang="hu" type="translation">Harkai Tamás</author>
     </authors>
     <songbooks>
-      <songbook entry="12" root="Szent András énekfüzet"/>
+      <songbook entry="12" name="Szent András énekfüzet"/>
       <songbook name="Zöld könyv" entry="434"/>
       <songbook name="Kék könyv" entry="67D"/>
       <songbook name="Teszt könyv" entry="76"/>
@@ -431,7 +431,7 @@
       <songbook name="Teszt könyv" entry="125"/>
     </songbooks>
   </properties><lyrics>
-    <instrument root="i">
+    <instrument name="i">
       <lines repeat="2">
         <beat><chord root="C"/></beat>
         <beat><chord root="G"/></beat>
@@ -467,7 +467,7 @@
         <chord root="A" structure="min">Népem vagy, és</chord> <chord root="G">Urad én va</chord><chord root="A" structure="min">gyok!</chord><chord root="E" structure="dom7"/>
      </lines>
     </verse>
-    <instrument root="s">
+    <instrument name="s">
       <lines>
         <beat><chord root="A" structure="min"/></beat>
         <beat><chord root="E" structure="min"/></beat>

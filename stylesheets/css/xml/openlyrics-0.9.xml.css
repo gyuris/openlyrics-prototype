@@ -83,6 +83,7 @@ song[version="0.9"] chord[root][upbeat]:empty::before {
  * a tweak... <chord tweak="nested" root="D"><chord root="A">Text<chord>text</chord>
  * First playing chord is D.
  * Displaying is a little bit tricky.
+ * Prince 12 has :has selector, but browsers (for preview) doesn't support it. See: https://www.princexml.com/doc-refs/#sel-logical
  */
 song[version="0.9"] lines chord[root][tweak="nested"] /*,
 song[version="0.9"] lines chord[root]:has(> chord[root]) */ { /* CSS4 selector */

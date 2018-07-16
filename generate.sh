@@ -1,6 +1,9 @@
 #!/bin/bash
 
 # OpenLyrics prototype: generate PDF
+# Prerequisites:
+# - xsltproc
+# - prince (v12): https://www.princexml.com
 
 # Generate book
 ################
@@ -42,13 +45,13 @@ do
     xsltproc "$file"  &> "$(basename "$file" .xml).html"
     echo "HTML->PDF : $file"
     # Generate PDF
-    prince "$(basename "$file" .xml).html" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"
+    prince "$(basename "$file" .xml).html" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért" --pdf-title="$(basename "$file" .xml)"
     # Remove HTML
     rm "$(basename "$file" .xml).html"
   else
     # CSS version: XML->PDF
     echo " XML->PDF : $file"
     # Generate PDF
-    prince --javascript --script=stylesheets/css/xml/openlyrics-0.9-chord.xml.js "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért"
+    prince --javascript --script=stylesheets/css/xml/openlyrics-0.9-chord.xml.js "$file" -o "pdf/$(basename "$file" .xml).pdf" --pdf-author="Gyuris Gellért" --pdf-title="$(basename "$file" .xml)"
   fi
 done

@@ -37,7 +37,6 @@ section.lyrics p.lines > .lyrics-comment {
   color: red;
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-structure:not(:empty) {
-  color: blue;
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-bassnotation,
 .song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {

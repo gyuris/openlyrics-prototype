@@ -41,10 +41,6 @@
   font-weight: bold;
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-structure:not(:empty) {
-  font-size: .813rem;
-  font-weight: bold;
-  position: relative;
-  bottom: .3rem;
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-bassnotation,
 .song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {

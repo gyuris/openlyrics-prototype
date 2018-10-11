@@ -6,6 +6,8 @@
 
 :root {
   font-family: "Linux Libertine";
+  font-feature-settings: "ss01" on;
+  font-variant: prince-opentype(ss01(1));
 }
 song[version] chord[name]::before,
 song[version] chord[root]::before,

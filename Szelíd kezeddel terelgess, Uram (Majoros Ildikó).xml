@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="OpenLP 2.4.6" modifiedIn="Geany" modifiedDate="2016-02-15T23:33:03">
+  <properties>
+    <titles>
+      <title lang="hu">Szelíd kezeddel terelgess, Uram</title>
+      <title lang="hu">Boldogok vagytok kurzus, Szelíddé lenni</title>
+    </titles>
+    <authors>
+      <author type="words">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+    <songbooks>
+      <songbook entry="000" name="Szent András Énekfüzet" />
+    </songbooks>
+    <transposition>2</transposition>
+    <verseOrder>v1 c1</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord root="G">Szelíd kezeddel</chord> <chord root="B" structure="min">terelgess, Uram,</chord><br />
+        <chord root="C">Szelíd szíveddel</chord> <chord root="G">formálj át, U</chord><chord root="D">ram.</chord>
+      </lines>
+    </verse>
+    <verse name="c1">
+      <lines>
+        Hadd <chord root="E" structure="min">égjen az én igazságom,</chord><br />
+        Hadd <chord root="B" structure="min">égjen a gyűlölet!</chord><br />
+        <chord root="E" structure="min">Elengedem a vádat, bosszút,</chord><br />
+        <chord root="D">Töltsön el a szeretet!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

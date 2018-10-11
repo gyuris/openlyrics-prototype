@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="OpenLP 2.4.6" modifiedIn="Geany" modifiedDate="2016-02-15T23:33:03">
+  <properties>
+    <titles>
+      <title lang="hu">Jövök eléd, Uram</title>
+      <title lang="hu">Boldogok vagytok kurzus, Isten szegénye</title>
+    </titles>
+    <authors>
+      <author type="words">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+    <songbooks>
+      <songbook entry="000" name="Szent András Énekfüzet" />
+    </songbooks>
+    <verseOrder>v1 c1</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Jövök e<chord root="A">léd, Uram, kezem üres.</chord><br />
+        A Te sze<chord root="F#" structure="min">gényed vagyok, minden gazdag</chord><chord root="D">ságom Ti</chord><chord root="E">ed, Jé</chord><chord root="A">zus.</chord>
+      </lines>
+    </verse>
+    <verse name="c1">
+      <lines>
+        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br />
+        <chord root="F#" structure="min">takarj el en</chord><chord root="C#" structure="min">gem a</chord> <chord root="D">világ e</chord><chord root="E">lől!</chord><br />
+        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br />
+        <chord root="D">Mindenem Ti</chord><chord root="E">éd le</chord><chord root="A">gyen!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

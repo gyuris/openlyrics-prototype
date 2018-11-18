@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" 
+      xml:lang="hu"
+      version="0.9"
+      chordnotation="hungarian"
+      createdIn="OpenLP 2.4.6" 
+      modifiedIn="Geany" 
+      modifiedDate="2018-11-18T22:21:39">
+  <properties>
+    <titles>
+      <title>Íme, az én fiam</title>
+    </titles>
+    <verseOrder>i v1 v2 m1 b c c m2 c e</verseOrder>
+    <authors>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="341"/>
+    </songbooks>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord root="B" structure="min" /></beat>
+        <beat><chord root="G" /></beat>
+        <beat><chord root="E" structure="min" /></beat>
+        <beat><chord root="B" structure="min" /></beat>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines>
+        <chord root="G">Íme, az én fiam, akit</chord> <chord root="D">támogatok,</chord><br/>
+        <chord root="G">Választottam, aki</chord> <chord root="D">kedves nagyon.</chord><br/>
+        <chord root="B" structure="min">Ráárasztottam Lelke</chord><chord root="G">met,</chord><br/>
+        hogy <chord root="E" structure="min">igazságot vi</chord><chord root="A">gyen a népek</chord><chord root="D">nek.</chord>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord root="G">Én vagyok az Úr, ez az</chord> <chord root="D">én nevem!</chord><br/>
+        <chord root="G">Nem engedem másnak az én</chord> <chord root="D">dicsőségemet.</chord><br/>
+        A <chord root="B" structure="min">régi terveim mind valóra</chord> <chord root="G">váltak</chord>,<br/>
+        s ma <chord root="E" structure="min">újakat hirde</chord><chord root="A">tek, lásd most sar</chord><chord root="D">jadnak.</chord>
+        </lines>
+    </verse>
+    <instrument name="m1">
+      <lines>
+        <beat><chord root="B" structure="min" /></beat>
+        <beat><chord root="G" /></beat>
+        <beat><chord root="E" structure="min" /></beat>
+        <beat><chord root="B" structure="min" /></beat>
+      </lines>
+    </instrument>
+    <verse name="b">
+      <lines>
+        <chord root="B" structure="min">A megroppant nádszálat nem töri össze,</chord><br/>
+        a füstölgő mécsbelet nem oltja el.<br/>
+        Ereje nem lankad, és nem roppan össze,<br/>
+        míg igazságot nem tesz e földön.
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord root="B" structure="min" upbeat="true" />Mennyei <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true" />országod jöjjön <chord root="F#">el!</chord><br/>
+        <chord root="B" structure="min" upbeat="true" />Ó, drága <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true" />Királyunk küldjed <chord root="F#">el!</chord>
+      </lines>
+    </verse>
+    <instrument name="m2">
+      <lines repeat="2">
+        <beat><chord root="B" structure="min" /></beat>
+        <beat><chord root="F#" structure="min" /></beat>
+        <beat><chord root="E" structure="min" /></beat>
+        <beat><chord root="F#" /></beat>
+      </lines>
+    </instrument>
+    <verse name="e">
+      <lines>
+        <chord root="G">Országod jöjjön el,</chord><br/>
+        <chord root="Bb">Királyunk küldjed el,</chord><br/>
+        A Te <chord root="D">Országod jöjjön el!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

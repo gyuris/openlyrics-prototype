@@ -3,7 +3,7 @@
 <book xmlns:ol="http://openlyrics.info/namespace/2009/song" xmlns:str="http://exslt.org/strings" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <title xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" id="tk">Teszt könyv</title>
   <foreword xmlns="http://openlyrics.info/namespace/2009/song" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
-  <ol:toc><ol:entry><xhtml:a href="#tk-11">A béke napja közel</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-21">Add a kezed, hogy zengjünk az</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-32">Alleluja, dicsőség a mennyben Istenenünknek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-44">Habár szemem</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-56">How Great Is Our God</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-76">Jézus, véred megtisztít</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-99">Legyen a béke teveled, legyen</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-111">Meghívtál, hogy vízre lépjek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-125">Új szívet adok és új lelket</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-222">You Are My Passion</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jézus, Te boldog vagy, imádlak</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jövök eléd, Uram</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Szelíd kezeddel terelgess, Uram</xhtml:a></ol:entry></ol:toc>
+  <ol:toc><ol:entry><xhtml:a href="#tk-11">A béke napja közel</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-21">Add a kezed, hogy zengjünk az</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-32">Alleluja, dicsőség a mennyben Istenenünknek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-44">Habár szemem</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-56">How Great Is Our God</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-76">Jézus, véred megtisztít</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-99">Legyen a béke teveled, legyen</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-111">Meghívtál, hogy vízre lépjek</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-125">Új szívet adok és új lelket</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-222">You Are My Passion</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jézus, Te boldog vagy, imádlak</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jövök eléd, Uram</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Szelíd kezeddel terelgess, Uram</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Íme, az én fiam</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">A kapudat nyisd meg</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jézus, jöjj közel</xhtml:a></ol:entry><ol:entry><xhtml:a href="#tk-">Jézus, lépj be szívem ajtaján</xhtml:a></ol:entry></ol:toc>
   <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.8" chordnotation="hungarian" createdIn="ConvDiatarOpenlyrics" modifiedIn="ConvDiatarOpenlyrics" modifiedDate="2015-06-09T16:47:45" id="tk-11"><properties>
     <titles>
       <title>A béke napja közel</title>
@@ -636,6 +636,149 @@
         Hadd <chord root="B" structure="min">égjen a gyűlölet!</chord><br/>
         <chord root="E" structure="min">Elengedem a vádat, bosszút,</chord><br/>
         <chord root="D">Töltsön be a szeretet!</chord>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="OpenLP 2.4.6" modifiedIn="Geany" modifiedDate="2018-11-18T22:21:39" id="tk-"><properties>
+    <titles>
+      <title>Íme, az én fiam</title>
+    </titles>
+    <verseOrder>i v1 v2 m1 b c c m2 c e</verseOrder>
+    <authors>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="341"/>
+    </songbooks>
+  </properties><lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord root="B" structure="min"/></beat>
+        <beat><chord root="G"/></beat>
+        <beat><chord root="E" structure="min"/></beat>
+        <beat><chord root="B" structure="min"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines>
+        <chord root="G">Íme, az én fiam, akit</chord> <chord root="D">támogatok,</chord><br/>
+        <chord root="G">Választottam, aki</chord> <chord root="D">kedves nagyon.</chord><br/>
+        <chord root="B" structure="min">Ráárasztottam Lelke</chord><chord root="G">met,</chord><br/>
+        hogy <chord root="E" structure="min">igazságot vi</chord><chord root="A">gyen a népek</chord><chord root="D">nek.</chord>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord root="G">Én vagyok az Úr, ez az</chord> <chord root="D">én nevem!</chord><br/>
+        <chord root="G">Nem engedem másnak az én</chord> <chord root="D">dicsőségemet.</chord><br/>
+        A <chord root="B" structure="min">régi terveim mind valóra</chord> <chord root="G">váltak</chord>,<br/>
+        s ma <chord root="E" structure="min">újakat hirde</chord><chord root="A">tek, lásd most sar</chord><chord root="D">jadnak.</chord>
+        </lines>
+    </verse>
+    <instrument name="m1">
+      <lines>
+        <beat><chord root="B" structure="min"/></beat>
+        <beat><chord root="G"/></beat>
+        <beat><chord root="E" structure="min"/></beat>
+        <beat><chord root="B" structure="min"/></beat>
+      </lines>
+    </instrument>
+    <verse name="b">
+      <lines>
+        <chord root="B" structure="min">A megroppant nádszálat nem töri össze,</chord><br/>
+        a füstölgő mécsbelet nem oltja el.<br/>
+        Ereje nem lankad, és nem roppan össze,<br/>
+        míg igazságot nem tesz e földön.
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord root="B" structure="min" upbeat="true"/>Mennyei <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true"/>országod jöjjön <chord root="F#">el!</chord><br/>
+        <chord root="B" structure="min" upbeat="true"/>Ó, drága <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true"/>Királyunk küldjed <chord root="F#">el!</chord>
+      </lines>
+    </verse>
+    <instrument name="m2">
+      <lines repeat="2">
+        <beat><chord root="B" structure="min"/></beat>
+        <beat><chord root="F#" structure="min"/></beat>
+        <beat><chord root="E" structure="min"/></beat>
+        <beat><chord root="F#"/></beat>
+      </lines>
+    </instrument>
+    <verse name="e">
+      <lines>
+        <chord root="G">Országod jöjjön el,</chord><br/>
+        <chord root="Bb">Királyunk küldjed el,</chord><br/>
+        A Te <chord root="D">Országod jöjjön el!</chord>
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="Geany" modifiedIn="Geany" modifiedDate="2019-02-27T17:47:03" id="tk-"><properties>
+    <titles>
+      <title lang="hu">A kapudat nyisd meg</title>
+    </titles>
+    <verseOrder>v1 v2</verseOrder>
+    <authors>
+      <author>ismeretlen</author>
+    </authors>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        A <chord root="D">kapudat nyisd meg,</chord> <chord root="G">Jézusnak nyisd meg,</chord> <chord root="D">jön, közele</chord><chord root="A">dik</chord>.<br/>
+        A <chord root="D">kapudat nyisd meg,</chord> <chord root="G">Jézusnak nyisd meg,</chord> <chord root="D">jön,</chord> <chord root="A">közele</chord><chord root="D">dik</chord>.<br/>
+      </lines>
+      <lines>
+        <chord root="D">Nyisd</chord> <chord root="G">meg, íme,</chord> <chord root="D">jön, közele</chord><chord root="A">dik</chord>.<br/>
+        <chord root="D">Nyisd</chord> <chord root="G">meg, íme,</chord> <chord root="D">jön,</chord> <chord root="A">közele</chord><chord root="D">dik</chord>.
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        A <chord root="D">kapudat zárd be,</chord> <chord root="G">kapudat zárd be, az</chord> <chord root="D">Úr Jézus u</chord><chord root="A">tán</chord>.<br/>
+        A <chord root="D">kapudat zárd be,</chord> <chord root="G">kapudat zárd be, az</chord> <chord root="D">Úr</chord> <chord root="A">Jézus u</chord><chord root="D">tán</chord>.<br/>
+      </lines>
+      <lines>
+        <chord root="D">Zárd</chord> <chord root="G">be és ne</chord> <chord root="D">engededd el soha töb</chord><chord root="A">bé</chord>.<br/>
+        <chord root="D">Zárd</chord> <chord root="G">be és ne</chord> <chord root="D">engededd el</chord> <chord root="A">soha töb</chord><chord root="D">bé</chord>.
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="Geany" modifiedIn="Geany" modifiedDate="2019-02-27T18:47:03" id="tk-"><properties>
+    <titles>
+      <title lang="hu">Jézus, jöjj közel</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <authors>
+      <author type="word">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        <chord root="A" structure="min">Jé</chord><chord root="E">zus,</chord> <chord root="G"/>jöjj kö<chord root="F">zel, mert Te vagy az</chord> <chord root="G">Út, a Szabad</chord><chord root="C">ság!</chord><chord root="E"/><br/>
+        <chord root="A" structure="min">Jé</chord><chord root="E">zus,</chord> <chord root="G"/>kötelem vágd <chord root="F">el, te vagy a harmadik, a</chord> <chord root="G">jó válasz</chord><chord root="D">tás</chord>.
+      </lines>
+    </verse>
+  </lyrics></song>
+  <song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="Geany" modifiedIn="Geany" modifiedDate="2019-02-27T18:27:00" id="tk-"><properties>
+    <titles>
+      <title lang="hu">Jézus, lépj be szívem ajtaján</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <authors>
+      <author type="word">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+  </properties><lyrics>
+    <verse name="v1">
+      <lines>
+        <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Gyere, <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Gyere, <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Add, hogy <chord root="F">felismerjelek és ne</chord> <chord root="G">nyíljon ki az zár</chord>.
       </lines>
     </verse>
   </lyrics></song>

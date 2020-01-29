@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding='UTF-8'?>
+<?xml-stylesheet href="stylesheets/openlyrics.xsl" type="text/xsl"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="Geany" modifiedIn="Geany" modifiedDate="2019-02-27T18:27:00">
+  <properties>
+    <titles>
+      <title lang="hu">Jézus, lépj be szívem ajtaján</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <authors>
+      <author type="word">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Gyere, <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Gyere, <chord root="A" structure="min">Jézus, lépj be</chord> <chord root="G">szívem ajtaján</chord>.<br/>
+        Add, hogy <chord root="F">felismerjelek és ne</chord> <chord root="G">nyíljon ki az zár</chord>.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

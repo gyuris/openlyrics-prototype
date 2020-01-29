@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding='UTF-8'?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordnotation="hungarian" createdIn="Geany" modifiedIn="Geany" modifiedDate="2020-01-29T11:27:00">
+  <properties>
+    <titles>
+      <title lang="hu">Uram, a Te Igéd fény</title>
+    </titles>
+    <verseOrder>v1 p c e v1 p c c c e</verseOrder>
+    <authors>
+      <author type="word">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+    <transposition>2</transposition>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Uram, a Te Igéd <chord root="B" structure="min">fény, lámpás és</chord> <chord root="A">tűz,<br/>
+        Uram, a Te Igéd</chord> <chord root="E">méz, forrás és</chord> <chord root="G">víz</chord>,<chord root="A"><br/>
+        Uram, a Te Igéd</chord> <chord root="B" structure="min">mag, pöröly és</chord> <chord root="A">kard,<br/>
+        Uram, a Te Igéd</chord> <chord root="E">étel, mely</chord> <chord root="G">örök életet</chord> <chord root="G">ad</chord>.<chord root="A" />
+      </lines>
+    </verse>
+    <verse name="p">
+      <lines>
+        Mert a Te Igéd <chord root="B" structure="min">teremt és elvá</chord><chord root="A">laszt,<br/>
+        Igéd</chord> <chord root="E">gyógyulást hoz,</chord> <chord root="G">megtérést, hitet</chord> <chord root="G">ad</chord>,<chord root="A"><br/>
+        A Te Igéd</chord> <chord root="B" structure="min">Lélek és közös</chord><chord root="A">ség,<br/>
+        A Te Igéd</chord> <chord root="E">élet</chord>,<chord root="G"/>az örök<chord root="F#">lét!</chord>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord root="B" structure="min">Cselekedj, Ige a szívemben,</chord><br/>
+        <chord root="G">Cselekedj, Ige a lelkemben,</chord><br/>
+        <chord root="E">Cselekedj, Ige az elmémben,</chord><br/>
+        Hogy <chord root="G">mindig köves</chord><chord root="A">sem…</chord>
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        …Jé<chord root="B" structure="min">zust!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

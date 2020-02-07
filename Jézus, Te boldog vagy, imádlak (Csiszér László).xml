@@ -21,7 +21,7 @@
         <chord root="A" structure="sus2">Jézus, Te boldog</chord> <chord root="E">vagy, i</chord><chord root="E" structure="dom9">mád</chord><chord root="E">lak,</chord><br/>
         <chord root="A" structure="sus2">Örökké boldog</chord> <chord root="E">vagy.</chord><br/>
         <chord root="A" structure="sus2">Boldogan éltél</chord> <chord root="G#" structure="min7">minden</chord> <chord root="C#" structure="min7">nap,</chord><br/>
-        <chord root="F#" structure="min7">Boldog</chord> <chord root="A">Fiú</chord> <chord root="B" structure="4-5-m7">vagy!</chord><chord root="H" />
+        <chord root="F#" structure="min7">Boldog</chord> <chord root="A">Fiú</chord> <chord root="B" structure="4-5-m7">vagy!</chord><chord root="B" />
       </lines>
     </verse>
     <verse name="c1">
@@ -29,7 +29,7 @@
         Hiszem, hogy <chord root="A" structure="sus2">boldoggá le</chord><chord root="E">szek Te</chord><chord root="E" structure="dom9">ben</chord><chord root="E">ned,</chord><br/>
         ez <chord root="A" structure="sus2">igazi boldog</chord><chord root="E">ság.</chord><br/>
         <chord root="A" structure="sus2">Boldog vagy Jézus és</chord> <chord root="G#" structure="min7">bennem</chord> <chord root="C#" structure="min7">élsz,</chord><br/>
-        veled <chord root="F#" structure="min7">vár a </chord><chord root="A">menyor</chord><chord root="B" structure="4-5-m7">szág.</chord><chord root="H" />
+        veled <chord root="F#" structure="min7">vár a </chord><chord root="A">menyor</chord><chord root="B" structure="4-5-m7">szág.</chord><chord root="B" />
       </lines>
     </verse>
     <verse name="e1">

@@ -134,7 +134,7 @@ Prince.addScriptFunc("getChord", function(sRoot, sStructure, sBass) {
   if (sBass) {
     sReturn += (oNotation[sBass] === "undefined") ? "/" + sBass : "/" + oNotation[sBass][NOTATION];
   }
-  console.log( "root:'" + sRoot + "', structure:'" + sStructure + "', bass:'" + sBass + "', -> " + sReturn);
+  //console.log( "root:'" + sRoot + "', structure:'" + sStructure + "', bass:'" + sBass + "', -> " + sReturn);
   return sReturn;
 });
 

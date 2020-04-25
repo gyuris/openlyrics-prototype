@@ -1,0 +1,32 @@
+#! /bin/bash
+
+# Prerequisites: xmllint
+# Usage:         ./validate-ol FILE
+# Example:       ./validate-ol A\ béke\ napja\ közel.xml
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Params
+########
+if [ -z "$1" ]; then
+  echo "Usage: ./validate-ol FILE"
+  exit 1
+fi
+
+if [ ! -f "$1" ]; then
+  echo "\"$1\" doesn't exist. Enter a valid XML file."
+  exit 1
+fi
+
+# Variables
+###########
+file=$1
+
+# Running
+#########
+if grep -q 'version="0.8"' "$file"; then
+  echo -n "Validating \"$file\"... "
+  xmllint --noout --relaxng openlyrics-0.8.rng "$file";
+fi
+# if 0.9...

@@ -1,7 +1,20 @@
 # XML_FILES := $(filter-out *.xsl.xml, $(wildcard *.xml))
 
 .PHONY: all
-all: pdf clean
+all: validate-xsl validate-ol pdf clean
+
+.PHONY: validate-xsl
+validate-xsl: stylesheets/openlyrics.xsl \
+              stylesheets/book.xsl \
+              stylesheets/xsl/openlyrics.08chords.xsl \
+              stylesheets/xsl/openlyrics.09chords.xml \
+              stylesheets/xsl/openlyrics.lang.en.xml \
+              stylesheets/xsl/openlyrics.lang.hu.xml
+	xmllint --noout $^
+
+.PHONY: validate-ol
+validate-ol: *.xml
+	for file in *.xml; do ./validate-ol "$$file"; done
 
 .PHONY: pdf
 pdf: *.xml

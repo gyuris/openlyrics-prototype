@@ -19,21 +19,27 @@ if [ ! -f "$1" ]; then
   exit 1
 fi
 
+# Prerequisites
+###############
+if [ $(prince --version | grep -oP "Prince \K(\d+)") -lt 13 ] ; then
+  echo "Minimum Prince version is 13. Please upgrade prince package."
+  exit 1
+fi
+
 # Variables
 ###########
 file=$1
 name="$(basename "$file" .xml)"
 js="stylesheets/css/xml/openlyrics-0.9-chord.xml.js" # Prince JS tweak
 author="Gyuris Gellért" # Author for PDF
-book="book" # Book 
+book="book" # Book
 
 # Running
 #########
-
 echo -n "Making \"$file\"... "
 
 # Generate PDF from original XML
-prince --javascript --script=$js "$file" -o "pdf/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
+prince "$file" -o "pdf/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
 
 # Replace CSS with XSL and remove CSS tweaks, save it in another file
 if [[ $name != 'book' ]]; then
@@ -52,6 +58,6 @@ else
 fi
 
 # Generate PDF from XSL(HTML) version
-xsltproc "$name.xsl.xml" | prince -o "pdf/$name.xsl.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -  
+xsltproc "$name.xsl.xml" | prince -o "pdf/$name.xsl.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
 
 echo "done"

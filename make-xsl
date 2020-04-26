@@ -1,0 +1,47 @@
+#! /bin/bash
+
+# Prerequisites: xsltproc
+# Usage:         ./make-xsl FILE
+# Example:       ./make-pdf A\ béke\ napja\ közel.xml
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Params
+########
+if [ -z "$1" ]; then
+  echo "Usage: ./make-pdf FILE"
+  exit 1
+fi
+
+if [ ! -f "$1" ]; then
+  echo "\"$1\" doesn't exist. Enter a valid XML file."
+  exit 1
+fi
+
+# Variables
+###########
+file=$1
+name="$(basename "$file" .xml)"
+
+# Running
+#########
+echo -n "Creating XSL version \"$file\"... "
+
+# Replace CSS with XSL and remove CSS tweaks, save it to another file
+if [[ $name != 'book' ]]; then
+  sed -e 's/href="stylesheets\/openlyrics\.css" type="text\/css"/href="stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
+      -e 's/ tweak="nested"//g' \
+      -e 's/ tweak="linebreak"//g' \
+      "$file" > "$name.xsl.xml"
+else
+  # Book needs extra xi:includes xslt translation to do but without --xinclude param
+  xsltproc "$file" > "$name.xsl.xml"
+  # Replace CSS with XSL and remove CSS tweaks
+  sed -i -e 's/href="stylesheets\/openlyrics\.css" type="text\/css"/href="stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
+      -e 's/ tweak="nested"//g' \
+      -e 's/ tweak="linebreak"//g' \
+      "$name.xsl.xml"
+fi
+
+echo "done"

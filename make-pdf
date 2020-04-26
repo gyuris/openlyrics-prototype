@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Prerequisites: xsltproc, prince (v12)
+# Prerequisites: xsltproc, prince (v13)
 # Usage:         ./make-pdf FILE
 # Example:       ./make-pdf A\ béke\ napja\ közel.xml
 
@@ -30,34 +30,18 @@ fi
 ###########
 file=$1
 name="$(basename "$file" .xml)"
-js="stylesheets/css/xml/openlyrics-0.9-chord.xml.js" # Prince JS tweak
 author="Gyuris Gellért" # Author for PDF
-book="book" # Book
 
 # Running
 #########
 echo -n "Making \"$file\"... "
 
-# Generate PDF from original XML
-prince "$file" -o "pdf/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
-
-# Replace CSS with XSL and remove CSS tweaks, save it in another file
-if [[ $name != 'book' ]]; then
-  sed -e 's/href="stylesheets\/openlyrics\.css" type="text\/css"/href="stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
-      -e 's/ tweak="nested"//g' \
-      -e 's/ tweak="linebreak"//g' \
-      "$file" > "$name.xsl.xml"
+if [[ $file = *".xsl.xml" ]]; then
+  # Generate PDF from XSL(HTML) version
+  xsltproc "$name.xml" | prince -o "pdf/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
 else
-  # Book needs extra xslt tranlsation to do xi:includes but without --xinclude param
-  xsltproc "$file" > "$name.xsl.xml"
-  # Replace CSS with XSL and remove CSS tweaks
-  sed -i -e 's/href="stylesheets\/openlyrics\.css" type="text\/css"/href="stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
-      -e 's/ tweak="nested"//g' \
-      -e 's/ tweak="linebreak"//g' \
-      "$name.xsl.xml"
+  # Generate PDF from original XML
+  prince "$file" -o "pdf/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
 fi
-
-# Generate PDF from XSL(HTML) version
-xsltproc "$name.xsl.xml" | prince -o "pdf/$name.xsl.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
 
 echo "done"

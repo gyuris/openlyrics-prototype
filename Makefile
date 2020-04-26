@@ -45,4 +45,4 @@ help:
 	@echo "  xsl         - Generates XSL versions"
 	@echo "  pdf         - Generates PDF files"
 	@echo "  clean       - Removes all generated XSL version"
-	@echo "  http        - Creates a light HTTP server. Stopping: Ctrl+C"
+	@echo "  http        - Creates a light HTTP server. See: https://developer.mozilla.org/hu/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp Stopping: Ctrl+C"

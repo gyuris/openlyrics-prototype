@@ -346,7 +346,7 @@
     </xsl:variable>
     <span class="segment{$linebreak}{$empty}{$upbeat}">
       <span class="chord">
-        <xsl:call-template name="chords">
+        <xsl:call-template name="chordname">
           <xsl:with-param name="this" select="." />
         </xsl:call-template>
       </span>
@@ -357,7 +357,7 @@
       </xsl:if>
     </span>
   </xsl:template>
-  <xsl:template name="chords">
+  <xsl:template name="chordname">
     <xsl:param name="this" />
     <code>{</code>
     <span class="chord-root" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/></span>
@@ -369,7 +369,7 @@
       <span class="chord-bass" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/></span>
     </xsl:if>
     <xsl:if test="local-name($this/..) = 'chord'">
-      <xsl:call-template name="chords">
+      <xsl:call-template name="chordname">
         <xsl:with-param name="this" select="$this/.." />
       </xsl:call-template>
     </xsl:if>

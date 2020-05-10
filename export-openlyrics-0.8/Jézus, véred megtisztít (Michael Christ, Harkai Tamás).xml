@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song" createdIn="OpenLP 2.0.1" modifiedDate="2015-01-20T14:40:00" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" version="0.8">
   <properties>
     <titles>

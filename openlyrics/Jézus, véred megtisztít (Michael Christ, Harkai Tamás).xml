@@ -1,5 +1,5 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
 <song xml:lang="hu" createdIn="OpenLP 2.0.1" modifiedDate="2015-01-20T14:40:00" modifiedIn="openlyrics.py 0.2" version="0.9" chordnotation="hungarian" xmlns="http://openlyrics.info/namespace/2009/song">
   <properties>
     <titles>

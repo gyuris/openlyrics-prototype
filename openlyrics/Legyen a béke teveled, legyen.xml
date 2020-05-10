@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding='UTF-8'?>
-<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song" 
   version="0.8" 
   xml:lang="hu"
@@ -29,11 +29,11 @@
       </lines>
     </verse>
     <verse name="v1" lang="he">
-      <lines>
-        <br/>הבאנו שלום עליכם
-        <br/>הבאנו שלום עליכם
-        <br/>הבאנו שלום עליכם
-        <br/>הבאנו שלום שלום שלום עליכם
+      <lines><br/>
+        הבאנו שלום עליכם<br/>
+        הבאנו שלום עליכם<br/>
+        הבאנו שלום עליכם<br/>
+        הבאנו שלום שלום שלום עליכם
       </lines>
     </verse>
     <verse name="v1" lang="he" translit="hu">

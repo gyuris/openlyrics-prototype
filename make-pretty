@@ -22,14 +22,17 @@ fi
 # Variables
 ###########
 file=$1
-name="$(basename "$file" .xml)"
+configuration="make-pretty.conf"
+if [ "$2" ]; then
+  configuration=$2
+fi
 
 # Running
 #########
-echo -n "Format XML \"$file\"... "
+echo -n "Formatting XML... $file... "
 
 # xmlformat
-xmlformat --in-place --config-file=xmlformat.conf "$file"
+xmlformat --in-place --config-file=$configuration "$file"
 # xmlformat does not format well the <br/>. Puts it on new line. I want to leave it on the line
 # ending. We must fromat it by hand.
 # Remark:I think <br/> is alian OpenLyrics and we should return to <line></line> instead of <br/>

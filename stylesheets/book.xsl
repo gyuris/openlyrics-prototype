@@ -8,9 +8,11 @@
  xmlns:xhtml="http://www.w3.org/1999/xhtml">
 <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="no"/>
 
+  <xsl:param name="source-path"/>
+
   <xsl:template match="/">
     <xsl:processing-instruction name="xml-stylesheet">
-      <xsl:text>href="stylesheets/openlyrics.css" type="text/css"</xsl:text>
+      <xsl:text>href="../stylesheets/openlyrics.css" type="text/css"</xsl:text>
     </xsl:processing-instruction>
     <xsl:text>&#x0A;</xsl:text>
     <book>
@@ -24,7 +26,7 @@
         <xsl:variable name="url">
           <xsl:choose>
             <xsl:when test="system-property('xsl:vendor')='Transformiix'"><xsl:value-of select="concat('../', @href)"/></xsl:when>
-            <xsl:otherwise><xsl:value-of select="concat('../', str:encode-uri(@href, true()))"/></xsl:otherwise>
+            <xsl:otherwise><xsl:value-of select="concat($source-path, str:encode-uri(@href, true()))"/></xsl:otherwise>
           </xsl:choose>
         </xsl:variable>
         <xsl:variable name="song" select="document ($url)/ol:song" />
@@ -38,7 +40,7 @@
     <xsl:variable name="url">
       <xsl:choose>
         <xsl:when test="system-property('xsl:vendor')='Transformiix'"><xsl:value-of select="concat('../', @href)"/></xsl:when>
-        <xsl:otherwise><xsl:value-of select="concat('../', str:encode-uri(@href, true()))"/></xsl:otherwise>
+        <xsl:otherwise><xsl:value-of select="concat($source-path, str:encode-uri(@href, true()))"/></xsl:otherwise>
       </xsl:choose>
     </xsl:variable>
     <xsl:variable name="song" select="document ($url)/ol:song" />

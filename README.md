@@ -4,12 +4,13 @@ Prototype for [openlyrics single-source](https://github.com/openlyrics/openlyric
 Usage
 =====
 
-Download and open XML files with Firefox.
+Download and open XML files with Firefox or Chrome. Pay atteintion on [local file security policy](https://developer.mozilla.org/hu/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp),
+use `make http`. For available actions see `make help`.
 
-There are two version:
+There are two diplays:
 
-- Simple: display with pure CSS
-- "xsl" in the file name: display with XSLT transformation and CSS
+- Pure CSS: display XML with CSS (for editors)
+- XSLT ("xsl" in the file name): convert XML with XSLT transformation to HTML and display with HTML+CSS (for publishers)
 
 OpenLyrics 0.9 new elements
 ===========================

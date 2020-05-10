@@ -18,15 +18,15 @@
   <lyrics>
     <verse name="v1">
       <lines>
-        Jövök e<chord root="A">léd, Uram, kezem üres.</chord><br />
+        Jövök e<chord root="A">léd, Uram, kezem üres.</chord><br/>
         A Te sze<chord root="F#" structure="min">gényed vagyok, minden gazdag</chord><chord root="D">ságom Ti</chord><chord root="E">ed, Jé</chord><chord root="A">zus.</chord>
       </lines>
     </verse>
     <verse name="c1">
       <lines>
-        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br />
-        <chord root="F#" structure="min">takarj el en</chord><chord root="C#" structure="min">gem a</chord> <chord root="D">világ e</chord><chord root="E">lől!</chord><br />
-        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br />
+        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br/>
+        <chord root="F#" structure="min">takarj el en</chord><chord root="C#" structure="min">gem a</chord> <chord root="D">világ e</chord><chord root="E">lől!</chord><br/>
+        <chord root="F#" structure="min">Boríts be en</chord><chord root="C#" structure="min">gem a Te</chord> <chord root="D">gondoskodásod</chord> <chord root="E">palástjával,</chord><br/>
         <chord root="D">Mindenem Ti</chord><chord root="E">éd le</chord><chord root="A">gyen!</chord>
       </lines>
     </verse>

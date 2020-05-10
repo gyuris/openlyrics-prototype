@@ -19,15 +19,15 @@
   <lyrics>
     <verse name="v1">
       <lines>
-        <chord root="G">Szelíd kezeddel</chord> <chord root="B" structure="min">terelgess, Uram,</chord><br />
+        <chord root="G">Szelíd kezeddel</chord> <chord root="B" structure="min">terelgess, Uram,</chord><br/>
         <chord root="C">Szelíd szíveddel</chord> <chord root="G">formálj át, U</chord><chord root="D">ram.</chord>
       </lines>
     </verse>
     <verse name="c1">
       <lines>
-        Hadd <chord root="E" structure="min">égjen az én igazságom,</chord><br />
-        Hadd <chord root="B" structure="min">égjen a gyűlölet!</chord><br />
-        <chord root="E" structure="min">Elengedem a vádat, bosszút,</chord><br />
+        Hadd <chord root="E" structure="min">égjen az én igazságom,</chord><br/>
+        Hadd <chord root="B" structure="min">égjen a gyűlölet!</chord><br/>
+        <chord root="E" structure="min">Elengedem a vádat, bosszút,</chord><br/>
         <chord root="D">Töltsön be a szeretet!</chord>
       </lines>
     </verse>

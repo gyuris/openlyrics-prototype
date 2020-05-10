@@ -1,12 +1,12 @@
 ﻿<?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song" 
-      xml:lang="hu"
-      version="0.9"
-      chordnotation="hungarian"
-      createdIn="OpenLP 2.4.6" 
-      modifiedIn="Geany" 
-      modifiedDate="2018-11-18T22:21:39">
+ xml:lang="hu"
+ version="0.9"
+ chordnotation="hungarian"
+ createdIn="OpenLP 2.4.6"
+ modifiedIn="Geany"
+ modifiedDate="2018-11-18T22:21:39">
   <properties>
     <titles>
       <title>Íme, az én fiam</title>
@@ -43,7 +43,7 @@
         <chord root="G">Nem engedem másnak az én</chord> <chord root="D">dicsőségemet.</chord><br/>
         A <chord root="B" structure="min">régi terveim mind valóra</chord> <chord root="G">váltak</chord>,<br/>
         s ma <chord root="E" structure="min">újakat hirde</chord><chord root="A">tek, lásd most sar</chord><chord root="D">jadnak.</chord>
-        </lines>
+      </lines>
     </verse>
     <instrument name="m1">
       <lines>

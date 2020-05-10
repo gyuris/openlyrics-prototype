@@ -23,12 +23,14 @@
   </properties>
   <lyrics>
     <verse name="v1">
-      <lines>Jézus, <chord root="A">véred</chord> <chord root="E" bass="G#">megtisz</chord><chord root="F#" structure="min">tít,</chord> <chord root="F#" structure="min" bass="E" tweak="linebreak"><br />
-      véred </chord><chord root="D">ad új éle</chord><chord root="E" structure="sus4">tet,</chord><chord root="E" /><br />
-      véred <chord root="D">tesz ma szabad</chord><chord root="E" structure="sus4">dá,</chord><chord root="E" /><br />
-      értem <chord root="A">folyt e</chord> <chord root="C#" structure="min7">drága</chord> <chord root="F#" structure="min">vér!</chord><chord root="F#" structure="min" bass="E" /><br />
-      Így a <chord root="D">lel</chord><chord root="D" structure="min">kem fehér, mint a</chord> <chord root="E" bass="G#" tweak="nested"><chord root="A" bass="">hó,</chord></chord> mint a <chord root="F#" structure="min">hó.</chord><chord root="F#" structure="min" bass="E" /><br />
-      Úr <chord root="B" structure="min7">Jézus, Te</chord> <chord root="D" bass="E">megölt</chord> <chord root="E" structure="dom7">Bá</chord><chord root="A">rány!</chord></lines>
+      <lines>
+        Jézus, <chord root="A">véred</chord> <chord root="E" bass="G#">megtisz</chord><chord root="F#" structure="min">tít,</chord> <chord root="F#" structure="min" bass="E" tweak="linebreak"><br/>
+        véred </chord><chord root="D">ad új éle</chord><chord root="E" structure="sus4">tet,</chord><chord root="E" /><br/>
+        véred <chord root="D">tesz ma szabad</chord><chord root="E" structure="sus4">dá,</chord><chord root="E" /><br/>
+        értem <chord root="A">folyt e</chord> <chord root="C#" structure="min7">drága</chord> <chord root="F#" structure="min">vér!</chord><chord root="F#" structure="min" bass="E" /><br/>
+        Így a <chord root="D">lel</chord><chord root="D" structure="min">kem fehér, mint a</chord> <chord root="E" bass="G#" tweak="nested"><chord root="A" bass="">hó,</chord></chord> mint a <chord root="F#" structure="min">hó.</chord><chord root="F#" structure="min" bass="E" /><br/>
+        Úr <chord root="B" structure="min7">Jézus, Te</chord> <chord root="D" bass="E">megölt</chord> <chord root="E" structure="dom7">Bá</chord><chord root="A">rány!</chord>
+      </lines>
     </verse>
   </lyrics>
 </song>

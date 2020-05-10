@@ -35,13 +35,14 @@
         <br/>הבאנו שלום עליכם
         <br/>הבאנו שלום שלום שלום עליכם
       </lines>
-    </verse>    
+    </verse>
     <verse name="v1" lang="he" translit="hu">
       <lines>
         Hevenu <chord name="Dm"/>shalom aleikhem,<br/>
         hevenu <chord name="Gm"/>shalom aleikhem,<br/>
         hevenu <chord name="A"/>shalom a<chord name="Dm"/>leikhem,<br/>
-        hevenu <chord name="A"/>shalom, shalom, shalom aleik<chord name="Dm"/>hem!</lines>
+        hevenu <chord name="A"/>shalom, shalom, shalom aleik<chord name="Dm"/>hem!
+      </lines>
     </verse>
   </lyrics>
 </song>

@@ -1,0 +1,38 @@
+#! /bin/bash
+
+# Prerequisites: xmlformat (tested with PERL version)
+# Usage:         ./make-pretty FILE
+# Example:       ./make-pretty A\ béke\ napja\ közel.xml
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Params
+########
+if [ -z "$1" ]; then
+  echo "Usage: ./make-pretty FILE"
+  exit 1
+fi
+
+if [ ! -f "$1" ]; then
+  echo "\"$1\" doesn't exist. Enter a valid XML file."
+  exit 1
+fi
+
+# Variables
+###########
+file=$1
+name="$(basename "$file" .xml)"
+
+# Running
+#########
+echo -n "Format XML \"$file\"... "
+
+# xmlformat
+xmlformat --in-place --config-file=xmlformat.conf "$file"
+# xmlformat does not format well the <br/>. Puts it on new line. I want to leave it on the line
+# ending. We must fromat it by hand.
+# Remark:I think <br/> is alian OpenLyrics and we should return to <line></line> instead of <br/>
+sed --in-place --regexp-extended ':a;N;$!ba;s/\r{0,1}\n\s+(<br\/>|<br \/>)/<br\/>/g' "$file"
+
+echo "done"

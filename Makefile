@@ -24,6 +24,10 @@ validate: *.xml
 	done
 # If 0.9
 
+.PHONY: pretty
+pretty: *.xml
+	@for file in *.xml; do ./make-pretty "$$file"; done
+
 .PHONY: convert08
 convert08: *.xml
 	cd converted && rm -f *.xml && cd ..
@@ -31,9 +35,11 @@ convert08: *.xml
 		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" && xsltproc -o converted/"$$file" openlyrics-09-to-openlyrics-08.xsl "$$file"; fi; \
 	done
 	@for file in converted/*.xml; do \
+		./make-pretty "$$file"; \
+	done
+	@for file in converted/*.xml; do \
 		echo -n "Validating... " && xmllint --noout --relaxng openlyrics-0.8.rng "$$file"; \
 	done
-
 
 .PHONY: xsl
 xsl: *.xml
@@ -59,3 +65,4 @@ help:
 	@echo "  clean       - Removes all generated XSL version"
 	@echo "  http        - Creates a light HTTP server. See: https://developer.mozilla.org/hu/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp Stopping: Ctrl+C"
 	@echo "  convert08   - Converts OpenLyrics 0.9 files to OpenLyrics 0.8"
+	@echo "  pretty      - Format XML source"

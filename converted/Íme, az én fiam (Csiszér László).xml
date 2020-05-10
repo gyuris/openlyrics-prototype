@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.4.6" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2018-11-18T22:21:39">
+  <properties>
+    <titles>
+      <title>Íme, az én fiam</title>
+    </titles>
+    <verseOrder>v1 v2 1 b c c 2 c e</verseOrder>
+    <authors>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="341"/>
+    </songbooks>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="G"/>Íme, az én fiam, akit <chord name="D"/>támogatok,<br/>
+        <chord name="G"/>Választottam, aki <chord name="D"/>kedves nagyon.<br/>
+        <chord name="Hm"/>Ráárasztottam Lelke<chord name="G"/>met,<br/>
+        hogy <chord name="Em"/>igazságot vi<chord name="A"/>gyen a népek<chord name="D"/>nek.
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="G"/>Én vagyok az Úr, ez az <chord name="D"/>én nevem!<br/>
+        <chord name="G"/>Nem engedem másnak az én <chord name="D"/>dicsőségemet.<br/>
+        A <chord name="Hm"/>régi terveim mind valóra <chord name="G"/>váltak,<br/>
+        s ma <chord name="Em"/>újakat hirde<chord name="A"/>tek, lásd most sar<chord name="D"/>jadnak.
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines>
+        <chord name="Hm"/>A megroppant nádszálat nem töri össze,<br/>
+        a füstölgő mécsbelet nem oltja el.<br/>
+        Ereje nem lankad, és nem roppan össze,<br/>
+        míg igazságot nem tesz e földön.
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord name="Hm"/>Mennyei <chord name="Em"/>jó Atyám,<br/>
+        <chord name="G"/>országod jöjjön <chord name="Fisz"/>el!<br/>
+        <chord name="Hm"/>Ó, drága <chord name="Em"/>jó Atyám,<br/>
+        <chord name="G"/>Királyunk küldjed <chord name="Fisz"/>el!
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        <chord name="G"/>Országod jöjjön el,<br/>
+        <chord name="B"/>Királyunk küldjed el,<br/>
+        A Te <chord name="D"/>Országod jöjjön el!
+      </lines>
+    </verse>
+  </lyrics>
+</song>

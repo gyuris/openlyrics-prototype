@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Geany" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2019-02-27T17:47:03">
+  <properties>
+    <titles>
+      <title lang="hu">A kapudat nyisd meg</title>
+    </titles>
+    <verseOrder>v1 v2</verseOrder>
+    <authors>
+      <author>ismeretlen</author>
+    </authors>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        A <chord name="D"/>kapudat nyisd meg, <chord name="G"/>Jézusnak nyisd meg, <chord name="D"/>jön, közele<chord name="A"/>dik.<br/>
+        A <chord name="D"/>kapudat nyisd meg, <chord name="G"/>Jézusnak nyisd meg, <chord name="D"/>jön, <chord name="A"/>közele<chord name="D"/>dik.<br/>
+      </lines>
+      <lines>
+        <chord name="D"/>Nyisd <chord name="G"/>meg, íme, <chord name="D"/>jön, közele<chord name="A"/>dik.<br/>
+        <chord name="D"/>Nyisd <chord name="G"/>meg, íme, <chord name="D"/>jön, <chord name="A"/>közele<chord name="D"/>dik.
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        A <chord name="D"/>kapudat zárd be, <chord name="G"/>kapudat zárd be, az <chord name="D"/>Úr Jézus u<chord name="A"/>tán.<br/>
+        A <chord name="D"/>kapudat zárd be, <chord name="G"/>kapudat zárd be, az <chord name="D"/>Úr <chord name="A"/>Jézus u<chord name="D"/>tán.<br/>
+      </lines>
+      <lines>
+        <chord name="D"/>Zárd <chord name="G"/>be és ne <chord name="D"/>engededd el soha töb<chord name="A"/>bé.<br/>
+        <chord name="D"/>Zárd <chord name="G"/>be és ne <chord name="D"/>engededd el <chord name="A"/>soha töb<chord name="D"/>bé.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

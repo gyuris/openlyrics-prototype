@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.4" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2016-03-15T07:36:08">
+  <properties>
+    <titles>
+      <title lang="hu">Habár szemem</title>
+      <title lang="hu">Itt vagy velem</title>
+      <title lang="es" original="true">Tu Estas Aqui</title>
+      <title lang="en">You are here</title>
+    </titles>
+    <authors>
+      <author type="words">Jesus Adrian Romero</author>
+      <author type="music">Jesus Adrian Romero</author>
+      <author type="words">Marcela Gandara</author>
+      <author type="music">Marcela Gandara</author>
+      <author type="translation" lang="hu">Majoros Ildikó</author>
+      <author type="translation" lang="hu">Gyuris Gellért</author>
+    </authors>
+    <songbooks>
+      <songbook entry="000" name="Szent András Énekfüzet"/>
+      <songbook name="Teszt könyv" entry="44"/>
+    </songbooks>
+    <copyright>© 2005 Vástago Producciones</copyright>
+    <verseOrder>v1 c1</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="G"/>Habár sze<chord name="C"/>mem <chord name="G/H"/>nem láthat Té<chord name="Am"/>ged, mégis érez<chord name="F"/>lek; tudom, itt vagy ve<chord name="C"/>lem.<br/>
+        <chord name="G"/>Habár ke<chord name="C"/>zem <chord name="G/H"/>nem érintheti <chord name="Am"/>még arcodat, U<chord name="F"/>ram, tudom, itt vagy ve<chord name="C"/>lem. <chord name="C"/>Óh…<chord name="G4"/>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines break="optional">
+        <chord name="G"/>Szívemben <chord name="Am"/>már érezhe<chord name="F"/>tem jelenléted…<br/>
+        <chord name="C"/>itt vagy velem, Te <chord name="G"/>itt vagy velem.<br/>
+        És <chord name="Am"/>érezhetem <chord name="F"/>fenségedet…<br/>
+        <chord name="C"/>itt vagy velem, Te <chord name="G"/>itt vagy velem.<chord name="G4"/>
+      </lines>
+      <lines>
+        <chord name="G"/>Szívemben <chord name="Am"/>már szemlélhe<chord name="F"/>tem a Te szépséged…<br/>
+        <chord name="C"/>itt vagy velem, Te <chord name="G"/>itt vagy velem.<br/>
+        Mert <chord name="Am"/>érezhetem <chord name="F"/>nagy szerelmed…<br/>
+        <chord name="C"/>itt vagy velem, Te <chord name="G"/>itt vagy velem.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

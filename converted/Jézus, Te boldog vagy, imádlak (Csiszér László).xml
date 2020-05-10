@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLP 2.4.6" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2016-02-15T23:33:03">
+  <properties>
+    <titles>
+      <title lang="hu">Jézus, Te boldog vagy, imádlak</title>
+      <title lang="hu">Boldogok vagytok kurzus himnusz</title>
+    </titles>
+    <authors>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <songbooks>
+      <songbook entry="000" name="Szent András Énekfüzet"/>
+    </songbooks>
+    <verseOrder>v1 c1 e1</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="A2"/>Jézus, Te boldog <chord name="E"/>vagy, i<chord name="E9"/>mád<chord name="E"/>lak,<br/>
+        <chord name="A2"/>Örökké boldog <chord name="E"/>vagy.<br/>
+        <chord name="A2"/>Boldogan éltél <chord name="Giszm7"/>minden <chord name="Ciszm7"/>nap,<br/>
+        <chord name="Fiszm7"/>Boldog <chord name="A"/>Fiú <chord name="H7,4"/>vagy!<chord name="H"/>
+      </lines>
+    </verse>
+    <verse name="c1">
+      <lines>
+        Hiszem, hogy <chord name="A2"/>boldoggá le<chord name="E"/>szek Te<chord name="E9"/>ben<chord name="E"/>ned,<br/>
+        ez <chord name="A2"/>igazi boldog<chord name="E"/>ság.<br/>
+        <chord name="A2"/>Boldog vagy Jézus és <chord name="Giszm7"/>bennem <chord name="Ciszm7"/>élsz,<br/>
+        veled <chord name="Fiszm7"/>vár a <chord name="A"/>menyor<chord name="H7,4"/>szág.<chord name="H"/>
+      </lines>
+    </verse>
+    <verse name="e1">
+      <lines>
+        A Te <chord name="A2"/>Igéd vezet és <chord name="H4/A"/>bátorít,<br/>
+        <chord name="A2"/>Igéd vezet és <chord name="H4/A"/> bátorít,<br/>
+        <chord name="A2"/>Igéd vezet és <chord name="H4/A"/>boldogít,<br/>
+        minden <chord name="E"/>nap.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

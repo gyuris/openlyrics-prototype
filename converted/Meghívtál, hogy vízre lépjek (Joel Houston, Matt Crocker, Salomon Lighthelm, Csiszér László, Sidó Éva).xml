@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="OpenLyrics Python Library 0.2" modifiedDate="2015-01-20T14:40:01" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter">
+  <properties>
+    <titles>
+      <title lang="hu">Meghívtál, hogy vízre lépjek</title>
+      <title lang="en" original="true">Oceans</title>
+      <title lang="en">Where Feet May Fail</title>
+    </titles>
+    <authors>
+      <author type="words">Joel Houston</author>
+      <author type="music">Joel Houston</author>
+      <author type="words">Matt Crocker</author>
+      <author type="music">Matt Crocker</author>
+      <author type="words">Salomon Lighthelm</author>
+      <author type="music">Salomon Lighthelm</author>
+      <author lang="hu" type="translation">Csiszér László</author>
+      <author lang="hu" type="translation">Sidó Éva</author>
+    </authors>
+    <released>2015</released>
+    <key>D</key>
+    <transposition>-6</transposition>
+    <tempo type="bpm">132</tempo>
+    <variant>Csiszér László</variant>
+    <songbooks>
+      <songbook entry="309" name="Szent András énekfüzet"/>
+      <songbook name="Teszt könyv" entry="111"/>
+    </songbooks>
+    <copyright>© 2012 Hillsong Music Publishing</copyright>
+    <ccliNo>6428767</ccliNo>
+    <verseOrder>v1 c v2 c 1 b1 b1 b1 b2 b3 b3 2 e</verseOrder>
+    <comments>
+      <comment>Hivatkozás: Mt 14,22‒33</comment>
+    </comments>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines part="lányok">
+        <comment>Halkan énekeljük.</comment>
+        <chord name="Hm"/>Meghívtál, hogy <chord name="A/Cisz"/>vízre <chord name="D"/>lépjek, hol Nélkü<chord name="A"/>led elsüllye<chord name="G"/>dek.<br/>
+        <chord name="Hm"/>Ebben megta<chord name="A/Cisz"/>lállak <chord name="D"/>Téged, a mélység<chord name="A"/>ben megtart hi<chord name="G"/>tem.
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord name="G"/>Nagy Ne<chord name="D"/>ved hívom <chord name="A"/>én,<br/>
+        <chord name="G"/>és felné<chord name="D"/>zek a vizek fö<chord name="A"/>lé.<br/>
+        Ott látlak <chord name="G"/>én, a lelkem <chord name="D"/>Benned megpi<chord name="A"/>hen.<br/>
+        Enyém <chord name="G"/>vagy és <chord name="A"/>én Ti<chord name="Hm"/>ed.<chord name="A/Cisz"/><chord name="D"/><chord name="A"/><chord name="Em"/>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="Hm"/>A mélységnél na<chord name="A/Cisz"/>gyobb ke<chord name="D"/>gyelmed, mely elve<chord name="A"/>zet és tart en<chord name="G"/>gem.<br/>
+        <chord name="Hm"/>Ha elbuknék és <chord name="A/Cisz"/>nagyon <chord name="D"/>félnék, Te nem hagysz <chord name="A"/>el, nem inogsz <chord name="G"/>meg.
+      </lines>
+    </verse>
+    <verse name="b1">
+      <lines>
+        <chord name="Hm"/>Lélek add, hogy Benned <chord name="G"/>teljesen megbízzak,<br/>
+        A vízen <chord name="D"/>bátran Veled járjak, <chord name="A"/>bárhová hívsz, menjek.<br/>
+        <chord name="Hm"/>Vigyél tovább, mint a <chord name="G"/>lábam tudna menni.<br/>
+        Taníts <chord name="D"/>teljes hittel járni, je<chord name="A"/>lenlétedben élni.
+      </lines>
+    </verse>
+    <verse name="b2">
+      <lines>
+        <chord name="G"/>Lélek add, hogy Benned <chord name="D"/>teljesen megbízzak,<br/>
+        A vízen <chord name="A"/>bátran Veled járjak, <chord name="G"/>bárhová hívsz, menjek.<br/>
+        <chord name="G"/>Vigyél tovább, mint a <chord name="D"/>lábam tudna menni.<br/>
+        Taníts <chord name="A"/>teljes hittel járni, je<chord name="G"/>lenlétedben élni.
+      </lines>
+    </verse>
+    <verse name="b3">
+      <lines>
+        <chord name="Hm"/>Lélek add, hogy <chord name="A/Cisz"/>Benned <chord name="D"/>teljesen megbízzak,<br/>
+        A vízen <chord name="A"/>bátran Veled járjak, <chord name="Em"/>bárhová hívsz, menjek.<br/>
+        <chord name="Hm"/>Vigyél tovább, <chord name="A/Cisz"/>mint a <chord name="D"/>lábam tudna menni.<br/>
+        Taníts <chord name="A"/>teljes hittel járni, je<chord name="Em"/>lenlétedben élni.
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        <chord name="G"/>Nagy Ne<chord name="D"/>ved hívom <chord name="A"/>én,<br/>
+        <chord name="G"/>és felné<chord name="D"/>zek a vizek fö<chord name="A"/>lé.<br/>
+        <chord name="G"/>A lelkem <chord name="D"/>Benned megpi<chord name="A"/>hen.<br/>
+        Enyém <chord name="G"/>vagy és <chord name="A"/>én Ti<chord name="Hm"/>ed.<chord name="A/Cisz"/><chord name="D"/><chord name="A"/><chord name="G"/><chord name="Hm"/><chord name="A/Cisz"/><chord name="D"/>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

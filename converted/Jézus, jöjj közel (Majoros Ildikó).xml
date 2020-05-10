@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Geany" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2019-02-27T18:47:03">
+  <properties>
+    <titles>
+      <title lang="hu">Jézus, jöjj közel</title>
+    </titles>
+    <verseOrder>v1</verseOrder>
+    <authors>
+      <author type="words">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="Am"/>Jé<chord name="E"/>zus, <chord name="G"/>jöjj kö<chord name="F"/>zel, mert Te vagy az <chord name="G"/>Út, a Szabad<chord name="C"/>ság!<chord name="E"/><br/>
+        <chord name="Am"/>Jé<chord name="E"/>zus, <chord name="G"/>kötelem vágd <chord name="F"/>el, te vagy a harmadik, a <chord name="G"/>jó válasz<chord name="D"/>tás.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

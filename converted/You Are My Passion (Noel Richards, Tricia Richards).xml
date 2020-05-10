@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Geany" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2017-03-22T17:19:28-06:00">
+  <properties>
+    <titles>
+      <title lang="en">You Are My Passion</title>
+      <title>Now Will You Draw Me Close To You</title>
+    </titles>
+    <authors>
+      <author type="words">Noel Richards</author>
+      <author type="music">Noel Richards</author>
+      <author type="words">Tricia Richards</author>
+      <author type="music">Tricia Richards</author>
+    </authors>
+    <songbooks>
+      <songbook name="Teszt könyv" entry="222"/>
+    </songbooks>
+    <key>D</key>
+    <ccliNo>1537935</ccliNo>
+    <copyright> 1995 Thankyou Music</copyright>
+    <themes>
+      <theme>Declaration</theme>
+      <theme>Love</theme>
+    </themes>
+    <verseOrder>v1 c</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="D"/>You are my pas<chord name="D2/C♯"/>sion<br/>
+        <chord name="Bm7"/>Love of my <chord name="G"/>life<br/>
+        <chord name="D"/>Friend and com<chord name="D2/C♯"/>panion my <chord name="G2"/>Lover<br/>
+        <chord name="D"/>All of my <chord name="D2/C♯"/>being<br/>
+        <chord name="Bm7"/>Longs for Your <chord name="G"/>touch<br/>
+        <chord name="D"/>With all <chord name="D2/C♯"/>my heart I <chord name="G2"/>love You
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord name="G/B"/>Now will You <chord name="A2"/>draw me <chord name="A2/C♯"/>close to <chord name="D"/>You?<br/>
+        <chord name="G2"/>Gather me <chord name="A2"/>in <chord name="A2/C♯"/>Your <chord name="D"/>arms.<br/>
+        <chord name="G/B"/>Let me hear the <chord name="A2"/>beating <chord name="A2/C♯"/>of Your <chord name="D"/>heart;<br/>
+        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/>Je<chord name="D"/>sus,<br/>
+        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/>Je<chord name="D"/>sus.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

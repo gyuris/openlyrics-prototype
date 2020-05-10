@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" createdIn="OpenLP 2.0.1" modifiedDate="2015-01-20T14:40:00" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" version="0.8">
+  <properties>
+    <titles>
+      <title lang="hu">Jézus, véred megtisztít</title>
+      <title lang="en" original="true">It's Your Blood</title>
+    </titles>
+    <authors>
+      <author type="words">Michael Christ</author>
+      <author type="music">Michael Christ</author>
+      <author lang="hu" type="translation">Harkai Tamás</author>
+    </authors>
+    <songbooks>
+      <songbook entry="12" name="Szent András énekfüzet"/>
+      <songbook name="Zöld könyv" entry="434"/>
+      <songbook name="Kék könyv" entry="67D"/>
+      <songbook name="Teszt könyv" entry="76"/>
+    </songbooks>
+    <copyright>© 1985 Mercy / Vineyard Publishing</copyright>
+    <ccliNo>59287</ccliNo>
+    <verseOrder>v1</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Jézus, <chord name="A"/>véred <chord name="E/Gisz"/>megtisz<chord name="Fiszm"/>tít, <chord name="Fiszm/E"/> véred <chord name="D"/>ad új éle<chord name="E4"/>tet,<chord name="E"/><br/>
+        véred <chord name="D"/>tesz ma szabad<chord name="E4"/>dá,<chord name="E"/><br/>
+        értem <chord name="A"/>folyt e <chord name="Ciszm7"/>drága <chord name="Fiszm"/>vér!<chord name="Fiszm/E"/><br/>
+        Így a <chord name="D"/>lel<chord name="Dm"/>kem fehér, mint a <chord name="E/Gisz"/>hó, mint a <chord name="Fiszm"/>hó.<chord name="Fiszm/E"/><br/>
+        Úr <chord name="Hm7"/>Jézus, Te <chord name="D/E"/>megölt <chord name="E7"/>Bá<chord name="A"/>rány!
+      </lines>
+    </verse>
+  </lyrics>
+</song>

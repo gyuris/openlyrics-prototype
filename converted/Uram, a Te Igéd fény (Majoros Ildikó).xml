@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Geany" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-01-29T11:27:00">
+  <properties>
+    <titles>
+      <title lang="hu">Uram, a Te Igéd fény</title>
+    </titles>
+    <verseOrder>v1 p c e v1 p c c c e</verseOrder>
+    <authors>
+      <author type="words">Majoros Ildikó</author>
+      <author type="music">Majoros Ildikó</author>
+    </authors>
+    <transposition>2</transposition>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Uram, a Te Igéd <chord name="Hm"/>fény, lámpás és <chord name="A"/>tűz, Uram, a Te Igéd <chord name="E"/>méz, forrás és <chord name="G"/>víz,<chord name="A"/> Uram, a Te Igéd <chord name="Hm"/>mag, pöröly és <chord name="A"/>kard, Uram, a Te Igéd <chord name="E"/>étel, mely <chord name="G"/>örök életet <chord name="G"/>ad.<chord name="A"/>
+      </lines>
+    </verse>
+    <verse name="p">
+      <lines>
+        Mert a Te Igéd <chord name="Hm"/>teremt és elvá<chord name="A"/>laszt, Igéd <chord name="E"/>gyógyulást hoz, <chord name="G"/>megtérést, hitet <chord name="G"/>ad,<chord name="A"/> A Te Igéd <chord name="Hm"/>Lélek és közös<chord name="A"/>ség, A Te Igéd <chord name="E"/>élet,<chord name="G"/>az örök<chord name="Fisz"/>lét!
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord name="Hm"/>Cselekedj, Ige a szívemben,<br/>
+        <chord name="G"/>Cselekedj, Ige a lelkemben,<br/>
+        <chord name="E"/>Cselekedj, Ige az elmémben,<br/>
+        Hogy <chord name="G"/>mindig köves<chord name="A"/>sem…
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        …Jé<chord name="Hm"/>zust!
+      </lines>
+    </verse>
+  </lyrics>
+</song>

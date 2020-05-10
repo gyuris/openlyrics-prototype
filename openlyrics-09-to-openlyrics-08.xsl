@@ -59,7 +59,7 @@
         </xsl:call-template>
       </xsl:attribute>
     </xsl:element>
-    <xsl:value-of select="."/>
+    <xsl:apply-templates/>
   </xsl:template>
 
 </xsl:stylesheet>

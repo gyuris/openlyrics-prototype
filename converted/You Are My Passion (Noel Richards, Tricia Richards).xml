@@ -40,8 +40,8 @@
         <chord name="G/B"/>Now will You <chord name="A2"/>draw me <chord name="A2/C♯"/>close to <chord name="D"/>You?<br/>
         <chord name="G2"/>Gather me <chord name="A2"/>in <chord name="A2/C♯"/>Your <chord name="D"/>arms.<br/>
         <chord name="G/B"/>Let me hear the <chord name="A2"/>beating <chord name="A2/C♯"/>of Your <chord name="D"/>heart;<br/>
-        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/>Je<chord name="D"/>sus,<br/>
-        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/>Je<chord name="D"/>sus.
+        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/><chord name="A2"/>Je<chord name="D"/>sus,<br/>
+        <chord name="Am"/>O <chord name="G"/>my <chord name="A2/C♯"/><chord name="A2"/>Je<chord name="D"/>sus.
       </lines>
     </verse>
   </lyrics>

@@ -26,8 +26,10 @@
   <lyrics>
     <verse name="v1">
       <lines>
-        <chord name="G"/>Habár sze<chord name="C"/>mem <chord name="G/H"/>nem láthat Té<chord name="Am"/>ged, mégis érez<chord name="F"/>lek; tudom, itt vagy ve<chord name="C"/>lem.<br/>
-        <chord name="G"/>Habár ke<chord name="C"/>zem <chord name="G/H"/>nem érintheti <chord name="Am"/>még arcodat, U<chord name="F"/>ram, tudom, itt vagy ve<chord name="C"/>lem. <chord name="C"/>Óh…<chord name="G4"/>
+        <chord name="G"/>Habár sze<chord name="C"/>mem <chord name="G/H"/>nem láthat Té<chord name="Am"/>ged,<br/>
+        mégis érez<chord name="F"/>lek; tudom, itt vagy ve<chord name="C"/>lem.<br/>
+        <chord name="G"/>Habár ke<chord name="C"/>zem <chord name="G/H"/>nem érintheti <chord name="Am"/>még<br/>
+        arcodat, U<chord name="F"/>ram, tudom, itt vagy ve<chord name="C"/>lem. <chord name="C"/>Óh…<chord name="G4"/>
       </lines>
     </verse>
     <verse name="c">

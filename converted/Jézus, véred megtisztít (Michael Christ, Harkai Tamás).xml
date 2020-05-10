@@ -24,10 +24,11 @@
   <lyrics>
     <verse name="v1">
       <lines>
-        Jézus, <chord name="A"/>véred <chord name="E/Gisz"/>megtisz<chord name="Fiszm"/>tít, <chord name="Fiszm/E"/> véred <chord name="D"/>ad új éle<chord name="E4"/>tet,<chord name="E"/><br/>
+        Jézus, <chord name="A"/>véred <chord name="E/Gisz"/>megtisz<chord name="Fiszm"/>tít, <chord name="Fiszm/E"/><br/>
+        véred <chord name="D"/>ad új éle<chord name="E4"/>tet,<chord name="E"/><br/>
         véred <chord name="D"/>tesz ma szabad<chord name="E4"/>dá,<chord name="E"/><br/>
         értem <chord name="A"/>folyt e <chord name="Ciszm7"/>drága <chord name="Fiszm"/>vér!<chord name="Fiszm/E"/><br/>
-        Így a <chord name="D"/>lel<chord name="Dm"/>kem fehér, mint a <chord name="E/Gisz"/>hó, mint a <chord name="Fiszm"/>hó.<chord name="Fiszm/E"/><br/>
+        Így a <chord name="D"/>lel<chord name="Dm"/>kem fehér, mint a <chord name="E/Gisz"/><chord name="A"/>hó, mint a <chord name="Fiszm"/>hó.<chord name="Fiszm/E"/><br/>
         Úr <chord name="Hm7"/>Jézus, Te <chord name="D/E"/>megölt <chord name="E7"/>Bá<chord name="A"/>rány!
       </lines>
     </verse>

@@ -37,8 +37,10 @@
     <verse name="v1">
       <lines part="lányok">
         <comment>Halkan énekeljük.</comment>
-        <chord name="Hm"/>Meghívtál, hogy <chord name="A/Cisz"/>vízre <chord name="D"/>lépjek, hol Nélkü<chord name="A"/>led elsüllye<chord name="G"/>dek.<br/>
-        <chord name="Hm"/>Ebben megta<chord name="A/Cisz"/>lállak <chord name="D"/>Téged, a mélység<chord name="A"/>ben megtart hi<chord name="G"/>tem.
+        <chord name="Hm"/>Meghívtál, hogy <chord name="A/Cisz"/>vízre <chord name="D"/>lépjek,<br/>
+        hol Nélkü<chord name="A"/>led elsüllye<chord name="G"/>dek.<br/>
+        <chord name="Hm"/>Ebben megta<chord name="A/Cisz"/>lállak <chord name="D"/>Téged,<br/>
+        a mélység<chord name="A"/>ben megtart hi<chord name="G"/>tem.
       </lines>
     </verse>
     <verse name="c">
@@ -51,8 +53,10 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord name="Hm"/>A mélységnél na<chord name="A/Cisz"/>gyobb ke<chord name="D"/>gyelmed, mely elve<chord name="A"/>zet és tart en<chord name="G"/>gem.<br/>
-        <chord name="Hm"/>Ha elbuknék és <chord name="A/Cisz"/>nagyon <chord name="D"/>félnék, Te nem hagysz <chord name="A"/>el, nem inogsz <chord name="G"/>meg.
+        <chord name="Hm"/>A mélységnél na<chord name="A/Cisz"/>gyobb ke<chord name="D"/>gyelmed,<br/>
+        mely elve<chord name="A"/>zet és tart en<chord name="G"/>gem.<br/>
+        <chord name="Hm"/>Ha elbuknék és <chord name="A/Cisz"/>nagyon <chord name="D"/>félnék,<br/>
+        Te nem hagysz <chord name="A"/>el, nem inogsz <chord name="G"/>meg.
       </lines>
     </verse>
     <verse name="b1">

@@ -1,7 +1,7 @@
 # XML_FILES := $(filter-out *.xsl.xml, $(wildcard *.xml))
 
-SOURCEXML := openlyrics/*.xml
-SOURCEDIR := openlyrics
+SOURCEXML := songs/*.xml
+SOURCEDIR := songs
 EXPORTDIR := export-openlyrics-0.8
 
 .PHONY: all
@@ -24,20 +24,20 @@ http:
 
 .PHONY: validate
 validate: $(SOURCEXML)
-	@cd openlyrics && for file in *.xml; do \
+	@cd songs && for file in *.xml; do \
 		if grep -q 'version="0.8"' "$$file"; then echo -n "Validating (0.8)... " && xmllint --noout --relaxng ../openlyrics-0.8.rng "$$file"; fi; \
 	done
 # If 0.9
 
 .PHONY: pretty
-pretty: openlyrics/*.xml
-	@cd openlyrics && for file in *.xml; do ../make-pretty "$$file" "../make-pretty.conf"; done
+pretty: songs/*.xml
+	@cd songs && for file in *.xml; do ../make-pretty "$$file" "../make-pretty.conf"; done
 
 .PHONY: export08
-export08: openlyrics/*.xml
+export08: songs/*.xml
 	@cd export-openlyrics-0.8 && rm -f *.xml && cd ..
 	@echo "Deleting export-openlyrics/.xml files"
-	@cd openlyrics && for file in *.xml; do \
+	@cd songs && for file in *.xml; do \
 		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" && xsltproc -o ../export-openlyrics-0.8/"$$file" ../openlyrics-0.9-to-openlyrics-0.8.xsl "$$file"; fi; \
 	done
 	@cd export-openlyrics-0.8 && for file in *.xml; do \
@@ -48,17 +48,17 @@ export08: openlyrics/*.xml
 	done
 
 .PHONY: xsl
-xsl: openlyrics/*.xml
-	@cd openlyrics && rm -f *.xsl.xml && cd ..
-	@cd openlyrics && for file in *.xml; do ../make-xsl "$$file" "."; done
+xsl: songs/*.xml
+	@cd songs && rm -f *.xsl.xml && cd ..
+	@cd songs && for file in *.xml; do ../make-xsl "$$file" "."; done
 
 .PHONY: pdf
-pdf: openlyrics/*.xml
-	@cd openlyrics && for file in *.xml; do ../make-pdf "$$file" "../export-pdf"; done
+pdf: songs/*.xml
+	@cd songs && for file in *.xml; do ../make-pdf "$$file" "../export-pdf"; done
 
 .PHONY: clean
 clean:
-	@rm -f openlyrics/*.xsl.xml
+	@rm -f songs/*.xsl.xml
 
 .PHONY: help
 help:

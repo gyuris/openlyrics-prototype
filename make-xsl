@@ -40,7 +40,7 @@ if [[ $name != 'book' ]]; then
       "$file" > "$exportdir/$name.xsl.xml"
 else
   # Book needs extra xi:includes xslt translation to do but without --xinclude param
-  xsltproc "$file" --stringparam source-path "../openlyrics/" > "$name.xsl.xml"
+  xsltproc "$file" --stringparam source-path "../songs/" > "$name.xsl.xml"
   # Replace CSS with XSL and remove CSS tweaks
   sed -i -e 's/href="..\/stylesheets\/openlyrics\.css" type="text\/css"/href="..\/stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
       -e 's/ tweak="nested"//g' \

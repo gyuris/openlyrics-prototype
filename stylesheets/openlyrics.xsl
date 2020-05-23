@@ -10,13 +10,13 @@
 
   <!-- Locale-specific content -->
   <xsl:variable name="locale-strings">
-    <xsl:text>xsl/openlyrics.lang.</xsl:text>
+    <xsl:text>xsl/lang-</xsl:text>
     <xsl:value-of select="//ol:song/@xml:lang"/>
     <xsl:text>.xml</xsl:text>
   </xsl:variable>
   <xsl:variable name="locale" select="document($locale-strings)/locale"/>
   <!-- Chords -->
-  <xsl:variable name="chordnotation" select="document('xsl/openlyrics.09chords.xml')/chordnotation"/>
+  <xsl:variable name="chordnotation" select="document('xsl/openlyrics-0.9-chord.xml')/chordnotation"/>
   <xsl:variable name="notation">
     <xsl:choose>
       <xsl:when test="//ol:song/@chordnotation">
@@ -35,7 +35,7 @@
       <head>
         <title><xsl:value-of select="ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
-        <link rel="stylesheet" href="../stylesheets/css/html/openlyrics.html.css" />
+        <link rel="stylesheet" href="../stylesheets/css/xsl.css" />
       </head>
       <body>
         <xsl:apply-templates/>
@@ -326,7 +326,7 @@
   </xsl:template>
 
   <!-- Chords support for OpenLyrics 0.8 is in separated file -->
-  <xsl:include href="xsl/openlyrics.08chords.xsl" />
+  <xsl:include href="xsl/openlyrics-0.8-chord.xsl" />
 
   <xsl:template match="ol:song[@version='0.9']//ol:chord[not(ol:chord)]">
     <xsl:variable name="upbeat">

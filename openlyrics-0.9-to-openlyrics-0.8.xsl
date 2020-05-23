@@ -7,7 +7,7 @@
   <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
   <!-- Chords -->
-  <xsl:variable name="chordnotation" select="document('stylesheets/xsl/openlyrics.09chords.xml')/chordnotation"/>
+  <xsl:variable name="chordnotation" select="document('stylesheets/xsl/openlyrics-0.9-chord.xml')/chordnotation"/>
   <xsl:variable name="notation">
     <xsl:choose>
       <xsl:when test="//ol:song/@chordnotation">

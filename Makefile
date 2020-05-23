@@ -11,10 +11,10 @@ all: well-formed validate export08 xsl pdf clean
 well-formed: openlyrics-0.9-to-openlyrics-0.8.xsl \
              stylesheets/openlyrics.xsl \
              stylesheets/book.xsl \
-             stylesheets/xsl/openlyrics.08chords.xsl \
-             stylesheets/xsl/openlyrics.09chords.xml \
-             stylesheets/xsl/openlyrics.lang.en.xml \
-             stylesheets/xsl/openlyrics.lang.hu.xml
+             stylesheets/xsl/openlyrics-0.8-chord.xsl \
+             stylesheets/xsl/openlyrics-0.9-chord.xml \
+             stylesheets/xsl/lang-en.xml \
+             stylesheets/xsl/lang-hu.xml
 	@echo "Checking..." $^
 	@xmllint --noout $^
 

@@ -21,4 +21,5 @@ OpenLyrics 0.9 new elements
 - song/@chordnotation : Chordnotation, possible values: english, german, dutch, hungarian, neolatin
 - song/lyrics/instrument : Intrumental parts: intro, middle, outro and solo. - https://github.com/openlyrics/openlyrics/issues/35
 - song/lyrics/instrument/beat : For instrumental - https://github.com/openlyrics/openlyrics/issues/36
-- song/lyrics/verse/lines@repeat : Repeating for lines - https://github.com/openlyrics/openlyrics/issues/37
+- song/lyrics/verse/lines/@repeat : Repeating for lines - https://github.com/openlyrics/openlyrics/issues/37
+- //chord/@root, //chord/@structure, //chord/@bass : New chord notation

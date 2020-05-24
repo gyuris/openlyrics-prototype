@@ -17,7 +17,7 @@
       <author type="translation" lang="hu">Gyuris Gellért</author>
     </authors>
     <songbooks>
-      <songbook entry="000" name="Szent András Énekfüzet"/>
+      <songbook name="Szent András énekfüzet" entry="9998"/>
       <songbook name="Teszt könyv" entry="44"/>
     </songbooks>
     <copyright>© 2005 Vástago Producciones</copyright>

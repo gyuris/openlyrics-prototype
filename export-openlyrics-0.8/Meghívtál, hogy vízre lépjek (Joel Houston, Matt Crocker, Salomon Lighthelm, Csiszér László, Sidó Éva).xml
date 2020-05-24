@@ -23,7 +23,7 @@
     <tempo type="bpm">132</tempo>
     <variant>Csiszér László</variant>
     <songbooks>
-      <songbook entry="309" name="Szent András énekfüzet"/>
+      <songbook name="Szent András énekfüzet" entry="309"/>
       <songbook name="Teszt könyv" entry="111"/>
     </songbooks>
     <copyright>© 2012 Hillsong Music Publishing</copyright>

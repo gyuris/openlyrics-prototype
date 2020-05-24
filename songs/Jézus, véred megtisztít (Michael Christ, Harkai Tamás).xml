@@ -12,7 +12,7 @@
       <author lang="hu" type="translation">Harkai Tamás</author>
     </authors>
     <songbooks>
-      <songbook entry="12" name="Szent András énekfüzet" />
+      <songbook name="Szent András énekfüzet" entry="12"/>
       <songbook name="Zöld könyv" entry="434"/>
       <songbook name="Kék könyv" entry="67D"/>
       <songbook name="Teszt könyv" entry="76"/>

@@ -9,6 +9,9 @@
     <authors>
       <author>ismeretlen</author>
     </authors>
+    <songbooks>
+      <songbook name="Teszt kömyv" entry="166"/>
+    </songbooks>
   </properties>
   <lyrics>
     <verse name="v1">

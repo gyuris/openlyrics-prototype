@@ -10,6 +10,9 @@
       <author type="words">Majoros Ildikó</author>
       <author type="music">Majoros Ildikó</author>
     </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9995"/>
+    </songbooks>
   </properties>
   <lyrics>
     <verse name="v1">

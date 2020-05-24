@@ -11,6 +11,9 @@
       <author type="music">Majoros Ildikó</author>
     </authors>
     <transposition>2</transposition>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9991"/>
+    </songbooks>
   </properties>
   <lyrics>
     <verse name="v1">

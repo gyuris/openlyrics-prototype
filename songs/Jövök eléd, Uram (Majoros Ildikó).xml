@@ -11,7 +11,7 @@
       <author type="music">Majoros Ildikó</author>
     </authors>
     <songbooks>
-      <songbook entry="000" name="Szent András Énekfüzet" />
+      <songbook name="Szent András énekfüzet" entry="9993"/>
     </songbooks>
     <verseOrder>v1 c1</verseOrder>
   </properties>

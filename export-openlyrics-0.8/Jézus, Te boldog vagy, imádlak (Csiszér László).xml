@@ -11,7 +11,7 @@
       <author type="music">Csiszér László</author>
     </authors>
     <songbooks>
-      <songbook entry="000" name="Szent András Énekfüzet"/>
+      <songbook name="Szent András énekfüzet" entry="9994"/>
     </songbooks>
     <verseOrder>v1 c1 e1</verseOrder>
   </properties>

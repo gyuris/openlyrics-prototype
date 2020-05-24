@@ -22,7 +22,7 @@ fi
 # Variables
 ###########
 file=$1
-configuration="make-pretty.conf"
+configuration="tools/xmlformat.conf"
 if [ "$2" ]; then
   configuration=$2
 fi

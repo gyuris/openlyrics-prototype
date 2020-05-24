@@ -31,7 +31,7 @@ validate: $(SOURCEXML)
 
 .PHONY: pretty
 pretty: songs/*.xml
-	@cd songs && for file in *.xml; do ../make-pretty "$$file" "../make-pretty.conf"; done
+	@cd songs && for file in *.xml; do ../make-pretty "$$file" "../tools/xmlformat.conf"; done
 
 .PHONY: export08
 export08: songs/*.xml
@@ -41,7 +41,7 @@ export08: songs/*.xml
 		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" && xsltproc -o ../export-openlyrics-0.8/"$$file" ../tools/openlyrics-0.9-to-openlyrics-0.8.xsl "$$file"; fi; \
 	done
 	@cd export-openlyrics-0.8 && for file in *.xml; do \
-		../make-pretty "$$file" "../make-pretty.conf"; \
+		../make-pretty "$$file" "../tools/xmlformat.conf"; \
 	done
 	@cd export-openlyrics-0.8 && for file in *.xml; do \
 		echo -n "Validating... " && xmllint --noout --relaxng ../openlyrics-0.8.rng "$$file"; \

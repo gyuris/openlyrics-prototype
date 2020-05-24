@@ -1,12 +1,13 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet href="../stylesheets/book.xsl" type="text/xsl"?>
 <book
- xmlns="http://openlyrics.info/namespace/2009/song"
+ xmlns="http://docbook.org/ns/docbook" version="5.0"
+ xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
  chordnotation="hungarian"
  xml:lang="hu">
-  <title id="tk">Teszt könyv</title>
+  <title id="testbook">Teszt könyv</title>
   <foreword>Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
   <toc>Tartalomjegyzék</toc>
   <xi:include href="A béke napja közel.xml" parse="xml" />

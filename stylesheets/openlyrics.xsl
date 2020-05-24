@@ -2,8 +2,9 @@
 <xsl:stylesheet
  version="1.0"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
- xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:str="http://exslt.org/strings"
+ xmlns:db="http://docbook.org/ns/docbook"
+ xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:xhtml="http://www.w3.org/1999/xhtml"
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
@@ -393,23 +394,23 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:template>
-  
+
+  <xsl:template match="ol:format"></xsl:template>
+
   <!-- book -->
-  <xsl:template match="ol:foreword">
+  <xsl:template match="db:foreword">
     <p><xsl:value-of select="text()" /></p>
   </xsl:template>
-  <xsl:template match="ol:toc">
+  <xsl:template match="db:toc">
     <nav class="toc">
       <ul>
         <xsl:apply-templates/>
       </ul>
     </nav>
   </xsl:template>
-  <xsl:template match="ol:entry">
+  <xsl:template match="db:entry">
     <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
   </xsl:template>
-
-  <xsl:template match="ol:format"></xsl:template>
 
 </xsl:stylesheet>
 

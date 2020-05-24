@@ -23,9 +23,15 @@ fi
 ###########
 file=$1
 name="$(basename "$file" .xml)"
+
 exportdir="songs"
 if [ "$2" ]; then
   exportdir=$2
+fi
+
+books=false
+if [ "$3" ]; then
+  books=true
 fi
 
 # Running
@@ -33,19 +39,19 @@ fi
 echo -n "Creating XSL version... $file... "
 
 # Replace CSS with XSL and remove CSS tweaks, save it to another file
-if [[ $name != 'book' ]]; then
+if [[ $books == false ]]; then
   sed -e 's/href="..\/stylesheets\/openlyrics\.css" type="text\/css"/href="..\/stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
       -e 's/ tweak="nested"//g' \
       -e 's/ tweak="linebreak"//g' \
       "$file" > "$exportdir/$name.xsl.xml"
 else
   # Book needs extra xi:includes xslt translation to do but without --xinclude param
-  xsltproc "$file" --stringparam source-path "../songs/" > "$name.xsl.xml"
+  xsltproc "$file" --stringparam source-path "../songs/" > "$exportdir/$name.xsl.xml"
   # Replace CSS with XSL and remove CSS tweaks
   sed -i -e 's/href="..\/stylesheets\/openlyrics\.css" type="text\/css"/href="..\/stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
       -e 's/ tweak="nested"//g' \
       -e 's/ tweak="linebreak"//g' \
-      "$name.xsl.xml"
+      "$exportdir/$name.xsl.xml"
 fi
 
 echo "done"

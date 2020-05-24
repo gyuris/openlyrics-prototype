@@ -32,6 +32,7 @@ validate: $(SOURCEXML)
 .PHONY: pretty
 pretty: songs/*.xml
 	@cd songs && for file in *.xml; do ../make-pretty "$$file" "../tools/xmlformat.conf"; done
+	@cd books && for file in *.xml; do ../make-pretty "$$file" "../tools/xmlformat.conf"; done
 
 .PHONY: export08
 export08: songs/*.xml
@@ -48,17 +49,21 @@ export08: songs/*.xml
 	done
 
 .PHONY: xsl
-xsl: songs/*.xml
+xsl: songs/*.xml books/*.xml
 	@cd songs && rm -f *.xsl.xml && cd ..
 	@cd songs && for file in *.xml; do ../make-xsl "$$file" "."; done
+	@cd books && rm -f *.xsl.xml && cd ..
+	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
 
 .PHONY: pdf
-pdf: songs/*.xml
+pdf: songs/*.xml books/*.xml
 	@cd songs && for file in *.xml; do ../make-pdf "$$file" "../export-pdf"; done
+	@cd books && for file in *.xml; do ../make-pdf "$$file" "."; done
 
 .PHONY: clean
 clean:
 	@rm -f songs/*.xsl.xml
+	@rm -f books/*.xsl.xml
 
 .PHONY: help
 help:

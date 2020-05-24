@@ -49,20 +49,23 @@ export08: songs/*.xml
 	done
 
 .PHONY: xsl
-xsl: songs/*.xml books/*.xml
+xsl: songs/*.xml
 	@cd songs && rm -f *.xsl.xml && cd ..
 	@cd songs && for file in *.xml; do ../make-xsl "$$file" "."; done
-	@cd books && rm -f *.xsl.xml && cd ..
-	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
 
 .PHONY: pdf
-pdf: songs/*.xml books/*.xml
+pdf: songs/*.xml
 	@cd songs && for file in *.xml; do ../make-pdf "$$file" "../export-pdf"; done
-	@cd books && for file in *.xml; do ../make-pdf "$$file" "."; done
 
 .PHONY: clean
 clean:
 	@rm -f songs/*.xsl.xml
+
+,PHONE: books
+books: songs/*.xml books/*.xml
+	@cd books && rm -f *.xsl.xml && cd ..
+	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
+	@cd books && for file in *.xml; do ../make-pdf "$$file" "."; done
 	@rm -f books/*.xsl.xml
 
 .PHONY: help
@@ -73,6 +76,7 @@ help:
 	@echo "  validate    - Validates presented OpenLyrics XML files against RelaxNG scheme"
 	@echo "  xsl         - Generates XSL versions"
 	@echo "  pdf         - Generates PDF files"
+	@echo "  books       - Generates books XSL and PDF"
 	@echo "  clean       - Removes all generated XSL version"
 	@echo "  http        - Creates a light HTTP server. Stopping: Ctrl+C"
 	@echo "  export08    - Converts OpenLyrics 0.9 files to OpenLyrics 0.8"

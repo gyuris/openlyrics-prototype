@@ -65,7 +65,7 @@ clean:
 books: songs/*.xml books/*.xml
 	@cd books && rm -f *.xsl.xml && cd ..
 	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
-	@cd books && for file in *.xml; do ../make-pdf "$$file" "."; done
+	@cd books && for file in *.xsl.xml; do ../make-pdf "$$file" "."; done
 	@rm -f books/*.xsl.xml
 
 .PHONY: help

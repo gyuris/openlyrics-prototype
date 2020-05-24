@@ -23,7 +23,7 @@ fi
 ###########
 file=$1
 name="$(basename "$file" .xml)"
-exportdir="openlyrics"
+exportdir="songs"
 if [ "$2" ]; then
   exportdir=$2
 fi

@@ -6,6 +6,9 @@
  xmlns="http://openlyrics.info/namespace/2009/song">
   <xsl:output method="xml" encoding="utf-8" indent="yes"/>
 
+  <!-- Current datetime is given by Makefile -->
+  <xsl:param name="datetime"/>
+
   <!-- Chords -->
   <xsl:variable name="chordnotation" select="document('../stylesheets/xsl/openlyrics-0.9-chord.xml')/chordnotation"/>
   <xsl:variable name="notation">
@@ -36,11 +39,33 @@
     </xsl:copy>
   </xsl:template>
 
+  <!-- Create root element, while attributes createdIn, modifiedIn and modifiedDate are optional. Stripping //ol:song/@chordnotation, //ol:song/@xml:lang -->
+  <xsl:template match="//ol:song">
+    <xsl:element name="{local-name()}" namespace="{namespace-uri(}">
+      <xsl:attribute name="version">0.8</xsl:attribute>
+      <xsl:attribute name="createdIn">
+        <xsl:choose>
+          <xsl:when test="//ol:song/@createdIn !=''"><xsl:value-of select="//ol:song/@createdIn" /></xsl:when>
+          <xsl:otherwise>Not known</xsl:otherwise>
+       </xsl:choose>
+      </xsl:attribute>
+      <xsl:attribute name="modifiedIn">
+        <xsl:choose>
+          <xsl:when test="//ol:song/@modifiedIn !=''"><xsl:value-of select="//ol:song/@modifiedIn" /></xsl:when>
+          <xsl:otherwise>OpenLyrics 0.9 to 0.8 XSLT converter</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:attribute name="modifiedDate">
+        <xsl:choose>
+          <xsl:when test="//ol:song/@modifiedDate !=''"><xsl:value-of select="//ol:song/@modifiedDate" /></xsl:when>
+          <xsl:otherwise><xsl:value-of select="$datetime"/></xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <xsl:apply-templates/>
+    </xsl:element>
+  </xsl:template>
+
   <!-- Remove parts not compliant with version 0.8 -->
-  <xsl:template match="//ol:song/@chordnotation"/>
-  <xsl:template match="//ol:song/@xml:lang"/>
-  <xsl:template match="//ol:song/@version"><xsl:attribute name="version">0.8</xsl:attribute></xsl:template>
-  <xsl:template match="//ol:song/@modifiedIn"><xsl:attribute name="modifiedIn">OpenLyrics 0.9 to 0.8 XSLT converter</xsl:attribute></xsl:template>
   <xsl:template match="//ol:song/ol:lyrics/ol:verse/ol:lines/@repeat"/>
   <xsl:template match="//ol:song/ol:lyrics/ol:instrument"/>
   <xsl:template match="//ol:song/ol:properties/ol:verseOrder">

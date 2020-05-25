@@ -3,10 +3,7 @@
 <song xmlns="http://openlyrics.info/namespace/2009/song" 
  xml:lang="hu"
  version="0.9"
- chordnotation="hungarian"
- createdIn="OpenLP 2.4.6"
- modifiedIn="Geany"
- modifiedDate="2018-11-18T22:21:39">
+ chordnotation="hungarian">
   <properties>
     <titles>
       <title>Íme, az én fiam</title>

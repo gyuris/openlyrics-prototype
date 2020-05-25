@@ -413,4 +413,3 @@
   </xsl:template>
 
 </xsl:stylesheet>
-

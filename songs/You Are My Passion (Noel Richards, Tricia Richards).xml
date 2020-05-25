@@ -2,10 +2,7 @@
 <?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
 <song xmlns="http://openlyrics.info/namespace/2009/song"
   xml:lang="en"
-  version="0.9"
-  createdIn="Geany"
-  modifiedIn="Geany"
-  modifiedDate="2017-03-22T17:19:28-06:00">
+  version="0.9">
   <properties>
     <titles>
       <title lang="en">You Are My Passion</title>

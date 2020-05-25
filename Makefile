@@ -39,7 +39,8 @@ export08: songs/*.xml
 	@cd export-openlyrics-0.8 && rm -f *.xml && cd ..
 	@echo "Deleting export-openlyrics/.xml files"
 	@cd songs && for file in *.xml; do \
-		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" && xsltproc -o ../export-openlyrics-0.8/"$$file" ../tools/openlyrics-0.9-to-openlyrics-0.8.xsl "$$file"; fi; \
+		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" \
+		&& xsltproc --stringparam datetime `date --iso-8601=seconds` -o ../export-openlyrics-0.8/"$$file" ../tools/openlyrics-0.9-to-openlyrics-0.8.xsl "$$file"; fi; \
 	done
 	@cd export-openlyrics-0.8 && for file in *.xml; do \
 		../make-pretty "$$file" "../tools/xmlformat.conf"; \

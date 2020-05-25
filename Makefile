@@ -5,7 +5,7 @@ SOURCEDIR := songs
 EXPORTDIR := export-openlyrics-0.8
 
 .PHONY: all
-all: well-formed validate export08 xsl pdf clean
+all: well-formed validate export08 xsl pdf books clean
 
 .PHONY: well-formed
 well-formed: tools/openlyrics-0.9-to-openlyrics-0.8.xsl \
@@ -60,13 +60,13 @@ pdf: songs/*.xml
 .PHONY: clean
 clean:
 	@rm -f songs/*.xsl.xml
+	@rm -f books/*.xsl.xml
 
-,PHONE: books
+.PHONY: books
 books: songs/*.xml books/*.xml
 	@cd books && rm -f *.xsl.xml && cd ..
 	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
 	@cd books && for file in *.xsl.xml; do ../make-pdf "$$file" "."; done
-	@rm -f books/*.xsl.xml
 
 .PHONY: help
 help:

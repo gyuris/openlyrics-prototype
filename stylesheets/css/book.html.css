@@ -1,0 +1,54 @@
+/**
+ * OpenLyrics XML+XSLT+CSS stylesheet
+ * Book
+ */
+
+/* book */
+nav.toc {
+  border-top-style: double;
+  border-top-width: .249999999rem;
+  border-bottom-style: double;
+  border-bottom-width: .249999999rem;
+  margin: 1rem 0;
+}
+nav.toc ul li {
+  line-height: 1.4rem;
+}
+nav.toc ul li a {
+  padding: .15rem .5rem;
+  text-decoration: none;
+}
+
+
+@media print {
+  nav.toc {
+    border-color: cmyk(0, 0, 0, 1);
+  }
+  nav.toc ul {
+    margin: 1rem 0;
+    padding: 0;
+  }
+  nav.toc li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  nav.toc a {
+    color: cmyk(1, 0, 0, 0);
+  }
+  nav.toc a[href]::after {
+    content: leader(".") target-counter(attr(href), page);
+  }
+}
+
+@media screen {
+  nav.toc {
+    border-color: black;
+  }
+  nav.toc a {
+    color: blue;
+  }
+  nav.toc a:hover {
+    background: rgba(228,241,254,1);
+  }
+}

@@ -47,11 +47,3 @@ chord::before {
 beat::after {
   color: black;
 }
-
-/* book */
-toc entry a {
-  color: blue;
-}
-toc entry a:hover {
-  background: rgb(228, 241, 254);
-}

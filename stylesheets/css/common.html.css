@@ -186,19 +186,3 @@ section.lyrics p.lines > .lyrics-comment { /* comment in lines */
 footer .root-properties {
   font-size: .625rem;
 }
-
-/* book */
-nav.toc {
-  border-top-style: double;
-  border-top-width: .249999999rem;
-  border-bottom-style: double;
-  border-bottom-width: .249999999rem;
-  margin: 1rem 0;
-}
-nav.toc ul li {
-  line-height: 1.4rem;
-}
-nav.toc ul li a {
-  padding: .15rem .5rem;
-  text-decoration: none;
-}

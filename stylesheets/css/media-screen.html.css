@@ -42,14 +42,3 @@ section.lyrics p.lines > .lyrics-comment {
 .song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
   color: green;
 }
-
-/* book */
-nav.toc {
-  border-color: black;
-}
-nav.toc a {
-  color: blue;
-}
-nav.toc a:hover {
-  background: rgba(228,241,254,1);
-}

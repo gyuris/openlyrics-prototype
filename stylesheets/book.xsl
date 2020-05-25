@@ -14,7 +14,7 @@
 
   <xsl:template match="/">
     <xsl:processing-instruction name="xml-stylesheet">
-      <xsl:text>href="../stylesheets/openlyrics.css" type="text/css"</xsl:text>
+      <xsl:text>href="../stylesheets/book.css" type="text/css"</xsl:text>
     </xsl:processing-instruction>
     <xsl:text>&#x0A;</xsl:text>
     <book>
@@ -60,8 +60,9 @@
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="title|foreword">
+  <xsl:template match="db:title|db:foreword">
     <xsl:copy-of select="."/>
   </xsl:template>
+
 </xsl:stylesheet>
 

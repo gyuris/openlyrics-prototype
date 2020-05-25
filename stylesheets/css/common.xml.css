@@ -228,18 +228,3 @@ lines comment {
   font-style: italic;
   text-align: right;
 }
-
-/* book */
-toc {
-  display: block;
-  margin: 1rem 0;
-}
-toc entry {
-  display: list-item;
-  margin-left: 1rem;
-  line-height: 1.4rem;
-}
-toc entry a {
-  padding: .15rem .5rem;
-  text-decoration: none;
-}

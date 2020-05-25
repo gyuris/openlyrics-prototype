@@ -1,0 +1,7 @@
+/**
+ * OpenLyrics XML+CSS stylesheet
+ */
+
+@import url("openlyrics.css");
+
+@import url("css/book.xml.css");

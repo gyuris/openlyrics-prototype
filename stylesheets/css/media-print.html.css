@@ -25,14 +25,14 @@
 }
 :root {
   font-size: 12pt; /* Root element size */
-  color: cmyk(0, 0, 0, 1);
+  color: cmyk(0,0,0,1);
 }
 .song {
   page-break-before: always;
   string-set: root-properties attr(data-root-properties);
 }
 a {
-  color: cmyk(0, 0, 0, 1);
+  color: cmyk(0,0,0,1);
 }
 h1 {
   string-set: title content();
@@ -55,10 +55,10 @@ section.lyrics > article.instrument .verse-name,
 section.lyrics > article.verse .verse-lang,
 section.lyrics > article.verse .verse-translit,
 section.lyrics p.lines > .line-part {
-  color: cmyk(1, 0, 0, 0);
+  color: cmyk(1,0,0,0);
 }
 section.lyrics p.lines > .lyrics-comment {
-  color: cmyk(0, 0, 0, 0.35);
+  color: cmyk(0,0,0,0.35);
 }
 section.lyrics > article.verse,
 section.lyrics > article.instrument {
@@ -67,11 +67,11 @@ section.lyrics > article.instrument {
 
 .song[data-ol-version="0.8"] .chord,
 .song[data-ol-version="0.9"] .segment .chord {
-  color: cmyk(0, 1, 1, 0);
+  color: cmyk(0,1,1,0);
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-structure:not(:empty) {
 }
 .song[data-ol-version="0.9"] .segment .chord .chord-bassnotation,
 .song[data-ol-version="0.9"] .segment .chord .chord-bass:not(:empty) {
-  color: cmyk(1, 0, 1, 0);
+  color: cmyk(1,0,1,0);
 }

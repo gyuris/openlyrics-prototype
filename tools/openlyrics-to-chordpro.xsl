@@ -90,7 +90,7 @@
     <xsl:choose>
       <xsl:when test="string-length(normalize-space(.))>0"><!-- if there are not only whitespaces (RegExp: \S) -->
         <xsl:choose>
-          <xsl:when test="local-name(preceding-sibling::*[1])='br'"> <!-- if preceded by <br>: real linebreak  -->
+          <xsl:when test="position()=1 or local-name(preceding-sibling::*[1])='br'"> <!-- if preceded by <br>: real linebreak  -->
             <xsl:value-of select="custom:strip-leading-whitespace(.)"/>
           </xsl:when>
           <xsl:otherwise>

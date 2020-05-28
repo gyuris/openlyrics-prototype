@@ -22,15 +22,10 @@ fi
 # Variables
 ###########
 file=$1
-name="$(basename "$file" .xml)"
-
-exportdir="songs"
-if [ "$2" ]; then
-  exportdir=$2
-fi
+name=${file%.xml}.xsl.xml
 
 books=false
-if [ "$3" ]; then
+if [ "$2" ]; then
   books=true
 fi
 
@@ -43,15 +38,15 @@ if [[ $books == false ]]; then
   sed -e 's/href="..\/stylesheets\/openlyrics\.css" type="text\/css"/href="..\/stylesheets\/openlyrics\.xsl" type="text\/xsl"/g' \
       -e 's/ tweak="nested"//g' \
       -e 's/ tweak="linebreak"//g' \
-      "$file" > "$exportdir/$name.xsl.xml"
+      "$file" > "$name"
 else
   # Book needs extra xi:includes xslt translation to do but without --xinclude param
-  xsltproc "$file" --stringparam source-path "../songs/" > "$exportdir/$name.xsl.xml"
+  xsltproc "$file" --stringparam source-path "../songs/" > "$name"
   # Replace CSS with XSL and remove CSS tweaks
   sed -i -e 's/href="..\/stylesheets\/book\.css" type="text\/css"/href="..\/stylesheets\/book\.html\.xsl" type="text\/xsl"/g' \
       -e 's/ tweak="nested"//g' \
       -e 's/ tweak="linebreak"//g' \
-      "$exportdir/$name.xsl.xml"
+      "$name"
 fi
 
 echo "done"

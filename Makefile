@@ -1,6 +1,10 @@
-SOURCEXML := songs/*.xml
-SOURCEDIR := songs
-EXPORTDIR := export-openlyrics-0.8
+SOURCEDIR   := songs
+SOURCEXML   := songs/*.xml
+BOOKDIR     := books
+BOOKXML     := books/*.xml
+EXPORT_OL08 := export-openlyrics-0.8
+EXPORT_CHO  := export-chordpro
+EXPORT_PDF  := export-pdf
 
 .PHONY: all
 all: well-formed validate export-ol08 export-cho xsl pdf books clean
@@ -22,65 +26,109 @@ http:
 
 .PHONY: validate
 validate: $(SOURCEXML)
-	@cd songs && for file in *.xml; do \
-		if grep -q 'version="0.8"' "$$file"; then echo -n "Validating (0.8)... " && xmllint --noout --relaxng ../openlyrics-0.8.rng "$$file"; fi; \
-	done
+	@for file in $(SOURCEXML); \
+		do \
+			if grep -q 'version="0.8"' "$$file"; \
+			then \
+				echo -n "Validating (0.8)... " && \
+				xmllint \
+					--noout \
+					--relaxng openlyrics-0.8.rng \
+					"$$file"; \
+			fi; \
+		done
 # If 0.9
 
 .PHONY: pretty
-pretty: songs/*.xml
-	@cd songs && for file in *.xml; do ../make-pretty "$$file" "../tools/xmlformat.conf"; done
-	@cd books && for file in *.xml; do ../make-pretty "$$file" "../tools/xmlformat.conf"; done
+pretty: $(SOURCEXML) $(BOOKXML)
+	@for file in $(SOURCEXML); \
+		do \
+			./make-pretty "$$file"; \
+		done
+	@for file in $(BOOKXML); \
+		do \
+			./make-pretty "$$file"; \
+		done
 
 .PHONY: export-ol08
 export-ol08: songs/*.xml
-	@cd export-openlyrics-0.8 && rm -f *.xml && cd ..
-	@echo "Deleting export-openlyrics/*.xml files"
-	@cd songs && for file in *.xml; do \
-		if grep -q 'version="0.9"' "$$file"; then echo -n "Converting to OpenLyrics 0.8... $$file\n" \
-		&& xsltproc --stringparam datetime `date --iso-8601=seconds` -o ../export-openlyrics-0.8/"$$file" ../tools/openlyrics-0.9-to-openlyrics-0.8.xsl "$$file"; fi; \
-	done
-	@cd export-openlyrics-0.8 && for file in *.xml; do \
-		../make-pretty "$$file" "../tools/xmlformat.conf"; \
-	done
-	@cd export-openlyrics-0.8 && for file in *.xml; do \
-		echo -n "Validating... " && xmllint --noout --relaxng ../openlyrics-0.8.rng "$$file"; \
-	done
+	@rm -f $(EXPORT_OL08)/*.xml
+	@echo "Deleting $(EXPORT_OL08)/*.xml files"
+	@for file in $(SOURCEXML); \
+		do \
+			if grep -q 'version="0.9"' "$$file"; \
+			then \
+				echo -n "Converting to OpenLyrics 0.8... $$file\n" && \
+				name=$${file#songs/} && \
+				xsltproc \
+					--stringparam datetime $$(date --iso-8601=seconds) \
+					--output $(EXPORT_OL08)/"$$name" \
+					tools/openlyrics-0.9-to-openlyrics-0.8.xsl \
+					"$$file"; \
+			fi; \
+		done
+	@for file in $(EXPORT_OL08)/*.xml; \
+		do \
+			./make-pretty "$$file"; \
+		done
+	@for file in $(EXPORT_OL08)/*.xml; \
+		do \
+			echo -n "Validating... " && \
+			xmllint \
+				--noout \
+				--relaxng openlyrics-0.8.rng \
+				"$$file"; \
+		done
 
 .PHONY: export-cho
-export-cho: songs/*.xml
-	@cd export-chordpro && rm -f *.cho
-	@echo "Deleting export-chordpro/*.cho files"
-	@for file in songs/*.xml; \
+export-cho: $(SOURCEXML)
+	@rm -f $(EXPORT_CHO)/*.cho
+	@echo "Deleting $(EXPORT_CHO)/*.cho files"
+	@for file in $(SOURCEXML); \
 		do \
-			name=$${file%.xml}.cho \
-			&& echo -n "Converting to ChordPro... $${name}\n" \
-			&& name=$${name#songs/} \
-			&& xsltproc \
-				--output "export-chordpro/$${name}" \
+			name=$${file%.xml}.cho && \
+			echo -n "Converting to ChordPro... $${name}\n" && \
+			name=$${name#songs/} && \
+			xsltproc \
+				--output "$(EXPORT_CHO)/$${name}" \
 				tools/openlyrics-to-chordpro.xsl \
 				"$$file"; \
 		done
 
 .PHONY: xsl
-xsl: songs/*.xml
-	@cd songs && rm -f *.xsl.xml && cd ..
-	@cd songs && for file in *.xml; do ../make-xsl "$$file" "."; done
+xsl: $(SOURCEXML)
+	@rm -f $(SOURCEDIR)/*.xsl.xml
+	@for file in $(SOURCEXML); \
+		do \
+			./make-xsl "$$file"; \
+		done
 
 .PHONY: pdf
-pdf: songs/*.xml
-	@cd songs && for file in *.xml; do ../make-pdf "$$file" "../export-pdf"; done
+pdf: $(SOURCEXML)
+	@for file in $(SOURCEXML); \
+		do \
+			./make-pdf "$$file" $(EXPORT_PDF); \
+		done
 
 .PHONY: clean
 clean:
-	@rm -f songs/*.xsl.xml
-	@rm -f books/*.xsl.xml
+	@rm -f $(SOURCEDIR)/*.xsl.xml
+	@echo "Deleting $(SOURCEDIR)/*.xsl.xml files"
+	@rm -f $(BOOKDIR)/*.xsl.xml
+	@echo "Deleting $(BOOKDIR)/*.xsl.xml files"
 
 .PHONY: books
-books: songs/*.xml books/*.xml
-	@cd books && rm -f *.xsl.xml && cd ..
-	@cd books && for file in *.xml; do ../make-xsl "$$file" "." "books"; done
-	@cd books && for file in *.xsl.xml; do ../make-pdf "$$file" "."; done
+books: $(SOURCEXML) $(BOOKXML)
+	@cd $(BOOKDIR) && \
+	rm -f *.xsl.xml
+	@for file in  $(BOOKXML); \
+		do \
+			./make-xsl "$$file" "books"; \
+		done
+	@for file in $(BOOKDIR)/*.xsl.xml; \
+		do \
+			./make-pdf "$$file" $(BOOKDIR); \
+		done
 
 .PHONY: help
 help:

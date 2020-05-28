@@ -22,17 +22,13 @@ fi
 # Variables
 ###########
 file=$1
-configuration="tools/xmlformat.conf"
-if [ "$2" ]; then
-  configuration=$2
-fi
 
 # Running
 #########
 echo -n "Formatting XML... $file... "
 
 # xmlformat
-xmlformat --in-place --config-file=$configuration "$file"
+xmlformat --in-place --config-file=tools/xmlformat.conf "$file"
 # xmlformat does not format well the <br/>. Puts it on new line. I want to leave it on the line
 # ending. We must fromat it by hand.
 # Remark:I think <br/> is alian OpenLyrics and we should return to <line></line> instead of <br/>

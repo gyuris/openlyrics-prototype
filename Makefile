@@ -1,5 +1,3 @@
-# XML_FILES := $(filter-out *.xsl.xml, $(wildcard *.xml))
-
 SOURCEXML := songs/*.xml
 SOURCEDIR := songs
 EXPORTDIR := export-openlyrics-0.8
@@ -51,12 +49,18 @@ export-ol08: songs/*.xml
 
 .PHONY: export-cho
 export-cho: songs/*.xml
-	@cd export-chordpro && rm -f *.cho && cd ..
+	@cd export-chordpro && rm -f *.cho
 	@echo "Deleting export-chordpro/*.cho files"
-	@cd songs && for file in *.xml; do \
-		echo -n "Converting to ChordPro... $$file\n" \
-		&& xsltproc -o ../export-chordpro/"$$file.cho" ../tools/openlyrics-to-chordpro.xsl "$$file"; \
-	done
+	@for file in songs/*.xml; \
+		do \
+			name=$${file%.xml}.cho \
+			&& echo -n "Converting to ChordPro... $${name}\n" \
+			&& name=$${name#songs/} \
+			&& xsltproc \
+				--output "export-chordpro/$${name}" \
+				tools/openlyrics-to-chordpro.xsl \
+				"$$file"; \
+		done
 
 .PHONY: xsl
 xsl: songs/*.xml

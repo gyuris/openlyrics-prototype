@@ -46,7 +46,7 @@ if [[ $file = *".xsl.xml" ]]; then
   cd $dir && xsltproc "$name.xml" | prince -o "../$exportdir/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
 else
   # Generate PDF from original XML
-  prince "$file" -o "$exportdir/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
+  cd $dir && prince "$name.xml" -o "../$exportdir/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
 fi
 
 echo "done"

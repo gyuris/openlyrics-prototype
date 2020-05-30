@@ -1,0 +1,25 @@
+{title: Add a kezed, hogy zengjünk az}
+{composer: ismeretlen szerző}
+# {book: Sárga könyv}
+# {number: 2}
+# {book: Teszt könyv}
+# {number: 21}
+
+{start_of_verse: Verse 1}
+[E]Add a kezed, hogy [A]zengjünk az [E]Úrnak,
+[A]zengjünk az [E]Úrnak [H7]alleluját!
+[E]Add a kezed, hogy [A]zengjünk az [E]Úrnak,
+[A]zengjünk az [E]Úrnak [H7]allelu[E]ját! 
+{end_of_verse: Verse 1}
+
+{start_of_chorus: Chorus}
+‖: [A]Alleluja, [E]alleluja,
+[H7]alleluja, [E]allelu[E7]ja! :‖ 
+{end_of_chorus: Chorus}
+
+{start_of_verse: Verse 2}
+[E]Kitárt karokkal [A]mindenki [E]áldja,
+[A]mindenki [E]áldja az [H7]élet Urát!
+[E]Kitárt karokkal [A]mindenki [E]áldja,
+[A]mindenki [E]áldja az [H7]élet U[E]rát! 
+{end_of_verse: Verse 2}

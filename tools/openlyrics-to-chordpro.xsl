@@ -58,8 +58,8 @@
     <xsl:value-of select="concat('{ccli: ', ., '}&#10;')"/>
   </xsl:template>
   <xsl:template match="ol:songbook">
-    <xsl:value-of select="concat('{book: ', @name, '}&#10;')"/>
-    <xsl:value-of select="concat('{number: ', @entry, '}&#10;')"/>
+    <xsl:value-of select="concat('# {book: ', @name, '}&#10;')"/>
+    <xsl:value-of select="concat('# {number: ', @entry, '}&#10;')"/>
   </xsl:template>
   <xsl:template match="ol:released">
     <xsl:value-of select="concat('{year: ', ., '}&#10;')"/>
@@ -90,7 +90,7 @@
     <xsl:choose>
       <xsl:when test="string-length(normalize-space(.))>0"><!-- if there are not only whitespaces (RegExp: \S) -->
         <xsl:choose>
-          <xsl:when test="position()=1 or local-name(preceding-sibling::*[1])='br'"> <!-- if preceded by <br>: real linebreak  -->
+          <xsl:when test="position()=1 or local-name(preceding-sibling::*[1])='br'"><!-- if preceded by <br>: real linebreak  -->
             <xsl:value-of select="custom:strip-leading-whitespace(.)"/>
           </xsl:when>
           <xsl:otherwise>
@@ -113,13 +113,39 @@
     <xsl:apply-templates/>
     <xsl:text>&#10;</xsl:text>
   </xsl:template>
+
+  <xsl:template name="displayVerseName">
+    <xsl:param name="name" />
+    <xsl:param name="type" />
+    <xsl:variable name="verseName" select="substring($name,1,1)" />
+    <xsl:variable name="verseNum"  select="substring($name,2,string-length(-1))" />
+    <xsl:text>{</xsl:text>
+    <xsl:value-of select="$type"/>
+    <xsl:text>_of_</xsl:text>
+    <xsl:choose>
+      <xsl:when test="$verseName='c'">chorus: Chorus</xsl:when>
+      <xsl:when test="$verseName='v'">verse: Verse</xsl:when>
+      <xsl:when test="$verseName='b'">bridge: Bridge</xsl:when>
+      <xsl:when test="$verseName='p'">prechorus: Pre-chorus</xsl:when>
+      <xsl:when test="$verseName='e'">part: Part</xsl:when>
+    </xsl:choose>
+    <xsl:if test="$verseNum!=''"><xsl:value-of select="concat(' ', $verseNum)"/></xsl:if>
+    <xsl:text>}</xsl:text>
+  </xsl:template>
   <xsl:template match="ol:verse">
-    <xsl:text>&#10;{start_of_</xsl:text>
-    <xsl:value-of select="@name"/>
-    <xsl:text>}&#10;</xsl:text>
+    <xsl:text>&#10;</xsl:text>
+    <xsl:call-template name="displayVerseName">
+      <xsl:with-param name="name" select="@name"/>
+      <xsl:with-param name="type" select="string('start')"/>
+    </xsl:call-template>
+    <xsl:text>&#10;</xsl:text>
     <xsl:apply-templates/>
     <xsl:text>&#10;</xsl:text>
-    <xsl:text>{end_of_chorus}&#10;</xsl:text>
+    <xsl:call-template name="displayVerseName">
+      <xsl:with-param name="name" select="@name"/>
+      <xsl:with-param name="type" select="string('end')"/>
+    </xsl:call-template>
+    <xsl:text>&#10;</xsl:text>
   </xsl:template>
 
   <!-- Chords -->

@@ -23,30 +23,30 @@
 }
 :root {
   font-size: 12pt; /* Root element size */
-  color: device-cmyk(0 0 0 1);
+  color: device-cmyk(0, 0, 0, 1);
   string-set: openlyrics-version attr(version), openlyrics-language attr(xml|lang);
 }
 title:first-child {
-  color: device-cmyk(0 0 0 1);
+  color: device-cmyk(0, 0, 0, 1);
 }
 properties {
-  border-bottom-color: device-cmyk(0 0 0 0.35);
-  color: device-cmyk(0 0 0 0.35);
+  border-bottom-color: device-cmyk(0, 0, 0, 0.35);
+  color: device-cmyk(0, 0, 0, 0.35);
 }
 lines comment {
-  color: device-cmyk(0 0 0 0.35);
+  color: device-cmyk(0, 0, 0, 0.35);
 }
 lyrics > verse::before,
 lyrics > instrument::before,
 lyrics > verse[lang]::after,
 lines[part]::before {
-  color: device-cmyk(1 0 0 0);
+  color: device-cmyk(1, 0, 0, 0);
 }
 chord::before {
-  color: device-cmyk(0 1 1 0);
+  color: device-cmyk(0, 1, 1, 0);
 }
 beat::after {
-  color: device-cmyk(0 0 0 1);
+  color: device-cmyk(0, 0, 0, 1);
 }
 lyrics > verse,
 lyrics > instrument {

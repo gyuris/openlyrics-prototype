@@ -44,9 +44,11 @@ echo -n "Making PDF... $file... "
 if [[ $file = *".xsl.xml" ]]; then
   # Generate PDF from XSL(HTML) version
   cd $dir && xsltproc "$name.xml" | prince -o "../$exportdir/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
+  xsltproc "$name.xml" | weasyprint --quiet - "../$exportdir/weasyprint/$name.pdf"
 else
   # Generate PDF from original XML
   cd $dir && prince "$name.xml" -o "../$exportdir/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
+  # weasyprint doesn't support XML? https://print-css.rocks/lesson/lesson-xml
 fi
 
 echo "done"

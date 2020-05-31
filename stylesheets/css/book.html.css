@@ -22,7 +22,7 @@ nav.toc ul li a {
 
 @media print {
   nav.toc {
-    border-color: cmyk(0,0,0,1);
+    border-color: device-cmyk(0 0 0 1);
   }
   nav.toc ul {
     margin: 1rem 0;
@@ -34,7 +34,7 @@ nav.toc ul li a {
     list-style: none;
   }
   nav.toc a {
-    color: cmyk(1,0,0,0);
+    color: device-cmyk(1 0 0 0);
   }
   nav.toc a[href]::after {
     content: leader(".") target-counter(attr(href), page);

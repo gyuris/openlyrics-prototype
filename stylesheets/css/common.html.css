@@ -146,10 +146,10 @@ section.lyrics > article.instrument {
   position: relative;
 }
 
-section.lyrics > article.verse .verse-name, /* verse names */
+section.lyrics > article.verse .verse-name,
 section.lyrics > article.instrument .verse-name,
 section.lyrics > article.verse .verse-lang,
-section.lyrics > article.verse .verse-translit {
+section.lyrics > article.verse .verse-translit { /* verse names */
   position: absolute;
   width: auto;
   top: 1rem;

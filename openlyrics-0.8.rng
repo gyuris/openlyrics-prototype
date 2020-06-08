@@ -416,11 +416,6 @@
       <!-- date format: ISO 8601 -->
       <data type="dateTime"/>
     </attribute>
-    <optional>
-      <attribute name="xml:lang">
-        <data type="language"/>
-      </attribute>
-    </optional>
   </define>
 
   <define name="verseNameType">

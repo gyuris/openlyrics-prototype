@@ -10,9 +10,19 @@
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
   <!-- Locale-specific content -->
+  <xsl:variable name="xmllang">
+    <xsl:choose>
+      <xsl:when test="//ol:song/@xml:lang">
+        <xsl:value-of select="//ol:song/@xml:lang" />
+      </xsl:when>
+      <xsl:otherwise>
+        <xsl:text>en</xsl:text>
+      </xsl:otherwise>
+    </xsl:choose>
+  </xsl:variable>
   <xsl:variable name="locale-strings">
     <xsl:text>xsl/lang-</xsl:text>
-    <xsl:value-of select="//ol:song/@xml:lang"/>
+    <xsl:value-of select="$xmllang"/>
     <xsl:text>.xml</xsl:text>
   </xsl:variable>
   <xsl:variable name="locale" select="document($locale-strings)/locale"/>
@@ -32,7 +42,7 @@
 
   <!-- Main -->
   <xsl:template match="/">
-    <html lang="{ol:song/@xml:lang}">
+    <html lang="{$xmllang}">
       <head>
         <title><xsl:value-of select="ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
@@ -50,12 +60,17 @@
       <xsl:if test="@createdIn">
         <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/creator/text()"/><xsl:text>: </xsl:text><xsl:value-of select="@createdIn"/>
       </xsl:if>
-      <xsl:if test="@xml:lang">
-        <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=current()/@xml:lang]/text()"/>
-      </xsl:if>
+      <xsl:choose>
+        <xsl:when test="@xml:lang">
+          <xsl:text> • </xsl:text><xsl:value-of select="$locale/properties/language/text()"/><xsl:text>: </xsl:text><xsl:value-of select="$locale/languages/*[local-name()=$xmllang]/text()"/>
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:text> • unspecified</xsl:text>
+        </xsl:otherwise>
+      </xsl:choose>
     </xsl:variable>
 
-    <div class="song" id="{@id}" lang="{@xml:lang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
+    <div class="song" id="{@id}" lang="{$xmllang}" data-ol-version="{@version}" data-root-properties="{$rootProperties}">
       <xsl:apply-templates/>
         <footer>
           <p class="root-properties">

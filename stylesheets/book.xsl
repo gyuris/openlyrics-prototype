@@ -48,7 +48,9 @@
     <xsl:variable name="song" select="document ($url)/ol:song" />
     <xsl:variable name="title" select="../db:title/text()" />
     <xsl:element name="song" namespace="http://openlyrics.info/namespace/2009/song">
-      <xsl:attribute name="xml:lang"><xsl:value-of select="$song/@xml:lang" /></xsl:attribute>
+      <xsl:if test="$song/@xml:lang">
+        <xsl:attribute name="xml:lang"><xsl:value-of select="$song/@xml:lang" /></xsl:attribute>
+      </xsl:if>
       <xsl:attribute name="version"><xsl:value-of select="$song/@version" /></xsl:attribute>
       <xsl:attribute name="chordnotation"><xsl:value-of select="/db:book/@chordnotation" /></xsl:attribute>
       <xsl:attribute name="createdIn"><xsl:value-of select="$song/@createdIn" /></xsl:attribute>

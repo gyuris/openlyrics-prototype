@@ -14,7 +14,7 @@
 
   <!-- overwrite root from openlyrics.xsl: import 2nd CSS -->
   <xsl:template match="/">
-    <html lang="{ol:song/@xml:lang}">
+    <html lang="{@xml:lang}">
       <head>
         <title><xsl:value-of select="ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />

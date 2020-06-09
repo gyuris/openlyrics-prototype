@@ -59,7 +59,7 @@ export-ol08: songs/*.xml
 			if grep -q 'version="0.9"' "$$file"; \
 			then \
 				echo -n "Converting to OpenLyrics 0.8... $$file\n" && \
-				name=$${file#songs/} && \
+				name=$${file##*/} && \
 				xsltproc \
 					--stringparam datetime $$(date --iso-8601=seconds) \
 					--output $(EXPORT_OL08)/"$$name" \
@@ -88,7 +88,7 @@ export-cho: $(SOURCEXML)
 		do \
 			name=$${file%.xml}.cho && \
 			echo -n "Converting to ChordPro... $${name}\n" && \
-			name=$${name#songs/} && \
+			name=$${name##*/} && \
 			xsltproc \
 				--output "$(EXPORT_CHO)/$${name}" \
 				tools/openlyrics-to-chordpro.xsl \

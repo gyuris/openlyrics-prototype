@@ -32,6 +32,6 @@ xmlformat --in-place --config-file=tools/xmlformat.conf "$file"
 # xmlformat does not format well the <br/>. Puts it on new line. I want to leave it on the line
 # ending. We must fromat it by hand.
 # Remark:I think <br/> is alian OpenLyrics and we should return to <line></line> instead of <br/>
-sed --in-place --regexp-extended ':a;N;$!ba;s/\r{0,1}\n\s+(<br\/>|<br \/>)/<br\/>/g' "$file"
+sed --in-place --regexp-extended ':a;N;$!ba;s/\r{0,1}\n\s+<br\s*\/*>/<br\/>/g' "$file"
 
 echo "done"

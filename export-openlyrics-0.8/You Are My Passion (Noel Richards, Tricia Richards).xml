@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-05-26T00:43:53+02:00">
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-06-21T23:22:19+02:00">
   <properties>
     <titles>
       <title lang="en">You Are My Passion</title>
@@ -17,7 +17,7 @@
     </songbooks>
     <key>D</key>
     <ccliNo>1537935</ccliNo>
-    <copyright> 1995 Thankyou Music</copyright>
+    <copyright>1995 Thankyou Music</copyright>
     <themes>
       <theme>Declaration</theme>
       <theme>Love</theme>

@@ -60,10 +60,10 @@
     </verse>
     <verse name="c">
       <lines>
-        <chord root="B" structure="min" upbeat="true" />Mennyei <chord root="E" structure="min">jó Atyám,</chord><br/>
-        <chord root="G" upbeat="true" />országod jöjjön <chord root="F#">el!</chord><br/>
-        <chord root="B" structure="min" upbeat="true" />Ó, drága <chord root="E" structure="min">jó Atyám,</chord><br/>
-        <chord root="G" upbeat="true" />Királyunk küldjed <chord root="F#">el!</chord>
+        <chord root="B" structure="min" upbeat="true">Mennyei</chord> <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true">országod jöjjön</chord> <chord root="F#">el!</chord><br/>
+        <chord root="B" structure="min" upbeat="true">Ó, drága</chord> <chord root="E" structure="min">jó Atyám,</chord><br/>
+        <chord root="G" upbeat="true">Királyunk küldjed</chord> <chord root="F#">el!</chord>
       </lines>
     </verse>
     <instrument name="m2">

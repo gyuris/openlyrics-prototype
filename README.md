@@ -53,6 +53,6 @@ We add new elements and attributes to current OpenLyrics 0.8. We plan to adopt t
 - song/lyrics/instrument : Intrumental parts: intro, middle, outro and solo. - https://github.com/openlyrics/openlyrics/issues/35
 - song/lyrics/instrument/beat : For instrumental - https://github.com/openlyrics/openlyrics/issues/36
 - song/lyrics/verse/lines/@repeat : Repeating for lines - https://github.com/openlyrics/openlyrics/issues/37
-- //chord/@root, //chord/@structure, //chord/@bass : New chord notation
+- //chord/@root, //chord/@structure, //chord/@bass : New chord notation - https://github.com/openlyrics/openlyrics/issues/52 + https://github.com/openlyrics/openlyrics/issues/54
 
 There are a simple converter to current wide used OpenLyrics 0.8 and ChordPro standards.

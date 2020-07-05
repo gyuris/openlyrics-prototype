@@ -149,11 +149,11 @@
   </xsl:template>
 
   <!-- Chords -->
-  <xsl:variable name="chordnotation" select="document('../stylesheets/xsl/openlyrics-0.9-chord.xml')/chordnotation"/>
+  <xsl:variable name="chordNotation" select="document('../stylesheets/xsl/openlyrics-0.9-chord.xml')/chordNotation"/>
   <xsl:variable name="notation">
     <xsl:choose>
-      <xsl:when test="//ol:song/@chordnotation">
-        <xsl:value-of select="//ol:song/@chordnotation"/>
+      <xsl:when test="//ol:song/@chordNotation">
+        <xsl:value-of select="//ol:song/@chordNotation"/>
       </xsl:when>
       <xsl:otherwise>
         <xsl:text>english</xsl:text>
@@ -162,11 +162,11 @@
   </xsl:variable>
   <xsl:template name="chordname">
     <xsl:param name="this" />
-    <xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/>
-    <xsl:value-of select="$chordnotation/structure[@id=$this/@structure]/text()|$chordnotation/structure[@shorthand=$this/@structure]/text()"/>
+    <xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/>
+    <xsl:value-of select="$chordNotation/structure[@id=$this/@structure]/text()|$chordNotation/structure[@shorthand=$this/@structure]/text()"/>
     <xsl:if test="string-length($this/@bass)!=0">
       <xsl:text>/</xsl:text>
-      <xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/>
+      <xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/>
     </xsl:if>
   </xsl:template>
   <xsl:template match="ol:song[@version='0.8']//ol:chord">

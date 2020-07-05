@@ -5,7 +5,7 @@
  xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
- chordnotation="hungarian"
+ chordNotation="hungarian"
  xml:lang="hu">
   <title id="saintandrew">Szent András énekfüzet</title>
   <foreword>Ez a Szent András énekfüzet készülő új verziója.</foreword>

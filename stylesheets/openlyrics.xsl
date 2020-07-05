@@ -27,11 +27,11 @@
   </xsl:variable>
   <xsl:variable name="locale" select="document($locale-strings)/locale"/>
   <!-- Chords -->
-  <xsl:variable name="chordnotation" select="document('xsl/openlyrics-0.9-chord.xml')/chordnotation"/>
+  <xsl:variable name="chordNotation" select="document('xsl/openlyrics-0.9-chord.xml')/chordNotation"/>
   <xsl:variable name="notation">
     <xsl:choose>
-      <xsl:when test="//ol:song/@chordnotation">
-        <xsl:value-of select="//ol:song/@chordnotation" />
+      <xsl:when test="//ol:song/@chordNotation">
+        <xsl:value-of select="//ol:song/@chordNotation" />
       </xsl:when>
       <xsl:otherwise>
         <xsl:text>english</xsl:text>
@@ -376,13 +376,13 @@
   <xsl:template name="chordname">
     <xsl:param name="this" />
     <code>{</code>
-    <span class="chord-root" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/></span>
+    <span class="chord-root" data-notation="{$notation}"><xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/></span>
     <!--<xsl:if test="string-length($this/@structure)!=0">-->
-      <span class="chord-structure"><xsl:value-of select="$chordnotation/structure[@id=$this/@structure]/text()|$chordnotation/structure[@shorthand=$this/@structure]/text()"/></span>
+      <span class="chord-structure"><xsl:value-of select="$chordNotation/structure[@id=$this/@structure]/text()|$chordNotation/structure[@shorthand=$this/@structure]/text()"/></span>
     <!--</xsl:if>-->
     <xsl:if test="string-length($this/@bass)!=0">
       <span class="chord-bassnotation">/</span>
-      <span class="chord-bass" data-notation="{$notation}"><xsl:value-of select="$chordnotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/></span>
+      <span class="chord-bass" data-notation="{$notation}"><xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/></span>
     </xsl:if>
     <xsl:if test="local-name($this/..) = 'chord'">
       <xsl:call-template name="chordname">

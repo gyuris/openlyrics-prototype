@@ -49,7 +49,7 @@ We add new elements and attributes to current OpenLyrics 0.8. We plan to adopt t
 - Processing instructions - https://github.com/openlyrics/openlyrics/issues/31
 - song/@version : 0.9
 - song/@xml:lang : Language of the file (not only for lyrics) Optional, default is 'en' - https://github.com/openlyrics/openlyrics/issues/32
-- song/@chordNotation : chordNotation, possible values: english, german, dutch, hungarian, neolatin
+- song/@chordNotation : Chord notation, possible values: english, german, dutch, hungarian, neolatin
 - song/lyrics/instrument : Intrumental parts: intro, middle, outro and solo. - https://github.com/openlyrics/openlyrics/issues/35
 - song/lyrics/instrument/beat : For instrumental - https://github.com/openlyrics/openlyrics/issues/36
 - song/lyrics/verse/lines/@repeat : Repeating for lines - https://github.com/openlyrics/openlyrics/issues/37

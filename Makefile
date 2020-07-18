@@ -36,8 +36,15 @@ validate: $(SOURCEXML)
 					--relaxng openlyrics-0.8.rng \
 					"$$file"; \
 			fi; \
+			if grep -q 'version="0.9"' "$$file"; \
+			then \
+				echo -n "Validating (0.9)... " && \
+				xmllint \
+					--noout \
+					--relaxng openlyrics-0.9.rng \
+					"$$file"; \
+			fi; \
 		done
-# If 0.9
 
 .PHONY: pretty
 pretty: $(SOURCEXML) $(BOOKXML)

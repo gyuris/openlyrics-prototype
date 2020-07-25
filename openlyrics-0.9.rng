@@ -398,14 +398,6 @@
           <data type="boolean"/>
         </attribute>
       </optional>
-      <optional>
-        <attribute name="tweak">
-          <choice>
-            <value>linebreak</value>
-            <value>nested</value>
-          </choice>
-        </attribute>
-      </optional>
       <choice>
         <oneOrMore>
           <ref name="linesContent"/>

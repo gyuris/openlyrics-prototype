@@ -16,7 +16,7 @@ song[version="0.9"] lines[repeat]::before { /* repeat */
   content: '‖:';
 }
 song[version="0.9"] lines[repeat]::after {
-  content: ':‖×' attr(repeat);
+  content: ':‖×' attr(repeat) '\A';
 }
 song[version="0.9"] beat {
   display: inline-block;

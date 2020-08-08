@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-08-08T09:20:20+02:00">
+  <properties>
+    <titles>
+      <title>Nem a képzettet hívja</title>
+      <title original="true">Bátorság</title>
+    </titles>
+    <verseOrder>v1 c v2 c b c</verseOrder>
+    <authors>
+      <author type="words">Tihanyi Klári</author>
+      <author type="music">Tihanyi Klári</author>
+    </authors>
+    <transposition>3</transposition>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9999"/>
+    </songbooks>
+    <comments>
+      <comment>„Ne mondd azt, hogy ifjú vagyok!” (Jer 1,7b)</comment>
+    </comments>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Nem a <chord name="C"/>képzettet <chord name="G"/>hívja, a <chord name="Am"/>bölcset, a <chord name="Em"/>hőst,<br/>
+        Aki <chord name="C"/>szívében <chord name="G"/>tiszta, <chord name="Am"/>az lesz e<chord name="D"/>rős.<br/>
+        <chord name="C"/>Ne félj, Ő küld <chord name="G"/>téged! <chord name="Am"/>Harcol érted <chord name="Em"/>mennyei A<chord name="D"/>tyád.<chord name="D4"/><br/>
+        <chord name="Em"/>Lépni <chord name="D"/>kell, <chord name="G"/>hitben járva <chord name="Am"/>útra kelni, mert <chord name="C"/>vár A<chord name="D"/>tyád.<br/>
+        <chord name="Em"/>Dönts te<chord name="D"/>hát, <chord name="G"/>keresd meg az <chord name="Am"/>ígért földet, <chord name="C"/>szép ha<chord name="D"/>zát.<chord name="D4"/>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        𝄆  <chord name="Em7"/>Ő ad hitet, <chord name="Cadd9"/>reményt, erőt, hogy el<chord name="G"/>tépd lánca<chord name="D"/>id!<br/>
+        <chord name="Em7"/>Ne félj soha, <chord name="Cadd9"/>lépj vízre ma, <chord name="G"/>add át álma<chord name="D"/>id!<chord name="D4"/>  𝄇×2
+      </lines>
+      <lines>
+        Álma<chord name="G"/>id.
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord name="C"/>Botom vegyem <chord name="G"/>kezembe, <chord name="Am"/>Lelked most ezt <chord name="Em"/>súgja.<br/>
+        <chord name="C"/>Szívemnek <chord name="G"/>vágya <chord name="Am"/>lángra lobban <chord name="D"/>újra:<br/>
+        <chord name="C"/>Feláldozni <chord name="G"/>mindent, <chord name="Am"/>szolgálni a <chord name="Em"/>szabadító <chord name="D"/>Istent.<chord name="D4"/><br/>
+        <chord name="Em"/>Hajts fe<chord name="D"/>jet! E<chord name="G"/>lőtted áll ki <chord name="Am"/>történelmet <chord name="C"/>ír ve<chord name="D"/>led.<br/>
+        <chord name="Em"/>Nyújtsd ke<chord name="D"/>zed! Ten<chord name="G"/>ger válik <chord name="Am"/>ketté, hogyha <chord name="C"/>Ő ve<chord name="D"/>zet.<chord name="D4"/>
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines>
+        𝄆  Vedd <chord name="Em7"/>kardodat és <chord name="Cadd9"/>pajzsodat, <chord name="Em7"/>vívd a hit har<chord name="D"/>cát!<br/>
+        Dönts <chord name="Em7"/>gátakat, nyiss <chord name="Cadd9"/>zárakat, <chord name="G"/>lásd az Úr ar<chord name="D"/>cát!<chord name="D4"/>  𝄇×2
+      </lines>
+      <lines>
+        Az Úr ar<chord name="G"/>cát.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

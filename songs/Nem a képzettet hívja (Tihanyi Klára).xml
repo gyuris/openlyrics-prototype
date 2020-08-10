@@ -8,8 +8,8 @@
     </titles>
     <verseOrder>v1 c v2 c m b m c</verseOrder>
     <authors>
-      <author type="words">Tihanyi Klári</author>
-      <author type="music">Tihanyi Klári</author>
+      <author type="words">Tihanyi Klára</author>
+      <author type="music">Tihanyi Klára</author>
     </authors>
     <transposition>3</transposition>
     <songbooks>
@@ -40,28 +40,34 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord root="C">Botom vegyem</chord> <chord root="G">kezembe,</chord> <chord root="A" structure="min">Lelked most ezt</chord> <chord root="E" structure="min">súgja.</chord><br/>
-        <chord root="C">Szívemnek</chord> <chord root="G">vágya</chord> <chord root="A" structure="min">lángra lobban</chord> <chord root="D">újra:</chord><br/>
+        <chord root="C">„Botod vedd a</chord> <chord root="G">kezedbe” –</chord> <chord root="A" structure="min">Lelke most ezt</chord> <chord root="E" structure="min">súgja.</chord><br/>
+        <chord root="C">Szívednek</chord> <chord root="G">vágya</chord> <chord root="A" structure="min">lángra lobban</chord> <chord root="D">újra:</chord><br/>
         <chord root="C">Feláldozni</chord> <chord root="G">mindent,</chord> <chord root="A" structure="min">szolgálni a</chord> <chord root="E" structure="min">szabadító</chord> <chord root="D">Istent.</chord><chord root="D" structure="sus4"/><br/>
         <chord root="E" structure="min">Hajts fe</chord><chord root="D">jet! E</chord><chord root="G">lőtted áll ki</chord> <chord root="A" structure="min">történelmet</chord> <chord root="C">ír ve</chord><chord root="D">led.</chord><br/>
         <chord root="E" structure="min">Nyújtsd ke</chord><chord root="D">zed! Ten</chord><chord root="G">ger válik</chord> <chord root="A" structure="min">ketté, hogyha</chord> <chord root="C">Ő ve</chord><chord root="D">zet.</chord><chord root="D" structure="sus4"/>
       </lines>
     </verse>
     <instrument name="m">
-      <lines repeat="2">
-        <beat><chord root="E" structure="min7"/></beat>
+      <lines>
         <beat><chord root="C" structure="add9"/></beat>
         <beat><chord root="G"/></beat>
+        <beat><chord root="D"/></beat>
+        <beat><chord root="E" structure="min7"/></beat>
+      </lines>
+      <lines>
+        <beat><chord root="C" structure="add9"/></beat>
+        <beat><chord root="G"/></beat>
+        <beat><chord root="D"/></beat>
         <beat><chord root="D"/></beat>
       </lines>
     </instrument>
     <verse name="b">
       <lines repeat="2">
-        Vedd <chord root="E" structure="min7">kardodat és</chord> <chord root="C" structure="add9">pajzsodat,</chord> <chord root="E" structure="min7">vívd a hit har</chord><chord root="D">cát!</chord><br/>
-        Dönts <chord root="E" structure="min7">gátakat, nyiss</chord> <chord root="C" structure="add9">zárakat,</chord> <chord root="G">lásd az Úr ar</chord><chord root="D">cát!</chord><chord root="D" structure="sus4"/>
+        Vedd <chord root="C" structure="add9">kardodat és</chord> <chord root="G">pajzsodat,</chord> <chord root="D">vívd a hit</chord> har<chord root="E" structure="min7">cát!</chord><br/>
+        Dönts <chord root="C" structure="add9">gátakat, nyiss</chord> <chord root="G">zárakat,</chord> <chord root="D">lásd az Úr ar</chord><chord root="E" structure="min7">cát!</chord>
       </lines>
       <lines>
-        Az Úr ar<chord root="G">cát.</chord>
+        Az Úr <chord root="D">ar</chord><chord root="D" structure="sus4">cát.</chord><chord root="D"/>
       </lines>
     </verse>
   </lyrics>

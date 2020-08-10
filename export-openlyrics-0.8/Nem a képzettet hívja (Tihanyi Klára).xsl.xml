@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-08-08T09:20:20+02:00">
+<?xml-stylesheet href="../stylesheets/openlyrics.xsl" type="text/xsl"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-08-10T19:40:50+02:00">
   <properties>
     <titles>
       <title>Nem a képzettet hívja</title>
@@ -8,8 +8,8 @@
     </titles>
     <verseOrder>v1 c v2 c b c</verseOrder>
     <authors>
-      <author type="words">Tihanyi Klári</author>
-      <author type="music">Tihanyi Klári</author>
+      <author type="words">Tihanyi Klára</author>
+      <author type="music">Tihanyi Klára</author>
     </authors>
     <transposition>3</transposition>
     <songbooks>
@@ -40,8 +40,8 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord name="C"/>Botom vegyem <chord name="G"/>kezembe, <chord name="Am"/>Lelked most ezt <chord name="Em"/>súgja.<br/>
-        <chord name="C"/>Szívemnek <chord name="G"/>vágya <chord name="Am"/>lángra lobban <chord name="D"/>újra:<br/>
+        <chord name="C"/>„Botod vedd a <chord name="G"/>kezedbe” – <chord name="Am"/>Lelke most ezt <chord name="Em"/>súgja.<br/>
+        <chord name="C"/>Szívednek <chord name="G"/>vágya <chord name="Am"/>lángra lobban <chord name="D"/>újra:<br/>
         <chord name="C"/>Feláldozni <chord name="G"/>mindent, <chord name="Am"/>szolgálni a <chord name="Em"/>szabadító <chord name="D"/>Istent.<chord name="D4"/><br/>
         <chord name="Em"/>Hajts fe<chord name="D"/>jet! E<chord name="G"/>lőtted áll ki <chord name="Am"/>történelmet <chord name="C"/>ír ve<chord name="D"/>led.<br/>
         <chord name="Em"/>Nyújtsd ke<chord name="D"/>zed! Ten<chord name="G"/>ger válik <chord name="Am"/>ketté, hogyha <chord name="C"/>Ő ve<chord name="D"/>zet.<chord name="D4"/>
@@ -49,11 +49,11 @@
     </verse>
     <verse name="b">
       <lines>
-        𝄆  Vedd <chord name="Em7"/>kardodat és <chord name="Cadd9"/>pajzsodat, <chord name="Em7"/>vívd a hit har<chord name="D"/>cát!<br/>
-        Dönts <chord name="Em7"/>gátakat, nyiss <chord name="Cadd9"/>zárakat, <chord name="G"/>lásd az Úr ar<chord name="D"/>cát!<chord name="D4"/>  𝄇×2
+        𝄆  Vedd <chord name="Cadd9"/>kardodat és <chord name="G"/>pajzsodat, <chord name="D"/>vívd a hit har<chord name="Em7"/>cát!<br/>
+        Dönts <chord name="Cadd9"/>gátakat, nyiss <chord name="G"/>zárakat, <chord name="D"/>lásd az Úr ar<chord name="Em7"/>cát!  𝄇×2
       </lines>
       <lines>
-        Az Úr ar<chord name="G"/>cát.
+        Az Úr <chord name="D"/>ar<chord name="D4"/>cát.<chord name="D"/>
       </lines>
     </verse>
   </lyrics>

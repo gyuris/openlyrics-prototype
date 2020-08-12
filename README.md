@@ -9,8 +9,8 @@ to display OpenLyrics XML on screen and print media with pure CSS or XSLT(+CSS).
 - [xmllint](http://xmlsoft.org/xmllint.html) (for checking XML files and OpenLyrics validity)
 - [xsltproc](http://xmlsoft.org/XSLT/xsltproc.html) (for XSLT transformations)
 - [xmlformat](www.kitebird.com/software/xmlformat/) (to make pretty printed OpenLyrics XML)
-- [Prince](https://www.princexml.com/) or [WeasyPrint](https://weasyprint.org/) (to create PDF
-output): Prince supports XML and HTML output, WeasyPrint supports only HTML version.
+- [Prince](https://www.princexml.com/) or [WeasyPrint](https://weasyprint.org/) or [Paged.js](https://www.pagedjs.org/) (to create PDF
+output): Prince supports XML and HTML output, WeasyPrint and Paged.js supports only HTML version. Prince is the default tool.
 
 
 ## Concept

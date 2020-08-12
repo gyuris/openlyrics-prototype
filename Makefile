@@ -5,6 +5,7 @@ BOOKXML     := books/*.xml
 EXPORT_OL08 := export-openlyrics-0.8
 EXPORT_CHO  := export-chordpro
 EXPORT_PDF  := export-pdf
+TOOL        ?= prince
 
 .PHONY: all
 all: well-formed validate export-ol08 export-cho xsl pdf books clean
@@ -113,7 +114,7 @@ xsl: $(SOURCEXML)
 pdf: $(SOURCEXML)
 	@for file in $(SOURCEXML); \
 		do \
-			./make-pdf "$$file" $(EXPORT_PDF); \
+			./make-pdf -p ../$(EXPORT_PDF) -t "$(TOOL)" "$$file"; \
 		done
 
 .PHONY: clean
@@ -133,20 +134,20 @@ books: $(SOURCEXML) $(BOOKXML)
 		done
 	@for file in $(BOOKDIR)/*.xsl.xml; \
 		do \
-			./make-pdf "$$file" $(BOOKDIR); \
+			./make-pdf -p ../$(BOOKDIR) -t "$(TOOL)" "$$file"; \
 		done
 
 .PHONY: help
 help:
 	@echo "Targets:"
-	@echo "  all         - Perform all operations"
-	@echo "  well-formed - Checks that transforming XSL and XML are well formed"
-	@echo "  validate    - Validates presented OpenLyrics XML files against RelaxNG scheme"
-	@echo "  xsl         - Generates XSL versions"
-	@echo "  pdf         - Generates PDF files"
-	@echo "  books       - Generates books XSL and PDF"
-	@echo "  clean       - Removes all generated XSL version"
-	@echo "  http        - Creates a light HTTP server. Stopping: Ctrl+C"
-	@echo "  export-ol08 - Converts OpenLyrics 0.9 files to OpenLyrics 0.8"
-	@echo "  export-cho  - Converts OpenLyrics files to ChordPro"
-	@echo "  pretty      - Format OpenLyrics XML source"
+	@echo "  all         - Perform all operations."
+	@echo "  well-formed - Checks that transforming XSL and XML are well formed."
+	@echo "  validate    - Validates presented OpenLyrics XML files against RelaxNG scheme."
+	@echo "  xsl         - Generates XSL versions."
+	@echo "  pdf         - Generates PDF files. Optional TOOL parameter specifies the tool: prince, weasyprint or pagedjs. Example: make pdf TOOL=weasyprint. Prince is the default tool."
+	@echo "  books       - Generates books XSL and PDF. Optional TOOL parameter specifies the tool: prince, weasyprint or pagedjs. Example: make books TOOL=pagedjs. Prince is the default tool."
+	@echo "  clean       - Removes all generated XSL version."
+	@echo "  http        - Creates a light HTTP server. Stopping: Ctrl+C."
+	@echo "  export-ol08 - Converts OpenLyrics 0.9 files to OpenLyrics 0.8."
+	@echo "  export-cho  - Converts OpenLyrics files to ChordPro."
+	@echo "  pretty      - Format OpenLyrics XML source."

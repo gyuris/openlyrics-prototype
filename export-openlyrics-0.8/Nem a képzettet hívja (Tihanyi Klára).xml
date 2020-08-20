@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet href="../stylesheets/openlyrics.xsl" type="text/xsl"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-08-10T19:40:50+02:00">
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-08-20T23:05:55+02:00">
   <properties>
     <titles>
       <title>Nem a képzettet hívja</title>
@@ -49,8 +49,8 @@
     </verse>
     <verse name="b">
       <lines>
-        𝄆  Vedd <chord name="Cadd9"/>kardodat és <chord name="G"/>pajzsodat, <chord name="D"/>vívd a hit har<chord name="Em7"/>cát!<br/>
-        Dönts <chord name="Cadd9"/>gátakat, nyiss <chord name="G"/>zárakat, <chord name="D"/>lásd az Úr ar<chord name="Em7"/>cát!  𝄇×2
+        𝄆  Vedd <chord name="Cadd9"/>kardodat és <chord name="G"/>pajzsodat, <chord name="D"/>vívd a hit <chord name="Em7"/>harcát!<br/>
+        Dönts <chord name="Cadd9"/>gátakat, nyiss <chord name="G"/>zárakat, <chord name="D"/>lásd az Úr <chord name="Em7"/>arcát!  𝄇×2
       </lines>
       <lines>
         Az Úr <chord name="D"/>ar<chord name="D4"/>cát.<chord name="D"/>

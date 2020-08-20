@@ -63,8 +63,8 @@
     </instrument>
     <verse name="b">
       <lines repeat="2">
-        Vedd <chord root="C" structure="add9">kardodat és</chord> <chord root="G">pajzsodat,</chord> <chord root="D">vívd a hit</chord> har<chord root="E" structure="min7">cát!</chord><br/>
-        Dönts <chord root="C" structure="add9">gátakat, nyiss</chord> <chord root="G">zárakat,</chord> <chord root="D">lásd az Úr ar</chord><chord root="E" structure="min7">cát!</chord>
+        Vedd <chord root="C" structure="add9">kardodat és</chord> <chord root="G">pajzsodat,</chord> <chord root="D">vívd a hit</chord> <chord root="E" structure="min7">harcát!</chord><br/>
+        Dönts <chord root="C" structure="add9">gátakat, nyiss</chord> <chord root="G">zárakat,</chord> <chord root="D">lásd az Úr </chord><chord root="E" structure="min7">arcát!</chord>
       </lines>
       <lines>
         Az Úr <chord root="D">ar</chord><chord root="D" structure="sus4">cát.</chord><chord root="D"/>

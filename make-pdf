@@ -72,33 +72,41 @@ author="Gyuris Gellért" # Author for PDF
 
 if [[ $file = *".xsl.xml" ]]; then
   # Generate PDF from XSL(HTML) version
-  if [ $tool == "prince" ]; then
-    echo -n "Making PDF [Prince]... $file... "
-    cd $dir && xsltproc "$name.xml" | prince -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
-    echo "done"
-  elif [ $tool == "weasyprint" ]; then
-    echo -n "Making PDF [WeasyPrint]... $file... "
-    cd $dir && xsltproc "$name.xml" | weasyprint --quiet - "$exportpath/$name.pdf"
-    echo "done"
-  elif [ $tool == "pagedjs" ]; then
-    echo -n "Making PDF [Paged.js]... $file... "
-    cd $dir
-    xsltproc "$name.xml" > "$name.html"
-    pagedjs-cli -o "$exportpath/$name.pdf" "$name.html"
-    rm -f "$name.html"
-    cd ..
-    echo "done"
-  fi
+  case "$tool" in
+    prince)
+      echo -n "Making PDF [Prince]... $file... "
+      cd $dir && xsltproc "$name.xml" | prince -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
+      echo "done"
+      ;;
+    weasyprint)
+      echo -n "Making PDF [WeasyPrint]... $file... "
+      cd $dir && xsltproc "$name.xml" | weasyprint --quiet - "$exportpath/$name.pdf"
+      echo "done"
+      ;;
+    pagedjs)
+      echo -n "Making PDF [Paged.js]... $file... "
+      cd $dir
+      xsltproc "$name.xml" > "$name.html"
+      pagedjs-cli -o "$exportpath/$name.pdf" "$name.html"
+      rm -f "$name.html"
+      cd ..
+      echo "done"
+      ;;
+  esac
 else
   # Generate PDF from original XML
-  if [ $tool == "prince" ]; then
-    echo -n "Making PDF [Prince]... $file... "
-    cd $dir && prince "$name.xml" -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
-    echo "done"
-  elif [ $tool == "weasyprint" ]; then
-    echo "Weasyprint doesn't support processing XML... $file"
-  elif [ $tool == "pagedjs" ]; then
-    echo "Paged.js doesn't support processing XML... $file"
-  fi
+  case "$tool" in
+    prince)
+      echo -n "Making PDF [Prince]... $file... "
+      cd $dir && prince "$name.xml" -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
+      echo "done"
+      ;;
+    weasyprint)
+      echo "Weasyprint doesn't support processing XML... $file"
+      ;;
+    pagedjs)
+      echo "Paged.js doesn't support processing XML... $file"
+      ;;
+  esac
 fi
 

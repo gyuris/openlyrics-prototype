@@ -9,6 +9,8 @@
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
+  <xsl:param name="book-type"/>
+
   <!-- reuse openlyrics.xsl -->
   <xsl:include href="openlyrics.xsl"/> 
 
@@ -20,8 +22,11 @@
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="../stylesheets/css/html.css" />
         <link rel="stylesheet" href="../stylesheets/css/book.html.css" />
+        <xsl:if test="$book-type='public'">
+          <link rel="stylesheet" href="../stylesheets/css/book-public.html.css" />
+        </xsl:if>
       </head>
-      <body>
+      <body class="{$book-type}">
         <xsl:apply-templates/>
       </body>
     </html>
@@ -43,6 +48,11 @@
   </xsl:template>
   <xsl:template match="db:entry">
     <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
+  </xsl:template>
+  <xsl:template match="db:chapter">
+    <section id="songs">
+      <xsl:apply-templates />
+    </section>
   </xsl:template>
 
 </xsl:stylesheet>

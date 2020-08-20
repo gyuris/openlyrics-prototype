@@ -134,7 +134,8 @@ books: $(SOURCEXML) $(BOOKXML)
 		done
 	@for file in $(BOOKDIR)/*.xsl.xml; \
 		do \
-			./make-pdf -p ../$(BOOKDIR) -t "$(TOOL)" "$$file"; \
+			./make-pdf -p ../$(BOOKDIR) -t "$(TOOL)" -b public "$$file"; \
+			./make-pdf -p ../$(BOOKDIR) -t "$(TOOL)" -b band   "$$file"; \
 		done
 
 .PHONY: help

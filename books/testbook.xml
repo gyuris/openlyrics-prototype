@@ -10,15 +10,17 @@
   <title id="testbook">Teszt könyv</title>
   <foreword>Ez egy énekekeskönyv, amelynek a neve „Teszt könyv”.</foreword>
   <toc>Tartalomjegyzék</toc>
-  <xi:include href="../songs/A béke napja közel.xml" parse="xml" />
-  <xi:include href="../songs/Add a kezed, hogy zengjünk az.xml" parse="xml" />
-  <xi:include href="../songs/A kapudat nyisd meg.xml" parse="xml" />
-  <xi:include href="../songs/Alleluja, dicsőség a mennyben Istenenünknek.xml" parse="xml" />
-  <xi:include href="../songs/Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
-  <xi:include href="../songs/How Great Is Our God (Chris Tomlin, Ed Cash, Jesse Reeves).xml" parse="xml" />
-  <xi:include href="../songs/Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
-  <xi:include href="../songs/Legyen a béke teveled, legyen.xml" parse="xml" />
-  <xi:include href="../songs/Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />
-  <xi:include href="../songs/Új szívet adok és új lelket.xml" parse="xml" />
-  <xi:include href="../songs/You Are My Passion (Noel Richards, Tricia Richards).xml" parse="xml" />
+  <chapter>
+    <xi:include href="../songs/A béke napja közel.xml" parse="xml" />
+    <xi:include href="../songs/Add a kezed, hogy zengjünk az.xml" parse="xml" />
+    <xi:include href="../songs/A kapudat nyisd meg.xml" parse="xml" />
+    <xi:include href="../songs/Alleluja, dicsőség a mennyben Istenenünknek.xml" parse="xml" />
+    <xi:include href="../songs/Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
+    <xi:include href="../songs/How Great Is Our God (Chris Tomlin, Ed Cash, Jesse Reeves).xml" parse="xml" />
+    <xi:include href="../songs/Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
+    <xi:include href="../songs/Legyen a béke teveled, legyen.xml" parse="xml" />
+    <xi:include href="../songs/Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />
+    <xi:include href="../songs/Új szívet adok és új lelket.xml" parse="xml" />
+    <xi:include href="../songs/You Are My Passion (Noel Richards, Tricia Richards).xml" parse="xml" />
+  </chapter>
 </book>

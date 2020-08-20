@@ -1,10 +1,11 @@
 #! /bin/bash
 
 # Prerequisites: xsltproc, prince (v13)
-# Usage:         ./make-pdf [-p EXPORTPATH] [-t TOOL] FILE
+# Usage:         ./make-pdf [-p EXPORTPATH] [-t TOOL] [-b BOOK_TYPE] FILE
 # Examples:      ./make-pdf A\ béke\ napja\ közel.xml
 #                ./make-pdf -p ../song "A béke napja közel.xml"
 #                ./make-pdf -p ../songs -t pagedjs "A béke napja közel.xml"
+#                ./make-pdf -p ../songs -t pagedjs -b public "A béke napja közel.xml"
 
 # Exit immediately if a command exits with a non-zero status.
 set -e
@@ -20,14 +21,15 @@ fi
 ######################
 help=$(cat <<'EOT'
 Usage: ./make-pdf [options] FILE
-  -t    Tool for processing: prince, weasyprint, pagedjs
-  -p    Path to export
+  -t    Processing tool: prince, weasyprint, pagedjs
+  -p    Path for export
+  -b    Type of the book if any: 'public' or 'band'
 EOT
 )
 
 exportpath="../export-pdf"
 tool="prince"
-while getopts "t:p:h" opt; do
+while getopts "t:p:b:h" opt; do
   case ${opt} in
     t)
       tool=$OPTARG
@@ -39,6 +41,9 @@ while getopts "t:p:h" opt; do
       ;;
     p)
       exportpath=$OPTARG
+      ;;
+    b)
+      booktype=$OPTARG
       ;;
     h)
       echo "$help"
@@ -64,8 +69,12 @@ if [ ! -f "$file" ]; then
 fi
 
 name="$(basename "$file" .xml)"
+pdfname=$name
 dir="$(dirname "$file")"
 author="Gyuris Gellért" # Author for PDF
+if [ -n "$booktype" ]; then
+  pdfname="${name/.xsl/_$booktype.xsl}"
+fi
 
 # Running
 #########
@@ -75,19 +84,19 @@ if [[ $file = *".xsl.xml" ]]; then
   case "$tool" in
     prince)
       echo -n "Making PDF [Prince]... $file... "
-      cd $dir && xsltproc "$name.xml" | prince -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
+      cd $dir && xsltproc "$name.xml" $( [[ -n $booktype ]] && printf %s " --stringparam book-type $booktype" )  | prince -o "$exportpath/$pdfname.pdf" --pdf-author="$author" --pdf-title="$name"  --no-warn-css-unsupported -
       echo "done"
       ;;
     weasyprint)
       echo -n "Making PDF [WeasyPrint]... $file... "
-      cd $dir && xsltproc "$name.xml" | weasyprint --quiet - "$exportpath/$name.pdf"
+      cd $dir && xsltproc "$name.xml" $( [[ -n $booktype ]] && printf %s " --stringparam book-type $booktype" ) | weasyprint --quiet - "$exportpath/$pdfname.pdf"
       echo "done"
       ;;
     pagedjs)
       echo -n "Making PDF [Paged.js]... $file... "
       cd $dir
-      xsltproc "$name.xml" > "$name.html"
-      pagedjs-cli -o "$exportpath/$name.pdf" "$name.html"
+      xsltproc "$name.xml" $( [[ -n $booktype ]] && printf %s " --stringparam book-type $booktype" ) > "$name.html"
+      pagedjs-cli -o "$exportpath/$pdfname.pdf" "$name.html"
       rm -f "$name.html"
       cd ..
       echo "done"
@@ -98,7 +107,7 @@ else
   case "$tool" in
     prince)
       echo -n "Making PDF [Prince]... $file... "
-      cd $dir && prince "$name.xml" -o "$exportpath/$name.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
+      cd $dir && prince "$name.xml" -o "$exportpath/$pdfname.pdf" --pdf-author="$author" --pdf-title="$name" --no-warn-css-unsupported
       echo "done"
       ;;
     weasyprint)

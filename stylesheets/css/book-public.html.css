@@ -1,0 +1,19 @@
+/**
+ * OpenLyrics XML+XSLT+CSS stylesheet
+ * Book
+ */
+
+/* book */
+:root {
+  font-size: 8pt;
+}
+
+section#songs {
+  page-break-before: always;
+  columns: 2;
+  column-gap: 1rem;
+}
+
+section#songs .song {
+  page-break-before: auto;
+}

@@ -18,13 +18,13 @@
     </xsl:processing-instruction>
     <xsl:text>&#x0A;</xsl:text>
     <book>
-    <xsl:apply-templates />
+      <xsl:apply-templates />
     </book>
   </xsl:template>
 
   <xsl:template match="db:toc">
     <db:toc>
-      <xsl:for-each select="../xi:include">
+      <xsl:for-each select="../db:chapter[1]/xi:include">
         <xsl:variable name="url">
           <xsl:choose>
             <xsl:when test="system-property('xsl:vendor')='Transformiix'"><xsl:value-of select="concat('../', @href)"/></xsl:when>
@@ -38,7 +38,7 @@
     </db:toc>
   </xsl:template>
 
-  <xsl:template match="xi:include">
+  <xsl:template match="db:chapter[1]/xi:include">
     <xsl:variable name="url">
       <xsl:choose>
         <xsl:when test="system-property('xsl:vendor')='Transformiix'"><xsl:value-of select="concat('../', @href)"/></xsl:when>
@@ -46,7 +46,7 @@
       </xsl:choose>
     </xsl:variable>
     <xsl:variable name="song" select="document ($url)/ol:song" />
-    <xsl:variable name="title" select="../db:title/text()" />
+    <xsl:variable name="title" select="../../db:title/text()" />
     <xsl:element name="song" namespace="http://openlyrics.info/namespace/2009/song">
       <xsl:if test="$song/@xml:lang">
         <xsl:attribute name="xml:lang"><xsl:value-of select="$song/@xml:lang" /></xsl:attribute>
@@ -56,7 +56,7 @@
       <xsl:attribute name="createdIn"><xsl:value-of select="$song/@createdIn" /></xsl:attribute>
       <xsl:attribute name="modifiedIn"><xsl:value-of select="$song/@modifiedIn" /></xsl:attribute>
       <xsl:attribute name="modifiedDate"><xsl:value-of select="$song/@modifiedDate" /></xsl:attribute>
-      <xsl:attribute name="id"><xsl:value-of select="concat(../db:title/@id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
+      <xsl:attribute name="id"><xsl:value-of select="concat(../../db:title/@id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
       <xsl:copy-of select="$song/ol:properties" />
       <xsl:copy-of select="$song/ol:lyrics" />
     </xsl:element>
@@ -64,6 +64,12 @@
 
   <xsl:template match="db:title|db:foreword">
     <xsl:copy-of select="."/>
+  </xsl:template>
+
+  <xsl:template match="db:chapter">
+    <chapter xml:id="songs">
+      <xsl:apply-templates />
+    </chapter>
   </xsl:template>
 
 </xsl:stylesheet>

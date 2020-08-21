@@ -9,7 +9,7 @@
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
-  <xsl:param name="book-type"/>
+  <xsl:param name="book-type" select="string('public')"/><!-- value passed from outside, possible values: 'public', 'band' -->
 
   <!-- reuse openlyrics.xsl -->
   <xsl:include href="openlyrics.xsl"/> 

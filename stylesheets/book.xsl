@@ -32,8 +32,8 @@
           </xsl:choose>
         </xsl:variable>
         <xsl:variable name="song" select="document ($url)/ol:song" />
-        <xsl:variable name="title" select="../db:title/text()" />
-        <db:entry><xhtml:a href="#{../db:title/@id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}"><xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" /></xhtml:a></db:entry>
+        <xsl:variable name="title" select="../../db:title/text()" />
+        <db:entry><xhtml:a href="#{../../db:title/@id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}"><xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" /></xhtml:a></db:entry>
       </xsl:for-each>
     </db:toc>
   </xsl:template>

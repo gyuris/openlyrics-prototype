@@ -85,3 +85,17 @@ body.public section.properties p.properties-main span {
   padding: 0;
   margin-right: 0;
 }
+body.public header .title.real {
+  font-size: 1rem;
+  font-weight: bold;
+}
+body.public header .title-entry {
+  background: device-cmyk(0, 0, 0, 1);
+  color: device-cmyk(0, 0, 0, 0);
+  border-radius: 0.25rem;
+  display: inline-block;
+  margin: 0 .5rem 0 -.25rem;
+  padding: 0 .25rem;
+  font-size: 1.75rem;
+  min-width: 2.5rem;
+}

@@ -1,0 +1,18 @@
+/* First page */
+body.band h1 {
+  visibility: hidden;
+  page-break-after: always; 
+}
+@page:first {
+  background: url(elements/songbook_saintandrew_band.svg);
+}
+
+/* Foreword */
+
+/* TOC */
+body.band nav.toc {
+  page-break-before: always;
+  columns: 2;
+  column-gap: 0.5cm;
+  border: none;
+}

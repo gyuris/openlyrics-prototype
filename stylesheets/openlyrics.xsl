@@ -112,7 +112,10 @@
       </p>
     </section>
   </xsl:template>
-  
+
+  <xsl:template match="ol:titles">
+    <section class="{local-name()}"><xsl:apply-templates/></section>
+  </xsl:template>
   <xsl:template match="ol:title[1]">
     <h1 title="{$locale/properties/title/text()}"><xsl:value-of select="."/></h1>
   </xsl:template>
@@ -200,6 +203,9 @@
   </xsl:template>
 
   <xsl:template match="ol:songbook">
+    <xsl:call-template name="songbook"/>
+  </xsl:template>
+  <xsl:template name="songbook">
     <div class="{local-name()}" title="{$locale/properties/songbook/text()}">
       <span class="songbook_name">
         <xsl:value-of select="@name"/>

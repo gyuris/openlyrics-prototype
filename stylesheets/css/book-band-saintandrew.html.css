@@ -1,5 +1,5 @@
 /* First page */
-body.band h1 {
+body.band > h1 {
   visibility: hidden;
   page-break-after: always; 
 }
@@ -11,7 +11,6 @@ body.band h1 {
 
 /* TOC */
 body.band nav.toc {
-  page-break-before: always;
   columns: 2;
   column-gap: 0.5cm;
   border: none;

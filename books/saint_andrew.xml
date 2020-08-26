@@ -4,13 +4,18 @@
  xmlns="http://docbook.org/ns/docbook" version="5.0"
  xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:xi="http://www.w3.org/2001/XInclude"
- xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
- chordNotation="hungarian"
+ xml:id="saintandrew"
  xml:lang="hu">
-  <title id="saintandrew">Szent András énekfüzet</title>
-  <foreword>Ez a Szent András énekfüzet készülő új verziója.</foreword>
-  <toc>Tartalomjegyzék</toc>
-  <chapter>
+  <title>Szent András énekfüzet</title>
+  <preface>
+    <title>Előszó</title>
+    <para>Ez a Szent András énekfüzet készülő új verziója.</para>
+  </preface>
+  <toc>
+    <title>Tartalomjegyzék</title>
+  </toc>
+  <chapter version="hungarian">
+    <title>Énekek</title>
     <xi:include href="../songs/Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
     <xi:include href="../songs/Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
     <xi:include href="../songs/Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />

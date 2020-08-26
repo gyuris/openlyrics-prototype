@@ -17,13 +17,16 @@
       <xsl:text>href="../stylesheets/book.css" type="text/css"</xsl:text>
     </xsl:processing-instruction>
     <xsl:text>&#x0A;</xsl:text>
-    <book>
+    <xsl:element name="book" namespace="http://docbook.org/ns/docbook">
+      <xsl:attribute name="version"><xsl:value-of select="/db:book/@version" /></xsl:attribute>
+      <xsl:attribute name="xml:id"><xsl:value-of select="/db:book/@xml:id" /></xsl:attribute>
+      <xsl:attribute name="xml:lang"><xsl:value-of select="/db:book/@xml:lang" /></xsl:attribute>
       <xsl:apply-templates />
-    </book>
+    </xsl:element>
   </xsl:template>
 
   <xsl:template match="db:toc">
-    <db:toc>
+    <toc>
       <xsl:for-each select="../db:chapter[1]/xi:include">
         <xsl:variable name="url">
           <xsl:choose>
@@ -33,9 +36,15 @@
         </xsl:variable>
         <xsl:variable name="song" select="document ($url)/ol:song" />
         <xsl:variable name="title" select="../../db:title/text()" />
-        <db:entry><xhtml:a href="#{../../db:title/@id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}"><xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" /></xhtml:a></db:entry>
+        <tocentry>
+          <xhtml:a href="#{/db:book/@xml:id}-{$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry}">
+            <xsl:value-of select="$song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry" />
+            <xsl:text> </xsl:text>
+            <xsl:value-of select="$song/ol:properties/ol:titles/ol:title[1]" />
+          </xhtml:a>
+        </tocentry>
       </xsl:for-each>
-    </db:toc>
+    </toc>
   </xsl:template>
 
   <xsl:template match="db:chapter[1]/xi:include">
@@ -52,17 +61,17 @@
         <xsl:attribute name="xml:lang"><xsl:value-of select="$song/@xml:lang" /></xsl:attribute>
       </xsl:if>
       <xsl:attribute name="version"><xsl:value-of select="$song/@version" /></xsl:attribute>
-      <xsl:attribute name="chordNotation"><xsl:value-of select="/db:book/@chordNotation" /></xsl:attribute>
+      <xsl:attribute name="chordNotation"><xsl:value-of select="../@version" /></xsl:attribute>
       <xsl:attribute name="createdIn"><xsl:value-of select="$song/@createdIn" /></xsl:attribute>
       <xsl:attribute name="modifiedIn"><xsl:value-of select="$song/@modifiedIn" /></xsl:attribute>
       <xsl:attribute name="modifiedDate"><xsl:value-of select="$song/@modifiedDate" /></xsl:attribute>
-      <xsl:attribute name="id"><xsl:value-of select="concat(../../db:title/@id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
+      <xsl:attribute name="id"><xsl:value-of select="concat(/db:book/@xml:id, '-', $song/ol:properties/ol:songbooks/ol:songbook[@name=$title]/@entry)" /></xsl:attribute>
       <xsl:copy-of select="$song/ol:properties" />
       <xsl:copy-of select="$song/ol:lyrics" />
     </xsl:element>
   </xsl:template>
 
-  <xsl:template match="db:title|db:foreword">
+  <xsl:template match="db:title|db:preface">
     <xsl:copy-of select="."/>
   </xsl:template>
 

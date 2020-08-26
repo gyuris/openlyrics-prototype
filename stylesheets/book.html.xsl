@@ -16,7 +16,7 @@
 
   <!-- overwrite root from openlyrics.xsl: import 2nd CSS and CSS for public type -->
   <xsl:template match="/">
-    <html lang="{@xml:lang}">
+    <html lang="{/db:book/@xml:lang}">
       <head>
         <title><xsl:value-of select="ol:song/ol:properties/ol:titles/ol:title[1]/text()"/></title>
         <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
         <xsl:if test="$book-type='public'">
           <link rel="stylesheet" href="../stylesheets/css/book-public.html.css" />
         </xsl:if>
-        <link rel="stylesheet" href="../stylesheets/css/book-{$book-type}-{//db:title/@id}.html.css" />
+        <link rel="stylesheet" href="../stylesheets/css/book-{$book-type}-{/db:book/@xml:id}.html.css" />
       </head>
       <body class="{$book-type}">
         <xsl:apply-templates/>
@@ -61,7 +61,7 @@
   <xsl:template match="db:title">
     <h1><xsl:value-of select="text()" /></h1>
   </xsl:template>
-  <xsl:template match="db:foreword">
+  <xsl:template match="db:preface">
     <p><xsl:value-of select="text()" /></p>
   </xsl:template>
   <xsl:template match="db:toc">
@@ -71,7 +71,7 @@
       </ul>
     </nav>
   </xsl:template>
-  <xsl:template match="db:entry">
+  <xsl:template match="db:tocentry">
     <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
   </xsl:template>
   <xsl:template match="db:chapter">

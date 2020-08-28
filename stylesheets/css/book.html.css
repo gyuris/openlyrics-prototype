@@ -15,8 +15,9 @@ nav.toc ul li {
   line-height: 1.4rem;
 }
 nav.toc ul li a {
-  padding: .15rem .5rem;
+  padding: .15rem .25rem;
   text-decoration: none;
+  margin-left: -.25rem;
 }
 
 

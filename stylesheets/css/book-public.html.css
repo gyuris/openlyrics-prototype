@@ -20,10 +20,10 @@
   }
 }
 @page:left {
-  margin: 1.2cm 0.7cm 1cm 1.2cm;
+  margin: 1.2cm 1.2cm 1cm 0.7cm;
 }
 @page:right {
-  margin: 1.2cm 1.2cm 1cm 0.7cm;
+  margin: 1.2cm 0.7cm 1cm 1.2cm;
 }
 
 body.public section#songs {
@@ -98,4 +98,11 @@ body.public header .title-entry {
   padding: 0 .25rem;
   font-size: 1.75rem;
   min-width: 2.5rem;
+}
+
+/* Hide: inline comments, indicator for line's part */
+body.public section#songs > h1:first-child,
+body.public .lines .lyrics-comment,
+body.public .lines .line-part {
+  display: none;
 }

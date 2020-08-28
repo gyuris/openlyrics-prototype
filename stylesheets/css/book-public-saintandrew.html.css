@@ -12,6 +12,13 @@ body.public > h1 {
 /* TOC */
 body.public nav.toc {
   columns: 3;
-  column-gap: 0.5cm;
+  column-gap: 0.25cm;
   border: none;
+}
+
+/* Particular songs */
+#saintandrew-309,
+#saintandrew-341,
+#saintandrew-9996 {
+  break-before: column;
 }

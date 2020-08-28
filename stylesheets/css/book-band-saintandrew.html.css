@@ -7,6 +7,12 @@ body.band > h1 {
   background: url(elements/songbook_saintandrew_band.svg);
 }
 
+/* Hide: inline comments, indicator for line's part */
+body.band section#songs > h1:first-child {
+  display: none;
+}
+
+
 /* Foreword */
 
 /* TOC */

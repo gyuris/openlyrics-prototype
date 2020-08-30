@@ -418,19 +418,4 @@
 
   <xsl:template match="ol:format"></xsl:template>
 
-  <!-- book -->
-  <xsl:template match="db:foreword">
-    <p><xsl:value-of select="text()" /></p>
-  </xsl:template>
-  <xsl:template match="db:toc">
-    <nav class="toc">
-      <ul>
-        <xsl:apply-templates/>
-      </ul>
-    </nav>
-  </xsl:template>
-  <xsl:template match="db:entry">
-    <li><a href="{xhtml:a/@href}"><xsl:value-of select="xhtml:a/text()" /></a></li>
-  </xsl:template>
-
 </xsl:stylesheet>

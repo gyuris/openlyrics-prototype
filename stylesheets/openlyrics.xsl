@@ -9,6 +9,12 @@
  xmlns="http://www.w3.org/1999/xhtml">
 <xsl:output method="html" encoding="utf-8" indent="yes" doctype-system="about:legacy-compat" />
 
+  <!-- config variables -->
+  <xsl:param name="title-style">full</xsl:param>     <!-- default is 'full', possible values: 'full', 'entry' -->
+  <xsl:param name="songbook-style">full</xsl:param>  <!-- default is 'full', possible values: 'full', 'none'  -->
+  <xsl:param name="verseorder-style">full</xsl:param><!-- default is 'full', possible values: 'full', 'short', 'none'  -->
+  <xsl:param name="book-name"/>                      <!-- default is empty, filled by book.html.xsl  -->
+
   <!-- Locale-specific content -->
   <xsl:variable name="xmllang">
     <xsl:choose>
@@ -38,7 +44,6 @@
       </xsl:otherwise>
     </xsl:choose>
   </xsl:variable>
-
 
   <!-- Main -->
   <xsl:template match="/">
@@ -87,7 +92,7 @@
     </header>
     <section class="{local-name()}">
       <p class="properties-authors">
-      <xsl:apply-templates select="ol:authors"/>
+        <xsl:apply-templates select="ol:authors"/>
       </p>
       <p class="properties-other">
         <xsl:apply-templates select="ol:released"/>
@@ -103,6 +108,9 @@
         <xsl:apply-templates select="ol:transposition"/>
         <xsl:apply-templates select="ol:tempo"/>
         <xsl:apply-templates select="ol:ccliNo"/>
+        <xsl:if test="$verseorder-style='short'">
+          <xsl:apply-templates select="ol:verseOrder"/>
+        </xsl:if>
       </p>
       <p class="properties-themes">
         <xsl:apply-templates select="ol:themes"/>
@@ -117,7 +125,19 @@
     <section class="{local-name()}"><xsl:apply-templates/></section>
   </xsl:template>
   <xsl:template match="ol:title[1]">
-    <h1 title="{$locale/properties/title/text()}"><xsl:value-of select="."/></h1>
+    <xsl:choose>
+      <xsl:when test="$title-style='full'">
+        <h1 title="{$locale/properties/title/text()}"><xsl:value-of select="."/></h1>
+      </xsl:when>
+      <xsl:when test="$title-style='entry'"><!-- book related variation, see $book-name -->
+        <span class="{local-name()}-entry">
+          <xsl:value-of select="../../ol:songbooks/ol:songbook[@name=$book-name]/@entry"/>
+        </span>
+        <span class="{local-name()}-real">
+          <xsl:value-of select="."/>
+        </span>
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
   <xsl:template match="ol:title[@original]">
     <span class="{local-name()} {name(@original)}" title="{$locale/properties/originalTitle/text()}">
@@ -203,41 +223,66 @@
   </xsl:template>
 
   <xsl:template match="ol:songbook">
-    <xsl:call-template name="songbook"/>
-  </xsl:template>
-  <xsl:template name="songbook">
-    <div class="{local-name()}" title="{$locale/properties/songbook/text()}">
-      <span class="songbook_name">
-        <xsl:value-of select="@name"/>
-      </span>
-      <span class="songbook_entry">
-        <xsl:text> </xsl:text><xsl:value-of select="@entry"/><xsl:text>.</xsl:text>
-      </span>
-    </div>
+    <xsl:choose>
+      <xsl:when test="$songbook-style='none'"></xsl:when>
+      <xsl:when test="$songbook-style='full'">
+        <span class="{local-name()}" title="{$locale/properties/songbook/text()}">
+          <span class="songbook_name">
+            <xsl:value-of select="@name"/>
+          </span>
+          <span class="songbook_entry">
+            <xsl:text> </xsl:text><xsl:value-of select="@entry"/><xsl:text>.</xsl:text>
+          </span>
+        </span>
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
 
   <!-- Lyrics and chords -->
   <xsl:template match="ol:lyrics">
-    <aside class="verse-order">
-      <xsl:apply-templates select="../ol:properties/ol:verseOrder"/>
-    </aside>
+    <xsl:if test="$verseorder-style='full'">
+      <aside class="verse-order">
+        <xsl:apply-templates select="../ol:properties/ol:verseOrder"/>
+      </aside>
+    </xsl:if>
     <section class="{local-name()}">
       <xsl:apply-templates/>
     </section>
   </xsl:template>
 
   <xsl:template match="ol:verseOrder">
-    <span class="{local-name()}" title="{$locale/properties/verseOrder/text()}">
-      <em><xsl:value-of select="$locale/properties/verseOrder/text()"/>: </em>
-      <div>
-        <xsl:for-each select="str:tokenize(.,' ')">
-          <xsl:call-template name="displayVerseName">
-            <xsl:with-param name="name" select="."/>
-          </xsl:call-template>
-          <xsl:call-template name="break" />
-        </xsl:for-each>
-      </div>
-    </span>
+    <xsl:choose>
+      <xsl:when test="$verseorder-style='none'"></xsl:when>
+      <xsl:when test="$verseorder-style='full'">
+        <span class="{local-name()}" title="{$locale/properties/verseOrder/text()}">
+          <em><xsl:value-of select="$locale/properties/verseOrder/text()"/>: </em>
+          <div>
+            <xsl:for-each select="str:tokenize(.,' ')">
+              <xsl:call-template name="displayVerseName">
+                <xsl:with-param name="name" select="."/>
+              </xsl:call-template>
+              <xsl:call-template name="break" />
+            </xsl:for-each>
+          </div>
+        </span>
+      </xsl:when>
+      <xsl:when test="$verseorder-style='short'">
+        <span class="{local-name()}" title="{$locale/properties/verseOrder/text()}">
+          <em><xsl:value-of select="$locale/properties/verseOrder/text()"/>: </em>
+          <span>
+            <xsl:for-each select="str:tokenize(.,' ')">
+              <xsl:variable name="verseName" select="substring(.,1,1)" />
+              <xsl:variable name="verseNum"  select="substring(.,2,string-length(-1))" />
+              <xsl:value-of select="substring($locale/lyrics/verseNames/*[local-name()=$verseName]/text(), 1, 1)"/>
+              <xsl:value-of select="$verseNum" />
+              <xsl:if test="position() != last()">
+                <xsl:text>+&#8203;</xsl:text>
+              </xsl:if>
+            </xsl:for-each>
+          </span>
+        </span>
+      </xsl:when>
+    </xsl:choose>
   </xsl:template>
 
   <xsl:template name="displayVerseName">

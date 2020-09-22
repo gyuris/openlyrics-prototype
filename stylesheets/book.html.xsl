@@ -11,8 +11,28 @@
 
   <xsl:param name="book-type" select="string('public')"/><!-- value passed from outside, possible values: 'public', 'band' -->
 
+  <!-- reconfig variables, see params in openlyrics.xsl -->
+  <xsl:param name="title-style">
+    <xsl:choose>
+      <xsl:when test="$book-type='public'">entry</xsl:when>
+      <xsl:otherwise>full</xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
+  <xsl:param name="book-name"><xsl:value-of select="//db:title/text()"/></xsl:param>
+  <xsl:param name="songbook-style">
+    <xsl:choose>
+      <xsl:when test="$book-type='public'">none</xsl:when>
+      <xsl:otherwise>full</xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
+  <xsl:param name="verseorder-style">
+    <xsl:choose>
+      <xsl:when test="$book-type='public'">short</xsl:when>
+      <xsl:otherwise>full</xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
   <!-- reuse openlyrics.xsl -->
-  <xsl:include href="openlyrics.xsl"/> 
+  <xsl:include href="openlyrics.xsl"/>
 
   <!-- overwrite root from openlyrics.xsl: import 2nd CSS and CSS for public type -->
   <xsl:template match="/">
@@ -31,30 +51,6 @@
         <xsl:apply-templates/>
       </body>
     </html>
-  </xsl:template>
-
-  <!-- overwrite title for public type -->
-  <xsl:template match="ol:title[1]">
-    <xsl:choose>
-      <xsl:when test="$book-type='public'">
-        <span class="{local-name()}-entry">
-          <xsl:value-of select="../../ol:songbooks/ol:songbook[@name=//db:title/text()]/@entry"/>
-        </span>
-        <span class="{local-name()} real">
-          <xsl:value-of select="."/>
-        </span>
-      </xsl:when>
-      <xsl:otherwise>
-        <h1 title="{$locale/properties/title/text()}"><xsl:value-of select="."/></h1>
-      </xsl:otherwise>
-    </xsl:choose>
-  </xsl:template>
-
-  <!-- overwrite/remove songbooks for public type -->
-  <xsl:template match="ol:songbook">
-    <xsl:if test="$book-type!='public'">
-      <xsl:call-template name="songbook"/>
-    </xsl:if>
   </xsl:template>
 
   <!-- book related declarations -->

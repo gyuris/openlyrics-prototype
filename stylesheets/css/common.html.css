@@ -70,6 +70,7 @@ header .title.original::before,
 .properties .publisher::before,
 .properties .version::before,
 .properties .keywords::before,
+.properties .verseOrder::before,
 .verse-order .verseOrder::before,
 .properties .songbook::before,
 .properties .themes::before,
@@ -93,6 +94,7 @@ header .title.original::before          { content: "\f024"; /* flag */ }
 .properties .publisher::before          { content: "\f1ad"; /* building */ }
 .properties .version::before            { content: "\f126"; /* code-fork */ }
 .properties .keywords::before           { content: "\f02b"; /* tag */ }
+.properties .verseOrder::before         { content: "\f061"; /* arrow-right */ }
 .verse-order .verseOrder::before        { content: "\f061"; /* arrow-right */ }
 .properties .songbook::before           { content: "\f02d"; /* book */ }
 .properties .themes::before             { content: "\f069"; /* asterisk */ }
@@ -123,6 +125,9 @@ section.properties p.properties-main span {
 }
 section.properties p.properties-main span:first-child {
   border-right-style: solid;
+}
+section.properties p.properties-songbooks span.songbook {
+  display: block;
 }
 
 /* verse-order */

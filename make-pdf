@@ -73,7 +73,7 @@ pdfname=$name
 pdftitle=$name
 dir="$(dirname "$file")"
 author="Gyuris Gellért" # Author for PDF
-if [ -n $booktype ]; then
+if [[ -n $booktype ]]; then
   pdfname="${name/.xsl/_$booktype.xsl}"
   pdftitle=$(xmllint --xpath "/*[local-name()='book']/*[local-name()='title']/text()" "$file") # xpath -e "/book/title/text()" -q "$file"
 fi

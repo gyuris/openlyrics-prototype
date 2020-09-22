@@ -85,9 +85,10 @@ body.public section.properties p.properties-main span {
   padding: 0;
   margin-right: 0;
 }
-body.public header .title.real {
+body.public header .title-real {
   font-size: 1rem;
   font-weight: bold;
+  display: none;
 }
 body.public header .title-entry {
   background: device-cmyk(0, 0, 0, 1);

@@ -31,6 +31,13 @@
       <xsl:otherwise>full</xsl:otherwise>
     </xsl:choose>
   </xsl:param>
+  <xsl:param name="instrument-style">
+    <xsl:choose>
+      <xsl:when test="$book-type='public'">none</xsl:when>
+      <xsl:otherwise>full</xsl:otherwise>
+    </xsl:choose>
+  </xsl:param>
+
   <!-- reuse openlyrics.xsl -->
   <xsl:include href="openlyrics.xsl"/>
 

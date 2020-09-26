@@ -89,36 +89,36 @@
   <xsl:template match="ol:properties">
     <header>
       <xsl:apply-templates select="ol:titles"/>
+      <section class="{local-name()}">
+        <p class="properties-authors">
+          <xsl:apply-templates select="ol:authors"/>
+        </p>
+        <p class="properties-other">
+          <xsl:apply-templates select="ol:released"/>
+          <xsl:apply-templates select="ol:version"/>
+          <xsl:apply-templates select="ol:variant"/>
+          <xsl:apply-templates select="ol:publisher"/>
+          <xsl:apply-templates select="ol:copyright"/>
+          <xsl:apply-templates select="ol:comments"/>
+          <xsl:apply-templates select="ol:keywords"/>
+        </p>
+        <p class="properties-main">
+          <xsl:apply-templates select="ol:key"/>
+          <xsl:apply-templates select="ol:transposition"/>
+          <xsl:apply-templates select="ol:tempo"/>
+          <xsl:apply-templates select="ol:ccliNo"/>
+          <xsl:if test="$verseorder-style='short'">
+            <xsl:apply-templates select="ol:verseOrder"/>
+          </xsl:if>
+        </p>
+        <p class="properties-themes">
+          <xsl:apply-templates select="ol:themes"/>
+        </p>
+        <p class="properties-songbooks">
+          <xsl:apply-templates select="ol:songbooks"/>
+        </p>
+      </section>
     </header>
-    <section class="{local-name()}">
-      <p class="properties-authors">
-        <xsl:apply-templates select="ol:authors"/>
-      </p>
-      <p class="properties-other">
-        <xsl:apply-templates select="ol:released"/>
-        <xsl:apply-templates select="ol:version"/>
-        <xsl:apply-templates select="ol:variant"/>
-        <xsl:apply-templates select="ol:publisher"/>
-        <xsl:apply-templates select="ol:copyright"/>
-        <xsl:apply-templates select="ol:comments"/>
-        <xsl:apply-templates select="ol:keywords"/>
-      </p>
-      <p class="properties-main">
-        <xsl:apply-templates select="ol:key"/>
-        <xsl:apply-templates select="ol:transposition"/>
-        <xsl:apply-templates select="ol:tempo"/>
-        <xsl:apply-templates select="ol:ccliNo"/>
-        <xsl:if test="$verseorder-style='short'">
-          <xsl:apply-templates select="ol:verseOrder"/>
-        </xsl:if>
-      </p>
-      <p class="properties-themes">
-        <xsl:apply-templates select="ol:themes"/>
-      </p>
-      <p class="properties-songbooks">
-        <xsl:apply-templates select="ol:songbooks"/>
-      </p>
-    </section>
   </xsl:template>
 
   <xsl:template match="ol:titles">
@@ -245,9 +245,9 @@
         <xsl:apply-templates select="../ol:properties/ol:verseOrder"/>
       </aside>
     </xsl:if>
-    <section class="{local-name()}">
+    <main>
       <xsl:apply-templates/>
-    </section>
+    </main>
   </xsl:template>
 
   <xsl:template match="ol:verseOrder">

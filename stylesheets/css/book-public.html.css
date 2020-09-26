@@ -34,16 +34,17 @@ body.public section#songs {
 
 body.public section#songs .song {
   page-break-before: auto;
+  padding-top: .5rem;
 }
 
-body.public section.lyrics > article.verse,
-body.public section.lyrics > article.instrument {
+body.public main > article.verse,
+body.public main > article.instrument {
   margin-left: 2rem;
 }
-body.public section.lyrics > article.verse .verse-name,
-body.public section.lyrics > article.instrument .verse-name,
-body.public section.lyrics > article.verse .verse-lang,
-body.public section.lyrics > article.verse .verse-translit {
+body.public main > article.verse .verse-name,
+body.public main > article.instrument .verse-name,
+body.public main > article.verse .verse-lang,
+body.public main > article.verse .verse-translit {
   left: -2rem;
 }
 
@@ -51,19 +52,23 @@ body.public aside.verse-order {
   width: 3rem;
   margin-left: .5rem;
 }
+body.public header {
+  background: device-cmyk(0, 0, 0, 0.0588);
+  margin: .25rem -.5rem .5rem -.5rem;
+  padding: .25rem .5em;
+  border-radius: .25rem;
+}
+
 body.public header,
-body.public section.properties,
 body.public aside.verse-order {
   font-size: 7pt;
 }
 body.public header {
   margin-bottom: 0;
 }
+body.public section.titles,
 body.public section.properties {
-  background: device-cmyk(0, 0, 0, 0.0588);
-  margin: .25rem -.5rem .5rem -.5rem;
-  padding: .25rem .5em;
-  border-radius: .25rem;
+  display: inline;
 }
 body.public section.properties p.properties-other:not(:empty) {
   margin: 0;
@@ -95,7 +100,8 @@ body.public header .title-entry {
   color: device-cmyk(0, 0, 0, 0);
   border-radius: 0.25rem;
   display: inline-block;
-  margin: 0 .5rem 0 -.25rem;
+  float: left;
+  margin: -.25rem .5rem 0 -.25rem;
   padding: 0 .25rem;
   font-size: 1.75rem;
   min-width: 2.5rem;

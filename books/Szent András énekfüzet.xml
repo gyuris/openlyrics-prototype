@@ -16,16 +16,16 @@
   </toc>
   <chapter version="hungarian">
     <title>Énekek</title>
-    <xi:include href="../songs/Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
     <xi:include href="../songs/Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
     <xi:include href="../songs/Meghívtál, hogy vízre lépjek (Joel Houston, Matt Crocker, Salomon Lighthelm, Csiszér László, Sidó Éva).xml" parse="xml" />
-    <xi:include href="../songs/Jézus, Te boldog vagy, imádlak (Csiszér László).xml" parse="xml" />
     <xi:include href="../songs/Íme, az én fiam (Csiszér László).xml" parse="xml" />
     <xi:include href="../songs/Uram, a Te Igéd fény (Majoros Ildikó).xml" parse="xml" />
-    <xi:include href="../songs/Jövök eléd, Uram (Majoros Ildikó).xml" parse="xml" />
     <xi:include href="../songs/Szelíd kezeddel terelgess, Uram (Majoros Ildikó).xml" parse="xml" />
-    <xi:include href="../songs/Jézus, jöjj közel (Majoros Ildikó).xml" parse="xml" />
+    <xi:include href="../songs/Jövök eléd, Uram (Majoros Ildikó).xml" parse="xml" />
+    <xi:include href="../songs/Jézus, Te boldog vagy, imádlak (Csiszér László).xml" parse="xml" />
     <xi:include href="../songs/Jézus, lépj be szívem ajtaján (Majoros Ildikó).xml" parse="xml" />
+    <xi:include href="../songs/Jézus, jöjj közel (Majoros Ildikó).xml" parse="xml" />
+    <xi:include href="../songs/Habár szemem (Majoros Ildikó, Jesus Adrian Romer, Marcela Gandara, Gyuris Gellért).xml" parse="xml" />
     <xi:include href="../songs/Nem a képzettet hívja (Tihanyi Klára).xml" parse="xml" />
   </chapter>
 </book>

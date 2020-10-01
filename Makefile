@@ -128,6 +128,7 @@ clean:
 books: $(SOURCEXML) $(BOOKXML)
 	@cd $(BOOKDIR) && \
 	rm -f *.xsl.xml
+	@./make-books
 	@for file in  $(BOOKXML); \
 		do \
 			./make-xsl "$$file" "books"; \

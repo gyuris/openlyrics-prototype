@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../stylesheets/book.xsl" type="text/xsl"?>
+<book
+ xmlns="http://docbook.org/ns/docbook" version="5.0"
+ xmlns:ol="http://openlyrics.info/namespace/2009/song"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xml:id="yellowbook"
+ xml:lang="hu">
+  <title>Sárga könyv</title>
+  <preface>
+    <title>Előszór</title>
+    <para>Lorem ipsum</para>
+  </preface>
+  <toc>
+    <title>Tartalomjegyzék</title>
+  </toc>
+  <chapter version="hungarian">
+    <title>Énekek</title>
+    <xi:include href="../songs/Add a kezed, hogy zengjünk az.xml" parse="xml" />
+    <xi:include href="../songs/Legyen a béke teveled, legyen.xml" parse="xml" />
+    <xi:include href="../songs/Új szívet adok és új lelket.xml" parse="xml" />
+    <xi:include href="../songs/Alleluja, dicsőség a mennyben Istenenünknek.xml" parse="xml" />
+  </chapter>
+</book>

@@ -1,0 +1,92 @@
+#!/bin/bash
+
+# Prerequisites: xmllint
+# Usage:         ./make-pretty FILE
+# Example:       ./make-pretty A\ béke\ napja\ közel.xml
+
+# Exit immediately if a command exits with a non-zero status.
+set -e
+
+# Variables
+declare -a books=()
+book_regex='name="([^"]+)"\s+entry="([^"]+)"' # 'name="xyz" entry="xyz"'
+song_regex='(\w+)\s+(.+)'
+book_xml=$(cat <<END
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../stylesheets/book.xsl" type="text/xsl"?>
+<book
+ xmlns="http://docbook.org/ns/docbook" version="5.0"
+ xmlns:ol="http://openlyrics.info/namespace/2009/song"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xml:id="id-of-the-book"
+ xml:lang="en">
+  <title>Title of the book</title>
+  <preface>
+    <title>Title</title>
+    <para>Lorem ipsum</para>
+  </preface>
+  <toc>
+    <title>TOC</title>
+  </toc>
+  <chapter version="">
+    <title>Songs</title>
+    INCLUDES  </chapter>
+</book>
+END
+)
+function join_by { local IFS="$1"; shift; echo "$*"; }
+
+for file in songs/*.xml; do
+  echo "Processing... $file"
+  # get related songbooks and entries
+  # xpath -e "/song/properties/songbooks/songbook/@name
+  # xpath -e "/song/properties/songbooks/songbook/@entry
+  # together:
+  # xpath -e "/song/properties/songbooks/songbook/@*[name()='name' or name()='entry']"
+  item=$(xmllint --xpath xmllint --xpath "/*[local-name()='song']/*[local-name()='properties']/*[local-name()='songbooks']/*[local-name()='songbook']/@*[name()='name' or name()='entry']" "$file") 
+  
+  # generate book content 
+  while [[ $item =~ $book_regex ]]; do
+      book=${BASH_REMATCH[1]}
+      entry=${BASH_REMATCH[2]}
+      # if file does not exists, create them
+      if [ ! -f "$book" ]; then
+          books+=("$book")
+          touch "$book"
+      fi
+      # append to file 
+      echo -e "$entry" '\t' "$file" >> "$book"
+      # remove last match, next
+      item=${item##*"${BASH_REMATCH[0]}"}
+  done
+done
+
+for i in "${books[@]}"; do
+  # sort books by entries
+  sort -g "$i" -o "$i"
+
+  # create real XML from temp file
+  declare -a axml=()
+  while IFS= read -r line; do
+    if [[ $line =~ $song_regex ]]; then
+      axml+=("    <xi:include href=\"../${BASH_REMATCH[2]}\" parse=\"xml\" />")
+    fi
+  done < "$i"
+  xml=$(join_by $'\n' "${axml[@]}")
+  # Remove temporary file
+  rm "$i"
+ 
+  # write to a file
+  if [[ -e "books/$i.xml" ]]; then
+    echo "Updating TOC... $i"
+    # file exists, update content
+    sed -i '/<xi:include/d' "books/$i.xml"
+    gawk -i inplace -v "xml=$xml" '/<\/chapter>/{print xml}1' "books/$i.xml"
+  else
+    echo "Creating TOC... $i"
+    # File none exists, creat a new XML and write it to file
+    inc=${book_xml/INCLUDES/$xml}
+    touch "books/$i.xml"
+    echo "$inc" >> "books/$i.xml"
+  fi
+done

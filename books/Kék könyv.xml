@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet href="../stylesheets/book.xsl" type="text/xsl"?>
+<book
+ xmlns="http://docbook.org/ns/docbook" version="5.0"
+ xmlns:ol="http://openlyrics.info/namespace/2009/song"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
+ xml:id="bluebook"
+ xml:lang="en">
+  <title>Kék könyv</title>
+  <preface>
+    <title>Előszó</title>
+    <para>Lorem ipsum</para>
+  </preface>
+  <toc>
+    <title>Tartalomjegyzék</title>
+  </toc>
+  <chapter version="hungarian">
+    <title>Énekek</title>
+    <xi:include href="../songs/Jézus, véred megtisztít (Michael Christ, Harkai Tamás).xml" parse="xml" />
+  </chapter>
+</book>

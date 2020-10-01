@@ -52,7 +52,7 @@
         <xsl:if test="$book-type='public'">
           <link rel="stylesheet" href="../stylesheets/css/book-public.html.css" />
         </xsl:if>
-        <link rel="stylesheet" href="../stylesheets/css/book-{$book-type}-{/db:book/@xml:id}.html.css" />
+        <link rel="stylesheet" href="../stylesheets/css/books/book-{/db:book/@xml:id}-{$book-type}.html.css" />
       </head>
       <body class="{$book-type}">
         <xsl:apply-templates/>

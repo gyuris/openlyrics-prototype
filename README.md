@@ -16,7 +16,7 @@ output): Prince supports XML and HTML output, WeasyPrint and Paged.js supports o
 ## Concept
 
 Main goal is to use OpenLyrics XML as single source for lyrics projection (OpenLP) and creating
-chordsheets for web browsers and for print media (PDF). This project adds an CSS or XSLT stylesheet
+chordsheets for web browsers and for print media (PDF) as well as printed songbooks. This project adds an CSS or XSLT stylesheet
 to OpenLyrics (not part of the standard) to display OpenLyrics with web browsers (XML or HTML) or PDF readers.
 By design XML+CSS output is for OpenLyrics editors, and XSLT(HTML)+CSS version is for publishers
 to create songbooks.
@@ -25,7 +25,7 @@ to create songbooks.
 
 Download and open XML files with Firefox or Chrome. Pay atteintion on [local file security
 policy](https://developer.mozilla.org/hu/docs/Web/HTTP/CORS/Errors/CORSRequestNotHttp),
-use `make http`. For available actions see `make help`.
+use `make http`. For available actions see `make help`. For building install prerequisites and run 'make'.
 
 Two diplay method:
 
@@ -35,7 +35,7 @@ Two diplay method:
 Parts:
 
 - /songs: Sample OpenLyrics (0.8 and 0.9) source files (can be viewed with web browsers)
-- /books: Sample songbooks
+- /books: Generated songbooks from OpenLyrics source files
 - /stylesheets: CSS and XSLT stylesheets for individual OL files and for books
 - /tool: tools for converting
 - /export-chordpro: Converted OpenLyrics files to ChordPro

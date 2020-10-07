@@ -22,7 +22,7 @@
     </instrument>
     <verse name="c">
       <lines>
-        <chord root="A" tweak="nested"><chord root="G" tweak="nested"><chord root="D">A</chord></chord></chord>lle<chord root="D">luja,</chord> <chord root="G">dicsőség a</chord><br/>
+        <chord root="A"><chord root="G"><chord root="D">A</chord></chord></chord>lle<chord root="D">luja,</chord> <chord root="G">dicsőség a</chord><br/>
         <chord root="A">mennyben Iste</chord><chord root="D">nünknek,</chord><br/>
         és <chord root="G">békes</chord><chord root="A">ség a földön</chord> <chord root="G">néped</chord><chord root="A">nek!</chord>
       </lines>

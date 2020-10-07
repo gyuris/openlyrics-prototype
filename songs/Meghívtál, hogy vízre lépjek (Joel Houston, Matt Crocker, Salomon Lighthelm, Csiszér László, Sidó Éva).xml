@@ -50,9 +50,9 @@
     <verse name="v1">
       <lines part="lányok">
         <comment>Halkan énekeljük.</comment>
-        <chord root="B" structure="min" upbeat="true">Meghívtál, hogy</chord> <chord root="A" bass="C#">vízre</chord> <chord root="D" tweak="linebreak">lépjek,<br/>
+        <chord root="B" structure="min" upbeat="true">Meghívtál, hogy</chord> <chord root="A" bass="C#">vízre</chord> <chord root="D">lépjek,<br/>
         hol Nélkü</chord><chord root="A">led elsüllye</chord><chord root="G">dek.</chord><br/>
-        <chord root="B" structure="min" upbeat="true">Ebben megta</chord><chord root="A" bass="C#">lállak</chord> <chord root="D" tweak="linebreak">Téged,<br/>
+        <chord root="B" structure="min" upbeat="true">Ebben megta</chord><chord root="A" bass="C#">lállak</chord> <chord root="D">Téged,<br/>
         a mélység</chord><chord root="A">ben megtart hi</chord><chord root="G">tem.</chord>
       </lines>
     </verse>
@@ -66,9 +66,9 @@
     </verse>
     <verse name="v2">
       <lines>
-        <chord root="B" structure="min" upbeat="true">A mélységnél na</chord><chord root="A" bass="C#">gyobb ke</chord><chord root="D" tweak="linebreak">gyelmed,<br/>
+        <chord root="B" structure="min" upbeat="true">A mélységnél na</chord><chord root="A" bass="C#">gyobb ke</chord><chord root="D">gyelmed,<br/>
         mely elve</chord><chord root="A">zet és tart en</chord><chord root="G">gem.</chord><br/>
-        <chord root="B" structure="min" upbeat="true">Ha elbuknék és</chord> <chord root="A" bass="C#">nagyon</chord> <chord root="D" tweak="linebreak">félnék,<br/>
+        <chord root="B" structure="min" upbeat="true">Ha elbuknék és</chord> <chord root="A" bass="C#">nagyon</chord> <chord root="D">félnék,<br/>
         Te nem hagysz</chord> <chord root="A">el, nem inogsz</chord> <chord root="G">meg</chord>.
       </lines>
     </verse>

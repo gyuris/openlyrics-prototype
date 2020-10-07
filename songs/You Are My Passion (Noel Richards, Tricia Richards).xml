@@ -42,8 +42,8 @@
         <chord root="G" bass="B" upbeat="true">Now will You</chord> <chord root="A" structure="sus2">draw me</chord> <chord root="A" bass="C#" structure="sus2">close to</chord> <chord root="D">You?</chord><br/>
         <chord root="G" structure="sus2" upbeat="true">Gather me</chord> <chord root="A" structure="sus2">in</chord> <chord root="A" bass="C#" structure="sus2">Your</chord> <chord root="D">arms.</chord><br/>
         <chord root="G" bass="B" upbeat="true">Let me hear the</chord> <chord root="A" structure="sus2">beating</chord> <chord root="A" bass="C#" structure="sus2">of Your</chord> <chord root="D">heart;</chord><br/>
-        <chord root="A" structure="min">O</chord> <chord root="G">my</chord> <chord root="A" bass="C#" structure="sus2" tweak="nested"><chord root="A" structure="sus2">Je</chord></chord><chord root="D">sus,</chord><br/>
-        <chord root="A" structure="min">O</chord> <chord root="G">my</chord> <chord root="A" bass="C#" structure="sus2" tweak="nested"><chord root="A" structure="sus2">Je</chord></chord><chord root="D">sus.</chord>
+        <chord root="A" structure="min">O</chord> <chord root="G">my</chord> <chord root="A" bass="C#" structure="sus2"><chord root="A" structure="sus2">Je</chord></chord><chord root="D">sus,</chord><br/>
+        <chord root="A" structure="min">O</chord> <chord root="G">my</chord> <chord root="A" bass="C#" structure="sus2"><chord root="A" structure="sus2">Je</chord></chord><chord root="D">sus.</chord>
       </lines>
     </verse>
   </lyrics>

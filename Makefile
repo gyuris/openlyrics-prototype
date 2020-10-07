@@ -8,7 +8,7 @@ EXPORT_PDF  := export-pdf
 TOOL        ?= prince
 
 .PHONY: all
-all: well-formed validate export-ol08 export-cho xsl pdf books clean
+all: well-formed validate export-ol08 export-cho xsl pdf clean books clean
 
 .PHONY: well-formed
 well-formed: tools/openlyrics-0.9-to-openlyrics-0.8.xsl \

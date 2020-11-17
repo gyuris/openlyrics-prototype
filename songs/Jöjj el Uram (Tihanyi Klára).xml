@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="hungarian">
+  <properties>
+    <titles>
+      <title>Jöjj el Uram</title>
+      <title original="true">Ki vagy Te?</title>
+    </titles>
+    <verseOrder>i e v1 m p c p c c e</verseOrder>
+    <authors>
+      <author type="words">Tihanyi Klára</author>
+      <author type="music">Tihanyi Klára</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9990" />
+    </songbooks>
+    <comments>
+      <comment>A Lélek és a menyasszony így szól: „Jójj el!” És aki hallja, az is mondja: „Jöjj el!” (Jel 22,17a)</comment>
+    </comments>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord root="B" structure="min"/><chord root="A"/></beat>
+        <beat><chord root="E"/><chord root="B" structure="min"/></beat>
+        <beat><chord root="G"/><chord root="D"/></beat>
+        <beat><chord root="G"/><chord root="A" structure="sus4"/><chord root="A"/></beat>
+      </lines>
+    </instrument>
+    <verse name="e">
+      <lines repeat="2">
+        <chord root="B" structure="min">Jöjj el U</chord><chord root="A">ram!</chord> <chord root="E">Jöjj el U</chord><chord root="B" structure="min">ram!</chord><br/>
+        <chord root="B" structure="min">Jöjj el U</chord><chord root="A">ram!</chord> <chord root="E">Jöjj el U</chord><chord root="B" structure="min">ram!</chord>
+      </lines>
+    </verse>
+    <verse name="v1">
+      <lines repeat="2">
+        <chord root="G">Szólnék, de</chord> <chord root="D">nem tudok,</chord> <chord root="E" structure="min">megérintett</chord> <chord root="G">Lé</chord><chord root="A">nyed!</chord><br/>
+        <chord root="G">Ki vagy Te</chord> <chord root="D">énnekem, hogy</chord> <chord root="G">hívhatnálak</chord> <chord root="A">Téged?</chord>
+      </lines>
+    </verse>
+    <instrument name="m">
+      <lines>
+        <beat><chord root="B" structure="min"/><chord root="A"/><chord root="D"/></beat>
+        <beat><chord root="B" structure="min"/><chord root="A"/><chord root="D"/></beat>
+      </lines>
+    </instrument>
+    <verse name="p">
+      <lines>
+        <chord root="B" structure="min">Ó…</chord><chord root="A"/><chord root="D"/> <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/><br/>
+        <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/> <chord root="B" structure="min">ó…</chord><chord root="A" bass="C#"/><chord root="D"/>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord root="B" structure="min">Királyom és</chord> <chord root="D">Mesterem,</chord> <chord root="A">Segítőm vagy</chord> <chord root="E">Istenem</chord>,<br/>
+        <chord root="B" structure="min">Megváltóm, Vé</chord><chord root="D">delmezőm,</chord> <chord root="A">mindenható</chord> <chord root="E">Tervezőm,</chord><br/>
+        <chord root="B" structure="min">Orvosom</chord> <chord root="D">és Pásztorom,</chord> <chord root="A">Barátom vagy</chord> <chord root="E">Támaszom,</chord><br/>
+        <chord root="B" structure="min">Reménységem</chord> <chord root="D">Szerelmem,</chord> <chord root="A">Célom</chord> <chord root="E">vagy nekem,</chord>
+      </lines>
+      <lines>
+        <chord root="B" structure="min">Atyám.</chord><chord root="A"/>
+      </lines>
+    </verse>
+    <instrument name="o">
+      <lines>
+        <beat><chord root="E"/><chord root="B" structure="min"/></beat>
+        <beat><chord root="B" structure="min"/><chord root="A"/></beat>
+        <beat><chord root="E"/><chord root="B" structure="min"/></beat>
+      </lines>
+    </instrument>
+
+  </lyrics>
+</song>

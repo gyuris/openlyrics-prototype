@@ -1,0 +1,29 @@
+{title: Jöjj el Uram}
+{subtitle: Ki vagy Te?}
+{lyricist: Tihanyi Klára}
+{composer: Tihanyi Klára}
+# {book: Szent András énekfüzet}
+# {number: 9990}
+
+{start_of_part: Part}
+[Hm]Jöjj el U[A]ram! [E]Jöjj el U[Hm]ram!
+[Hm]Jöjj el U[A]ram! [E]Jöjj el U[Hm]ram!
+{end_of_part: Part}
+
+{start_of_verse: Verse 1}
+[G]Szólnék, de [D]nem tudok, [Em]megérintett [G]Lé[A]nyed!
+[G]Ki vagy Te [D]énnekem, hogy [G]hívhatnálak [A]Téged?
+{end_of_verse: Verse 1}
+
+{start_of_prechorus: Pre-chorus}
+[Hm]Ó…[A][D] [Hm]ó…[A][D]
+[Hm]ó…[A][D] [Hm]ó…[A/Cisz][D]
+{end_of_prechorus: Pre-chorus}
+
+{start_of_chorus: Chorus}
+[Hm]Királyom és [D]Mesterem, [A]Segítőm vagy [E]Istenem,
+[Hm]Megváltóm, Vé[D]delmezőm, [A]mindenható [E]Tervezőm,
+[Hm]Orvosom [D]és Pásztorom, [A]Barátom vagy [E]Támaszom,
+[Hm]Reménységem [D]Szerelmem, [A]Célom [E]vagy nekem,
+[Hm]Atyám.[A]
+{end_of_chorus: Chorus}

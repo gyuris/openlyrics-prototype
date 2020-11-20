@@ -6,7 +6,7 @@
       <title>Jöjj el Uram</title>
       <title original="true">Ki vagy Te?</title>
     </titles>
-    <verseOrder>i e v1 m p c p c c e</verseOrder>
+    <verseOrder>i e v1 m p c p c c o e</verseOrder>
     <authors>
       <author type="words">Tihanyi Klára</author>
       <author type="music">Tihanyi Klára</author>
@@ -34,8 +34,12 @@
       </lines>
     </verse>
     <verse name="v1">
-      <lines repeat="2">
-        <chord root="G">Szólnék, de</chord> <chord root="D">nem tudok,</chord> <chord root="E" structure="min">megérintett</chord> <chord root="G">Lé</chord><chord root="A">nyed!</chord><br/>
+      <lines>
+        <chord root="G" structure="add9">Szólnék, de</chord> <chord root="D">nem tudok,</chord> <chord root="E" structure="min7">megérintett</chord> <chord root="G">Lé</chord><chord root="A">nyed!</chord><br/>
+        <chord root="G">Ki vagy Te</chord> <chord root="D">énnekem, hogy</chord> <chord root="G">hívhatnálak</chord> <chord root="A" structure="sus4">Té</chord><chord root="A">ged?</chord>
+      </lines>
+      <lines>
+        <chord root="G" structure="add9">Szólnék, de</chord> <chord root="D">nem tudok,</chord> <chord root="E" structure="min7">megérintett</chord> <chord root="G">Lé</chord><chord root="A">nyed!</chord><br/>
         <chord root="G">Ki vagy Te</chord> <chord root="D">énnekem, hogy</chord> <chord root="G">hívhatnálak</chord> <chord root="A">Téged?</chord>
       </lines>
     </verse>
@@ -48,18 +52,18 @@
     <verse name="p">
       <lines>
         <chord root="B" structure="min">Ó…</chord><chord root="A"/><chord root="D"/> <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/><br/>
-        <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/> <chord root="B" structure="min">ó…</chord><chord root="A" bass="C#"/><chord root="D"/>
+        <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/> <chord root="B" structure="min">ó…</chord><chord root="A"/><chord root="D"/>
       </lines>
     </verse>
     <verse name="c">
       <lines>
         <chord root="B" structure="min">Királyom és</chord> <chord root="D">Mesterem,</chord> <chord root="A">Segítőm vagy</chord> <chord root="E">Istenem</chord>,<br/>
-        <chord root="B" structure="min">Megváltóm, Vé</chord><chord root="D">delmezőm,</chord> <chord root="A">mindenható</chord> <chord root="E">Tervezőm,</chord><br/>
+        <chord root="B" structure="min">Megváltóm, Vé</chord><chord root="D">delmezőm,</chord> <chord root="A">mindenható</chord> <chord root="E" structure="sus4">Ter</chord><chord root="E">vezőm,</chord><br/>
         <chord root="B" structure="min">Orvosom</chord> <chord root="D">és Pásztorom,</chord> <chord root="A">Barátom vagy</chord> <chord root="E">Támaszom,</chord><br/>
-        <chord root="B" structure="min">Reménységem</chord> <chord root="D">Szerelmem,</chord> <chord root="A">Célom</chord> <chord root="E">vagy nekem,</chord>
+        <chord root="B" structure="min">Reménységem</chord> <chord root="D">Szerelmem,</chord> <chord root="A">Célom</chord> <chord root="E" structure="sus4">vagy nekem,</chord>
       </lines>
       <lines>
-        <chord root="B" structure="min">Atyám.</chord><chord root="A"/>
+        A<chord root="B" structure="min">tyám</chord>.<chord root="A"/>
       </lines>
     </verse>
     <instrument name="o">

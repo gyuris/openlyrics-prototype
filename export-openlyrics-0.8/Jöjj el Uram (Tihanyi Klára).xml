@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-11-17T16:54:09+01:00">
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2020-11-20T22:01:51+01:00">
   <properties>
     <titles>
       <title>Jöjj el Uram</title>
@@ -27,25 +27,29 @@
     </verse>
     <verse name="v1">
       <lines>
-        𝄆  <chord name="G"/>Szólnék, de <chord name="D"/>nem tudok, <chord name="Em"/>megérintett <chord name="G"/>Lé<chord name="A"/>nyed!<br/>
-        <chord name="G"/>Ki vagy Te <chord name="D"/>énnekem, hogy <chord name="G"/>hívhatnálak <chord name="A"/>Téged?  𝄇×2
+        <chord name="Gadd9"/>Szólnék, de <chord name="D"/>nem tudok, <chord name="Em7"/>megérintett <chord name="G"/>Lé<chord name="A"/>nyed!<br/>
+        <chord name="G"/>Ki vagy Te <chord name="D"/>énnekem, hogy <chord name="G"/>hívhatnálak <chord name="A4"/>Té<chord name="A"/>ged?
+      </lines>
+      <lines>
+        <chord name="Gadd9"/>Szólnék, de <chord name="D"/>nem tudok, <chord name="Em7"/>megérintett <chord name="G"/>Lé<chord name="A"/>nyed!<br/>
+        <chord name="G"/>Ki vagy Te <chord name="D"/>énnekem, hogy <chord name="G"/>hívhatnálak <chord name="A"/>Téged?
       </lines>
     </verse>
     <verse name="p">
       <lines>
         <chord name="Hm"/>Ó…<chord name="A"/><chord name="D"/> <chord name="Hm"/>ó…<chord name="A"/><chord name="D"/><br/>
-        <chord name="Hm"/>ó…<chord name="A"/><chord name="D"/> <chord name="Hm"/>ó…<chord name="A/Cisz"/><chord name="D"/>
+        <chord name="Hm"/>ó…<chord name="A"/><chord name="D"/> <chord name="Hm"/>ó…<chord name="A"/><chord name="D"/>
       </lines>
     </verse>
     <verse name="c">
       <lines>
         <chord name="Hm"/>Királyom és <chord name="D"/>Mesterem, <chord name="A"/>Segítőm vagy <chord name="E"/>Istenem,<br/>
-        <chord name="Hm"/>Megváltóm, Vé<chord name="D"/>delmezőm, <chord name="A"/>mindenható <chord name="E"/>Tervezőm,<br/>
+        <chord name="Hm"/>Megváltóm, Vé<chord name="D"/>delmezőm, <chord name="A"/>mindenható <chord name="E4"/>Ter<chord name="E"/>vezőm,<br/>
         <chord name="Hm"/>Orvosom <chord name="D"/>és Pásztorom, <chord name="A"/>Barátom vagy <chord name="E"/>Támaszom,<br/>
-        <chord name="Hm"/>Reménységem <chord name="D"/>Szerelmem, <chord name="A"/>Célom <chord name="E"/>vagy nekem,
+        <chord name="Hm"/>Reménységem <chord name="D"/>Szerelmem, <chord name="A"/>Célom <chord name="E4"/>vagy nekem,
       </lines>
       <lines>
-        <chord name="Hm"/>Atyám.<chord name="A"/>
+        A<chord name="Hm"/>tyám.<chord name="A"/>
       </lines>
     </verse>
   </lyrics>

@@ -1,11 +1,7 @@
 #!/bin/bash
 
 # Prerequisites: xmllint
-# Usage:         ./make-pretty FILE
-# Example:       ./make-pretty A\ béke\ napja\ közel.xml
-
-# Exit immediately if a command exits with a non-zero status.
-set -e
+# Usage:         ./make-books
 
 # Variables
 declare -a books=()
@@ -43,7 +39,11 @@ for file in songs/*.xml; do
   # xpath -e "/song/properties/songbooks/songbook/@entry
   # together:
   # xpath -e "/song/properties/songbooks/songbook/@*[name()='name' or name()='entry']"
-  item=$(xmllint --xpath xmllint --xpath "/*[local-name()='song']/*[local-name()='properties']/*[local-name()='songbooks']/*[local-name()='songbook']/@*[name()='name' or name()='entry']" "$file") 
+  item=$(xmllint --xpath "/*[local-name()='song']/*[local-name()='properties']/*[local-name()='songbooks']/*[local-name()='songbook']/@*[name()='name' or name()='entry']" "$file") 
+
+  if [[ $item == 'XPath set is empty' ]]; then
+    continue
+  fi
   
   # generate book content 
   while [[ $item =~ $book_regex ]]; do

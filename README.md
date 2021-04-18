@@ -42,17 +42,17 @@ Parts:
 - /export-openlyrics-0.8: Converted OpenLyrics files back to 0.8
 - /export-pdf: Converted OpenLyrics file to PDF
 
-## OpenLyrics 0.9 new elements
+## OpenLyrics 0.9
 
-We add new elements and attributes to current OpenLyrics 0.8. We plan to adopt these features to OpenLyrics 0.9:
+We use unreleased 0.9 version of OpenLyrics. During this project we have designed and developed   new elements and attributes for OpenLyrics  0.9, which have already been [included](https://github.com/openlyrics/openlyrics/pull/56):
 
-- Processing instructions - https://github.com/openlyrics/openlyrics/issues/31
-- song/@version : 0.9
-- song/@xml:lang : Language of the file (not only for lyrics) Optional, default is 'en' - https://github.com/openlyrics/openlyrics/issues/32
-- song/@chordNotation : Chord notation, possible values: english, german, dutch, hungarian, neolatin
-- song/lyrics/instrument : Intrumental parts: intro, middle, outro and solo. - https://github.com/openlyrics/openlyrics/issues/35
-- song/lyrics/instrument/beat : For instrumental - https://github.com/openlyrics/openlyrics/issues/36
-- song/lyrics/verse/lines/@repeat : Repeating for lines - https://github.com/openlyrics/openlyrics/issues/37
-- //chord/@root, //chord/@structure, //chord/@bass : New chord notation - https://github.com/openlyrics/openlyrics/issues/52 + https://github.com/openlyrics/openlyrics/issues/54
+- [Processing instructions]( https://github.com/openlyrics/openlyrics/issues/31) for CSS or XSL
+- song/@version: 0.9
+- [song/@xml:lang](https://github.com/openlyrics/openlyrics/issues/32): Language of the file (not only for lyrics) Optional, default is 'en'
+- song/@chordNotation: Chord notation, possible values: english, english-b, german, dutch, hungarian, neolatin
+- [song/lyrics/instrument](https://github.com/openlyrics/openlyrics/issues/35): Intrumental parts: intro, middle, outro and solo
+- [song/lyrics/instrument/beat](https://github.com/openlyrics/openlyrics/issues/36): For instrumenta
+- [song/lyrics/verse/lines/@repeat](https://github.com/openlyrics/openlyrics/issues/37): Repeating for lines
+- [//chord/@root, //chord/@structure, //chord/@bass](https://github.com/openlyrics/openlyrics/issues/52) + New chord [non empty notation](https://github.com/openlyrics/openlyrics/issues/54)
 
 There are a simple converter to current wide used OpenLyrics 0.8 and ChordPro standards.

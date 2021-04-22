@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
-<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="hungarian">
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="english-b">
   <properties>
     <titles>
       <title>Jöjj el Uram</title>
       <title original="true">Ki vagy Te?</title>
     </titles>
-    <verseOrder>i e v1 m p c p c c o e</verseOrder>
+    <verseOrder>i1 i2 v1 m p c p c c e i2</verseOrder>
     <authors>
       <author type="words">Tihanyi Klára</author>
       <author type="music">Tihanyi Klára</author>
@@ -19,7 +19,7 @@
     </comments>
   </properties>
   <lyrics>
-    <instrument name="i">
+    <instrument name="i1">
       <lines>
         <beat><chord root="B" structure="min"/><chord root="A"/></beat>
         <beat><chord root="E"/><chord root="B" structure="min"/></beat>
@@ -27,7 +27,7 @@
         <beat><chord root="G"/><chord root="A" structure="sus4"/><chord root="A"/></beat>
       </lines>
     </instrument>
-    <verse name="e">
+    <verse name="i2">
       <lines repeat="2">
         <chord root="B" structure="min">Jöjj el U</chord><chord root="A">ram!</chord> <chord root="E">Jöjj el U</chord><chord root="B" structure="min">ram!</chord><br/>
         <chord root="B" structure="min">Jöjj el U</chord><chord root="A">ram!</chord> <chord root="E">Jöjj el U</chord><chord root="B" structure="min">ram!</chord>
@@ -66,7 +66,7 @@
         A<chord root="B" structure="min">tyám</chord>.<chord root="A"/>
       </lines>
     </verse>
-    <instrument name="o">
+    <instrument name="e">
       <lines>
         <beat><chord root="E"/><chord root="B" structure="min"/></beat>
         <beat><chord root="B" structure="min"/><chord root="A"/></beat>

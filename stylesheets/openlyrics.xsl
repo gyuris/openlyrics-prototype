@@ -15,6 +15,7 @@
   <xsl:param name="verseorder-style">full</xsl:param><!-- default is 'full', possible values: 'full', 'short', 'none'  -->
   <xsl:param name="instrument-style">full</xsl:param><!-- default is 'full', possible values: 'full', 'none' -->
   <xsl:param name="book-name"/>                      <!-- default is empty, filled by book.html.xsl  -->
+  <xsl:param name="enable-formatting-tags" select="false()"/><!-- default is false(), possible values: true(), false() -->
 
   <!-- Locale-specific content -->
   <xsl:variable name="xmllang">
@@ -155,7 +156,13 @@
       <em><xsl:value-of select="$locale/properties/subtitle/text()"/>: </em>
       <xsl:value-of select="."/>
       <xsl:if test="@lang">
-        (<xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>)
+        <xsl:text> (</xsl:text>
+          <xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>
+          <xsl:if test="@translit">
+            <xsl:text>→</xsl:text>
+            <xsl:value-of select="$locale/languages/*[local-name()=current()/@translit]/text()"/>
+          </xsl:if>
+        <xsl:text>)</xsl:text>
       </xsl:if>
     </span>
   </xsl:template>
@@ -228,7 +235,14 @@
         </xsl:if>
         <xsl:if test="@lang">
           <xsl:value-of select="."/>
-          (<xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>)<xsl:if test="position()!=last()">, <xsl:text/></xsl:if>
+          <xsl:text> (</xsl:text>
+          <xsl:value-of select="$locale/languages/*[local-name()=current()/@lang]/text()"/>
+          <xsl:if test="@translit">
+            <xsl:text>→</xsl:text>
+            <xsl:value-of select="$locale/languages/*[local-name()=current()/@translit]/text()"/>
+          </xsl:if>
+          <xsl:text>)</xsl:text>
+          <xsl:if test="position()!=last()"><xsl:text>, </xsl:text></xsl:if>
         </xsl:if>
       </xsl:for-each>
     </span>
@@ -489,6 +503,19 @@
     </xsl:choose>
   </xsl:template>
 
+  <!-- Formating tags: if some vendor provide valid HTML or CSS for formatting tags -->
   <xsl:template match="ol:format"></xsl:template>
-
+  <xsl:template match="ol:lines//ol:tag[@name]">
+    <xsl:if test="$enable-formatting-tags = true()">
+      <xsl:choose>
+        <xsl:when test="system-property('xsl:vendor')='Transformiix'">
+        </xsl:when>
+        <xsl:otherwise>
+          <xsl:value-of select="/ol:song/ol:format/ol:tags[1]/ol:tag[@name=current()/@name]/ol:open/text()" disable-output-escaping="yes"/>
+          <xsl:value-of select="."/>
+          <xsl:value-of select="/ol:song/ol:format/ol:tags[1]/ol:tag[@name=current()/@name]/ol:close/text()" disable-output-escaping="yes"/>
+        </xsl:otherwise>
+      </xsl:choose>
+    </xsl:if>
+  </xsl:template>
 </xsl:stylesheet>

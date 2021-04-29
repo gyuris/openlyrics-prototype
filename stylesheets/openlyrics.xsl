@@ -4,6 +4,7 @@
  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
  xmlns:str="http://exslt.org/strings"
  xmlns:db="http://docbook.org/ns/docbook"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
  xmlns:ol="http://openlyrics.info/namespace/2009/song"
  xmlns:xhtml="http://www.w3.org/1999/xhtml"
  xmlns="http://www.w3.org/1999/xhtml">
@@ -16,6 +17,7 @@
   <xsl:param name="instrument-style">full</xsl:param><!-- default is 'full', possible values: 'full', 'none' -->
   <xsl:param name="book-name"/>                      <!-- default is empty, filled by book.html.xsl  -->
   <xsl:param name="enable-formatting-tags" select="false()"/><!-- default is false(), possible values: true(), false() -->
+  <xsl:param name="enable-fretboards"      select="true()"/><!-- default is false(), possible values: true(), false() -->
 
   <!-- Locale-specific content -->
   <xsl:variable name="xmllang">
@@ -121,6 +123,9 @@
           <xsl:apply-templates select="ol:songbooks"/>
         </p>
       </section>
+      <xsl:if test="$enable-fretboards = true()">
+        <xsl:apply-templates select="../ol:format/ol:fretboards"/>
+      </xsl:if>
     </header>
   </xsl:template>
 
@@ -484,6 +489,15 @@
     </xsl:if>
     <code>}</code>
   </xsl:template>
+  <xsl:template name="chordnametext">
+    <xsl:param name="this" />
+    <xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@root]/text()"/>
+    <xsl:value-of select="$chordNotation/structure[@id=$this/@structure]/text()|$chordNotation/structure[@shorthand=$this/@structure]/text()"/>
+    <xsl:if test="string-length($this/@bass)!=0">
+      <xsl:text>/</xsl:text>
+      <xsl:value-of select="$chordNotation/notation[@id=$notation]/name[@class=$this/@bass]/text()"/>
+    </xsl:if>
+  </xsl:template>
 
   <xsl:template match="ol:lyrics//ol:comment">
     <span class="lyrics-{local-name()}" title="{$locale/lyrics/comment/text()}">
@@ -517,5 +531,67 @@
         </xsl:otherwise>
       </xsl:choose>
     </xsl:if>
+  </xsl:template>
+
+  <!-- Fretboards -->
+  <xsl:template match="ol:format/ol:fretboards">
+    <section class="{local-name()}"><xsl:apply-templates/></section>
+  </xsl:template>
+  <xsl:template match="ol:fretboard">
+    <xsl:variable name="string-positions" select="str:tokenize('0,4,8,12,16,20', ',')"/><!-- string1, string2... string6 -->
+    <xsl:variable name="fret-positions"   select="str:tokenize('10,15,20,25,30', ',')"/><!-- fret0, fret1... fret4 -->
+    <svg style="outline:0px dashed red;"
+     viewBox="0 0 31 37"
+     width="50"
+     xmlns="http://www.w3.org/2000/svg">
+      <g transform="scale(1,1) translate(0,0)">
+        <use xlink:href="../stylesheets/xsl/fretboard.svg#fretboard"/>
+        <xsl:for-each select="str:tokenize(ol:tab, '')"><!-- workaround for-each select="1 to 6" -->
+          <xsl:variable name="position" select="position()"/>
+          <xsl:variable name="fretnum" select="number(.)+1"/>
+          <xsl:choose>
+            <xsl:when test=".='x' or .='o'">
+              <use xlink:href="../stylesheets/xsl/fretboard.svg#{.}"
+                x="{$string-positions[$position]}"
+                y="{$fret-positions[1]}"/>
+            </xsl:when>
+            <xsl:when test="string(number(.)) != 'NaN' and . > 0">
+              <use xlink:href="../stylesheets/xsl/fretboard.svg#finger"
+              x="{$string-positions[$position]}"
+              y="{$fret-positions[$fretnum]}"/>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:for-each>
+        <xsl:if test="ol:barre">
+          <xsl:variable name="barre-parts"   select="str:tokenize(ol:barre, ':-')"/>
+          <xsl:variable name="barre-fretnum" select="number($barre-parts[1]) + 1"/>
+          <xsl:variable name="barre-start"   select="number($barre-parts[2])"/>
+          <xsl:variable name="barre-width"   select="number($barre-parts[3]) - $barre-start + 1"/>
+          <use xlink:href="../stylesheets/xsl/fretboard.svg#barre-w{$barre-width}"
+            x="{$string-positions[$barre-start]}"
+            y="{$fret-positions[$barre-fretnum]}"/>
+        </xsl:if>
+        <xsl:choose>
+          <xsl:when test="ol:fret">
+            <use xlink:href="../stylesheets/xsl/fretboard.svg#necknum-{ol:fret}" />
+          </xsl:when>
+          <xsl:otherwise>
+            <use xlink:href="../stylesheets/xsl/fretboard.svg#neck"/>
+          </xsl:otherwise>
+        </xsl:choose>
+      </g>
+      <text x="12" y="7" font-size="8" text-anchor="middle">
+        <xsl:choose>
+          <xsl:when test="ol:name">
+            <xsl:value-of select="ol:name"/>
+          </xsl:when>
+          <xsl:otherwise>
+            <xsl:call-template name="chordnametext">
+              <xsl:with-param name="this" select="." />
+            </xsl:call-template>
+          </xsl:otherwise>
+        </xsl:choose>
+      </text>
+    </svg>
   </xsl:template>
 </xsl:stylesheet>

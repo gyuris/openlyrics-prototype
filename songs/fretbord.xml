@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.9" xml:lang="en">
+  <properties>
+    <titles>
+      <title>Amazing Grace</title>
+    </titles>
+  </properties>
+  <format>
+    <tags application="MyHTMLExporter">
+      <tag name="red">
+        <open><![CDATA[<span style="color:red">]]></open>
+        <close><![CDATA[</span>]]></close>
+      </tag>
+      <tag name="strong">
+        <open><![CDATA[<strong>]]></open>
+        <close><![CDATA[</strong>]]></close>
+      </tag>
+    </tags>
+    <fretboards>
+      <fretboard root="D" structure="sus2" bass="F">
+        <tab>xx323o</tab>
+      </fretboard>
+      <fretboard root="E" structure="min7">
+        <tab>xx2o3o</tab>
+      </fretboard>
+      <fretboard root="C" structure="dom9">
+        <tab>x32o3o</tab>
+      </fretboard>
+      <fretboard root="D" structure="sus2">
+        <tab>xxo23o</tab>
+      </fretboard>
+      <fretboard root="Bb" structure="maj7">
+        <tab>x13231</tab>
+        <barre>1:2-6</barre>
+      </fretboard>
+      <fretboard root="F" bass="Bb">
+        <tab>x13211</tab>
+        <barre>1:2-6</barre>
+      </fretboard>
+      <fretboard root="G" structure="min7">
+        <tab>020000</tab>
+        <fret>3</fret>
+        <barre>0:1-6</barre>
+      </fretboard>
+      <fretboard root="A" structure="dom7">
+        <tab>020100</tab>
+        <fret>5</fret>
+        <barre>0:1-6</barre>
+      </fretboard>
+      <fretboard root="D" structure="sus2" bass="F#">
+        <tab>xx423o</tab>
+      </fretboard>
+      <fretboard root="D" structure="sus2" bass="B">
+        <tab>x2x23o</tab>
+      </fretboard>
+      <fretboard root="D" bass="F#">
+        <tab>xx4232</tab>
+      </fretboard>
+      <fretboard root="G">
+        <tab>xxx232</tab>
+        <barre>2:4-6</barre>
+        <fret>5</fret>
+        <name>G*</name>
+      </fretboard>
+    </fretboards>
+  </format>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Amazing <tag name="red">grace!</tag> How sweet the sound<br/>
+        That saved a wretch <tag name="strong">like</tag> me.
+      </lines>
+    </verse>
+  </lyrics>
+</song>

@@ -539,9 +539,9 @@
   </xsl:template>
   <xsl:template match="ol:fretboard">
     <xsl:variable name="string-positions" select="str:tokenize('0,4,8,12,16,20', ',')"/><!-- string1, string2... string6 -->
-    <xsl:variable name="fret-positions"   select="str:tokenize('10,15,20,25,30', ',')"/><!-- fret0, fret1... fret4 -->
+    <xsl:variable name="fret-positions"   select="str:tokenize('10,16,22,28,34,40', ',')"/><!-- fret0, fret1... fret5 -->
     <svg style="outline:0px dashed red;"
-     viewBox="0 0 31 37"
+     viewBox="0 0 31 47"
      width="50"
      xmlns="http://www.w3.org/2000/svg">
       <g transform="scale(1,1) translate(0,0)">

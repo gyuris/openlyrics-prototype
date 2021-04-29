@@ -39,14 +39,14 @@
         <barre>1:2-6</barre>
       </fretboard>
       <fretboard root="G" structure="min7">
-        <tab>020000</tab>
+        <tab>030000</tab>
         <fret>3</fret>
-        <barre>0:1-6</barre>
+        <barre>1:1-6</barre>
       </fretboard>
       <fretboard root="A" structure="dom7">
-        <tab>020100</tab>
+        <tab>030200</tab>
         <fret>5</fret>
-        <barre>0:1-6</barre>
+        <barre>1:1-6</barre>
       </fretboard>
       <fretboard root="D" structure="sus2" bass="F#">
         <tab>xx423o</tab>
@@ -58,8 +58,8 @@
         <tab>xx4232</tab>
       </fretboard>
       <fretboard root="G">
-        <tab>xxx232</tab>
-        <barre>2:4-6</barre>
+        <tab>xxx343</tab>
+        <barre>3:4-6</barre>
         <fret>5</fret>
         <name>G*</name>
       </fretboard>

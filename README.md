@@ -46,7 +46,7 @@ Parts:
 
 We use unreleased 0.9 version of OpenLyrics. During this project we have designed and developed   new elements and attributes for OpenLyrics  0.9, which have already been [included](https://github.com/openlyrics/openlyrics/pull/56):
 
-- [Processing instructions]( https://github.com/openlyrics/openlyrics/issues/31) for CSS or XSL
+- [Processing instructions]( https://github.com/openlyrics/openlyrics/issues/31) for CSS or XSL ([OpenLP](https://gitlab.com/openlp/openlp/-/commit/66cf59767ac520eaa958d485036e49016189f48e))
 - song/@version: 0.9
 - [song/@xml:lang](https://github.com/openlyrics/openlyrics/issues/32): Language of the file (not only for lyrics) Optional, default is 'en'
 - song/@chordNotation: Chord notation, possible values: english, english-b, german, dutch, hungarian, neolatin

@@ -19,46 +19,52 @@
     </tags>
     <fretboards>
       <fretboard root="D" structure="sus2" bass="F">
-        <tab>xx323o</tab>
+        <positions>xx323o</positions>
+        <fingers>xx213x</fingers>
       </fretboard>
       <fretboard root="E" structure="min7">
-        <tab>xx2o3o</tab>
+        <positions>xx2o3o</positions>
       </fretboard>
       <fretboard root="C" structure="dom9">
-        <tab>x32o3o</tab>
+        <positions>x32o3o</positions>
       </fretboard>
       <fretboard root="D" structure="sus2">
-        <tab>xxo23o</tab>
+        <positions>xxo23o</positions>
       </fretboard>
       <fretboard root="Bb" structure="maj7">
-        <tab>x13231</tab>
+        <positions>x13231</positions>
+        <fingers>x132411</fingers>
         <barre>1:2-6</barre>
       </fretboard>
       <fretboard root="F" bass="Bb">
-        <tab>x13211</tab>
+        <positions>x13211</positions>
         <barre>1:2-6</barre>
       </fretboard>
       <fretboard root="G" structure="min7">
-        <tab>030000</tab>
+        <positions>131111</positions>
+        <fingers>131111</fingers>
         <fret>3</fret>
         <barre>1:1-6</barre>
       </fretboard>
       <fretboard root="A" structure="dom7">
-        <tab>030200</tab>
+        <positions>131211</positions>
         <fret>5</fret>
         <barre>1:1-6</barre>
       </fretboard>
       <fretboard root="D" structure="sus2" bass="F#">
-        <tab>xx423o</tab>
+        <positions>xx423o</positions>
+        <fingers>xx413x</fingers>
       </fretboard>
       <fretboard root="D" structure="sus2" bass="B">
-        <tab>x2x23o</tab>
+        <positions>x2x23o</positions>
       </fretboard>
       <fretboard root="D" bass="F#">
-        <tab>xx4232</tab>
+        <positions>xx4232</positions>
+        <fingers>xx4132</fingers>
       </fretboard>
       <fretboard root="G">
-        <tab>xxx343</tab>
+        <positions>xxx343</positions>
+        <fingers>xxx121</fingers>
         <barre>3:4-6</barre>
         <fret>5</fret>
         <name>G*</name>

@@ -540,28 +540,13 @@
   <xsl:template match="ol:fretboard">
     <xsl:variable name="string-positions" select="str:tokenize('0,4,8,12,16,20', ',')"/><!-- string1, string2... string6 -->
     <xsl:variable name="fret-positions"   select="str:tokenize('10,16,22,28,34,40', ',')"/><!-- fret0, fret1... fret5 -->
+    <xsl:variable name="fingernums"       select="ol:fingers"/>
     <svg style="outline:0px dashed red;"
      viewBox="0 0 31 47"
      width="50"
      xmlns="http://www.w3.org/2000/svg">
       <g transform="scale(1,1) translate(0,0)">
         <use xlink:href="../stylesheets/xsl/fretboard.svg#fretboard"/>
-        <xsl:for-each select="str:tokenize(ol:tab, '')"><!-- workaround for-each select="1 to 6" -->
-          <xsl:variable name="position" select="position()"/>
-          <xsl:variable name="fretnum" select="number(.)+1"/>
-          <xsl:choose>
-            <xsl:when test=".='x' or .='o'">
-              <use xlink:href="../stylesheets/xsl/fretboard.svg#{.}"
-                x="{$string-positions[$position]}"
-                y="{$fret-positions[1]}"/>
-            </xsl:when>
-            <xsl:when test="string(number(.)) != 'NaN' and . > 0">
-              <use xlink:href="../stylesheets/xsl/fretboard.svg#finger"
-              x="{$string-positions[$position]}"
-              y="{$fret-positions[$fretnum]}"/>
-            </xsl:when>
-          </xsl:choose>
-        </xsl:for-each>
         <xsl:if test="ol:barre">
           <xsl:variable name="barre-parts"   select="str:tokenize(ol:barre, ':-')"/>
           <xsl:variable name="barre-fretnum" select="number($barre-parts[1]) + 1"/>
@@ -571,6 +556,27 @@
             x="{$string-positions[$barre-start]}"
             y="{$fret-positions[$barre-fretnum]}"/>
         </xsl:if>
+        <xsl:for-each select="str:tokenize(ol:positions, '')"><!-- workaround for-each select="1 to 6" -->
+          <xsl:variable name="position" select="position()"/>
+          <xsl:variable name="fretnum" select="number(.)+1"/>
+          <xsl:choose>
+            <xsl:when test=".='x' or .='o'">
+              <use xlink:href="../stylesheets/xsl/fretboard.svg#{.}"
+                x="{$string-positions[$position]}"
+                y="{$fret-positions[1]}"/>
+            </xsl:when>
+            <xsl:when test="string(number(.)) != 'NaN'">
+              <use xlink:href="../stylesheets/xsl/fretboard.svg#finger"
+                x="{$string-positions[$position]}"
+                y="{$fret-positions[$fretnum]}"/>
+              <xsl:if test="$fingernums and string(number(substring($fingernums, $position, 1))) != 'NaN'">
+                <use xlink:href="../stylesheets/xsl/fretboard.svg#fingernum-{substring($fingernums, $position, 1)}"
+                  x="{$string-positions[$position]}"
+                  y="{$fret-positions[$fretnum]}"/>
+              </xsl:if>
+            </xsl:when>
+          </xsl:choose>
+        </xsl:for-each>
         <xsl:choose>
           <xsl:when test="ol:fret">
             <use xlink:href="../stylesheets/xsl/fretboard.svg#necknum-{ol:fret}" />

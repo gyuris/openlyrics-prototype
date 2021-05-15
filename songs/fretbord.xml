@@ -20,7 +20,7 @@
     <fretboards>
       <fretboard root="D" structure="sus2" bass="F">
         <positions>xx323o</positions>
-        <fingers>xx213x</fingers>
+        <fingers>--213-</fingers>
       </fretboard>
       <fretboard root="E" structure="min7">
         <positions>xx2o3o</positions>
@@ -33,41 +33,46 @@
       </fretboard>
       <fretboard root="Bb" structure="maj7">
         <positions>x13231</positions>
-        <fingers>x132411</fingers>
-        <barre>1:2-6</barre>
+        <fingers>-132411</fingers>
+        <barre>1</barre>
       </fretboard>
       <fretboard root="F" bass="Bb">
         <positions>x13211</positions>
-        <barre>1:2-6</barre>
+        <barre>1</barre>
       </fretboard>
       <fretboard root="G" structure="min7">
         <positions>131111</positions>
         <fingers>131111</fingers>
-        <fret>3</fret>
-        <barre>1:1-6</barre>
+        <offset>2</offset>
+        <barre>1</barre>
       </fretboard>
       <fretboard root="A" structure="dom7">
         <positions>131211</positions>
-        <fret>5</fret>
-        <barre>1:1-6</barre>
+        <offset>4</offset>
+        <barre>1</barre>
       </fretboard>
       <fretboard root="D" structure="sus2" bass="F#">
         <positions>xx423o</positions>
-        <fingers>xx413x</fingers>
+        <fingers>--413-</fingers>
       </fretboard>
       <fretboard root="D" structure="sus2" bass="B">
         <positions>x2x23o</positions>
       </fretboard>
       <fretboard root="D" bass="F#">
         <positions>xx4232</positions>
-        <fingers>xx4132</fingers>
+        <fingers>--4132</fingers>
       </fretboard>
       <fretboard root="G">
         <positions>xxx343</positions>
-        <fingers>xxx121</fingers>
-        <barre>3:4-6</barre>
-        <fret>5</fret>
+        <fingers>---121</fingers>
+        <barre>3</barre>
+        <offset>4</offset>
         <name>G*</name>
+      </fretboard>
+      <fretboard root="C" structure="maj7" bass="E">
+        <positions>x31oo3</positions>
+        <fingers>-21--4</fingers>
+        <offset>4</offset>
       </fretboard>
     </fretboards>
   </format>

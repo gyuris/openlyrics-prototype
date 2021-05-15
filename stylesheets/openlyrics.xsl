@@ -541,6 +541,14 @@
     <xsl:variable name="string-positions" select="str:tokenize('0,4,8,12,16,20', ',')"/><!-- string1, string2... string6 -->
     <xsl:variable name="fret-positions"   select="str:tokenize('10,16,22,28,34,40', ',')"/><!-- fret0, fret1... fret5 -->
     <xsl:variable name="fingernums"       select="ol:fingers"/>
+    <xsl:variable name="barrenum"         select="number(ol:barre)"/>
+    <xsl:variable name="barrepositions">
+      <xsl:if test="ol:barre">
+        <xsl:for-each select="str:tokenize(ol:positions, '')"><!-- workaround for-each select="1 to 6" -->
+          <xsl:if test=". = $barrenum"><xsl:value-of select="position()"/></xsl:if>
+        </xsl:for-each>
+      </xsl:if>
+    </xsl:variable>
     <svg style="outline:0px dashed red;"
      viewBox="0 0 31 47"
      width="50"
@@ -548,10 +556,9 @@
       <g transform="scale(1,1) translate(0,0)">
         <use xlink:href="../stylesheets/xsl/fretboard.svg#fretboard"/>
         <xsl:if test="ol:barre">
-          <xsl:variable name="barre-parts"   select="str:tokenize(ol:barre, ':-')"/>
-          <xsl:variable name="barre-fretnum" select="number($barre-parts[1]) + 1"/>
-          <xsl:variable name="barre-start"   select="number($barre-parts[2])"/>
-          <xsl:variable name="barre-width"   select="number($barre-parts[3]) - $barre-start + 1"/>
+          <xsl:variable name="barre-fretnum" select="$barrenum+1"/>
+          <xsl:variable name="barre-start"   select="number(substring($barrepositions, 1, 1))"/>
+          <xsl:variable name="barre-width"   select="number(number(substring($barrepositions, string-length($barrepositions), 1)) - $barre-start + 1)"/>
           <use xlink:href="../stylesheets/xsl/fretboard.svg#barre-w{$barre-width}"
             x="{$string-positions[$barre-start]}"
             y="{$fret-positions[$barre-fretnum]}"/>
@@ -578,8 +585,8 @@
           </xsl:choose>
         </xsl:for-each>
         <xsl:choose>
-          <xsl:when test="ol:fret">
-            <use xlink:href="../stylesheets/xsl/fretboard.svg#necknum-{ol:fret}" />
+          <xsl:when test="ol:offset">
+            <use xlink:href="../stylesheets/xsl/fretboard.svg#necknum-{number(ol:offset+1)}" />
           </xsl:when>
           <xsl:otherwise>
             <use xlink:href="../stylesheets/xsl/fretboard.svg#neck"/>

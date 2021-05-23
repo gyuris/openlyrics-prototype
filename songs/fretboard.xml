@@ -33,7 +33,7 @@
       </fretboard>
       <fretboard root="Bb" structure="maj7">
         <positions>x13231</positions>
-        <fingers>-132411</fingers>
+        <fingers>-13241</fingers>
         <barre>1</barre>
       </fretboard>
       <fretboard root="F" bass="Bb">

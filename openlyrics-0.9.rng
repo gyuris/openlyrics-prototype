@@ -331,6 +331,11 @@
         <ref name="formatTagsTag"/>
       </oneOrMore>
     </element>
+    <element name="fretboards">
+      <oneOrMore>
+        <ref name="fretboardsTag"/>
+      </oneOrMore>
+    </element>
   </define>
 
   <define name="formatTagsTag">
@@ -348,6 +353,49 @@
           <ref name="nonEmptyContent"/>
         </element>
       </optional>
+    </element>
+  </define>
+
+  <define name="fretboardsTag">
+    <element name="fretboard">
+      <interleave>
+        <ref name="chordCommonAttributes"/>
+        <element name="positions">
+          <data type="token">
+            <param name="pattern">[1-5ox]{6}</param>
+          </data>
+        </element>
+        <optional>
+          <element name="fingers">
+            <data type="token">
+              <param name="pattern">[1-4\-]{6}</param>
+            </data>
+          </element>
+        </optional>
+        <optional>
+          <element name="offset">
+            <data type="integer">
+              <param name="minInclusive">1</param>
+              <param name="maxInclusive">11</param>
+            </data>
+          </element>
+        </optional>
+        <optional>
+          <element name="barre">
+            <data type="integer">
+              <param name="minInclusive">1</param>
+              <param name="maxInclusive">5</param>
+            </data>
+          </element>
+        </optional>
+        <optional>
+          <element name="name">
+            <data type="token">
+              <param name="minLength">1</param>
+            </data>
+          </element>
+        </optional>
+      </interleave>
     </element>
   </define>
 
@@ -396,19 +444,7 @@
 
   <define name="chord">
     <element name="chord">
-      <attribute name="root">
-        <ref name="musicalNote"/>
-      </attribute>
-      <optional>
-        <attribute name="bass">
-          <ref name="musicalNote"/>
-        </attribute>
-      </optional>
-      <optional>
-        <attribute name="structure">
-          <ref name="chords"/>
-        </attribute>
-      </optional>
+      <ref name="chordCommonAttributes"/>
       <optional>
         <attribute name="upbeat">
           <data type="boolean"/>
@@ -421,6 +457,22 @@
         <empty/>
       </choice>
     </element>
+  </define>
+
+  <define name="chordCommonAttributes">
+    <attribute name="root">
+      <ref name="musicalNote"/>
+    </attribute>
+    <optional>
+      <attribute name="bass">
+        <ref name="musicalNote"/>
+      </attribute>
+    </optional>
+    <optional>
+      <attribute name="structure">
+        <ref name="chords"/>
+      </attribute>
+    </optional>
   </define>
 
   <define name="keyNote">

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="hungarian">
+  <properties>
+    <titles>
+      <title lang="hu">Mennyei Mesterem</title>
+    </titles>
+    <authors>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9989"/>
+    </songbooks>
+    <verseOrder>c v1</verseOrder>
+    <transposition>7</transposition>
+  </properties>
+  <lyrics>
+    <verse name="c">
+      <lines>
+        <chord root="G" upbeat="true">Mennyei Meste</chord><chord root="D" bass="F#">rem,</chord><br/>
+         <chord root="A" structure="min7" upbeat="true">kezedben</chord> <chord root="E" structure="min">van az éle</chord><chord root="D">tem.</chord>
+      </lines>
+    </verse>
+    <verse name="v1">
+      <lines>
+        Gyere <chord root="A" structure="min7">formáld</chord> <chord root="G" bass="B">át, ahogy aka</chord><chord root="D">rod.</chord><br/>
+        Legyen <chord root="A" structure="min7">minden</chord> <chord root="G" bass="B">úgy, ahogy aka</chord><chord root="D">rod.</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

@@ -19,7 +19,9 @@
     <verse name="c">
       <lines>
         <chord root="G" upbeat="true">Mennyei Meste</chord><chord root="D" bass="F#">rem,</chord><br/>
-         <chord root="A" structure="min7" upbeat="true">kezedben</chord> <chord root="E" structure="min">van az éle</chord><chord root="D">tem.</chord>
+        <chord root="A" structure="min7" upbeat="true">kezedbe te</chord> <chord root="E" structure="min">szem az éle</chord><chord root="D">tem.</chord> (a szívem)<br/>
+        <chord root="G" upbeat="true">Mennyei Meste</chord><chord root="D" bass="F#">rem,</chord><br/>
+        <chord root="A" structure="min7" upbeat="true">kezedben</chord> <chord root="E" structure="min">van az éle</chord><chord root="D">tem. (a szívem)</chord>
       </lines>
     </verse>
     <verse name="v1">

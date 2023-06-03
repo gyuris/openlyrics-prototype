@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.9" chordNotation="hungarian" xml:lang="hu">
+  <properties>
+    <titles>
+      <title>Te erőt adsz</title>
+      <title lang="en">You raise me up</title>
+    </titles>
+    <authors>
+      <author type="words">Brendan Graham</author>
+      <author type="music">Brendan Graham</author>
+      <author type="words">Rolf Lovland</author>
+      <author type="music">Rolf Lovland</author>
+    </authors>
+    <key>B</key>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Ha szívem <chord root="B">fáj és</chord> <chord root="E">kétely lakik</chord> <chord root="B">bennem,</chord><br/>
+        A csügge<chord root="B" bass="D#">dés oly</chord> <chord root="E">közel jön hoz</chord><chord root="F#">zám,</chord><chord root="F#" structure="sus4"/><chord root="F#"/><br/>
+        Én várok <chord root="G#" structure="min">rád s te</chord> <chord root="E">mellém ülsz a</chord> <chord root="B">csendben</chord><chord root="E"/><br/>
+        Megvigasz<chord root="B">talsz a</chord> <chord root="F#">jelenléted</chord><chord root="B">del.</chord>
+      </lines>
+    </verse>
+    <verse name="c1">
+      <lines>
+        Te erőt <chord root="G#" structure="min">adsz, ha</chord> <chord root="E">megfárad a</chord> <chord root="B">lelkem,</chord><chord root="F#"/><br/>
+        Erőd a<chord root="G#" structure="min">dod, ve</chord><chord root="E">lem vagy, nem hagysz</chord> <chord root="B">el.</chord><chord root="F#"/><br/>
+        Fele<chord root="G#" structure="min">melsz, to</chord><chord root="E">vább viszel az</chord> <chord root="B" bass="D#">úton,</chord><chord root="F#" bass="C#"/><br/>
+        Te erőt <chord root="B">adsz, mely</chord> <chord root="F#">nem fogy el so</chord><chord root="B">sem.</chord>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        A szívem <chord root="B">már csak</chord> <chord root="E">nálad lelhet</chord> <chord root="B">békét,</chord><br/>
+        Nem élhe<chord root="B" bass="D#">tek</chord> <chord root="E">nélküled to</chord><chord root="F#">vább.</chord><chord root="F#" structure="sus4"/><chord root="F#"/><br/>
+        Nézlek és <chord root="G#" structure="min">lelkem</chord> <chord root="E">megtelik cso</chord><chord root="B">dával,</chord><chord root="E"/><br/>
+        Az éle<chord root="B">tem</chord> <chord root="F#">fényed járja</chord> <chord root="B">át.</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

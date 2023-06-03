@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="hungarian" createdIn="OpenLP 3.0.2" modifiedIn="OpenLP 3.0.2" modifiedDate="2023-05-29T22:32:01">
+  <properties>
+    <titles>
+      <title>Uram, Jézus jöjj el</title>
+      <title>Maradj nálam</title>
+    </titles>
+    <authors>
+      <author type="words">Pálhegyi Dávid</author>
+      <author type="music">Pálhegyi Dávid</author>
+    </authors>
+    <key>D</key>
+    <verseOrder>i v1 v1 c1 i v1 c2 i b e</verseOrder>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines>
+        <chord root="D" /><chord root="D" bass="F#" /><chord root="G" /><chord root="A" structure="sus4" />
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines>
+        Uram, <chord root="D">Jézus</chord> <chord root="G">jöjj</chord> <chord root="A">el</chord>!<br/>
+        Szívünk <chord root="B" structure="min7">vágyik</chord> <chord root="G">újra</chord> <chord root="A">Rád</chord>!<br/>
+        Tűzzel <chord root="B" structure="min7">és</chord> e<chord root="G">rő</chord><chord root="A">vel</chord>,<br/>
+        Jelen<chord root="G">léted</chord> <chord root="A">járjon</chord> <chord root="D">át!</chord>
+      </lines>
+    </verse>
+    <verse name="c1">
+      <lines>
+        Ne menj <chord root="B" structure="min">el, már minden</chord> <chord root="G">ké</chord><chord root="D">szen!</chord><chord root="D" structure="sus4"/><chord root="D"/><br/>
+        Ajtóm e<chord root="G">lő</chord><chord root="D">tted</chord> <chord root="E" structure="min">nyitva</chord> <chord root="A">áll!</chord><br/>
+        S várom <chord root="G">míg</chord> <chord root="A">az első</chord> <chord root="B" structure="min">helyen</chord><br/>
+        Ott ülsz <chord root="G">majd</chord> <chord root="A">az asztal</chord><chord root="D">nál.</chord>
+      </lines>
+    </verse>
+    <verse name="c2">
+      <lines repeat="2">
+        Ne menj <chord root="B" structure="min">el, maradj</chord> <chord root="G">ná</chord><chord root="D">lam,</chord><chord root="D" structure="sus4"/><chord root="D"/><br/>
+        Ma este <chord root="G">még</chord> <chord root="D">ne</chord> <chord root="E" structure="min">menj</chord> to<chord root="A">vább!</chord><br/>
+        Míg lángra <chord root="G">gyújt</chord> <chord root="A">fényed</chord> <chord root="B" structure="min">újra,</chord><br/>
+        Mint kelő <chord root="G">nap</chord> <chord root="A">az éjsza</chord><chord root="D">kát.</chord><chord root="B" structure="min"/>
+      </lines>
+      <lines>
+        Mint kelő <chord root="G">nap</chord> <chord root="A">az éjsza</chord><chord root="D">kát.</chord>
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines break="optional">
+        És i<chord root="B" structure="min7">mád, újra i</chord><chord root="D">mád és csak i</chord><chord root="G">mád!</chord><br/>
+        Egész <chord root="A">bensőm csak Téged i</chord><chord root="B" structure="min">mád!</chord><br/>
+        Újra i<chord root="D">mád és csak i</chord><chord root="G">mád!</chord><br/>
+        Egész <chord root="A">bensőm…</chord> csak Téged i<chord root="B" structure="min7">mád.</chord>
+      </lines>
+      <lines>
+        Újra i<chord root="D">mád és csak i</chord><chord root="G">mád!</chord><br/>
+        Egész <chord root="A">bensőm csak Téged i</chord><chord root="B" structure="min">mád!</chord><br/>
+        Újra i<chord root="D">mád és csak i</chord><chord root="G">mád!</chord><br/>
+        Egész <chord root="A">bensőm…</chord>
+      </lines>
+    </verse>
+    <verse name="e">
+      <lines>
+        Uram, <chord root="D">Jézus</chord> <chord root="G">jöjj</chord> <chord root="A">el</chord>!<br/>
+        Szívünk <chord root="B" structure="min7">vágyik</chord> <chord root="G">újra</chord> <chord root="A">Rád</chord>!<br/>
+        Tűzzel <chord root="B" structure="min7">és</chord> e<chord root="G">rő</chord><chord root="A">vel</chord>,<br/>
+        Jelen<chord root="G">léted</chord> <chord root="A">már le</chord><chord root="B" structure="min">száll!</chord><chord root="D"/><br/>
+        Jelen<chord root="G">léted</chord> <chord root="A">ránk le</chord><chord root="D">száll.</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

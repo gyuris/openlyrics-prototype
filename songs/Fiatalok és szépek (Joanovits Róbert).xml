@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" xml:lang="hu" version="0.9" chordNotation="hungarian">
+  <properties>
+    <titles>
+      <title lang="hu">Fiatalok és szépek</title>
+      <title lang="hu">Az evangélium hét fiatalja, himnusz</title>
+    </titles>
+    <authors>
+      <author type="words">Joanovits Róbert</author>
+      <author type="music">Joanovits Róbert</author>
+    </authors>
+    <songbooks>
+      <songbook name="Szent András énekfüzet" entry="9987"/>
+    </songbooks>
+    <verseOrder>v1 v2</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord root="C">Fiatalok és</chord> <chord root="G">szépek,</chord><br/>
+        <chord root="G" structure="dom7">előttünk még az</chord> <chord root="C">élet</chord>.<br/>
+        <chord root="F">Reménykedők és</chord> <chord root="C">bátrak</chord>,<br/>
+        <chord root="G">utunkba kudarc nem</chord> <chord root="C">állhat</chord>.
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        <chord root="C">Hiszünk az Úrnak, az</chord> <chord root="G">Egynek,</chord><br/>
+        <chord root="G" structure="dom7">nekimegyünk most a</chord> <chord root="C">hegynek!</chord><br/>
+        <chord root="F">Szívünkbe Jézus</chord> <chord root="C">jött el</chord>,<br/>
+        <chord root="G">oroszlánerő</chord> <chord root="C">tölt el!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

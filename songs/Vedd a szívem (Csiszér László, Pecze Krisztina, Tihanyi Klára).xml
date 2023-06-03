@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.9" chordNotation="hungarian" xml:lang="hu">
+  <properties>
+    <titles>
+      <title>Vedd a szívem</title>
+    </titles>
+    <authors>
+      <author type="words">Tihanyi Klára</author>
+      <author type="music">Tihanyi Klára</author>
+      <author type="words">Pecze Krisztina</author>
+      <author type="music">Pecze Krisztina</author>
+      <author type="words">Csiszér László</author>
+      <author type="music">Csiszér László</author>
+    </authors>
+    <key>Bm</key>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        Vedd a <chord root="B" structure="min">szívem, vedd a lényem,</chord><br/>
+        Arra vágyom, <chord root="G">érted</chord> <chord root="A">égjen.</chord><br/>
+        El nem <chord root="B" structure="min">hagylak, veled élek,</chord><br/>
+        Átölel a <chord root="G">jelen</chord><chord root="A">léted.</chord>
+      </lines>
+    </verse>
+    <instrument name="m">
+      <lines>
+        <chord root="E" structure="min"/> <chord root="F#" structure="min"/> <chord root="B" structure="min"/>
+      </lines>
+    </instrument>
+    <verse name="v2">
+      <lines>
+        Szemtől <chord root="B" structure="min">szembe, szívtől szívig</chord><br/>
+        Szenve<chord root="G">délyed átjár,</chord> <chord root="A">érint</chord>,<br/>
+        Vonj ma<chord root="B" structure="min">gadba, még mélyebbre,</chord><br/>
+        Szívünk hadd ol<chord root="G">vadjon</chord> <chord root="A">egybe!</chord>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        Igent <chord root="G">mondok</chord> <chord root="G" bass="F#">Iste</chord><chord root="E" structure="min">nem,</chord><br/>
+        Te le<chord root="D">gyél a hitve</chord><chord root="A">sem.</chord><br/>
+        Hűsé<chord root="G">ged</chord> <chord root="G" bass="F#">végte</chord><chord root="E" structure="min">len,</chord><br/>
+        Szent pe<chord root="B" structure="min">csét a szíve</chord><chord root="A" bass="C#"/><chord root="A">men!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.9" chordNotation="hungarian" xml:lang="hu">
+  <properties>
+    <titles>
+      <title>Romjaimba élet száll</title>
+      <title lang="en">Glorious Ruins</title>
+    </titles>
+    <authors>
+      <author type="words">Joel Houston</author>
+      <author type="music">Joel Houston</author>
+      <author type="words">Matt Crocker</author>
+      <author type="music">Matt Crocker</author>
+    </authors>
+    <key>D</key>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines>
+        <chord root="D"/><chord root="B" structure="min"/><chord root="G"/>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines>
+        Viha<chord root="D">ros szél dúl, ez a föld széthull, de velem</chord> <chord root="B" structure="min">vagy!</chord><chord root="G"/><br/>
+        A vi<chord root="D">lág elmúlik, de kegyelmeben lelkem szár</chord><chord root="B" structure="min">nyal!</chord><chord root="E" structure="min"/>
+      </lines>
+    </verse>
+    <verse name="p">
+      <lines>
+        Ha <chord root="G">Te vagy velem, tűz sem</chord> <chord root="D">árthat nekem,</chord><br/>
+        Lelkem <chord root="B" structure="min">életre kel, ha rád né</chord><chord root="A">zek!</chord><br/>
+        Ke<chord root="G">reszted alatt elhagy</chord> <chord root="D">minden kudarc,</chord><br/>
+        A Te <chord root="B" structure="min">szent kegyelmed fényé</chord><chord root="A">ben!</chord>
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        Romjaimba élet <chord root="D">száll, a Te neved halla</chord><chord root="G">tán,</chord><br/>
+        Hamvaimból fel<chord root="D">kelve megállok trónod</chord><chord root="A">nál!</chord><br/>
+        Menedékre a lel<chord root="B" structure="min">kem a Te kezed közt ta</chord><chord root="G">lál,</chord><br/>
+        Én mindig sze<chord root="D">retlek, dalom szóljon Hoz</chord><chord root="A">zád!</chord>
+      </lines>
+    </verse>
+    <verse name="v2">
+      <lines>
+        Minden <chord root="D">porrá hull, de ígéreted a remé</chord><chord root="B" structure="min">nyem!</chord><chord root="G"/><br/>
+        Elhagy a <chord root="D">bátorság, de erőt belőled me</chord><chord root="B" structure="min">rítek!</chord><chord root="E" structure="min"/>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

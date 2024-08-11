@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.9" chordNotation="hungarian" xml:lang="hu">
+  <properties>
+    <titles>
+      <title>Írd át álmaim</title>
+    </titles>
+    <authors>
+      <author type="words">Szabó András</author>
+      <author type="music">Szabó András</author>
+    </authors>
+    <key>D</key>
+    <verseOrder>i v1 m v1 c b</verseOrder>
+  </properties>
+  <lyrics>
+    <instrument name="i">
+      <lines>
+        <beat><chord root="D" structure="sus2"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="D" structure="sus2"/></beat><beat><chord root="A" structure="sus4"/></beat>
+      </lines>
+      <lines>
+        <beat><chord root="D" structure="sus2"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="A" structure="sus4"/></beat>
+      </lines>
+    </instrument>
+    <verse name="v1">
+      <lines>
+        <chord root="D" structure="sus2">Megkopott,</chord> <chord root="E" structure="min7">elhamvadt</chord> <chord root="G" structure="maj6">álmaim</chord> <chord root="A" structure="sus4">itt hozom,</chord><br/>
+        <chord root="A" structure="sus4">Sarumat,</chord> <chord root="E" structure="min7">szétfoszló</chord> <chord root="G" structure="maj6">vágyaim</chord> <chord root="A" structure="sus4">leoldom.</chord><br/>
+        <chord root="A" structure="sus4">Elázott,</chord> <chord root="E" structure="min7">elhagyott,</chord> <chord root="G" structure="maj6">meghasadt</chord> <chord root="A" structure="sus4">kereszted</chord><br/>
+        <chord root="A" structure="sus4">Lábánál</chord> <chord root="E" structure="min7">otthagyom,</chord> <chord root="G" structure="maj6">meghajtom</chord> <chord root="A" structure="sus4">térdemet.</chord>
+      </lines>
+    </verse>
+    <instrument name="m">
+      <lines>
+        <beat><chord root="D" structure="sus2"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="G" structure="maj6"/></beat><beat><chord root="A" structure="sus4"/></beat>
+      </lines>
+      <lines>
+        <beat><chord root="D" structure="sus2"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="E" structure="min7"/></beat><beat><chord root="A" structure="sus4"/></beat>
+      </lines>
+    </instrument>
+    <verse name="c">
+      <lines>
+        <chord root="B" structure="min">Írd át</chord> <chord root="G" structure="power">álmaim</chord> <chord root="E" structure="min7">amire</chord> <chord root="A" structure="sus4">akarod</chord><br/>
+        <chord root="B" structure="min">Cseréld ki</chord> <chord root="G" structure="power">vágyaim,</chord> <chord root="E" structure="min7">amire</chord> <chord root="A" structure="sus4">akarod,</chord><br/>
+        <chord root="B" structure="min">Töltsd be</chord> <chord root="G" structure="power">életem,</chord> <chord root="E" structure="min7">amivel</chord> <chord root="A" structure="sus4">akarod,</chord><br/>
+        <chord root="B" structure="min">Ölelje</chord> <chord root="G" structure="power">jövőmet</chord> <chord root="E" structure="min7">egészen</chord> <chord root="A" structure="sus4">át ka</chord><chord root="D">rod.</chord><chord root="E" structure="min7"/><chord root="G" structure="power"/><chord root="A" structure="sus4"/>
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines>
+        <chord root="B" structure="min">Írj</chord> <chord root="G" structure="power">gyönyörű</chord> <chord root="E" structure="min7">verssoro</chord><chord root="A" structure="sus4">kat</chord><br/>
+        <chord root="B" structure="min">éle</chord><chord root="G" structure="power">tem</chord> <chord root="E" structure="min7">lapjai</chord><chord root="A" structure="sus4">ra</chord><br/>
+        <chord root="B" structure="min">Zengj</chord> <chord root="G" structure="power">szárnyaló</chord> <chord root="E" structure="min7">dallamo</chord><chord root="A" structure="sus4">kat</chord><br/>
+        <chord root="B" structure="min">éle</chord><chord root="G" structure="power">tem</chord> <chord root="E" structure="min7">ritmusá</chord><chord root="A" structure="sus4">ba!</chord>
+      </lines>
+    </verse>
+  </lyrics>
+</song>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="../stylesheets/openlyrics.css" type="text/css"?>
+<song xmlns="http://openlyrics.info/namespace/2009/song" version="0.8" createdIn="Not known" modifiedIn="OpenLyrics 0.9 to 0.8 XSLT converter" modifiedDate="2024-08-11T23:17:55+02:00">
+  <properties>
+    <titles>
+      <title>Írd át álmaim</title>
+    </titles>
+    <authors>
+      <author type="words">Szabó András</author>
+      <author type="music">Szabó András</author>
+    </authors>
+    <key>D</key>
+    <verseOrder>v1 v1 c b</verseOrder>
+  </properties>
+  <lyrics>
+    <verse name="v1">
+      <lines>
+        <chord name="D2"/>Megkopott, <chord name="Em7"/>elhamvadt <chord name="G6"/>álmaim <chord name="A4"/>itt hozom,<br/>
+        <chord name="A4"/>Sarumat, <chord name="Em7"/>szétfoszló <chord name="G6"/>vágyaim <chord name="A4"/>leoldom.<br/>
+        <chord name="A4"/>Elázott, <chord name="Em7"/>elhagyott, <chord name="G6"/>meghasadt <chord name="A4"/>kereszted<br/>
+        <chord name="A4"/>Lábánál <chord name="Em7"/>otthagyom, <chord name="G6"/>meghajtom <chord name="A4"/>térdemet.
+      </lines>
+    </verse>
+    <verse name="c">
+      <lines>
+        <chord name="Hm"/>Írd át <chord name="G5"/>álmaim <chord name="Em7"/>amire <chord name="A4"/>akarod<br/>
+        <chord name="Hm"/>Cseréld ki <chord name="G5"/>vágyaim, <chord name="Em7"/>amire <chord name="A4"/>akarod,<br/>
+        <chord name="Hm"/>Töltsd be <chord name="G5"/>életem, <chord name="Em7"/>amivel <chord name="A4"/>akarod,<br/>
+        <chord name="Hm"/>Ölelje <chord name="G5"/>jövőmet <chord name="Em7"/>egészen <chord name="A4"/>át ka<chord name="D"/>rod.<chord name="Em7"/><chord name="G5"/><chord name="A4"/>
+      </lines>
+    </verse>
+    <verse name="b">
+      <lines>
+        <chord name="Hm"/>Írj <chord name="G5"/>gyönyörű <chord name="Em7"/>verssoro<chord name="A4"/>kat<br/>
+        <chord name="Hm"/>éle<chord name="G5"/>tem <chord name="Em7"/>lapjai<chord name="A4"/>ra<br/>
+        <chord name="Hm"/>Zengj <chord name="G5"/>szárnyaló <chord name="Em7"/>dallamo<chord name="A4"/>kat<br/>
+        <chord name="Hm"/>éle<chord name="G5"/>tem <chord name="Em7"/>ritmusá<chord name="A4"/>ba!
+      </lines>
+    </verse>
+  </lyrics>
+</song>
